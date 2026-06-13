@@ -260,22 +260,21 @@ async function submitProduct() {
       if (getRes.ok) {
         const getData = await getRes.json();
         existingSha = getData.sha;
-        try {
-          const raw = atob(getData.content.replace(/[\r\n\s]/g,''));
-          existingProducts = JSON.parse(decodeURIComponent(escape(raw)));
-        } catch(e2) {
-          // 兼容旧格式
-          existingProducts = JSON.parse(atob(getData.content.replace(/[\r\n\s]/g,'')));
-        }
+        // 正确解码UTF-8中文
+        const raw = Uint8Array.from(atob(getData.content.replace(/[\r\n]/g,'')), c=>c.charCodeAt(0));
+        existingProducts = JSON.parse(new TextDecoder('utf-8').decode(raw));
       }
     } catch(e) {}
 
     existingProducts.push(product);
 
-    // 保存产品数据
+    // 保存产品数据 - 用TextEncoder正确处理中文
+    const jsonStr = JSON.stringify(existingProducts, null, 2);
+    const utf8Bytes = new TextEncoder().encode(jsonStr);
+    const b64 = btoa(String.fromCharCode(...utf8Bytes));
     const saveBody = {
       message: `Add product: ${title_zh}`,
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(existingProducts, null, 2)))),
+      content: b64,
       branch: BRANCH
     };
     if (existingSha) saveBody.sha = existingSha;
