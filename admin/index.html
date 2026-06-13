@@ -442,10 +442,22 @@ const BRANCH = 'main';
 
 // ==================== 编码工具（UTF-8安全）====================
 function utf8ToB64(str) {
-  return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m, p1) => String.fromCharCode('0x' + p1)));
+  const encoder = new TextEncoder();
+  const bytes = encoder.encode(str);
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary);
 }
 function b64ToUtf8(str) {
-  return decodeURIComponent(Array.prototype.map.call(atob(str.replace(/\n/g,'')), c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+  const binary = atob(str.replace(/[\r\n]/g, ''));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+  const decoder = new TextDecoder('utf-8');
+  return decoder.decode(bytes);
 }
 
 // ==================== GitHub API ====================
