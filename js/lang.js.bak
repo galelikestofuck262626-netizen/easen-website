@@ -1,0 +1,748 @@
+(function(){
+  var LANGS = [
+    { code: 'zh', label: '中文',     flag: '🇨🇳' },
+    { code: 'en', label: 'English',  flag: '🇺🇸' },
+    { code: 'fr', label: 'Français', flag: '🇫🇷' },
+    { code: 'es', label: 'Español',  flag: '🇪🇸' },
+    { code: 'de', label: 'Deutsch',  flag: '🇩🇪' },
+    { code: 'ar', label: 'العربية',  flag: '🇸🇦' },
+  ];
+
+  // All translations keyed by English text
+  var T = {
+    fr: {
+      // Nav
+      'EASEN Commercial Furniture': 'EASEN Mobilier Commercial',
+      'Home': 'Accueil',
+      'Our Products': 'Nos Produits',
+      'About Us': 'À Propos',
+      'Case Studies': 'Références',
+      'News': 'Actualités',
+      'Contact Us': 'Contactez-nous',
+      'Get a Quote': 'Demander un Devis',
+      'Insights': 'Ressources',
+      'Projects': 'Projets',
+      'Products': 'Produits',
+      'Quick Links': 'Liens Rapides',
+      'Contact Info': 'Coordonnées',
+      'All Rights Reserved': 'Tous Droits Réservés',
+      'Providing high-quality custom furniture for global clients.': 'Fournisseur de mobilier sur mesure de haute qualité pour clients internationaux.',
+      'Lecong, Shunde, Foshan, China': 'Lecong, Shunde, Foshan, Chine',
+      'Lecong Town, Shunde District, Foshan, China': 'Lecong, Shunde, Foshan, Chine',
+      // Hero
+      'Professional Commercial Furniture Manufacturer': 'Fabricant Professionnel de Mobilier Commercial',
+      '20+ years of expertise delivering high-quality custom furniture for hotels, restaurants, and cafes worldwide': 'Plus de 20 ans d\'expertise dans la fabrication de mobilier sur mesure pour hôtels, restaurants et cafés',
+      'View Products': 'Voir les Produits',
+      // About
+      '20+ Years of Commercial Furniture Expertise': 'Plus de 20 Ans d\'Expertise en Mobilier Commercial',
+      'Years Experience': 'Ans d\'Expérience',
+      'Global Clients': 'Clients Mondiaux',
+      '㎡ Factory': '㎡ Usine',
+      'Production Area': 'Surface de Production',
+      'Brand Partners': 'Partenaires de Marque',
+      'Export Countries': 'Pays d\'Export',
+      'Our Products': 'Nos Produits',
+      'Professional Custom Commercial Furniture': 'Mobilier Commercial Sur Mesure Professionnel',
+      'Restaurant Furniture': 'Mobilier de Restaurant',
+      'Custom restaurant tables, chairs, booths & bar stools': 'Tables, chaises, banquettes et tabourets de bar sur mesure',
+      'Hotel Furniture': 'Mobilier d\'Hôtel',
+      'Complete solutions for hotel lobbies, rooms & meeting rooms': 'Solutions complètes pour lobbies, chambres et salles de réunion',
+      'Cafe Furniture': 'Mobilier de Café',
+      'Popular cafe furniture wholesale, adaptable to any style': 'Mobilier de café en gros, adaptable à tout style',
+      'Outdoor Furniture': 'Mobilier d\'Extérieur',
+      'Weather-resistant outdoor furniture for gardens & terraces': 'Mobilier extérieur résistant aux intempéries pour jardins et terrasses',
+      'Learn More →': 'En Savoir Plus →',
+      // Pain points
+      'Buyer Pain Points': 'Défis des Acheteurs',
+      'We Get It 。?We Solve These Problems Every Day': 'Nous Comprenons — Nous Résolvons Ces Problèmes Chaque Jour',
+      'Sample Looks Great, Batch Fails': 'L\'Échantillon Est Parfait, La Livraison Décevante',
+      'Factories cut corners: cheaper materials, rusting hardware. The batch looks nothing like the sample — and opening day is around the corner.': 'Les usines réduisent les coûts : matériaux moins chers, quincaillerie qui rouille. La livraison ne ressemble pas à l\'échantillon — et l\'ouverture approche.',
+      'Delays After Delays': 'Retards Après Retards',
+      'Promised 30 days, now it\'s day 60. Contractor waiting, rent due, money burning — no straight answers.': 'Promis en 30 jours, nous en sommes au 60ème. L\'entrepreneur attend, le loyer est dû — aucune réponse claire.',
+      'Ghosted After Payment': 'Disparu Après Paiement',
+      'Broken leg? Wobbly chair? Cracked top? Call the factory — voicemail, blocked. The "cheap deal" cost more than a brand name.': 'Pied cassé ? Chaise bancale ? Plateau fissuré ? Appelez l\'usine — messagerie, bloqué. Le "bon prix" coûte finalement plus cher.',
+      'Wrong Size, Won\'t Fit': 'Mauvaises Dimensions',
+      'Measured carefully, but the delivery is off by centimeters. Won\'t fit through the door. Remake? Another month.': 'Mesuré avec soin, mais la livraison est décalée de centimètres. Refaire ? Encore un mois.',
+      'Middleman Markup, Zero Accountability': 'Intermédiaire, Zéro Responsabilité',
+      'Order through a trading company? Expect 30%+ markup. Problems? They blame each other — you\'re stuck in the middle.': 'Commander via un intermédiaire ? Attendez-vous à 30%+ de marge. Problèmes ? Ils se rejettent la faute — vous êtes coincé.',
+      'Falls Apart in Months': 'Se Dégrade en Quelques Mois',
+      'Chairs wobble in 3 months, tabletops blister in 6, sofas sag. Replacing yearly costs more than buying quality once.': 'Les chaises vacillent en 3 mois, les plateaux cloquent en 6. Remplacer chaque année coûte plus que d\'acheter de la qualité.',
+      // What we do
+      'What We Do for You': 'Ce Que Nous Faisons Pour Vous',
+      'From measurement to after-sales, we help you avoid every pitfall': 'De la mesure au service après-vente, nous vous aidons à éviter chaque écueil',
+      'Avoid Design Errors': 'Éviter les Erreurs de Conception',
+      'Professional team remote design review, CAD verification, final confirmation before production. Wrong size? Free remake.': 'Révision à distance par notre équipe, vérification CAD, confirmation finale avant production. Mauvaise taille ? Refabrication gratuite.',
+      'Avoid Color Mismatches': 'Éviter les Écarts de Couleur',
+      'Same batch and craft as sample, photo confirmation before shipping. What you see is what you get.': 'Même lot et fabrication que l\'échantillon, confirmation photo avant expédition. Ce que vous voyez est ce que vous recevez.',
+      'Avoid Delivery Delays': 'Éviter les Retards de Livraison',
+      'Delivery date in contract with daily penalty for delays. Weekly progress updates — we keep you informed.': 'Date de livraison contractuelle avec pénalités journalières. Mises à jour hebdomadaires — nous vous tenons informé.',
+      'Avoid Shipping Damage': 'Éviter les Dommages de Transport',
+      'Triple protection: crates + foam + corner guards. Any damage? Free replacement, no arguments.': 'Triple protection : caisses + mousse + coins. Dommages ? Remplacement gratuit, sans discussion.',
+      'Avoid Installation Confusion': 'Éviter la Confusion d\'Installation',
+      'Labeled packaging with diagrams, video tutorials, remote guidance always online.': 'Emballage étiqueté avec schémas, tutoriels vidéo, assistance à distance toujours disponible.',
+      'No More Unhandled After-Sales': 'Plus de SAV Sans Réponse',
+      'Dedicated after-sales manager, 2-hour response, 48-hour solution. Free parts during warranty.': 'Responsable SAV dédié, réponse en 2h, solution en 48h. Pièces gratuites pendant la garantie.',
+      'We Help You Complete Your Restaurant Project 。?Safely': 'Nous Vous Aidons à Mener Votre Projet à Bien',
+      'From the first drawing to opening day, we\'re with you every step. More than selling furniture 。?we help you get it right.': 'Du premier dessin jusqu\'à l\'inauguration, nous sommes là à chaque étape.',
+      // Cases
+      'Success Stories': 'Références Clients',
+      'Featured Projects': 'Projets Sélectionnés',
+      'Premium Restaurant Project': 'Projet Restaurant Premium',
+      'Space Planning Solutions': 'Solutions d\'Aménagement',
+      'Boutique Hotel Project': 'Projet Hôtel Boutique',
+      'Professional Craftsmen': 'Artisans Professionnels',
+      'Cafe Chain': 'Chaîne de Café',
+      'Best-selling Series': 'Série Best-seller',
+      'Outdoor Dining': 'Restauration en Plein Air',
+      'Weather-resistant': 'Résistant aux Intempéries',
+      // Partners & Certs
+      'Our Partners': 'Nos Partenaires',
+      'Trusted by Global Clients': 'La Confiance de Clients Mondiaux',
+      'Quality & Compliance': 'Qualité & Conformité',
+      'International Standards Certification': 'Certifications Internationales',
+      'Fire Safety Options': 'Options Sécurité Incendie',
+      'We can provide upholstery, foam and seating constructions tested to international fire-safety standards, including EN 1021-1 / EN 1021-2, BS 5852, TB 117-2013 and NFPA 260.': 'Nous proposons des tissus, mousses et structures testés selon EN 1021-1/2, BS 5852, TB 117-2013 et NFPA 260.',
+      'Commercial-Grade Construction': 'Construction de Qualité Commerciale',
+      'Our booth seating and banquette furniture are built for high-traffic hospitality environments, with reinforced frames, high-density foam, durable upholstery and strict quality control.': 'Nos banquettes sont conçues pour les environnements à fort trafic avec cadres renforcés, mousse haute densité et sellerie durable.',
+      'Low-Emission Material Options': 'Matériaux à Faibles Émissions',
+      'We support low-VOC, low-formaldehyde solutions including E0/E1 grade panels, CARB / TSCA Title VI compliant plywood and low-emission adhesives.': 'Nous proposons des panneaux E0/E1, contreplaqués CARB/TSCA et adhésifs à faibles émissions.',
+      'Responsible Wood Sourcing': 'Approvisionnement Responsable',
+      'For European and international projects, FSC / PEFC certified wood materials and traceability documents can be arranged according to project requirements.': 'Matériaux certifiés FSC/PEFC et documents de traçabilité disponibles pour les projets européens et internationaux.',
+      'Project Quality Control': 'Contrôle Qualité',
+      'Every project follows a step-by-step inspection: raw material checking, frame inspection, upholstery finishing, dimensional verification, packaging inspection and pre-shipment photos.': 'Chaque projet suit une inspection étape par étape : matières premières, cadre, sellerie, dimensions, emballage et photos pré-expédition.',
+      'Certification Documents Available Upon Request': 'Documents de Certification sur Demande',
+      'Certification and testing documents can be provided per project requirements for fire-retardant materials, low-emission panels, commercial-grade upholstery and responsible wood sourcing.': 'Rapports de test et certificats disponibles sur demande pour matériaux ignifuges, panneaux à faibles émissions et bois responsable.',
+      // Insights
+      'Hospitality Furniture Insights': 'Ressources Mobilier Hôtellerie',
+      'Helping overseas restaurants, hotels and cafés choose better commercial furniture': 'Aider restaurants, hôtels et cafés à choisir le meilleur mobilier commercial',
+      'Project Stories': 'Études de Cas',
+      'Custom Furniture Solution for a Contemporary Café Space': 'Solution Mobilier Sur Mesure pour un Café Contemporain',
+      'From space planning to furniture installation — how we configured a complete commercial furniture solution for a high-end café, covering dining chairs, booth seating, lounge chairs and bar stools.': 'De la planification à l\'installation — comment nous avons configuré une solution complète pour un café haut de gamme.',
+      'View Project →': 'Voir le Projet →',
+      'Our Inspection Process Before Shipping Restaurant Furniture': 'Notre Processus d\'Inspection Avant Expédition',
+      'Learn More →': 'En Savoir Plus →',
+      'PU Leather vs Fabric: Which Is Better for Restaurant Booth Seating?': 'Cuir PU vs Tissu : Lequel Choisir pour les Banquettes de Restaurant ?',
+      'Ask an Expert →': 'Demander à un Expert →',
+      // Contact
+      'Contact Us': 'Contactez-nous',
+      'Get a Free Quote': 'Devis Gratuit',
+      'Name': 'Nom',
+      'Email': 'E-mail',
+      'Message': 'Message',
+      'Submit': 'Envoyer',
+      'Factory Address': 'Adresse Usine',
+      'Phone': 'Téléphone',
+      'WeChat': 'WeChat',
+      'WeChat ID: easen_furniture': 'WeChat : easen_furniture',
+      // FAQ
+      'FAQ': 'FAQ',
+      'Do you support customization?': 'Proposez-vous des personnalisations ?',
+      'Yes, we offer full customization based on your drawings and requirements.': 'Oui, nous offrons une personnalisation complète selon vos plans et exigences.',
+      'What is the minimum order quantity (MOQ)?': 'Quelle est la quantité minimale de commande ?',
+      'Our MOQ varies by product type, generally starting from 50 pieces.': 'Notre MOQ varie selon le produit, généralement à partir de 50 pièces.',
+      'What is the production lead time?': 'Quel est le délai de production ?',
+      'Standard products: 30-45 days. Custom products: 45-60 days.': 'Produits standard : 30-45 jours. Sur mesure : 45-60 jours.',
+      'Do you provide overseas shipping?': 'Livrez-vous à l\'international ?',
+      'Yes, we offer global shipping with extensive export experience.': 'Oui, nous livrons dans le monde entier avec une grande expérience à l\'export.',
+      // CTA
+      'Want your project to succeed too?': 'Vous Voulez que Votre Projet Réussisse ?',
+      'From blueprints to grand opening, we\'re with you every step. More than selling furniture — we help you get it right.': 'Des plans à l\'inauguration, nous vous accompagnons. Plus que vendre du mobilier — nous vous aidons à réussir.',
+      'Contact Us Now': 'Contactez-nous Maintenant',
+      'Back to Home': 'Retour à l\'Accueil',
+      'Contact Us Via': 'Nous Contacter Via',
+      'WeChat ID': 'WeChat',
+      'Leave a Message': 'Laisser un Message',
+      // Case pages
+      'Case Study': 'Étude de Cas',
+      'Inside EASEN': 'À l\'Intérieur d\'EASEN',
+      'Craftsmanship & Smart Manufacturing': 'Artisanat & Fabrication Intelligente',
+      'Click to Play Factory Tour': 'Cliquer pour la Visite d\'Usine',
+      'Project Stories': 'Études de Cas',
+      'Furniture Guides': 'Guides d\'Achat',
+      'Materials & Craftsmanship': 'Matériaux & Savoir-Faire',
+      'Design Trends': 'Tendances Design',
+      'International Standards Certification': 'Certifications Internationales',
+      'EASEN Furniture was founded in 2016 and headquartered in Foshan Lecong, China\'s furniture manufacturing hub. With four specialized factories and a complete production system, we cover restaurant, hotel, cafe and other commercial furniture.': 'EASEN Furniture a été fondée en 2016 à Lecong, Foshan, le centre de fabrication de mobilier en Chine. Avec quatre usines spécialisées, nous couvrons le mobilier de restaurant, d\'hôtel, de café et autres espaces commerciaux.',
+      'Promised 30 days, now it\'s day 60. Contractor waiting, rent due, money burning — no straight answers.': 'Promis en 30 jours, nous en sommes au 60ème. L\'entrepreneur attend, le loyer est dû — aucune réponse claire.',
+      'Wrong Size, Won\'t Fit': 'Mauvaises Dimensions, Ça Ne Rentre Pas',
+      'Measured carefully, but the delivery is off by centimeters. Won\'t fit through the door. Remake? Another month.': 'Mesuré avec soin, mais la livraison est décalée de centimètres. Ça ne rentre pas. Refaire ? Encore un mois.',
+      'Order through a trading company? Expect 30%+ markup. Problems? They blame each other — you\'re stuck in the middle.': 'Commander via un intermédiaire ? Attendez-vous à 30%+ de marge. Problèmes ? Ils se rejettent la faute — vous êtes coincé.',
+      'From the first drawing to opening day, we\'re with you every step. More than selling furniture 。?we help you get it right.': 'Du premier dessin jusqu\'à l\'inauguration, nous sommes à vos côtés. Plus que vendre du mobilier — nous vous aidons à réussir.',
+    },
+
+    es: {
+      'Years Experience': 'Años de Experiencia',
+      'Production Area': 'Área de Producción',
+      'Brand Partners': 'Socios de Marca',
+      'Export Countries': 'Países de Exportación',
+      'Professional Custom Commercial Furniture': 'Mobiliario Comercial Personalizado Profesional',
+      'Learn More →': 'Más Información →',
+      'Global Clients': 'Clientes Globales',
+      'We Help You Complete Your Restaurant Project Safely': 'Le Ayudamos a Completar su Proyecto con Éxito',
+      'What We Do for You': 'Lo Que Hacemos Por Usted',      'EASEN Commercial Furniture': 'EASEN Mobiliario Comercial',
+      'Home': 'Inicio',
+      'Our Products': 'Nuestros Productos',
+      'About Us': 'Sobre Nosotros',
+      'Case Studies': 'Casos de Éxito',
+      'News': 'Noticias',
+      'Contact Us': 'Contáctenos',
+      'Get a Quote': 'Solicitar Presupuesto',
+      'Insights': 'Recursos',
+      'Projects': 'Proyectos',
+      'Products': 'Productos',
+      'Quick Links': 'Enlaces Rápidos',
+      'Contact Info': 'Información de Contacto',
+      'All Rights Reserved': 'Todos los Derechos Reservados',
+      'Providing high-quality custom furniture for global clients.': 'Proveedor de mobiliario personalizado de alta calidad para clientes globales.',
+      'Lecong, Shunde, Foshan, China': 'Lecong, Shunde, Foshan, China',
+      'Lecong Town, Shunde District, Foshan, China': 'Lecong, Shunde, Foshan, China',
+      'Professional Commercial Furniture Manufacturer': 'Fabricante Profesional de Mobiliario Comercial',
+      '20+ years of expertise delivering high-quality custom furniture for hotels, restaurants, and cafes worldwide': 'Más de 20 años de experiencia en mobiliario personalizado para hoteles, restaurantes y cafeterías en todo el mundo',
+      'View Products': 'Ver Productos',
+      '20+ Years of Commercial Furniture Expertise': 'Más de 20 Años de Experiencia en Mobiliario Comercial',
+      'Years Experience': 'Años de Experiencia',
+      'Global Clients': 'Clientes Globales',
+      '㎡ Factory': '㎡ Fábrica',
+      'Production Area': 'Área de Producción',
+      'Brand Partners': 'Socios de Marca',
+      'Export Countries': 'Países de Exportación',
+      'Professional Custom Commercial Furniture': 'Mobiliario Comercial Personalizado Profesional',
+      'Restaurant Furniture': 'Mobiliario de Restaurante',
+      'Custom restaurant tables, chairs, booths & bar stools': 'Mesas, sillas, cabinas y taburetes de bar personalizados',
+      'Hotel Furniture': 'Mobiliario de Hotel',
+      'Complete solutions for hotel lobbies, rooms & meeting rooms': 'Soluciones completas para vestíbulos, habitaciones y salas de reuniones',
+      'Cafe Furniture': 'Mobiliario de Cafetería',
+      'Popular cafe furniture wholesale, adaptable to any style': 'Mobiliario de cafetería al por mayor, adaptable a cualquier estilo',
+      'Outdoor Furniture': 'Mobiliario de Exterior',
+      'Weather-resistant outdoor furniture for gardens & terraces': 'Mobiliario exterior resistente para jardines y terrazas',
+      'Learn More →': 'Más Información →',
+      'Buyer Pain Points': 'Problemas del Comprador',
+      'We Get It 。?We Solve These Problems Every Day': 'Lo Entendemos — Resolvemos Estos Problemas Cada Día',
+      'Sample Looks Great, Batch Fails': 'La Muestra es Perfecta, el Pedido Falla',
+      'Factories cut corners: cheaper materials, rusting hardware. The batch looks nothing like the sample — and opening day is around the corner.': 'Las fábricas recortan gastos: materiales más baratos, herrajes oxidados. El pedido no se parece a la muestra — y la inauguración se acerca.',
+      'Delays After Delays': 'Retrasos Tras Retrasos',
+      'Promised 30 days, now it\'s day 60. Contractor waiting, rent due, money burning — no straight answers.': 'Prometido en 30 días, ya van 60. El contratista espera, el alquiler vence — ninguna respuesta clara.',
+      'Ghosted After Payment': 'Desaparecido Tras el Pago',
+      'Broken leg? Wobbly chair? Cracked top? Call the factory — voicemail, blocked. The "cheap deal" cost more than a brand name.': 'Pata rota, silla inestable, tablero agrietado. Llame a la fábrica — buzón de voz, bloqueado.',
+      'Wrong Size, Won\'t Fit': 'Tamaño Incorrecto',
+      'Measured carefully, but the delivery is off by centimeters. Won\'t fit through the door. Remake? Another month.': 'Medido con cuidado, pero la entrega tiene centímetros de diferencia. No cabe. ¿Rehacer? Otro mes.',
+      'Middleman Markup, Zero Accountability': 'Intermediario Sin Responsabilidad',
+      'Order through a trading company? Expect 30%+ markup. Problems? They blame each other — you\'re stuck in the middle.': '¿Pedido a través de un intermediario? Espere un 30%+ de margen. ¿Problemas? Se culpan mutuamente.',
+      'Falls Apart in Months': 'Se Rompe en Meses',
+      'Chairs wobble in 3 months, tabletops blister in 6, sofas sag. Replacing yearly costs more than buying quality once.': 'Sillas que se tambalean en 3 meses, mesas que se hinchan en 6. Reemplazar cada año cuesta más que comprar calidad.',
+      'What We Do for You': 'Lo Que Hacemos Por Usted',
+      'From measurement to after-sales, we help you avoid every pitfall': 'Desde la medición hasta el posventa, le ayudamos a evitar cada obstáculo',
+      'Avoid Design Errors': 'Evitar Errores de Diseño',
+      'Professional team remote design review, CAD verification, final confirmation before production. Wrong size? Free remake.': 'Revisión de diseño remota, verificación CAD, confirmación final antes de producción. ¿Tamaño incorrecto? Refabricación gratis.',
+      'Avoid Color Mismatches': 'Evitar Diferencias de Color',
+      'Same batch and craft as sample, photo confirmation before shipping. What you see is what you get.': 'Mismo lote y fabricación que la muestra, confirmación fotográfica antes del envío.',
+      'Avoid Delivery Delays': 'Evitar Retrasos de Entrega',
+      'Delivery date in contract with daily penalty for delays. Weekly progress updates — we keep you informed.': 'Fecha de entrega en contrato con penalizaciones diarias. Actualizaciones semanales — le mantenemos informado.',
+      'Avoid Shipping Damage': 'Evitar Daños en el Transporte',
+      'Triple protection: crates + foam + corner guards. Any damage? Free replacement, no arguments.': 'Triple protección: cajas + espuma + esquineros. ¿Daños? Reemplazo gratuito, sin discusión.',
+      'Avoid Installation Confusion': 'Evitar Confusión en la Instalación',
+      'Labeled packaging with diagrams, video tutorials, remote guidance always online.': 'Embalaje etiquetado con diagramas, tutoriales en vídeo, guía remota siempre disponible.',
+      'No More Unhandled After-Sales': 'Sin Posventa Sin Respuesta',
+      'Dedicated after-sales manager, 2-hour response, 48-hour solution. Free parts during warranty.': 'Responsable de posventa dedicado, respuesta en 2h, solución en 48h. Piezas gratuitas en garantía.',
+      'Success Stories': 'Casos de Éxito',
+      'Featured Projects': 'Proyectos Destacados',
+      'Premium Restaurant Project': 'Proyecto Restaurante Premium',
+      'Space Planning Solutions': 'Soluciones de Planificación',
+      'Boutique Hotel Project': 'Proyecto Hotel Boutique',
+      'Professional Craftsmen': 'Artesanos Profesionales',
+      'Cafe Chain': 'Cadena de Cafeterías',
+      'Best-selling Series': 'Serie Más Vendida',
+      'Outdoor Dining': 'Comedor Exterior',
+      'Weather-resistant': 'Resistente a la Intemperie',
+      'Our Partners': 'Nuestros Socios',
+      'Trusted by Global Clients': 'La Confianza de Clientes Globales',
+      'Quality & Compliance': 'Calidad y Cumplimiento',
+      'Fire Safety Options': 'Opciones de Seguridad Contra Incendios',
+      'We can provide upholstery, foam and seating constructions tested to international fire-safety standards, including EN 1021-1 / EN 1021-2, BS 5852, TB 117-2013 and NFPA 260.': 'Proporcionamos tapizados y estructuras probados según EN 1021, BS 5852, TB 117-2013 y NFPA 260.',
+      'Commercial-Grade Construction': 'Construcción de Grado Comercial',
+      'Our booth seating and banquette furniture are built for high-traffic hospitality environments, with reinforced frames, high-density foam, durable upholstery and strict quality control.': 'Nuestras bancadas están construidas para entornos de alta rotación con marcos reforzados y espuma de alta densidad.',
+      'Low-Emission Material Options': 'Materiales de Baja Emisión',
+      'We support low-VOC, low-formaldehyde solutions including E0/E1 grade panels, CARB / TSCA Title VI compliant plywood and low-emission adhesives.': 'Paneles E0/E1, contrachapado CARB/TSCA y adhesivos de baja emisión disponibles.',
+      'Responsible Wood Sourcing': 'Madera de Origen Responsable',
+      'For European and international projects, FSC / PEFC certified wood materials and traceability documents can be arranged according to project requirements.': 'Madera certificada FSC/PEFC y documentos de trazabilidad disponibles para proyectos internacionales.',
+      'Project Quality Control': 'Control de Calidad del Proyecto',
+      'Every project follows a step-by-step inspection: raw material checking, frame inspection, upholstery finishing, dimensional verification, packaging inspection and pre-shipment photos.': 'Cada proyecto sigue una inspección paso a paso: materias primas, estructura, tapizado, dimensiones, embalaje y fotos previas al envío.',
+      'Certification Documents Available Upon Request': 'Documentos de Certificación Disponibles bajo Solicitud',
+      'Hospitality Furniture Insights': 'Recursos de Mobiliario para Hostelería',
+      'Helping overseas restaurants, hotels and cafés choose better commercial furniture': 'Ayudando a restaurantes, hoteles y cafeterías a elegir mejor mobiliario comercial',
+      'Project Stories': 'Historias de Proyectos',
+      'Custom Furniture Solution for a Contemporary Café Space': 'Solución de Mobiliario Para un Café Contemporáneo',
+      'View Project →': 'Ver Proyecto →',
+      'Our Inspection Process Before Shipping Restaurant Furniture': 'Nuestro Proceso de Inspección Antes del Envío',
+      'PU Leather vs Fabric: Which Is Better for Restaurant Booth Seating?': 'Cuero PU vs Tela: ¿Cuál es Mejor para Bancadas de Restaurante?',
+      'Ask an Expert →': 'Consultar a un Experto →',
+      'Get a Free Quote': 'Presupuesto Gratuito',
+      'Name': 'Nombre',
+      'Email': 'Correo Electrónico',
+      'Message': 'Mensaje',
+      'Submit': 'Enviar',
+      'Factory Address': 'Dirección de Fábrica',
+      'Phone': 'Teléfono',
+      'WeChat': 'WeChat',
+      'WeChat ID: easen_furniture': 'WeChat: easen_furniture',
+      'FAQ': 'Preguntas Frecuentes',
+      'Do you support customization?': '¿Ofrecen personalización?',
+      'Yes, we offer full customization based on your drawings and requirements.': 'Sí, ofrecemos personalización completa según sus planos y requisitos.',
+      'What is the minimum order quantity (MOQ)?': '¿Cuál es el pedido mínimo?',
+      'Our MOQ varies by product type, generally starting from 50 pieces.': 'El MOQ varía según el producto, generalmente desde 50 piezas.',
+      'What is the production lead time?': '¿Cuál es el plazo de producción?',
+      'Standard products: 30-45 days. Custom products: 45-60 days.': 'Estándar: 30-45 días. Personalizado: 45-60 días.',
+      'Do you provide overseas shipping?': '¿Realizan envíos internacionales?',
+      'Yes, we offer global shipping with extensive export experience.': 'Sí, enviamos a todo el mundo con amplia experiencia en exportación.',
+      'Want your project to succeed too?': '¿Quiere que su Proyecto Tenga Éxito?',
+      'From blueprints to grand opening, we\'re with you every step. More than selling furniture — we help you get it right.': 'De los planos a la inauguración, estamos con usted en cada paso.',
+      'Contact Us Now': 'Contáctenos Ahora',
+      'Back to Home': 'Volver al Inicio',
+      'Contact Us Via': 'Contactar Mediante',
+      'WeChat ID': 'WeChat',
+      'Leave a Message': 'Dejar un Mensaje',
+      'Case Study': 'Estudio de Caso',
+      'Inside EASEN': 'Dentro de EASEN',
+      'Craftsmanship & Smart Manufacturing': 'Artesanía y Fabricación Inteligente',
+      'Click to Play Factory Tour': 'Haga Clic para Ver la Fábrica',
+      'Project Stories': 'Historias de Proyectos',
+      'Furniture Guides': 'Guías de Compra',
+      'Materials & Craftsmanship': 'Materiales y Artesanía',
+      'Design Trends': 'Tendencias de Diseño',
+    },
+
+    de: {
+      'Years Experience': 'Jahre Erfahrung',
+      'Production Area': 'Produktionsfläche',
+      'Brand Partners': 'Markenpartner',
+      'Export Countries': 'Exportländer',
+      'Professional Custom Commercial Furniture': 'Professionelle Gewerbemöbel nach Maß',
+      'Learn More →': 'Mehr Erfahren →',
+      'Global Clients': 'Globale Kunden',
+      'We Help You Complete Your Restaurant Project Safely': 'Wir Helfen Ihnen Ihr Projekt Erfolgreich Abzuschließen',
+      'What We Do for You': 'Was Wir Für Sie Tun',      'EASEN Commercial Furniture': 'EASEN Gewerbemöbel',
+      'Home': 'Startseite',
+      'Our Products': 'Unsere Produkte',
+      'About Us': 'Über Uns',
+      'Case Studies': 'Referenzen',
+      'News': 'Neuigkeiten',
+      'Contact Us': 'Kontakt',
+      'Get a Quote': 'Angebot Anfragen',
+      'Insights': 'Ressourcen',
+      'Projects': 'Projekte',
+      'Products': 'Produkte',
+      'Quick Links': 'Schnellzugriff',
+      'Contact Info': 'Kontaktdaten',
+      'All Rights Reserved': 'Alle Rechte Vorbehalten',
+      'Providing high-quality custom furniture for global clients.': 'Hochwertiger Maßmöbelhersteller für internationale Kunden.',
+      'Lecong, Shunde, Foshan, China': 'Lecong, Shunde, Foshan, China',
+      'Lecong Town, Shunde District, Foshan, China': 'Lecong, Shunde, Foshan, China',
+      'Professional Commercial Furniture Manufacturer': 'Professioneller Hersteller von Gewerbemöbeln',
+      '20+ years of expertise delivering high-quality custom furniture for hotels, restaurants, and cafes worldwide': 'Über 20 Jahre Erfahrung in der Lieferung hochwertiger Maßmöbel für Hotels, Restaurants und Cafés weltweit',
+      'View Products': 'Produkte Ansehen',
+      '20+ Years of Commercial Furniture Expertise': 'Über 20 Jahre Expertise in Gewerbemöbeln',
+      'Years Experience': 'Jahre Erfahrung',
+      'Global Clients': 'Globale Kunden',
+      '㎡ Factory': '㎡ Fabrik',
+      'Production Area': 'Produktionsfläche',
+      'Brand Partners': 'Markenpartner',
+      'Export Countries': 'Exportländer',
+      'Professional Custom Commercial Furniture': 'Professionelle Gewerbemöbel nach Maß',
+      'Restaurant Furniture': 'Restaurantmöbel',
+      'Custom restaurant tables, chairs, booths & bar stools': 'Maßgeschneiderte Restauranttische, Stühle, Sitznischen und Barhocker',
+      'Hotel Furniture': 'Hotelmöbel',
+      'Complete solutions for hotel lobbies, rooms & meeting rooms': 'Komplettlösungen für Hotelfoyers, Zimmer und Konferenzräume',
+      'Cafe Furniture': 'Cafémbel',
+      'Popular cafe furniture wholesale, adaptable to any style': 'Café-Möbel im Großhandel, anpassbar an jeden Stil',
+      'Outdoor Furniture': 'Außenmöbel',
+      'Weather-resistant outdoor furniture for gardens & terraces': 'Wetterfeste Außenmöbel für Gärten und Terrassen',
+      'Learn More →': 'Mehr Erfahren →',
+      'Buyer Pain Points': 'Herausforderungen der Käufer',
+      'We Get It 。?We Solve These Problems Every Day': 'Wir Verstehen Es — Wir Lösen Diese Probleme Täglich',
+      'Sample Looks Great, Batch Fails': 'Muster Perfekt, Lieferung Enttäuschend',
+      'Factories cut corners: cheaper materials, rusting hardware. The batch looks nothing like the sample — and opening day is around the corner.': 'Fabriken sparen an Kosten: billigere Materialien, rostende Hardware. Die Lieferung sieht dem Muster nicht ähnlich — und der Eröffnungstag rückt näher.',
+      'Delays After Delays': 'Verzögerung nach Verzögerung',
+      'Promised 30 days, now it\'s day 60. Contractor waiting, rent due, money burning — no straight answers.': 'Versprochen in 30 Tagen, jetzt ist es Tag 60. Auftragnehmer wartet, Miete fällig — keine klaren Antworten.',
+      'Ghosted After Payment': 'Verschwunden nach Zahlung',
+      'Broken leg? Wobbly chair? Cracked top? Call the factory — voicemail, blocked. The "cheap deal" cost more than a brand name.': 'Gebrochenes Bein? Wackeliger Stuhl? Gerissene Platte? Fabrik anrufen — Mailbox, blockiert.',
+      'Wrong Size, Won\'t Fit': 'Falsche Maße',
+      'Measured carefully, but the delivery is off by centimeters. Won\'t fit through the door. Remake? Another month.': 'Sorgfältig gemessen, aber die Lieferung weicht um Zentimeter ab. Passt nicht durch die Tür. Neuanfertigung? Noch ein Monat.',
+      'Middleman Markup, Zero Accountability': 'Zwischenhändler-Aufschlag, Null Verantwortung',
+      'Order through a trading company? Expect 30%+ markup. Problems? They blame each other — you\'re stuck in the middle.': 'Bestellung über Handelsfirma? Erwarten Sie 30%+ Aufschlag. Probleme? Sie schieben sich gegenseitig die Schuld zu.',
+      'Falls Apart in Months': 'Zerfällt in Monaten',
+      'Chairs wobble in 3 months, tabletops blister in 6, sofas sag. Replacing yearly costs more than buying quality once.': 'Stühle wackeln in 3 Monaten, Tischplatten blasen in 6 Monaten auf. Jährlicher Ersatz kostet mehr als Qualitätskauf.',
+      'What We Do for You': 'Was Wir Für Sie Tun',
+      'From measurement to after-sales, we help you avoid every pitfall': 'Von der Vermessung bis zum Kundendienst helfen wir Ihnen, jeden Fallstrick zu vermeiden',
+      'Avoid Design Errors': 'Konstruktionsfehler Vermeiden',
+      'Professional team remote design review, CAD verification, final confirmation before production. Wrong size? Free remake.': 'Fernüberprüfung durch Fachteam, CAD-Prüfung, Endbestätigung vor Produktion. Falsche Größe? Kostenlose Neuanfertigung.',
+      'Avoid Color Mismatches': 'Farbabweichungen Vermeiden',
+      'Same batch and craft as sample, photo confirmation before shipping. What you see is what you get.': 'Gleiche Charge und Verarbeitung wie Muster, Fotobestätigung vor Versand.',
+      'Avoid Delivery Delays': 'Lieferverzögerungen Vermeiden',
+      'Delivery date in contract with daily penalty for delays. Weekly progress updates — we keep you informed.': 'Lieferdatum vertraglich festgelegt mit täglichen Strafen. Wöchentliche Updates — wir halten Sie informiert.',
+      'Avoid Shipping Damage': 'Transportschäden Vermeiden',
+      'Triple protection: crates + foam + corner guards. Any damage? Free replacement, no arguments.': 'Dreifacher Schutz: Kisten + Schaumstoff + Eckenschutz. Schäden? Kostenloser Ersatz, keine Diskussion.',
+      'Avoid Installation Confusion': 'Installationsverwirrung Vermeiden',
+      'Labeled packaging with diagrams, video tutorials, remote guidance always online.': 'Beschriftete Verpackung mit Diagrammen, Video-Tutorials, Fernbetreuung immer verfügbar.',
+      'No More Unhandled After-Sales': 'Kein Ungeklärter Kundendienst Mehr',
+      'Dedicated after-sales manager, 2-hour response, 48-hour solution. Free parts during warranty.': 'Dedizierter Kundendienst-Manager, 2h Antwort, 48h Lösung. Kostenlose Teile während der Garantie.',
+      'Success Stories': 'Erfolgsgeschichten',
+      'Featured Projects': 'Ausgewählte Projekte',
+      'Premium Restaurant Project': 'Premium-Restaurantprojekt',
+      'Space Planning Solutions': 'Raumplanungslösungen',
+      'Boutique Hotel Project': 'Boutique-Hotelprojekt',
+      'Professional Craftsmen': 'Professionelle Handwerker',
+      'Cafe Chain': 'Café-Kette',
+      'Best-selling Series': 'Bestseller-Serie',
+      'Outdoor Dining': 'Außengastronomie',
+      'Weather-resistant': 'Wetterfest',
+      'Our Partners': 'Unsere Partner',
+      'Trusted by Global Clients': 'Vertrauen Globaler Kunden',
+      'Quality & Compliance': 'Qualität & Compliance',
+      'Fire Safety Options': 'Brandschutzoptionen',
+      'We can provide upholstery, foam and seating constructions tested to international fire-safety standards, including EN 1021-1 / EN 1021-2, BS 5852, TB 117-2013 and NFPA 260.': 'Polster und Strukturen getestet nach EN 1021, BS 5852, TB 117-2013 und NFPA 260.',
+      'Commercial-Grade Construction': 'Gewerbliche Bauqualität',
+      'Our booth seating and banquette furniture are built for high-traffic hospitality environments, with reinforced frames, high-density foam, durable upholstery and strict quality control.': 'Unsere Sitzmöbel sind für stark frequentierte Umgebungen konzipiert mit verstärkten Rahmen und hochdichtem Schaumstoff.',
+      'Low-Emission Material Options': 'Emissionsarme Materialoptionen',
+      'We support low-VOC, low-formaldehyde solutions including E0/E1 grade panels, CARB / TSCA Title VI compliant plywood and low-emission adhesives.': 'E0/E1-Platten, CARB/TSCA-konformes Sperrholz und emissionsarme Klebstoffe verfügbar.',
+      'Responsible Wood Sourcing': 'Verantwortungsvolle Holzbeschaffung',
+      'For European and international projects, FSC / PEFC certified wood materials and traceability documents can be arranged according to project requirements.': 'FSC/PEFC-zertifiziertes Holz und Rückverfolgungsdokumente für europäische und internationale Projekte.',
+      'Project Quality Control': 'Projektqualitätskontrolle',
+      'Every project follows a step-by-step inspection: raw material checking, frame inspection, upholstery finishing, dimensional verification, packaging inspection and pre-shipment photos.': 'Jedes Projekt folgt einer schrittweisen Inspektion: Rohstoffe, Rahmen, Polsterung, Maße, Verpackung und Vor-Versand-Fotos.',
+      'Certification Documents Available Upon Request': 'Zertifizierungsdokumente auf Anfrage',
+      'Hospitality Furniture Insights': 'Ressourcen für Gastgewerbe-Möbel',
+      'Helping overseas restaurants, hotels and cafés choose better commercial furniture': 'Wir helfen internationalen Restaurants, Hotels und Cafés bessere Gewerbemöbel zu wählen',
+      'Project Stories': 'Projektberichte',
+      'Custom Furniture Solution for a Contemporary Café Space': 'Maßmöbellösung für ein Zeitgenössisches Café',
+      'View Project →': 'Projekt Ansehen →',
+      'Our Inspection Process Before Shipping Restaurant Furniture': 'Unser Inspektionsprozess Vor dem Versand',
+      'PU Leather vs Fabric: Which Is Better for Restaurant Booth Seating?': 'PU-Leder vs. Stoff: Was ist Besser für Restaurant-Sitznischen?',
+      'Ask an Expert →': 'Experten Fragen →',
+      'Get a Free Quote': 'Kostenloses Angebot',
+      'Name': 'Name',
+      'Email': 'E-Mail',
+      'Message': 'Nachricht',
+      'Submit': 'Absenden',
+      'Factory Address': 'Fabrikadresse',
+      'Phone': 'Telefon',
+      'WeChat': 'WeChat',
+      'WeChat ID: easen_furniture': 'WeChat: easen_furniture',
+      'FAQ': 'Häufige Fragen',
+      'Do you support customization?': 'Bieten Sie Anpassungen an?',
+      'Yes, we offer full customization based on your drawings and requirements.': 'Ja, wir bieten vollständige Anpassung nach Ihren Zeichnungen und Anforderungen.',
+      'What is the minimum order quantity (MOQ)?': 'Was ist die Mindestbestellmenge?',
+      'Our MOQ varies by product type, generally starting from 50 pieces.': 'Unsere Mindestbestellmenge variiert je nach Produkt, generell ab 50 Stück.',
+      'What is the production lead time?': 'Wie lang ist die Produktionszeit?',
+      'Standard products: 30-45 days. Custom products: 45-60 days.': 'Standardprodukte: 30-45 Tage. Maßanfertigungen: 45-60 Tage.',
+      'Do you provide overseas shipping?': 'Liefern Sie international?',
+      'Yes, we offer global shipping with extensive export experience.': 'Ja, wir liefern weltweit mit umfangreicher Exporterfahrung.',
+      'Want your project to succeed too?': 'Möchten Sie Dass Ihr Projekt Auch Erfolgreich Wird?',
+      'From blueprints to grand opening, we\'re with you every step. More than selling furniture — we help you get it right.': 'Von den Plänen bis zur Eröffnung sind wir bei jedem Schritt dabei.',
+      'Contact Us Now': 'Jetzt Kontaktieren',
+      'Back to Home': 'Zurück zur Startseite',
+      'Contact Us Via': 'Kontaktieren Sie uns über',
+      'WeChat ID': 'WeChat',
+      'Leave a Message': 'Nachricht Hinterlassen',
+      'Case Study': 'Fallstudie',
+      'Inside EASEN': 'Einblick in EASEN',
+      'Craftsmanship & Smart Manufacturing': 'Handwerkskunst & Intelligente Fertigung',
+      'Click to Play Factory Tour': 'Klicken für Fabrikrundgang',
+      'Project Stories': 'Projektberichte',
+      'Furniture Guides': 'Kaufratgeber',
+      'Materials & Craftsmanship': 'Materialien & Handwerkskunst',
+      'Design Trends': 'Designtrends',
+    },
+
+    ar: {
+      'Years Experience': 'سنوات خبرة',
+      'Production Area': 'مساحة الإنتاج',
+      'Brand Partners': 'شركاء العلامات',
+      'Export Countries': 'دول التصدير',
+      'Professional Custom Commercial Furniture': 'أثاث تجاري مخصص احترافي',
+      'Learn More →': 'اعرف المزيد →',
+      'Global Clients': 'عملاء عالميون',
+      'We Help You Complete Your Restaurant Project Safely': 'نساعدك على إتمام مشروع مطعمك بنجاح',
+      'What We Do for You': 'ما نقدمه لك',      'EASEN Commercial Furniture': 'EASEN للأثاث التجاري',
+      'Home': 'الرئيسية',
+      'Our Products': 'منتجاتنا',
+      'About Us': 'من نحن',
+      'Case Studies': 'دراسات الحالة',
+      'News': 'الأخبار',
+      'Contact Us': 'اتصل بنا',
+      'Get a Quote': 'طلب عرض سعر',
+      'Insights': 'مقالات',
+      'Projects': 'المشاريع',
+      'Products': 'المنتجات',
+      'Quick Links': 'روابط سريعة',
+      'Contact Info': 'معلومات الاتصال',
+      'All Rights Reserved': 'جميع الحقوق محفوظة',
+      'Providing high-quality custom furniture for global clients.': 'نوفر أثاثاً مخصصاً عالي الجودة للعملاء حول العالم.',
+      'Lecong, Shunde, Foshan, China': 'لكونغ، شوندي، فوشان، الصين',
+      'Lecong Town, Shunde District, Foshan, China': 'لكونغ، شوندي، فوشان، الصين',
+      'Professional Commercial Furniture Manufacturer': 'مصنع أثاث تجاري احترافي',
+      '20+ years of expertise delivering high-quality custom furniture for hotels, restaurants, and cafes worldwide': 'أكثر من 20 عامًا من الخبرة في تصنيع الأثاث المخصص لللفنادق والمطاعم والمقاهي حول العالم',
+      'View Products': 'عرض المنتجات',
+      '20+ Years of Commercial Furniture Expertise': 'أكثر من 20 عامًا في الأثاث التجاري',
+      'Years Experience': 'سنوات خبرة',
+      'Global Clients': 'عملاء عالميون',
+      '㎡ Factory': '㎡ مصنع',
+      'Production Area': 'مساحة الإنتاج',
+      'Brand Partners': 'شركاء العلامات',
+      'Export Countries': 'دول التصدير',
+      'Professional Custom Commercial Furniture': 'أثاث تجاري مخصص احترافي',
+      'Restaurant Furniture': 'أثاث المطاعم',
+      'Custom restaurant tables, chairs, booths & bar stools': 'طاولات وكراسي وأرائك ومقاعد بار مخصصة',
+      'Hotel Furniture': 'أثاث الفنادق',
+      'Complete solutions for hotel lobbies, rooms & meeting rooms': 'حلول متكاملة لردهات الفنادق والغرف وقاعات الاجتماعات',
+      'Cafe Furniture': 'أثاث المقاهي',
+      'Popular cafe furniture wholesale, adaptable to any style': 'أثاث مقاهي بالجملة يتكيف مع أي أسلوب',
+      'Outdoor Furniture': 'الأثاث الخارجي',
+      'Weather-resistant outdoor furniture for gardens & terraces': 'أثاث خارجي مقاوم للطقس للحدائق والتراسات',
+      'Learn More →': 'اعرف المزيد →',
+      'Buyer Pain Points': 'تحديات المشترين',
+      'We Get It 。?We Solve These Problems Every Day': 'نفهمك — نحل هذه المشاكل كل يوم',
+      'Sample Looks Great, Batch Fails': 'العينة رائعة، الشحنة مخيبة',
+      'Factories cut corners: cheaper materials, rusting hardware. The batch looks nothing like the sample — and opening day is around the corner.': 'تقطع المصانع الزوايا: مواد أرخص، معدات صدئة. الشحنة لا تشبه العينة — ويوم الافتتاح قريب.',
+      'Delays After Delays': 'تأخير تلو تأخير',
+      'Promised 30 days, now it\'s day 60. Contractor waiting, rent due, money burning — no straight answers.': 'وعدوا بـ30 يومًا، الآن اليوم 60. المقاول ينتظر، الإيجار مستحق — لا إجابات واضحة.',
+      'Ghosted After Payment': 'اختفاء بعد الدفع',
+      'Broken leg? Wobbly chair? Cracked top? Call the factory — voicemail, blocked. The "cheap deal" cost more than a brand name.': 'ساق مكسورة؟ كرسي متذبذب؟ اتصل بالمصنع — بريد صوتي، محجوب.',
+      'Wrong Size, Won\'t Fit': 'مقاسات خاطئة',
+      'Measured carefully, but the delivery is off by centimeters. Won\'t fit through the door. Remake? Another month.': 'قياسات دقيقة لكن التسليم به فرق بالسنتيمترات. لا يدخل من الباب. إعادة تصنيع؟ شهر آخر.',
+      'Middleman Markup, Zero Accountability': 'وسيط بلا مسؤولية',
+      'Order through a trading company? Expect 30%+ markup. Problems? They blame each other — you\'re stuck in the middle.': 'طلب عبر شركة وساطة؟ توقع 30%+ هامش. مشاكل؟ يتبادلون الاتهامات — أنت محاصر.',
+      'Falls Apart in Months': 'يتفكك في أشهر',
+      'Chairs wobble in 3 months, tabletops blister in 6, sofas sag. Replacing yearly costs more than buying quality once.': 'الكراسي تتذبذب في 3 أشهر، الطاولات تتبلط في 6، الأرائك تنهار. الاستبدال السنوي أغلى من الجودة.',
+      'What We Do for You': 'ما نقدمه لك',
+      'From measurement to after-sales, we help you avoid every pitfall': 'من القياس إلى ما بعد البيع، نساعدك على تجنب كل عقبة',
+      'Avoid Design Errors': 'تجنب أخطاء التصميم',
+      'Professional team remote design review, CAD verification, final confirmation before production. Wrong size? Free remake.': 'مراجعة تصميم عن بُعد، تحقق CAD، تأكيد نهائي قبل الإنتاج. مقاس خاطئ؟ إعادة تصنيع مجانية.',
+      'Avoid Color Mismatches': 'تجنب اختلاف الألوان',
+      'Same batch and craft as sample, photo confirmation before shipping. What you see is what you get.': 'نفس الدفعة والحرفية كالعينة، تأكيد بالصور قبل الشحن.',
+      'Avoid Delivery Delays': 'تجنب تأخير التسليم',
+      'Delivery date in contract with daily penalty for delays. Weekly progress updates — we keep you informed.': 'تاريخ التسليم في العقد مع غرامات يومية. تحديثات أسبوعية — نبقيك على اطلاع.',
+      'Avoid Shipping Damage': 'تجنب أضرار الشحن',
+      'Triple protection: crates + foam + corner guards. Any damage? Free replacement, no arguments.': 'حماية ثلاثية: صناديق + إسفنج + حواف زوايا. أي ضرر؟ استبدال مجاني بلا جدال.',
+      'Avoid Installation Confusion': 'تجنب ارتباك التركيب',
+      'Labeled packaging with diagrams, video tutorials, remote guidance always online.': 'تعبئة مصنفة بمخططات، فيديوهات تعليمية، إرشاد عن بُعد دائماً.',
+      'No More Unhandled After-Sales': 'لا مزيد من خدمة ما بعد البيع دون استجابة',
+      'Dedicated after-sales manager, 2-hour response, 48-hour solution. Free parts during warranty.': 'مدير خدمة ما بعد البيع، استجابة في ساعتين، حل في 48 ساعة. قطع مجانية خلال الضمان.',
+      'Success Stories': 'قصص النجاح',
+      'Featured Projects': 'مشاريع مختارة',
+      'Premium Restaurant Project': 'مشروع مطعم فاخر',
+      'Space Planning Solutions': 'حلول تخطيط الفضاء',
+      'Boutique Hotel Project': 'مشروع فندق بوتيك',
+      'Professional Craftsmen': 'حرفيون محترفون',
+      'Cafe Chain': 'سلسلة مقاهي',
+      'Best-selling Series': 'السلسلة الأكثر مبيعاً',
+      'Outdoor Dining': 'تناول الطعام في الهواء الطلق',
+      'Weather-resistant': 'مقاوم للطقس',
+      'Our Partners': 'شركاؤنا',
+      'Trusted by Global Clients': 'ثقة العملاء العالميين',
+      'Quality & Compliance': 'الجودة والامتثال',
+      'Fire Safety Options': 'خيارات السلامة من الحرائق',
+      'We can provide upholstery, foam and seating constructions tested to international fire-safety standards, including EN 1021-1 / EN 1021-2, BS 5852, TB 117-2013 and NFPA 260.': 'نوفر أقمشة وهياكل مختبرة وفق EN 1021 وBS 5852 وTB 117-2013 وNFPA 260.',
+      'Commercial-Grade Construction': 'تصنيع بمستوى تجاري',
+      'Our booth seating and banquette furniture are built for high-traffic hospitality environments, with reinforced frames, high-density foam, durable upholstery and strict quality control.': 'أثاثنا مصمم لبيئات الضيافة عالية الحركة بهياكل معززة وإسفنج عالي الكثافة.',
+      'Low-Emission Material Options': 'خيارات مواد منخفضة الانبعاثات',
+      'We support low-VOC, low-formaldehyde solutions including E0/E1 grade panels, CARB / TSCA Title VI compliant plywood and low-emission adhesives.': 'ألواح E0/E1 وخشب رقائقي متوافق مع CARB/TSCA ومواد لاصقة منخفضة الانبعاثات.',
+      'Responsible Wood Sourcing': 'مصادر خشب مسؤولة',
+      'For European and international projects, FSC / PEFC certified wood materials and traceability documents can be arranged according to project requirements.': 'خشب معتمد FSC/PEFC ووثائق تتبع متاحة للمشاريع الدولية.',
+      'Project Quality Control': 'مراقبة جودة المشروع',
+      'Every project follows a step-by-step inspection: raw material checking, frame inspection, upholstery finishing, dimensional verification, packaging inspection and pre-shipment photos.': 'كل مشروع يتبع فحصاً خطوة بخطوة: المواد الخام، الهيكل، التنجيد، الأبعاد، التعبئة وصور ما قبل الشحن.',
+      'Certification Documents Available Upon Request': 'وثائق الشهادات متاحة عند الطلب',
+      'Hospitality Furniture Insights': 'مقالات أثاث الضيافة',
+      'Helping overseas restaurants, hotels and cafés choose better commercial furniture': 'مساعدة المطاعم والفنادق والمقاهي في اختيار أفضل الأثاث التجاري',
+      'Project Stories': 'قصص المشاريع',
+      'Custom Furniture Solution for a Contemporary Café Space': 'حل أثاث مخصص لمساحة مقهى عصرية',
+      'View Project →': 'عرض المشروع →',
+      'Our Inspection Process Before Shipping Restaurant Furniture': 'عملية الفحص قبل شحن أثاث المطاعم',
+      'PU Leather vs Fabric: Which Is Better for Restaurant Booth Seating?': 'جلد PU مقابل القماش: أيهما أفضل لمقاعد المطاعم؟',
+      'Ask an Expert →': 'استشر خبيراً →',
+      'Get a Free Quote': 'احصل على عرض سعر مجاني',
+      'Name': 'الاسم',
+      'Email': 'البريد الإلكتروني',
+      'Message': 'الرسالة',
+      'Submit': 'إرسال',
+      'Factory Address': 'عنوان المصنع',
+      'Phone': 'الهاتف',
+      'WeChat': 'ويتشات',
+      'WeChat ID: easen_furniture': 'ويتشات: easen_furniture',
+      'FAQ': 'الأسئلة الشائعة',
+      'Do you support customization?': 'هل تدعمون التخصيص؟',
+      'Yes, we offer full customization based on your drawings and requirements.': 'نعم، نقدم تخصيصاً كاملاً وفق رسوماتكم ومتطلباتكم.',
+      'What is the minimum order quantity (MOQ)?': 'ما هي الكمية الدنيا للطلب؟',
+      'Our MOQ varies by product type, generally starting from 50 pieces.': 'تتفاوت الكمية الدنيا حسب نوع المنتج، عموماً من 50 قطعة.',
+      'What is the production lead time?': 'ما هو وقت الإنتاج؟',
+      'Standard products: 30-45 days. Custom products: 45-60 days.': 'المنتجات القياسية: 30-45 يومًا. المخصصة: 45-60 يومًا.',
+      'Do you provide overseas shipping?': 'هل تقدمون شحناً دولياً؟',
+      'Yes, we offer global shipping with extensive export experience.': 'نعم، نشحن عالمياً بخبرة واسعة في التصدير.',
+      'Want your project to succeed too?': 'هل تريد أن ينجح مشروعك؟',
+      'From blueprints to grand opening, we\'re with you every step. More than selling furniture — we help you get it right.': 'من المخططات حتى الافتتاح، نحن معك في كل خطوة.',
+      'Contact Us Now': 'تواصل معنا الآن',
+      'Back to Home': 'العودة للرئيسية',
+      'Contact Us Via': 'تواصل معنا عبر',
+      'WeChat ID': 'ويتشات',
+      'Leave a Message': 'اترك رسالة',
+      'Case Study': 'دراسة حالة',
+      'Inside EASEN': 'داخل EASEN',
+      'Craftsmanship & Smart Manufacturing': 'الحرفية والتصنيع الذكي',
+      'Click to Play Factory Tour': 'اضغط لجولة المصنع',
+      'Project Stories': 'قصص المشاريع',
+      'Furniture Guides': 'أدلة الشراء',
+      'Materials & Craftsmanship': 'المواد والحرفية',
+      'Design Trends': 'اتجاهات التصميم',
+      '30,000 m² modern production facility 。?from raw materials to finished products, every step is crafted with precision': 'مرفق إنتاجي حديث بمساحة 30,000 م² — من المواد الخام إلى المنتج النهائي، كل خطوة تُنجز بدقة.',
+      'EASEN Furniture was founded in 2016 and headquartered in Foshan Lecong, China\'s furniture manufacturing hub. With four specialized factories and a complete production system, we cover restaurant, hotel, cafe and other commercial furniture.': 'تأسست EASEN عام 2016 ومقرها لكونغ، فوشان، مركز تصنيع الأثاث في الصين. بأربعة مصانع متخصصة ومنظومة إنتاج متكاملة، نغطي أثاث المطاعم والفنادق والمقاهي والمساحات التجارية.',
+      'Promised 30 days, now it\'s day 60. Contractor waiting, rent due, money burning — no straight answers.': 'وعدوا بـ30 يومًا والآن اليوم 60. المقاول ينتظر، الإيجار مستحق، الأموال تُهدر — ولا إجابات واضحة.',
+      'Wrong Size, Won\'t Fit': 'مقاسات خاطئة لا تناسب',
+      'Measured carefully, but the delivery is off by centimeters. Won\'t fit through the door. Remake? Another month.': 'قياسات دقيقة لكن التسليم يختلف بسنتيمترات. لا يدخل من الباب. إعادة تصنيع؟ شهر آخر.',
+      'Order through a trading company? Expect 30%+ markup. Problems? They blame each other — you\'re stuck in the middle.': 'طلب عبر شركة وساطة؟ توقع هامشاً 30%+. مشاكل؟ يلقي كل منهم اللوم على الآخر — وأنت محاصر بينهم.',
+      'From the first drawing to opening day, we\'re with you every step. More than selling furniture 。?we help you get it right.': 'من أول رسم حتى يوم الافتتاح، نحن معك في كل خطوة. أكثر من مجرد بيع أثاث — نساعدك على الإنجاز بالشكل الصحيح.',
+      'As a commercial restaurant and hotel furniture manufacturer, we understand that international buyers require more than attractive designs. For hospitality projects, safety, durability, material compliance and stable production quality are essential.': 'بوصفنا مصنعاً للأثاث التجاري للمطاعم والفنادق، ندرك أن المشترين الدوليين يحتاجون أكثر من مجرد تصاميم جذابة. السلامة والمتانة وامتثال المواد واستقرار الجودة أمور أساسية في مشاريع الضيافة.',
+      'Our booth seating, banquette sofas, dining chairs and custom hospitality furniture can be manufactured with project-specific compliance options, including fire-retardant upholstery, low-emission panels, reinforced commercial-grade frames and responsible wood sourcing.': 'يمكن تصنيع أرائكنا وكنباتنا وكراسي الطعام والأثاث المخصص مع خيارات امتثال محددة للمشروع، تشمل أقمشة مقاومة للحريق وألواح منخفضة الانبعاثات وهياكل تجارية معززة وخشباً من مصادر مسؤولة.',
+      'Raw material checking, frame testing, upholstery confirmation, dimensional verification, packaging inspection and pre-shipment photos — every step is a commitment to quality. Supporting EN 1021, BS 5852, CARB, FSC and more.': 'فحص المواد الخام، اختبار الهيكل، تأكيد التنجيد، التحقق من الأبعاد، فحص التعبئة وصور ما قبل الشحن — كل خطوة التزام بالجودة. ندعم EN 1021 وBS 5852 وCARB وFSC وغيرها.',
+      'In high-traffic environments, upholstery choice directly affects furniture lifespan and maintenance cost. We compare PU leather and fabric across durability, cleanability, appearance and cost to help buyers decide.': 'في البيئات عالية الحركة، يؤثر اختيار التنجيد مباشرة على عمر الأثاث وتكلفة الصيانة. نقارن جلد PU والقماش من حيث المتانة والنظافة والمظهر والتكلفة لمساعدة المشترين على الاختيار.',
+    },
+  };
+
+  var current = localStorage.getItem('easen-lang') || 'zh';
+
+  function getLang(code) {
+    for (var i = 0; i < LANGS.length; i++) {
+      if (LANGS[i].code === code) return LANGS[i];
+    }
+    return LANGS[0];
+  }
+
+  function storeOriginals() {
+    document.querySelectorAll('[data-lang="en"]').forEach(function(el) {
+      if (!el.hasAttribute('data-en-original')) {
+        el.setAttribute('data-en-original', el.innerHTML);
+      }
+    });
+  }
+
+  function applyLang(lang) {
+    current = lang;
+    localStorage.setItem('easen-lang', lang);
+
+    var showZh = (lang === 'zh');
+    var allLangCodes = ['zh', 'en', 'fr', 'es', 'de', 'ar'];
+
+    // Hide all language spans first
+    allLangCodes.forEach(function(code) {
+      document.querySelectorAll('[data-lang="' + code + '"]').forEach(function(el) {
+        el.style.display = 'none';
+      });
+    });
+
+    // Show current language
+    document.querySelectorAll('[data-lang="' + lang + '"]').forEach(function(el) {
+      el.style.display = '';
+    });
+
+    // For non-zh/non-native languages, fall back to en and apply translation
+    if (!showZh && lang !== ‘en’) {
+      document.querySelectorAll(‘[data-lang=”en”]’).forEach(function(el) {
+        var parent = el.parentNode;
+        var hasNative = parent && parent.querySelector(‘[data-lang=”’ + lang + ‘”]’);
+        if (!hasNative) {
+          el.style.display = ‘’;
+          // 始终先恢复原始英文内容
+          var orig = el.getAttribute(‘data-en-original’);
+          if (orig !== null) el.innerHTML = orig;
+          // 用临时div提取纯文字作为key，避免HTML标签污染
+          var tmp = document.createElement(‘div’);
+          tmp.innerHTML = orig !== null ? orig : el.innerHTML;
+          var raw = tmp.textContent.trim();
+          var key = raw
+            .replace(/’/g, “’”).replace(/‘/g, “’”)
+            .replace(/“/g, ‘”’).replace(/”/g, ‘”’)
+            .replace(/—/g, ‘--’).replace(/–/g, ‘-’)
+            .replace(/\s+/g, ‘ ‘);
+          if (T[lang]) {
+            if (T[lang][key]) {
+              el.textContent = T[lang][key];
+            } else if (T[lang][raw]) {
+              el.textContent = T[lang][raw];
+            }
+            // 如果没找到翻译，保留原始英文内容（已在上面恢复）
+          }
+        }
+      });
+    }
+
+    // RTL for Arabic
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    document.documentElement.lang = lang;
+
+    // Update button
+    var btn = document.getElementById('easen-lang-btn');
+    if (btn) {
+      var l = getLang(lang);
+      btn.innerHTML =
+        '<span style="font-size:18px;line-height:1">' + l.flag + '</span>' +
+        '<span style="font-size:13px;font-weight:500">' + l.label + '</span>' +
+        '<span style="font-size:9px;opacity:0.5;margin-left:2px">▼</span>';
+    }
+
+    document.querySelectorAll('.easen-lang-item').forEach(function(item) {
+      var active = item.dataset.code === lang;
+      item.style.background = active ? '#f3f4f6' : 'transparent';
+      item.style.fontWeight = active ? '600' : '400';
+    });
+  }
+
+  function createSwitcher() {
+    storeOriginals();
+    document.querySelectorAll('.lang-toggle-btn').forEach(function(el) {
+      el.style.display = 'none';
+    });
+
+    var wrap = document.createElement('div');
+    wrap.id = 'easen-lang-switcher';
+    wrap.style.cssText = 'position:fixed;top:14px;right:80px;z-index:10000;font-family:Inter,system-ui,sans-serif;';
+
+    var btn = document.createElement('button');
+    btn.id = 'easen-lang-btn';
+    btn.style.cssText = 'display:flex;align-items:center;gap:6px;padding:6px 12px;background:#fff;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.10);white-space:nowrap;color:#374151;font-size:13px;';
+
+    var panel = document.createElement('div');
+    panel.id = 'easen-lang-panel';
+    panel.style.cssText = 'display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,0.13);overflow:hidden;min-width:160px;';
+
+    LANGS.forEach(function(l) {
+      var item = document.createElement('button');
+      item.className = 'easen-lang-item';
+      item.dataset.code = l.code;
+      item.innerHTML = '<span style="font-size:20px;line-height:1">' + l.flag + '</span><span style="font-size:13px">' + l.label + '</span>';
+      item.style.cssText = 'display:flex;align-items:center;gap:10px;width:100%;padding:10px 14px;border:none;background:transparent;cursor:pointer;text-align:left;color:#374151;transition:background 0.15s;';
+      item.addEventListener('mouseenter', function() { if (current !== l.code) this.style.background = '#f9fafb'; });
+      item.addEventListener('mouseleave', function() { if (current !== l.code) this.style.background = 'transparent'; });
+      item.addEventListener('click', function(e) {
+        e.stopPropagation();
+        applyLang(l.code);
+        panel.style.display = 'none';
+      });
+      panel.appendChild(item);
+    });
+
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+    });
+    document.addEventListener('click', function() { panel.style.display = 'none'; });
+
+    wrap.appendChild(btn);
+    wrap.appendChild(panel);
+    document.body.appendChild(wrap);
+
+    applyLang(current);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createSwitcher);
+  } else {
+    createSwitcher();
+  }
+})();
