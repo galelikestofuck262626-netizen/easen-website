@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1781331397701,
+    "title_zh": "餐厅卡座",
+    "title_en": "",
+    "category": "restaurant",
+    "dimensions": "120*65*70",
+    "material": "实木",
+    "fabric": "绒布",
+    "color": "颜色可定制",
+    "sku": "ES-01",
+    "desc_zh": "",
+    "desc_en": "",
+    "images": [
+      "/images/products/uploads/1781331385086-1780035606288.jpg",
+      "/images/products/uploads/1781331388565-1780035741945.png",
+      "/images/products/uploads/1781331392063-1780035723116.png"
+    ],
+    "main_image": "/images/products/uploads/1781331385086-1780035606288.jpg",
+    "created_at": "2026-06-13T06:16:37.701Z"
+  }
+]
