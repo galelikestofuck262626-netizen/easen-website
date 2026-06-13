@@ -2,6 +2,7 @@ backend:
   name: github
   repo: galelikestofuck262626-netizen/easen-website
   branch: main
+  base_url: https://decapcms-github-backend.netlify.app
 
 media_folder: images/products/uploads
 public_folder: /images/products/uploads
