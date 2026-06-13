@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": 1781336571912,
+    "title_zh": "卡座沙发",
+    "title_en": "",
+    "category": "restaurant",
+    "dimensions": "",
+    "material": "",
+    "fabric": "",
+    "color": "",
+    "sku": "",
+    "desc_zh": "",
+    "desc_en": "",
+    "images": [
+      "/images/products/uploads/1781336568110-1780035741945.png"
+    ],
+    "main_image": "/images/products/uploads/1781336568110-1780035741945.png",
+    "created_at": "2026-06-13T07:42:51.912Z"
+  }
+]
