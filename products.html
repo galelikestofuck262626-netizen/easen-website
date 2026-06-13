@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>产品中心 — EASEN Commercial Furniture</title>
+<meta name="description" content="宜森商业家具产品中心，包含餐厅家具、酒店家具、咖啡厅家具、户外家具等全系列商业家具。"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{accent:'#c8a45c',primary:'#1a365d','accent-dark':'#a8853e'},fontFamily:{heading:['Playfair Display','serif']}}}}}</script>
+<style>
+body{font-family:Inter,system-ui,sans-serif;color:#2d343b}
+.product-card{transition:all 0.3s ease}
+.product-card:hover{transform:translateY(-4px)}
+.filter-btn{transition:all 0.2s}
+.filter-btn.active{background:#1a365d;color:#fff}
+</style>
+</head>
+<body class="antialiased bg-neutral-50">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm"></header>
+
+<main style="padding-top:112px">
+  <!-- Hero -->
+  <section class="bg-primary text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-accent text-sm font-medium tracking-widest uppercase mb-3">
+        <span data-lang="zh">全系列商业家具</span>
+        <span data-lang="en" style="display:none">Full Range Commercial Furniture</span>
+        <span data-lang="fr" style="display:none">Gamme Complète de Mobilier Commercial</span>
+        <span data-lang="es" style="display:none">Gama Completa de Mobiliario Comercial</span>
+        <span data-lang="de" style="display:none">Komplettes Sortiment an Gewerbemöbeln</span>
+        <span data-lang="ar" style="display:none">مجموعة كاملة من الأثاث التجاري</span>
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+        <span data-lang="zh">产品中心</span>
+        <span data-lang="en" style="display:none">Products</span>
+        <span data-lang="fr" style="display:none">Produits</span>
+        <span data-lang="es" style="display:none">Productos</span>
+        <span data-lang="de" style="display:none">Produkte</span>
+        <span data-lang="ar" style="display:none">المنتجات</span>
+      </h1>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto">
+        <span data-lang="zh">专业定制餐厅、酒店、咖啡厅及户外商业家具，可按图纸定制尺寸、材料和颜色</span>
+        <span data-lang="en" style="display:none">Custom restaurant, hotel, cafe and outdoor commercial furniture. Available in custom sizes, materials and colors.</span>
+        <span data-lang="fr" style="display:none">Mobilier commercial sur mesure pour restaurants, hôtels, cafés et espaces extérieurs.</span>
+        <span data-lang="es" style="display:none">Mobiliario comercial personalizado para restaurantes, hoteles, cafeterías y exteriores.</span>
+        <span data-lang="de" style="display:none">Maßgeschneiderte Gewerbemöbel für Restaurants, Hotels, Cafés und Außenbereiche.</span>
+        <span data-lang="ar" style="display:none">أثاث تجاري مخصص للمطاعم والفنادق والمقاهي والأماكن الخارجية.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 筛选栏 -->
+  <section class="bg-white border-b border-neutral-200 sticky top-28 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap gap-2 items-center">
+      <span class="text-sm text-neutral-500 mr-2">
+        <span data-lang="zh">筛选：</span>
+        <span data-lang="en" style="display:none">Filter:</span>
+      </span>
+      <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-primary text-white" onclick="filterProducts('all',this)">
+        <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('restaurant',this)">
+        <span data-lang="zh">餐厅家具</span><span data-lang="en" style="display:none">Restaurant</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('hotel',this)">
+        <span data-lang="zh">酒店家具</span><span data-lang="en" style="display:none">Hotel</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('cafe',this)">
+        <span data-lang="zh">咖啡厅家具</span><span data-lang="en" style="display:none">Cafe</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('outdoor',this)">
+        <span data-lang="zh">户外家具</span><span data-lang="en" style="display:none">Outdoor</span>
+      </button>
+      <div class="ml-auto">
+        <input type="text" id="searchInput" placeholder="搜索产品..." oninput="searchProducts(this.value)"
+          class="px-4 py-2 border border-neutral-200 rounded-full text-sm outline-none focus:border-accent w-48"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品列表 -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div id="products-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- 动态加载 -->
+      </div>
+      <div id="products-empty" class="text-center py-20" style="display:none">
+        <div class="text-6xl mb-4">🪑</div>
+        <p class="text-neutral-500 text-lg">
+          <span data-lang="zh">暂无产品，敬请期待</span>
+          <span data-lang="en" style="display:none">No products yet, coming soon</span>
+        </p>
+      </div>
+      <div id="products-loading" class="text-center py-20">
+        <div class="inline-block w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin"></div>
+        <p class="text-neutral-400 mt-4 text-sm">加载中...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-heading font-bold text-white mb-4">
+        <span data-lang="zh">没有找到合适的产品？</span>
+        <span data-lang="en" style="display:none">Can't find what you need?</span>
+      </h2>
+      <p class="text-white/70 mb-8">
+        <span data-lang="zh">我们提供全定制服务，按您的图纸和要求定制任何商业家具</span>
+        <span data-lang="en" style="display:none">We offer full customization — any commercial furniture made to your drawings and specifications.</span>
+      </p>
+      <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors">
+        <span data-lang="zh">立即询盘</span>
+        <span data-lang="en" style="display:none">Get a Quote</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#1a1a1a] text-white py-16"></footer>
+
+<!-- 产品详情弹窗 -->
+<div id="product-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;padding:16px;">
+  <div style="background:#fff;border-radius:16px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;position:relative;">
+    <button onclick="closeModal()" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#999;z-index:1;">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script src="js/lang.js"></script>
+<script src="js/components.js"></script>
+<script>
+const REPO = 'galelikestofuck262626-netizen/easen-website';
+const BRANCH = 'main';
+
+function b64ToUtf8(str) {
+  return decodeURIComponent(Array.prototype.map.call(atob(str.replace(/\n/g,'')),
+    c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+}
+
+var allProducts = [];
+var currentFilter = 'all';
+var currentSearch = '';
+
+const catMap = {
+  restaurant: {zh:'餐厅家具', en:'Restaurant Furniture'},
+  hotel: {zh:'酒店家具', en:'Hotel Furniture'},
+  cafe: {zh:'咖啡厅家具', en:'Cafe Furniture'},
+  outdoor: {zh:'户外家具', en:'Outdoor Furniture'}
+};
+
+async function loadProducts() {
+  try {
+    const r = await fetch('https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+'/data/products.json?t='+Date.now());
+    if (!r.ok) throw new Error('not found');
+    allProducts = await r.json();
+  } catch(e) {
+    allProducts = [];
+  }
+  document.getElementById('products-loading').style.display = 'none';
+  renderProducts();
+}
+
+function filterProducts(cat, btn) {
+  currentFilter = cat;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active','bg-primary','text-white');
+    b.classList.add('bg-white','text-neutral-700');
+  });
+  btn.classList.add('active','bg-primary','text-white');
+  btn.classList.remove('bg-white','text-neutral-700');
+  renderProducts();
+}
+
+function searchProducts(q) {
+  currentSearch = q.toLowerCase();
+  renderProducts();
+}
+
+function renderProducts() {
+  var lang = localStorage.getItem('easen-lang') || 'zh';
+  var filtered = allProducts.filter(function(p) {
+    if (p.status === 'offline') return false;
+    if (currentFilter !== 'all' && p.category !== currentFilter) return false;
+    if (currentSearch) {
+      var title = (lang === 'zh' ? p.title_zh : p.title_en) || p.title_zh || '';
+      if (title.toLowerCase().indexOf(currentSearch) < 0) return false;
+    }
+    return true;
+  });
+
+  var grid = document.getElementById('products-grid');
+  var empty = document.getElementById('products-empty');
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  grid.innerHTML = filtered.map(function(p) {
+    var imgUrl = p.main_image
+      ? 'https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+p.main_image
+      : 'https://via.placeholder.com/400x300?text=No+Image';
+    var title = lang === 'zh' ? (p.title_zh||p.title_en||'') : (p.title_en||p.title_zh||'');
+    var cat = catMap[p.category] || {zh:p.category, en:p.category};
+    var catLabel = lang === 'zh' ? cat.zh : cat.en;
+    var specs = [p.dimensions, p.material, p.fabric].filter(Boolean).join(' · ');
+    return '<div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl cursor-pointer" onclick="showProduct(\''+p.id+'\')">'
+      +'<div style="height:240px;overflow:hidden;background:#f5f5f5">'
+      +'<img src="'+imgUrl+'" alt="'+title+'" style="width:100%;height:240px;object-fit:cover" loading="lazy" onerror="this.parentElement.style.background=\'#eee\'">'
+      +'</div>'
+      +'<div class="p-4">'
+      +'<span style="font-size:11px;font-weight:500;color:#c8a45c;text-transform:uppercase;letter-spacing:0.05em">'+catLabel+'</span>'
+      +'<h3 class="font-semibold text-primary mt-1 mb-1 leading-tight">'+title+'</h3>'
+      +(specs ? '<p class="text-neutral-400 text-xs">'+specs+'</p>' : '')
+      +'<div class="mt-3 text-accent text-sm font-medium">'
+      +(lang==='zh'?'查看详情 →':'View Details →')
+      +'</div></div></div>';
+  }).join('');
+}
+
+function showProduct(id) {
+  var p = allProducts.find(function(x){ return String(x.id) === String(id); });
+  if (!p) return;
+  var lang = localStorage.getItem('easen-lang') || 'zh';
+  var title = lang==='zh' ? (p.title_zh||p.title_en||'') : (p.title_en||p.title_zh||'');
+  var desc = lang==='zh' ? (p.desc_zh||p.desc_en||'') : (p.desc_en||p.desc_zh||'');
+  var cat = catMap[p.category] || {zh:p.category, en:p.category};
+  var images = p.images || (p.main_image ? [p.main_image] : []);
+
+  var imgHtml = images.length > 0
+    ? '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;padding:20px 20px 0">'
+      + images.map(function(img){
+          return '<img src="https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+img+'" style="width:100%;height:200px;object-fit:cover;border-radius:8px" loading="lazy">';
+        }).join('')
+      + '</div>'
+    : '';
+
+  var specs = [
+    p.dimensions ? (lang==='zh'?'尺寸':'Dimensions')+': '+p.dimensions : null,
+    p.material ? (lang==='zh'?'材料':'Material')+': '+p.material : null,
+    p.fabric ? (lang==='zh'?'面料':'Fabric')+': '+p.fabric : null,
+    p.color ? (lang==='zh'?'颜色':'Color')+': '+p.color : null,
+    p.sku ? (lang==='zh'?'货号':'SKU')+': '+p.sku : null,
+  ].filter(Boolean);
+
+  document.getElementById('modal-content').innerHTML =
+    imgHtml
+    +'<div style="padding:24px">'
+    +'<span style="font-size:11px;font-weight:500;color:#c8a45c;text-transform:uppercase">'+(lang==='zh'?cat.zh:cat.en)+'</span>'
+    +'<h2 style="font-size:24px;font-weight:700;color:#1a365d;margin:8px 0 12px">'+title+'</h2>'
+    +(specs.length > 0
+      ? '<div style="background:#f9f9f9;border-radius:10px;padding:16px;margin-bottom:16px">'
+        +specs.map(function(s){ return '<p style="font-size:14px;color:#555;margin-bottom:6px">'+s+'</p>'; }).join('')
+        +'</div>'
+      : '')
+    +(desc ? '<p style="font-size:14px;color:#666;line-height:1.7;margin-bottom:20px">'+desc+'</p>' : '')
+    +'<a href="contact.html" style="display:inline-flex;align-items:center;justify-content:center;padding:12px 32px;background:#1a365d;color:#fff;font-weight:600;border-radius:8px;text-decoration:none;font-size:15px">'
+    +(lang==='zh'?'立即询价':'Get a Quote')+'</a>'
+    +'</div>';
+
+  var modal = document.getElementById('product-modal');
+  modal.style.display = 'flex';
+  modal.addEventListener('click', function(e){ if(e.target===modal)closeModal(); });
+}
+
+function closeModal() {
+  document.getElementById('product-modal').style.display = 'none';
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Escape')closeModal(); });
+
+loadProducts();
+</script>
+</body>
+</html>
