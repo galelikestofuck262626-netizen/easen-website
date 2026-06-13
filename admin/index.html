@@ -3,323 +3,900 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EASEN 产品管理后台</title>
+<title>EASEN 后台管理</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,system-ui,sans-serif;background:#f5f5f5;color:#333}
-.header{background:#1a365d;color:#fff;padding:16px 24px;display:flex;align-items:center;gap:12px}
-.header h1{font-size:18px;font-weight:600}
-.container{max-width:900px;margin:24px auto;padding:0 16px}
-.card{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
-.card h2{font-size:16px;font-weight:600;color:#1a365d;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #f0f0f0}
+body{font-family:Inter,system-ui,sans-serif;background:#f0f2f5;color:#1a1a1a;display:flex;min-height:100vh}
+
+/* 侧边栏 */
+.sidebar{width:240px;background:#1a365d;color:#fff;display:flex;flex-direction:column;position:fixed;top:0;left:0;height:100vh;z-index:100;transition:transform 0.3s}
+.sidebar-logo{padding:24px 20px;border-bottom:1px solid rgba(255,255,255,0.1)}
+.sidebar-logo h1{font-size:18px;font-weight:700;color:#fff}
+.sidebar-logo p{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px}
+.sidebar-nav{flex:1;overflow-y:auto;padding:12px 0}
+.nav-item{display:flex;align-items:center;gap:12px;padding:12px 20px;cursor:pointer;transition:background 0.15s;border-left:3px solid transparent;color:rgba(255,255,255,0.7);font-size:14px}
+.nav-item:hover{background:rgba(255,255,255,0.08);color:#fff}
+.nav-item.active{background:rgba(200,164,92,0.15);color:#c8a45c;border-left-color:#c8a45c}
+.nav-item svg{flex-shrink:0}
+
+/* 主内容 */
+.main{margin-left:240px;flex:1;display:flex;flex-direction:column;min-height:100vh}
+.topbar{background:#fff;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:50}
+.topbar h2{font-size:18px;font-weight:600;color:#1a365d}
+.topbar-right{display:flex;align-items:center;gap:12px}
+.content{padding:24px;flex:1}
+
+/* 卡片 */
+.card{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.card h3{font-size:15px;font-weight:600;color:#1a365d;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #f0f0f0}
+
+/* 表单 */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .form-group{display:flex;flex-direction:column;gap:6px}
 .form-group.full{grid-column:1/-1}
 label{font-size:13px;font-weight:500;color:#555}
-input,select,textarea{padding:9px 12px;border:1px solid #ddd;border-radius:8px;font-size:14px;outline:none;transition:border 0.2s;width:100%}
-input:focus,select:focus,textarea:focus{border-color:#1a365d}
+input,select,textarea{padding:9px 12px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none;transition:border 0.2s;width:100%}
+input:focus,select:focus,textarea:focus{border-color:#1a365d;box-shadow:0 0 0 3px rgba(26,54,93,0.08)}
 textarea{resize:vertical;min-height:80px}
-.img-upload-area{border:2px dashed #ddd;border-radius:8px;padding:20px;text-align:center;cursor:pointer;transition:border 0.2s;position:relative}
-.img-upload-area:hover{border-color:#c8a45c}
-.img-upload-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
-.img-upload-area p{color:#888;font-size:13px}
-.preview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-top:10px}
-.preview-item{position:relative;aspect-ratio:1;border-radius:6px;overflow:hidden;background:#f5f5f5}
-.preview-item img{width:100%;height:100%;object-fit:cover}
-.preview-item .del{position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.5);color:#fff;border:none;border-radius:50%;width:22px;height:22px;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1}
-.btn{padding:11px 24px;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.2s}
+
+/* 按钮 */
+.btn{padding:9px 20px;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:6px}
 .btn-primary{background:#1a365d;color:#fff}
 .btn-primary:hover{background:#2d4a7a}
-.btn-primary:disabled{background:#999;cursor:not-allowed}
-.btn-secondary{background:#f0f0f0;color:#333}
-.status{padding:12px 16px;border-radius:8px;font-size:13px;margin-top:12px;display:none}
-.status.success{background:#d4edda;color:#155724;display:block}
-.status.error{background:#f8d7da;color:#721c24;display:block}
-.status.loading{background:#d1ecf1;color:#0c5460;display:block}
-.tabs{display:flex;gap:4px;margin-bottom:20px}
-.tab{padding:8px 20px;border:none;border-radius:8px;font-size:14px;cursor:pointer;background:#fff;color:#666;font-weight:500;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
-.tab.active{background:#1a365d;color:#fff}
-.section{display:none}
-.section.active{display:block}
-.product-list{display:grid;gap:10px}
-.product-item{display:flex;align-items:center;gap:12px;padding:12px;background:#f9f9f9;border-radius:8px;border:1px solid #eee}
-.product-item img{width:64px;height:64px;object-fit:cover;border-radius:6px;background:#eee}
-.product-info{flex:1}
-.product-info h3{font-size:14px;font-weight:600;color:#1a365d}
-.product-info p{font-size:12px;color:#888;margin-top:2px}
-.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:500;background:#e8f0fe;color:#1a365d;margin-top:4px}
-@media(max-width:600px){.form-grid{grid-template-columns:1fr}}
+.btn-primary:disabled{background:#9ca3af;cursor:not-allowed}
+.btn-accent{background:#c8a45c;color:#fff}
+.btn-accent:hover{background:#a8853e}
+.btn-danger{background:#ef4444;color:#fff}
+.btn-danger:hover{background:#dc2626}
+.btn-secondary{background:#f3f4f6;color:#374151}
+.btn-secondary:hover{background:#e5e7eb}
+.btn-sm{padding:6px 14px;font-size:13px}
+
+/* 图片上传 */
+.upload-area{border:2px dashed #e5e7eb;border-radius:10px;padding:24px;text-align:center;cursor:pointer;transition:border 0.2s;position:relative;background:#fafafa}
+.upload-area:hover{border-color:#c8a45c;background:#fffdf7}
+.upload-area input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.preview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-top:10px}
+.preview-item{position:relative;aspect-ratio:1;border-radius:8px;overflow:hidden;background:#f5f5f5;border:1px solid #e5e7eb}
+.preview-item img{width:100%;height:100%;object-fit:cover}
+.preview-item .del-btn{position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.6);color:#fff;border:none;border-radius:50%;width:22px;height:22px;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1}
+.preview-item .main-badge{position:absolute;bottom:4px;left:4px;background:#c8a45c;color:#fff;font-size:9px;padding:2px 6px;border-radius:4px;font-weight:600}
+
+/* 状态提示 */
+.alert{padding:12px 16px;border-radius:8px;font-size:13px;margin-top:12px}
+.alert-success{background:#d1fae5;color:#065f46;border:1px solid #6ee7b7}
+.alert-error{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}
+.alert-loading{background:#dbeafe;color:#1e40af;border:1px solid #93c5fd}
+
+/* 产品列表 */
+.item-list{display:grid;gap:10px}
+.item-row{display:flex;align-items:center;gap:14px;padding:14px;background:#f9fafb;border-radius:10px;border:1px solid #e5e7eb}
+.item-row img{width:64px;height:64px;object-fit:cover;border-radius:8px;background:#eee;flex-shrink:0}
+.item-info{flex:1;min-width:0}
+.item-info h4{font-size:14px;font-weight:600;color:#1a365d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item-info p{font-size:12px;color:#9ca3af;margin-top:2px}
+.item-actions{display:flex;gap:6px;flex-shrink:0}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:500}
+.badge-online{background:#d1fae5;color:#065f46}
+.badge-offline{background:#fee2e2;color:#991b1b}
+.badge-cat{background:#e0e7ff;color:#3730a3}
+
+/* 统计卡片 */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-bottom:24px}
+.stat-card{background:#fff;border-radius:12px;padding:20px;display:flex;align-items:center;gap:16px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.stat-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.stat-info h3{font-size:24px;font-weight:700;color:#1a365d}
+.stat-info p{font-size:13px;color:#9ca3af;margin-top:2px}
+
+/* 页面区块 */
+.section-page{display:none}
+.section-page.active{display:block}
+
+/* 响应式 */
+@media(max-width:768px){
+  .sidebar{transform:translateX(-240px)}
+  .sidebar.open{transform:translateX(0)}
+  .main{margin-left:0}
+  .form-grid{grid-template-columns:1fr}
+  .topbar{padding:12px 16px}
+}
 </style>
 </head>
 <body>
-<div class="header">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-  <h1>EASEN 产品管理后台</h1>
-</div>
 
-<div class="container">
-  <div class="tabs">
-    <button class="tab active" onclick="showSection('add',this)">➕ 添加产品</button>
-    <button class="tab" onclick="showSection('list',this)">📋 产品列表</button>
+<!-- 侧边栏 -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <h1>⚙️ EASEN 后台</h1>
+    <p>产品 · 案例 · 设置</p>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-item active" onclick="showPage('dashboard',this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      概览
+    </div>
+    <div class="nav-item" onclick="showPage('products-list',this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      产品列表
+    </div>
+    <div class="nav-item" onclick="showPage('products-add',this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+      添加产品
+    </div>
+    <div class="nav-item" onclick="showPage('cases-list',this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      案例列表
+    </div>
+    <div class="nav-item" onclick="showPage('cases-add',this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+      添加案例
+    </div>
+    <div class="nav-item" onclick="showPage('blog-list',this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      博客/洞察
+    </div>
+    <div class="nav-item" onclick="showPage('settings',this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      网站设置
+    </div>
+  </nav>
+  <div style="padding:16px 20px;border-top:1px solid rgba(255,255,255,0.1)">
+    <a href="../index.html" target="_blank" style="color:rgba(255,255,255,0.6);font-size:13px;text-decoration:none;display:flex;align-items:center;gap:8px">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      查看网站
+    </a>
+  </div>
+</aside>
+
+<!-- 主内容 -->
+<div class="main">
+  <div class="topbar">
+    <div style="display:flex;align-items:center;gap:12px">
+      <button class="btn btn-secondary btn-sm" id="menuBtn" onclick="toggleSidebar()" style="display:none">☰</button>
+      <h2 id="page-title">概览</h2>
+    </div>
+    <div class="topbar-right">
+      <span style="font-size:13px;color:#9ca3af" id="save-status"></span>
+    </div>
   </div>
 
-  <div id="sec-add" class="section active">
-    <div class="card">
-      <h2>添加新产品</h2>
-      <div class="form-grid">
-        <div class="form-group">
-          <label>产品名称（中文）*</label>
-          <input type="text" id="title_zh" placeholder="例如：现代简约餐椅"/>
+  <div class="content">
+
+    <!-- 概览 -->
+    <div id="page-dashboard" class="section-page active">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon" style="background:#e0e7ff">🛋️</div>
+          <div class="stat-info"><h3 id="stat-products">-</h3><p>已上架产品</p></div>
         </div>
-        <div class="form-group">
-          <label>Product Name (English)</label>
-          <input type="text" id="title_en" placeholder="e.g. Modern Dining Chair"/>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:#d1fae5">🏗️</div>
+          <div class="stat-info"><h3 id="stat-cases">-</h3><p>项目案例</p></div>
         </div>
-        <div class="form-group">
-          <label>产品类别 *</label>
-          <select id="category">
+        <div class="stat-card">
+          <div class="stat-icon" style="background:#fef3c7">📝</div>
+          <div class="stat-info"><h3 id="stat-blogs">-</h3><p>博客文章</p></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:#fee2e2">🖼️</div>
+          <div class="stat-info"><h3 id="stat-images">-</h3><p>已上传图片</p></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>快捷操作</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <button class="btn btn-primary" onclick="showPage('products-add',null)">➕ 添加产品</button>
+          <button class="btn btn-accent" onclick="showPage('cases-add',null)">📷 添加案例</button>
+          <button class="btn btn-secondary" onclick="showPage('blog-list',null)">✍️ 写博客</button>
+          <button class="btn btn-secondary" onclick="showPage('settings',null)">⚙️ 网站设置</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 产品列表 -->
+    <div id="page-products-list" class="section-page">
+      <div class="card">
+        <h3>产品列表</h3>
+        <div style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+          <select id="product-filter-cat" onchange="renderProductList()" style="width:auto;padding:7px 12px">
+            <option value="">全部类别</option>
             <option value="restaurant">餐厅家具</option>
             <option value="hotel">酒店家具</option>
             <option value="cafe">咖啡厅家具</option>
             <option value="outdoor">户外家具</option>
           </select>
+          <select id="product-filter-status" onchange="renderProductList()" style="width:auto;padding:7px 12px">
+            <option value="">全部状态</option>
+            <option value="online">已上架</option>
+            <option value="offline">已下架</option>
+          </select>
         </div>
-        <div class="form-group">
-          <label>货号/型号</label>
-          <input type="text" id="sku" placeholder="例如：ES-001"/>
-        </div>
-        <div class="form-group">
-          <label>尺寸</label>
-          <input type="text" id="dimensions" placeholder="例如：45x45x80cm"/>
-        </div>
-        <div class="form-group">
-          <label>材料</label>
-          <input type="text" id="material" placeholder="例如：实木、金属"/>
-        </div>
-        <div class="form-group">
-          <label>面料</label>
-          <input type="text" id="fabric" placeholder="例如：PU皮、布艺、皮革"/>
-        </div>
-        <div class="form-group">
-          <label>颜色</label>
-          <input type="text" id="color" placeholder="例如：黑色、棕色、多色可选"/>
-        </div>
-        <div class="form-group full">
-          <label>产品描述（中文）</label>
-          <textarea id="desc_zh" placeholder="产品特点、适用场景..."></textarea>
-        </div>
-        <div class="form-group full">
-          <label>Product Description (English)</label>
-          <textarea id="desc_en" placeholder="Product features, suitable occasions..."></textarea>
-        </div>
-        <div class="form-group full">
-          <label>上传产品图片（可多选）*</label>
-          <div class="img-upload-area">
-            <input type="file" id="imgInput" accept="image/*" multiple onchange="handleImages(this)"/>
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 8px;display:block"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-            <p>点击或拖拽上传图片</p>
-            <p style="font-size:11px;color:#bbb;margin-top:4px">支持 JPG、PNG，可同时选择多张</p>
-          </div>
-          <div class="preview-grid" id="previewGrid"></div>
-        </div>
+        <div id="product-list-container"><p style="color:#9ca3af;text-align:center;padding:20px">加载中...</p></div>
       </div>
-      <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
-        <button class="btn btn-primary" id="submitBtn" onclick="submitProduct()">✅ 保存并发布产品</button>
-        <button class="btn btn-secondary" onclick="resetForm()">🔄 清空重填</button>
-      </div>
-      <div class="status" id="status"></div>
     </div>
-  </div>
 
-  <div id="sec-list" class="section">
-    <div class="card">
-      <h2>已发布产品</h2>
-      <div id="productList"><p style="color:#888;font-size:14px;text-align:center;padding:20px">加载中...</p></div>
+    <!-- 添加/编辑产品 -->
+    <div id="page-products-add" class="section-page">
+      <div class="card">
+        <h3 id="product-form-title">添加新产品</h3>
+        <input type="hidden" id="product-edit-id"/>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>产品名称（中文）*</label>
+            <input type="text" id="p-title-zh" placeholder="例：现代简约餐椅"/>
+          </div>
+          <div class="form-group">
+            <label>Product Name (English)</label>
+            <input type="text" id="p-title-en" placeholder="e.g. Modern Dining Chair"/>
+          </div>
+          <div class="form-group">
+            <label>产品类别 *</label>
+            <select id="p-category">
+              <option value="restaurant">餐厅家具</option>
+              <option value="hotel">酒店家具</option>
+              <option value="cafe">咖啡厅家具</option>
+              <option value="outdoor">户外家具</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>货号/型号</label>
+            <input type="text" id="p-sku" placeholder="例：ES-001"/>
+          </div>
+          <div class="form-group">
+            <label>尺寸</label>
+            <input type="text" id="p-dimensions" placeholder="例：45x45x80cm"/>
+          </div>
+          <div class="form-group">
+            <label>材料</label>
+            <input type="text" id="p-material" placeholder="例：实木、金属"/>
+          </div>
+          <div class="form-group">
+            <label>面料</label>
+            <input type="text" id="p-fabric" placeholder="例：PU皮、布艺"/>
+          </div>
+          <div class="form-group">
+            <label>颜色</label>
+            <input type="text" id="p-color" placeholder="例：黑色、棕色、多色可选"/>
+          </div>
+          <div class="form-group">
+            <label>上架状态</label>
+            <select id="p-status">
+              <option value="online">上架</option>
+              <option value="offline">下架</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>产品描述（中文）</label>
+            <textarea id="p-desc-zh" placeholder="产品特点、适用场景..."></textarea>
+          </div>
+          <div class="form-group full">
+            <label>Product Description (English)</label>
+            <textarea id="p-desc-en" placeholder="Product features, suitable occasions..."></textarea>
+          </div>
+          <div class="form-group full">
+            <label>产品图片（可多选，第一张为主图）</label>
+            <div class="upload-area" id="p-upload-area">
+              <input type="file" id="p-img-input" accept="image/*" multiple onchange="handleProductImages(this)"/>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.5" style="margin:0 auto 8px;display:block"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <p style="color:#9ca3af;font-size:13px">点击或拖拽上传图片</p>
+              <p style="color:#bbb;font-size:11px;margin-top:4px">支持 JPG、PNG，可同时选多张</p>
+            </div>
+            <div class="preview-grid" id="p-preview-grid"></div>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-primary" id="p-submit-btn" onclick="submitProduct()">✅ 保存产品</button>
+          <button class="btn btn-secondary" onclick="resetProductForm()">🔄 清空</button>
+        </div>
+        <div id="p-status-msg" style="display:none" class="alert"></div>
+      </div>
     </div>
+
+    <!-- 案例列表 -->
+    <div id="page-cases-list" class="section-page">
+      <div class="card">
+        <h3>案例列表</h3>
+        <div id="case-list-container"><p style="color:#9ca3af;text-align:center;padding:20px">加载中...</p></div>
+      </div>
+    </div>
+
+    <!-- 添加案例 -->
+    <div id="page-cases-add" class="section-page">
+      <div class="card">
+        <h3 id="case-form-title">添加新案例</h3>
+        <input type="hidden" id="case-edit-id"/>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>案例标题（中文）*</label>
+            <input type="text" id="c-title-zh" placeholder="例：高端咖啡厅家具案例"/>
+          </div>
+          <div class="form-group">
+            <label>Case Title (English)</label>
+            <input type="text" id="c-title-en" placeholder="e.g. Premium Café Furniture Project"/>
+          </div>
+          <div class="form-group">
+            <label>项目类别</label>
+            <select id="c-category">
+              <option value="restaurant">餐厅</option>
+              <option value="hotel">酒店</option>
+              <option value="cafe">咖啡厅</option>
+              <option value="outdoor">户外</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>项目地点</label>
+            <input type="text" id="c-location" placeholder="例：新加坡、上海"/>
+          </div>
+          <div class="form-group full">
+            <label>项目描述（中文）</label>
+            <textarea id="c-desc-zh" placeholder="项目背景、客户需求、我们的解决方案..."></textarea>
+          </div>
+          <div class="form-group full">
+            <label>Project Description (English)</label>
+            <textarea id="c-desc-en" placeholder="Project background, client requirements, our solution..."></textarea>
+          </div>
+          <div class="form-group full">
+            <label>项目图片（第一张为封面）</label>
+            <div class="upload-area">
+              <input type="file" id="c-img-input" accept="image/*" multiple onchange="handleCaseImages(this)"/>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.5" style="margin:0 auto 8px;display:block"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <p style="color:#9ca3af;font-size:13px">点击或拖拽上传项目图片</p>
+            </div>
+            <div class="preview-grid" id="c-preview-grid"></div>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:10px">
+          <button class="btn btn-primary" id="c-submit-btn" onclick="submitCase()">✅ 保存案例</button>
+          <button class="btn btn-secondary" onclick="resetCaseForm()">🔄 清空</button>
+        </div>
+        <div id="c-status-msg" style="display:none" class="alert"></div>
+      </div>
+    </div>
+
+    <!-- 博客列表 -->
+    <div id="page-blog-list" class="section-page">
+      <div class="card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+          <h3 style="border:none;padding:0;margin:0">博客/洞察文章</h3>
+          <button class="btn btn-primary btn-sm" onclick="showPage('blog-add',null)">➕ 写文章</button>
+        </div>
+        <div id="blog-list-container"><p style="color:#9ca3af;text-align:center;padding:20px">加载中...</p></div>
+      </div>
+    </div>
+
+    <!-- 写博客 -->
+    <div id="page-blog-add" class="section-page">
+      <div class="card">
+        <h3 id="blog-form-title">写新文章</h3>
+        <input type="hidden" id="blog-edit-id"/>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>文章标题（中文）*</label>
+            <input type="text" id="b-title-zh" placeholder="例：PU皮 vs 布艺：餐厅座椅如何选"/>
+          </div>
+          <div class="form-group">
+            <label>Article Title (English)</label>
+            <input type="text" id="b-title-en" placeholder="e.g. PU Leather vs Fabric for Restaurant Seating"/>
+          </div>
+          <div class="form-group">
+            <label>分类</label>
+            <select id="b-category">
+              <option value="guide">选购指南</option>
+              <option value="project">项目故事</option>
+              <option value="quality">质量认证</option>
+              <option value="trend">设计趋势</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>封面图</label>
+            <div class="upload-area" style="padding:12px">
+              <input type="file" id="b-cover-input" accept="image/*" onchange="handleBlogCover(this)"/>
+              <p style="color:#9ca3af;font-size:13px">点击上传封面图</p>
+            </div>
+            <div id="b-cover-preview"></div>
+          </div>
+          <div class="form-group full">
+            <label>文章内容（中文）</label>
+            <textarea id="b-content-zh" style="min-height:200px" placeholder="文章正文..."></textarea>
+          </div>
+          <div class="form-group full">
+            <label>Article Content (English)</label>
+            <textarea id="b-content-en" style="min-height:200px" placeholder="Article content..."></textarea>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:10px">
+          <button class="btn btn-primary" id="b-submit-btn" onclick="submitBlog()">✅ 发布文章</button>
+          <button class="btn btn-secondary" onclick="resetBlogForm()">🔄 清空</button>
+          <button class="btn btn-secondary" onclick="showPage('blog-list',null)">← 返回列表</button>
+        </div>
+        <div id="b-status-msg" style="display:none" class="alert"></div>
+      </div>
+    </div>
+
+    <!-- 网站设置 -->
+    <div id="page-settings" class="section-page">
+      <div class="card">
+        <h3>基本信息</h3>
+        <div class="form-grid">
+          <div class="form-group"><label>公司邮箱</label><input type="email" id="s-email"/></div>
+          <div class="form-group"><label>电话/WhatsApp</label><input type="text" id="s-phone"/></div>
+          <div class="form-group"><label>微信号</label><input type="text" id="s-wechat"/></div>
+          <div class="form-group"><label>工厂地址（中文）</label><input type="text" id="s-addr-zh"/></div>
+          <div class="form-group full"><label>工厂地址（English）</label><input type="text" id="s-addr-en"/></div>
+        </div>
+        <div style="margin-top:16px">
+          <button class="btn btn-primary" onclick="saveSettings()">💾 保存设置</button>
+        </div>
+        <div id="s-status-msg" style="display:none" class="alert"></div>
+      </div>
+    </div>
+
   </div>
 </div>
 
 <script>
-const GITHUB_TOKEN = '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';
+// ==================== 配置 ====================
+const TOKEN = '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';
 const REPO = 'galelikestofuck262626-netizen/easen-website';
 const BRANCH = 'main';
-const DATA_PATH = 'admin/products/products.json';
 
-let selectedImages = [];
-
-// UTF-8安全的base64编码/解码
+// ==================== 编码工具（UTF-8安全）====================
 function utf8ToB64(str) {
   return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m, p1) => String.fromCharCode('0x' + p1)));
 }
 function b64ToUtf8(str) {
-  return decodeURIComponent(Array.prototype.map.call(atob(str), c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+  return decodeURIComponent(Array.prototype.map.call(atob(str.replace(/\n/g,'')), c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
 }
 
-function showSection(name, btn) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('sec-' + name).classList.add('active');
-  btn.classList.add('active');
-  if (name === 'list') loadProducts();
-}
-
-function handleImages(input) {
-  Array.from(input.files).forEach(file => {
-    const reader = new FileReader();
-    reader.onload = e => {
-      selectedImages.push({ file, dataUrl: e.target.result, name: file.name });
-      renderPreviews();
-    };
-    reader.readAsDataURL(file);
-  });
-  input.value = '';
-}
-
-function renderPreviews() {
-  document.getElementById('previewGrid').innerHTML = selectedImages.map((img, i) =>
-    `<div class="preview-item"><img src="${img.dataUrl}"/><button class="del" onclick="removeImage(${i})">✕</button></div>`
-  ).join('');
-}
-
-function removeImage(i) { selectedImages.splice(i, 1); renderPreviews(); }
-
-function setStatus(msg, type) {
-  const el = document.getElementById('status');
-  el.textContent = msg;
-  el.className = 'status ' + type;
-}
-
-async function githubGet(path) {
+// ==================== GitHub API ====================
+async function ghGet(path) {
   const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
-    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
+    headers: { 'Authorization': `token ${TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
   });
   if (!r.ok) return null;
   return r.json();
 }
 
-async function githubPut(path, content, message, sha) {
+async function ghPut(path, content, message, sha) {
   const body = { message, content: utf8ToB64(content), branch: BRANCH };
   if (sha) body.sha = sha;
   const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
     method: 'PUT',
-    headers: {
-      'Authorization': `token ${GITHUB_TOKEN}`,
-      'Accept': 'application/vnd.github.v3+json',
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Authorization': `token ${TOKEN}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
     body: JSON.stringify(body)
   });
   if (!r.ok) { const e = await r.json(); throw new Error(e.message); }
   return r.json();
 }
 
+async function ghReadJSON(path) {
+  const data = await ghGet(path);
+  if (!data || !data.content) return { items: [], sha: null };
+  try { return { items: JSON.parse(b64ToUtf8(data.content)), sha: data.sha }; }
+  catch(e) { return { items: [], sha: data.sha }; }
+}
+
+async function ghWriteJSON(path, items, message, sha) {
+  return ghPut(path, JSON.stringify(items, null, 2), message, sha);
+}
+
 async function uploadImage(dataUrl, filename) {
   const base64 = dataUrl.split(',')[1];
-  const path = `images/products/uploads/${Date.now()}-${filename.replace(/[^a-zA-Z0-9._-]/g, '_')}`;
+  const ext = filename.split('.').pop().toLowerCase();
+  const safeName = Date.now() + '-' + filename.replace(/[^a-zA-Z0-9._-]/g, '_');
+  const path = `images/uploads/${safeName}`;
   const body = { message: `Upload: ${filename}`, content: base64, branch: BRANCH };
+  const existing = await ghGet(path);
+  if (existing) body.sha = existing.sha;
   const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
     method: 'PUT',
-    headers: {
-      'Authorization': `token ${GITHUB_TOKEN}`,
-      'Accept': 'application/vnd.github.v3+json',
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Authorization': `token ${TOKEN}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
     body: JSON.stringify(body)
   });
   if (!r.ok) { const e = await r.json(); throw new Error(e.message); }
   return '/' + path;
 }
 
+// ==================== UI 工具 ====================
+function showPage(id, navEl) {
+  document.querySelectorAll('.section-page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  const titles = { dashboard:'概览', 'products-list':'产品列表', 'products-add':'添加产品', 'cases-list':'案例列表', 'cases-add':'添加案例', 'blog-list':'博客/洞察', 'blog-add':'写文章', settings:'网站设置' };
+  document.getElementById('page-title').textContent = titles[id] || id;
+  if (navEl) { document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active')); navEl.classList.add('active'); }
+  if (id === 'products-list') loadProductList();
+  if (id === 'cases-list') loadCaseList();
+  if (id === 'blog-list') loadBlogList();
+  if (id === 'dashboard') loadDashboard();
+  if (id === 'settings') loadSettings();
+}
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+
+function setAlert(elId, msg, type) {
+  const el = document.getElementById(elId);
+  el.textContent = msg;
+  el.className = 'alert alert-' + type;
+  el.style.display = 'block';
+  if (type === 'success') setTimeout(() => { el.style.display = 'none'; }, 4000);
+}
+
+// ==================== 产品管理 ====================
+let productImages = [];
+
+function handleProductImages(input) {
+  Array.from(input.files).forEach(file => {
+    const reader = new FileReader();
+    reader.onload = e => { productImages.push({ file, dataUrl: e.target.result, name: file.name }); renderProductPreviews(); };
+    reader.readAsDataURL(file);
+  });
+  input.value = '';
+}
+
+function renderProductPreviews() {
+  document.getElementById('p-preview-grid').innerHTML = productImages.map((img, i) =>
+    `<div class="preview-item">
+      <img src="${img.dataUrl}"/>
+      ${i===0 ? '<span class="main-badge">主图</span>' : ''}
+      <button class="del-btn" onclick="removeProductImage(${i})">✕</button>
+    </div>`
+  ).join('');
+}
+
+function removeProductImage(i) { productImages.splice(i, 1); renderProductPreviews(); }
+
 async function submitProduct() {
-  const title_zh = document.getElementById('title_zh').value.trim();
-  const category = document.getElementById('category').value;
-  if (!title_zh) { setStatus('请填写产品名称', 'error'); return; }
-  if (selectedImages.length === 0) { setStatus('请至少上传一张图片', 'error'); return; }
-
-  const btn = document.getElementById('submitBtn');
+  const title_zh = document.getElementById('p-title-zh').value.trim();
+  if (!title_zh) { setAlert('p-status-msg', '请填写产品名称', 'error'); return; }
+  if (productImages.length === 0) { setAlert('p-status-msg', '请上传至少一张图片', 'error'); return; }
+  const btn = document.getElementById('p-submit-btn');
   btn.disabled = true;
-
+  setAlert('p-status-msg', '正在上传图片...', 'loading');
   try {
-    // 上传图片
     const imagePaths = [];
-    for (let i = 0; i < selectedImages.length; i++) {
-      setStatus(`正在上传图片 ${i+1}/${selectedImages.length}...`, 'loading');
-      const path = await uploadImage(selectedImages[i].dataUrl, selectedImages[i].name);
-      imagePaths.push(path);
+    for (let i = 0; i < productImages.length; i++) {
+      setAlert('p-status-msg', `上传图片 ${i+1}/${productImages.length}...`, 'loading');
+      imagePaths.push(await uploadImage(productImages[i].dataUrl, productImages[i].name));
     }
-
-    setStatus('正在保存产品数据...', 'loading');
-
-    // 读取现有产品
-    let products = [];
-    let sha = null;
-    const existing = await githubGet(DATA_PATH);
-    if (existing && existing.content) {
-      try { products = JSON.parse(b64ToUtf8(existing.content.replace(/\n/g,''))); } catch(e) { products = []; }
-      sha = existing.sha;
-    }
-
-    // 添加新产品
-    products.push({
-      id: Date.now(),
+    setAlert('p-status-msg', '保存产品数据...', 'loading');
+    const { items, sha } = await ghReadJSON('data/products.json');
+    const editId = document.getElementById('product-edit-id').value;
+    const product = {
+      id: editId || Date.now(),
       title_zh,
-      title_en: document.getElementById('title_en').value.trim(),
-      category,
-      sku: document.getElementById('sku').value.trim(),
-      dimensions: document.getElementById('dimensions').value.trim(),
-      material: document.getElementById('material').value.trim(),
-      fabric: document.getElementById('fabric').value.trim(),
-      color: document.getElementById('color').value.trim(),
-      desc_zh: document.getElementById('desc_zh').value.trim(),
-      desc_en: document.getElementById('desc_en').value.trim(),
+      title_en: document.getElementById('p-title-en').value.trim(),
+      category: document.getElementById('p-category').value,
+      sku: document.getElementById('p-sku').value.trim(),
+      dimensions: document.getElementById('p-dimensions').value.trim(),
+      material: document.getElementById('p-material').value.trim(),
+      fabric: document.getElementById('p-fabric').value.trim(),
+      color: document.getElementById('p-color').value.trim(),
+      status: document.getElementById('p-status').value,
+      desc_zh: document.getElementById('p-desc-zh').value.trim(),
+      desc_en: document.getElementById('p-desc-en').value.trim(),
       images: imagePaths,
       main_image: imagePaths[0],
-      created_at: new Date().toISOString()
-    });
-
-    await githubPut(DATA_PATH, JSON.stringify(products, null, 2), `Add product: ${title_zh}`, sha);
-
-    setStatus(`✅ "${title_zh}" 发布成功！网站将在1-2分钟后自动更新。`, 'success');
-    resetForm();
-
+      updated_at: new Date().toISOString()
+    };
+    if (!editId) product.created_at = product.updated_at;
+    const idx = items.findIndex(p => String(p.id) === String(editId));
+    if (idx > -1) { items[idx] = {...items[idx], ...product}; }
+    else { items.push(product); }
+    await ghWriteJSON('data/products.json', items, `${editId ? 'Update' : 'Add'} product: ${title_zh}`, sha);
+    setAlert('p-status-msg', `✅ "${title_zh}" 保存成功！网站将在1-2分钟后更新。`, 'success');
+    resetProductForm();
   } catch(e) {
-    setStatus('❌ 失败：' + e.message, 'error');
-  } finally {
-    btn.disabled = false;
-  }
+    setAlert('p-status-msg', '❌ 失败：' + e.message, 'error');
+  } finally { btn.disabled = false; }
 }
 
-function resetForm() {
-  ['title_zh','title_en','sku','dimensions','material','fabric','color','desc_zh','desc_en'].forEach(id => {
-    document.getElementById(id).value = '';
-  });
-  selectedImages = [];
-  renderPreviews();
+function resetProductForm() {
+  ['p-title-zh','p-title-en','p-sku','p-dimensions','p-material','p-fabric','p-color','p-desc-zh','p-desc-en'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('p-status').value = 'online';
+  document.getElementById('product-edit-id').value = '';
+  document.getElementById('product-form-title').textContent = '添加新产品';
+  productImages = []; renderProductPreviews();
 }
 
-async function loadProducts() {
-  const el = document.getElementById('productList');
+async function loadProductList() {
+  const container = document.getElementById('product-list-container');
+  const { items } = await ghReadJSON('data/products.json');
+  const catFilter = document.getElementById('product-filter-cat').value;
+  const statusFilter = document.getElementById('product-filter-status').value;
   const catMap = { restaurant:'餐厅家具', hotel:'酒店家具', cafe:'咖啡厅家具', outdoor:'户外家具' };
-  try {
-    const data = await githubGet(DATA_PATH);
-    if (!data || !data.content) { el.innerHTML = '<p style="color:#888;font-size:14px;text-align:center;padding:20px">还没有产品，去添加第一个吧！</p>'; return; }
-    const products = JSON.parse(b64ToUtf8(data.content.replace(/\n/g,'')));
-    if (products.length === 0) { el.innerHTML = '<p style="color:#888;font-size:14px;text-align:center;padding:20px">还没有产品，去添加第一个吧！</p>'; return; }
-    el.innerHTML = '<div class="product-list">' + products.slice().reverse().map(p =>
-      `<div class="product-item">
-        <img src="https://raw.githubusercontent.com/${REPO}/${BRANCH}${p.main_image}" onerror="this.style.background='#eee'"/>
-        <div class="product-info">
-          <h3>${p.title_zh||''} ${p.title_en ? '/ '+p.title_en : ''}</h3>
-          <p>${[p.sku,p.dimensions,p.material,p.fabric].filter(Boolean).join(' · ')}</p>
-          <span class="badge">${catMap[p.category]||p.category}</span>
-        </div>
-        <div style="font-size:11px;color:#bbb">${new Date(p.created_at).toLocaleDateString('zh')}</div>
-      </div>`
-    ).join('') + '</div>';
-  } catch(e) {
-    el.innerHTML = '<p style="color:#c00;font-size:14px">加载失败：' + e.message + '</p>';
-  }
+  const filtered = items.filter(p => (!catFilter || p.category===catFilter) && (!statusFilter || (p.status||'online')===statusFilter));
+  if (filtered.length === 0) { container.innerHTML = '<p style="color:#9ca3af;text-align:center;padding:20px">暂无产品</p>'; return; }
+  container.innerHTML = '<div class="item-list">' + filtered.slice().reverse().map(p => {
+    const img = p.main_image ? `https://raw.githubusercontent.com/${REPO}/${BRANCH}${p.main_image}` : '';
+    return `<div class="item-row">
+      <img src="${img}" onerror="this.style.background='#eee';this.src=''"/>
+      <div class="item-info">
+        <h4>${p.title_zh||''} ${p.title_en ? '/ '+p.title_en : ''}</h4>
+        <p>${[p.sku,p.dimensions,p.material,p.fabric].filter(Boolean).join(' · ')}</p>
+        <span class="badge badge-cat">${catMap[p.category]||p.category}</span>
+        <span class="badge ${(p.status||'online')==='online'?'badge-online':'badge-offline'}" style="margin-left:4px">${(p.status||'online')==='online'?'上架':'下架'}</span>
+      </div>
+      <div class="item-actions">
+        <button class="btn btn-secondary btn-sm" onclick="editProduct('${p.id}')">编辑</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteProduct('${p.id}','${p.title_zh}')">删除</button>
+      </div>
+    </div>`;
+  }).join('') + '</div>';
 }
+
+async function editProduct(id) {
+  const { items } = await ghReadJSON('data/products.json');
+  const p = items.find(x => String(x.id)===String(id));
+  if (!p) return;
+  showPage('products-add', null);
+  document.getElementById('product-edit-id').value = p.id;
+  document.getElementById('product-form-title').textContent = '编辑产品：' + p.title_zh;
+  document.getElementById('p-title-zh').value = p.title_zh||'';
+  document.getElementById('p-title-en').value = p.title_en||'';
+  document.getElementById('p-category').value = p.category||'restaurant';
+  document.getElementById('p-sku').value = p.sku||'';
+  document.getElementById('p-dimensions').value = p.dimensions||'';
+  document.getElementById('p-material').value = p.material||'';
+  document.getElementById('p-fabric').value = p.fabric||'';
+  document.getElementById('p-color').value = p.color||'';
+  document.getElementById('p-status').value = p.status||'online';
+  document.getElementById('p-desc-zh').value = p.desc_zh||'';
+  document.getElementById('p-desc-en').value = p.desc_en||'';
+  productImages = (p.images||[]).map(src => ({ dataUrl: `https://raw.githubusercontent.com/${REPO}/${BRANCH}${src}`, name: src.split('/').pop(), existing: src }));
+  renderProductPreviews();
+  document.getElementById('p-status-msg').style.display = 'none';
+}
+
+async function deleteProduct(id, title) {
+  if (!confirm(`确定删除产品"${title}"吗？`)) return;
+  const { items, sha } = await ghReadJSON('data/products.json');
+  const newItems = items.filter(p => String(p.id)!==String(id));
+  await ghWriteJSON('data/products.json', newItems, `Delete product: ${title}`, sha);
+  loadProductList();
+}
+
+function renderProductList() { loadProductList(); }
+
+// ==================== 案例管理 ====================
+let caseImages = [];
+
+function handleCaseImages(input) {
+  Array.from(input.files).forEach(file => {
+    const reader = new FileReader();
+    reader.onload = e => { caseImages.push({ file, dataUrl: e.target.result, name: file.name }); renderCasePreviews(); };
+    reader.readAsDataURL(file);
+  });
+  input.value = '';
+}
+
+function renderCasePreviews() {
+  document.getElementById('c-preview-grid').innerHTML = caseImages.map((img, i) =>
+    `<div class="preview-item"><img src="${img.dataUrl}"/>${i===0?'<span class="main-badge">封面</span>':''}<button class="del-btn" onclick="removeCaseImage(${i})">✕</button></div>`
+  ).join('');
+}
+
+function removeCaseImage(i) { caseImages.splice(i, 1); renderCasePreviews(); }
+
+async function submitCase() {
+  const title_zh = document.getElementById('c-title-zh').value.trim();
+  if (!title_zh) { setAlert('c-status-msg', '请填写案例标题', 'error'); return; }
+  const btn = document.getElementById('c-submit-btn');
+  btn.disabled = true;
+  setAlert('c-status-msg', '正在上传图片...', 'loading');
+  try {
+    const imagePaths = [];
+    for (let i = 0; i < caseImages.length; i++) {
+      if (caseImages[i].existing) { imagePaths.push(caseImages[i].existing); continue; }
+      imagePaths.push(await uploadImage(caseImages[i].dataUrl, caseImages[i].name));
+    }
+    setAlert('c-status-msg', '保存案例数据...', 'loading');
+    const { items, sha } = await ghReadJSON('data/cases.json');
+    const editId = document.getElementById('case-edit-id').value;
+    const item = {
+      id: editId || Date.now(),
+      title_zh, title_en: document.getElementById('c-title-en').value.trim(),
+      category: document.getElementById('c-category').value,
+      location: document.getElementById('c-location').value.trim(),
+      desc_zh: document.getElementById('c-desc-zh').value.trim(),
+      desc_en: document.getElementById('c-desc-en').value.trim(),
+      images: imagePaths, cover_image: imagePaths[0]||null,
+      updated_at: new Date().toISOString()
+    };
+    if (!editId) item.created_at = item.updated_at;
+    const idx = items.findIndex(c => String(c.id)===String(editId));
+    if (idx > -1) items[idx] = {...items[idx],...item}; else items.push(item);
+    await ghWriteJSON('data/cases.json', items, `${editId?'Update':'Add'} case: ${title_zh}`, sha);
+    setAlert('c-status-msg', `✅ "${title_zh}" 保存成功！`, 'success');
+    resetCaseForm();
+  } catch(e) { setAlert('c-status-msg', '❌ 失败：'+e.message, 'error'); }
+  finally { btn.disabled = false; }
+}
+
+function resetCaseForm() {
+  ['c-title-zh','c-title-en','c-location','c-desc-zh','c-desc-en'].forEach(id => document.getElementById(id).value='');
+  document.getElementById('case-edit-id').value='';
+  document.getElementById('case-form-title').textContent='添加新案例';
+  caseImages=[]; renderCasePreviews();
+}
+
+async function loadCaseList() {
+  const container = document.getElementById('case-list-container');
+  const { items } = await ghReadJSON('data/cases.json');
+  if (items.length===0) { container.innerHTML='<p style="color:#9ca3af;text-align:center;padding:20px">暂无案例</p>'; return; }
+  const catMap={restaurant:'餐厅',hotel:'酒店',cafe:'咖啡厅',outdoor:'户外'};
+  container.innerHTML='<div class="item-list">'+items.slice().reverse().map(c=>{
+    const img=c.cover_image?`https://raw.githubusercontent.com/${REPO}/${BRANCH}${c.cover_image}`:'';
+    return `<div class="item-row"><img src="${img}" onerror="this.style.background='#eee';this.src=''"/>
+      <div class="item-info"><h4>${c.title_zh||''}</h4><p>${c.location||''}</p>
+      <span class="badge badge-cat">${catMap[c.category]||c.category}</span></div>
+      <div class="item-actions">
+        <button class="btn btn-secondary btn-sm" onclick="editCase('${c.id}')">编辑</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteCase('${c.id}','${c.title_zh}')">删除</button>
+      </div></div>`;
+  }).join('')+'</div>';
+}
+
+async function editCase(id) {
+  const { items } = await ghReadJSON('data/cases.json');
+  const c = items.find(x=>String(x.id)===String(id));
+  if (!c) return;
+  showPage('cases-add',null);
+  document.getElementById('case-edit-id').value=c.id;
+  document.getElementById('case-form-title').textContent='编辑案例：'+c.title_zh;
+  document.getElementById('c-title-zh').value=c.title_zh||'';
+  document.getElementById('c-title-en').value=c.title_en||'';
+  document.getElementById('c-category').value=c.category||'restaurant';
+  document.getElementById('c-location').value=c.location||'';
+  document.getElementById('c-desc-zh').value=c.desc_zh||'';
+  document.getElementById('c-desc-en').value=c.desc_en||'';
+  caseImages=(c.images||[]).map(src=>({dataUrl:`https://raw.githubusercontent.com/${REPO}/${BRANCH}${src}`,name:src.split('/').pop(),existing:src}));
+  renderCasePreviews();
+}
+
+async function deleteCase(id,title) {
+  if (!confirm(`确定删除案例"${title}"吗？`)) return;
+  const {items,sha}=await ghReadJSON('data/cases.json');
+  await ghWriteJSON('data/cases.json',items.filter(c=>String(c.id)!==String(id)),`Delete case: ${title}`,sha);
+  loadCaseList();
+}
+
+// ==================== 博客管理 ====================
+let blogCoverImg = null;
+
+function handleBlogCover(input) {
+  const file = input.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    blogCoverImg = { dataUrl: e.target.result, name: file.name };
+    document.getElementById('b-cover-preview').innerHTML = `<img src="${e.target.result}" style="width:100%;max-height:150px;object-fit:cover;border-radius:8px;margin-top:8px">`;
+  };
+  reader.readAsDataURL(file);
+}
+
+async function submitBlog() {
+  const title_zh = document.getElementById('b-title-zh').value.trim();
+  if (!title_zh) { setAlert('b-status-msg','请填写文章标题','error'); return; }
+  const btn = document.getElementById('b-submit-btn');
+  btn.disabled = true;
+  setAlert('b-status-msg','保存中...','loading');
+  try {
+    let coverPath = null;
+    if (blogCoverImg && !blogCoverImg.existing) coverPath = await uploadImage(blogCoverImg.dataUrl, blogCoverImg.name);
+    else if (blogCoverImg) coverPath = blogCoverImg.existing;
+    const {items,sha} = await ghReadJSON('data/blog.json');
+    const editId = document.getElementById('blog-edit-id').value;
+    const item = {
+      id: editId||Date.now(), title_zh, title_en: document.getElementById('b-title-en').value.trim(),
+      category: document.getElementById('b-category').value, cover_image: coverPath,
+      content_zh: document.getElementById('b-content-zh').value.trim(),
+      content_en: document.getElementById('b-content-en').value.trim(),
+      updated_at: new Date().toISOString()
+    };
+    if (!editId) item.created_at = item.updated_at;
+    const idx = items.findIndex(b=>String(b.id)===String(editId));
+    if (idx>-1) items[idx]={...items[idx],...item}; else items.push(item);
+    await ghWriteJSON('data/blog.json',items,`${editId?'Update':'Add'} blog: ${title_zh}`,sha);
+    setAlert('b-status-msg',`✅ "${title_zh}" 发布成功！`,'success');
+    resetBlogForm();
+  } catch(e) { setAlert('b-status-msg','❌ 失败：'+e.message,'error'); }
+  finally { btn.disabled=false; }
+}
+
+function resetBlogForm() {
+  ['b-title-zh','b-title-en','b-content-zh','b-content-en'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('blog-edit-id').value='';
+  document.getElementById('blog-form-title').textContent='写新文章';
+  blogCoverImg=null; document.getElementById('b-cover-preview').innerHTML='';
+}
+
+async function loadBlogList() {
+  const container = document.getElementById('blog-list-container');
+  const {items} = await ghReadJSON('data/blog.json');
+  if (items.length===0) { container.innerHTML='<div style="text-align:center;padding:20px"><p style="color:#9ca3af">暂无文章</p><button class="btn btn-primary" style="margin-top:12px" onclick="showPage(\'blog-add\',null)">写第一篇</button></div>'; return; }
+  const catMap={guide:'选购指南',project:'项目故事',quality:'质量认证',trend:'设计趋势'};
+  container.innerHTML='<div class="item-list">'+items.slice().reverse().map(b=>{
+    const img=b.cover_image?`https://raw.githubusercontent.com/${REPO}/${BRANCH}${b.cover_image}`:'';
+    return `<div class="item-row"><img src="${img}" onerror="this.style.background='#eee';this.src=''"/>
+      <div class="item-info"><h4>${b.title_zh||''}</h4><p>${b.title_en||''}</p>
+      <span class="badge badge-cat">${catMap[b.category]||b.category}</span></div>
+      <div class="item-actions">
+        <button class="btn btn-secondary btn-sm" onclick="editBlog('${b.id}')">编辑</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteBlog('${b.id}','${b.title_zh}')">删除</button>
+      </div></div>`;
+  }).join('')+'</div>';
+}
+
+async function editBlog(id) {
+  const {items}=await ghReadJSON('data/blog.json');
+  const b=items.find(x=>String(x.id)===String(id)); if (!b) return;
+  showPage('blog-add',null);
+  document.getElementById('blog-edit-id').value=b.id;
+  document.getElementById('blog-form-title').textContent='编辑文章：'+b.title_zh;
+  document.getElementById('b-title-zh').value=b.title_zh||'';
+  document.getElementById('b-title-en').value=b.title_en||'';
+  document.getElementById('b-category').value=b.category||'guide';
+  document.getElementById('b-content-zh').value=b.content_zh||'';
+  document.getElementById('b-content-en').value=b.content_en||'';
+  if (b.cover_image) { blogCoverImg={existing:b.cover_image}; document.getElementById('b-cover-preview').innerHTML=`<img src="https://raw.githubusercontent.com/${REPO}/${BRANCH}${b.cover_image}" style="width:100%;max-height:150px;object-fit:cover;border-radius:8px;margin-top:8px">`; }
+}
+
+async function deleteBlog(id,title) {
+  if (!confirm(`确定删除文章"${title}"吗？`)) return;
+  const {items,sha}=await ghReadJSON('data/blog.json');
+  await ghWriteJSON('data/blog.json',items.filter(b=>String(b.id)!==String(id)),`Delete blog: ${title}`,sha);
+  loadBlogList();
+}
+
+// ==================== 网站设置 ====================
+async function loadSettings() {
+  const {items:s}=await ghReadJSON('data/settings.json');
+  const settings=Array.isArray(s)?{}:s;
+  document.getElementById('s-email').value=settings.email||'chinaeasen@outlook.com';
+  document.getElementById('s-phone').value=settings.phone||'+86 15159581871';
+  document.getElementById('s-wechat').value=settings.wechat||'easen_furniture';
+  document.getElementById('s-addr-zh').value=settings.address_zh||'广东省佛山市顺德区乐从镇';
+  document.getElementById('s-addr-en').value=settings.address_en||'Lecong Town, Shunde District, Foshan, China';
+}
+
+async function saveSettings() {
+  const {items:existing,sha}=await ghReadJSON('data/settings.json');
+  const settings=Array.isArray(existing)?{}:existing||{};
+  settings.email=document.getElementById('s-email').value.trim();
+  settings.phone=document.getElementById('s-phone').value.trim();
+  settings.wechat=document.getElementById('s-wechat').value.trim();
+  settings.address_zh=document.getElementById('s-addr-zh').value.trim();
+  settings.address_en=document.getElementById('s-addr-en').value.trim();
+  try {
+    await ghPut('data/settings.json',JSON.stringify(settings,null,2),'Update site settings',sha);
+    setAlert('s-status-msg','✅ 设置保存成功！','success');
+  } catch(e) { setAlert('s-status-msg','❌ 失败：'+e.message,'error'); }
+}
+
+// ==================== 概览 ====================
+async function loadDashboard() {
+  const [p,c,b]=await Promise.all([ghReadJSON('data/products.json'),ghReadJSON('data/cases.json'),ghReadJSON('data/blog.json')]);
+  document.getElementById('stat-products').textContent=(p.items||[]).filter(x=>(x.status||'online')==='online').length;
+  document.getElementById('stat-cases').textContent=(c.items||[]).length;
+  document.getElementById('stat-blogs').textContent=(b.items||[]).length;
+  // 统计图片数
+  try {
+    const r=await fetch(`https://api.github.com/repos/${REPO}/contents/images/uploads`,{headers:{'Authorization':`token ${TOKEN}`}});
+    if (r.ok){const d=await r.json(); document.getElementById('stat-images').textContent=Array.isArray(d)?d.length:0;}
+  } catch(e){document.getElementById('stat-images').textContent='?';}
+}
+
+// ==================== 响应式 ====================
+function checkMobile() {
+  const isMobile=window.innerWidth<768;
+  document.getElementById('menuBtn').style.display=isMobile?'block':'none';
+}
+window.addEventListener('resize',checkMobile);
+checkMobile();
+
+// ==================== 初始化 ====================
+loadDashboard();
 </script>
 </body>
 </html>
