@@ -493,9 +493,10 @@ async function ghWriteJSON(path, items, message, sha) {
 }
 
 async function uploadImage(dataUrl, filename) {
-  const base64 = dataUrl.split(',')[1];
-  const ext = filename.split('.').pop().toLowerCase();
-  const safeName = Date.now() + '-' + filename.replace(/[^a-zA-Z0-9._-]/g, '_');
+  // 自动压缩图片到最大 800KB
+  const compressed = await compressImage(dataUrl, 1200, 0.85);
+  const base64 = compressed.split(',')[1];
+  const safeName = Date.now() + '-' + filename.replace(/[^a-zA-Z0-9._-]/g, '_').replace(/[^.]+$/, 'jpg');
   const path = `images/uploads/${safeName}`;
   const body = { message: `Upload: ${filename}`, content: base64, branch: BRANCH };
   const existing = await ghGet(path);
@@ -507,6 +508,22 @@ async function uploadImage(dataUrl, filename) {
   });
   if (!r.ok) { const e = await r.json(); throw new Error(e.message); }
   return '/' + path;
+}
+
+function compressImage(dataUrl, maxWidth, quality) {
+  return new Promise(function(resolve) {
+    const img = new Image();
+    img.onload = function() {
+      let w = img.width, h = img.height;
+      if (w > maxWidth) { h = Math.round(h * maxWidth / w); w = maxWidth; }
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, w, h);
+      resolve(canvas.toDataURL('image/jpeg', quality));
+    };
+    img.src = dataUrl;
+  });
 }
 
 // ==================== UI 工具 ====================
