@@ -260,7 +260,7 @@ async function submitProduct() {
       if (getRes.ok) {
         const getData = await getRes.json();
         existingSha = getData.sha;
-        existingProducts = JSON.parse(atob(getData.content));
+        existingProducts = JSON.parse(decodeURIComponent(escape(atob(getData.content.replace(/\s/g,'')))));
       }
     } catch(e) {}
 
