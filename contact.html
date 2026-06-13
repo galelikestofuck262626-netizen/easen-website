@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>联系我们 — EASEN Commercial Furniture</title>
+<meta name="description" content="联系宜森商业家具，获取免费报价，咨询商业家具定制方案。"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{accent:'#c8a45c',primary:'#1a365d','accent-dark':'#a8853e'},fontFamily:{heading:['Playfair Display','serif']}}}}</script>
+<style>body{font-family:Inter,system-ui,sans-serif;color:#2d343b}</style>
+</head>
+<body class="antialiased bg-neutral-50">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm"></header>
+
+<main style="padding-top:112px">
+
+  <!-- Hero -->
+  <section class="bg-primary text-white py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-accent text-sm font-medium tracking-widest uppercase mb-3">
+        <span data-lang="zh">获取免费报价</span>
+        <span data-lang="en" style="display:none">Get a Free Quote</span>
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+        <span data-lang="zh">联系我们</span>
+        <span data-lang="en" style="display:none">Contact Us</span>
+        <span data-lang="fr" style="display:none">Contactez-nous</span>
+        <span data-lang="es" style="display:none">Contáctenos</span>
+        <span data-lang="de" style="display:none">Kontakt</span>
+        <span data-lang="ar" style="display:none">اتصل بنا</span>
+      </h1>
+      <p class="text-white/70 text-lg">
+        <span data-lang="zh">发送图纸或尺寸，我们在24小时内回复报价</span>
+        <span data-lang="en" style="display:none">Send us your drawings or dimensions and we'll respond with a quote within 24 hours.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 联系内容 -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+        <!-- 表单 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm">
+          <h2 class="text-2xl font-heading font-bold text-primary mb-6">
+            <span data-lang="zh">发送询盘</span>
+            <span data-lang="en" style="display:none">Send an Enquiry</span>
+          </h2>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5">
+            <input type="hidden" name="form-name" value="contact"/>
+            <p style="display:none"><input name="bot-field"/></p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-medium text-neutral-700 mb-2">
+                  <span data-lang="zh">姓名 *</span>
+                  <span data-lang="en" style="display:none">Name *</span>
+                </label>
+                <input type="text" name="name" required class="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none"/>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-neutral-700 mb-2">
+                  <span data-lang="zh">公司/品牌</span>
+                  <span data-lang="en" style="display:none">Company</span>
+                </label>
+                <input type="text" name="company" class="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none"/>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-neutral-700 mb-2">
+                <span data-lang="zh">邮箱 *</span>
+                <span data-lang="en" style="display:none">Email *</span>
+              </label>
+              <input type="email" name="email" required class="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-neutral-700 mb-2">
+                <span data-lang="zh">WhatsApp / 电话</span>
+                <span data-lang="en" style="display:none">WhatsApp / Phone</span>
+              </label>
+              <input type="text" name="phone" class="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-neutral-700 mb-2">
+                <span data-lang="zh">需求类型</span>
+                <span data-lang="en" style="display:none">Furniture Type</span>
+              </label>
+              <select name="type" class="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none bg-white">
+                <option value=""><span data-lang="zh">请选择</span></option>
+                <option value="restaurant"><span data-lang="zh">餐厅家具</span></option>
+                <option value="hotel"><span data-lang="zh">酒店家具</span></option>
+                <option value="cafe"><span data-lang="zh">咖啡厅家具</span></option>
+                <option value="outdoor"><span data-lang="zh">户外家具</span></option>
+                <option value="other"><span data-lang="zh">其他</span></option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-neutral-700 mb-2">
+                <span data-lang="zh">留言 *</span>
+                <span data-lang="en" style="display:none">Message *</span>
+              </label>
+              <textarea name="message" rows="5" required placeholder="" class="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 bg-primary text-white font-semibold rounded-lg hover:bg-accent transition-colors text-lg">
+              <span data-lang="zh">提交询盘</span>
+              <span data-lang="en" style="display:none">Submit Enquiry</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- 联系信息 -->
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-2xl font-heading font-bold text-primary mb-6">
+              <span data-lang="zh">联系方式</span>
+              <span data-lang="en" style="display:none">Get in Touch</span>
+            </h2>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c8a45c" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-800">Email</p>
+                  <a href="mailto:chinaeasen@outlook.com" class="text-accent hover:underline">chinaeasen@outlook.com</a>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-800">WhatsApp</p>
+                  <a href="https://wa.me/8615159581871" target="_blank" class="text-accent hover:underline">+86 15159581871</a>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#07C160"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.045c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.49.49 0 01.177-.554C22.827 18.208 24 16.614 24 14.854c0-3.263-3.14-5.963-7.062-5.996z"/></svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-800"><span data-lang="zh">微信</span><span data-lang="en" style="display:none">WeChat</span></p>
+                  <p class="text-neutral-600">easen_furniture</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c8a45c" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-800"><span data-lang="zh">工厂地址</span><span data-lang="en" style="display:none">Factory Address</span></p>
+                  <p class="text-neutral-600"><span data-lang="zh">广东省佛山市顺德区乐从镇</span><span data-lang="en" style="display:none">Lecong Town, Shunde District, Foshan, Guangdong, China</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <h3 class="text-xl font-heading font-bold text-primary mb-6">
+              <span data-lang="zh">常见问题</span>
+              <span data-lang="en" style="display:none">FAQ</span>
+            </h3>
+            <div class="space-y-4">
+              <div class="border-b border-neutral-100 pb-4">
+                <p class="font-medium text-neutral-800 mb-1"><span data-lang="zh">最小起订量是多少？</span><span data-lang="en" style="display:none">What is the MOQ?</span></p>
+                <p class="text-neutral-500 text-sm"><span data-lang="zh">一般50件起订，部分产品可以更少。</span><span data-lang="en" style="display:none">Generally 50 pieces minimum, some products can be less.</span></p>
+              </div>
+              <div class="border-b border-neutral-100 pb-4">
+                <p class="font-medium text-neutral-800 mb-1"><span data-lang="zh">生产周期多久？</span><span data-lang="en" style="display:none">What is the lead time?</span></p>
+                <p class="text-neutral-500 text-sm"><span data-lang="zh">标准产品30-45天，定制产品45-60天。</span><span data-lang="en" style="display:none">Standard: 30-45 days. Custom: 45-60 days.</span></p>
+              </div>
+              <div class="pb-2">
+                <p class="font-medium text-neutral-800 mb-1"><span data-lang="zh">支持全定制吗？</span><span data-lang="en" style="display:none">Do you support full customization?</span></p>
+                <p class="text-neutral-500 text-sm"><span data-lang="zh">是的，支持按图纸定制尺寸、颜色、材料和面料。</span><span data-lang="en" style="display:none">Yes, we support full customization of size, color, material and fabric.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-[#1a1a1a] text-white py-16"></footer>
+
+<script src="js/lang.js"></script>
+<script src="js/components.js"></script>
+</body>
+</html>
