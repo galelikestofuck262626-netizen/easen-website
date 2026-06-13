@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: galelikestofuck262626-netizen/easen-website
+  branch: main
+
+media_folder: images/products/uploads
+public_folder: /images/products/uploads
+
+locale: zh
+
+collections:
+  - name: products
+    label: 产品管理
+    label_singular: 产品
+    folder: admin/products
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: 产品名称, name: title, widget: string }
+      - label: 产品类别
+        name: category
+        widget: select
+        options:
+          - { label: 餐厅家具, value: restaurant }
+          - { label: 酒店家具, value: hotel }
+          - { label: 咖啡厅家具, value: cafe }
+          - { label: 户外家具, value: outdoor }
+      - label: 主图
+        name: main_image
+        widget: image
+      - label: 产品图片（多张）
+        name: gallery
+        widget: list
+        field: { label: 图片, name: image, widget: image }
+        required: false
+      - label: 尺寸
+        name: dimensions
+        widget: string
+        hint: 例如：45x45x80cm
+        required: false
+      - label: 材料
+        name: material
+        widget: string
+        hint: 例如：实木、金属、铝合金
+        required: false
+      - label: 面料
+        name: fabric
+        widget: string
+        hint: 例如：PU皮、布艺、皮革
+        required: false
+      - label: 颜色
+        name: color
+        widget: string
+        hint: 例如：黑色、棕色、多色可选
+        required: false
+      - label: 产品描述
+        name: description
+        widget: text
+        required: false
+      - label: 英文名称
+        name: title_en
+        widget: string
+        required: false
+      - label: 英文描述
+        name: description_en
+        widget: text
+        required: false
