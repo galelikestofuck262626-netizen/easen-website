@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>成功案例 — EASEN Commercial Furniture</title>
+<meta name="description" content="宜森商业家具成功案例展示，涵盖餐厅、酒店、咖啡厅、户外等商业空间家具项目。"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{accent:'#c8a45c',primary:'#1a365d','accent-dark':'#a8853e'},fontFamily:{heading:['Playfair Display','serif']}}}}</script>
+<style>body{font-family:Inter,system-ui,sans-serif;color:#2d343b}</style>
+</head>
+<body class="antialiased bg-neutral-50">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm"></header>
+
+<main style="padding-top:112px">
+  <!-- Hero -->
+  <section class="bg-primary text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-accent text-sm font-medium tracking-widest uppercase mb-3">
+        <span data-lang="zh">真实项目案例</span>
+        <span data-lang="en" style="display:none">Real Project Cases</span>
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+        <span data-lang="zh">成功案例</span>
+        <span data-lang="en" style="display:none">Case Studies</span>
+        <span data-lang="fr" style="display:none">Références</span>
+        <span data-lang="es" style="display:none">Casos de Éxito</span>
+        <span data-lang="de" style="display:none">Referenzen</span>
+        <span data-lang="ar" style="display:none">دراسات الحالة</span>
+      </h1>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto">
+        <span data-lang="zh">来自全球餐厅、酒店、咖啡厅的真实项目案例</span>
+        <span data-lang="en" style="display:none">Real furniture projects from restaurants, hotels and cafés around the world.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 筛选 -->
+  <section class="bg-white border-b border-neutral-200 sticky top-28 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap gap-2">
+      <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-primary text-white" onclick="filterCases('all',this)">
+        <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterCases('restaurant',this)">
+        <span data-lang="zh">餐厅</span><span data-lang="en" style="display:none">Restaurant</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterCases('hotel',this)">
+        <span data-lang="zh">酒店</span><span data-lang="en" style="display:none">Hotel</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterCases('cafe',this)">
+        <span data-lang="zh">咖啡厅</span><span data-lang="en" style="display:none">Cafe</span>
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterCases('outdoor',this)">
+        <span data-lang="zh">户外</span><span data-lang="en" style="display:none">Outdoor</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 案例列表 -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div id="cases-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+      <div id="cases-empty" class="text-center py-20" style="display:none">
+        <div class="text-6xl mb-4">🏗️</div>
+        <p class="text-neutral-500 text-lg"><span data-lang="zh">暂无案例</span><span data-lang="en" style="display:none">No cases yet</span></p>
+      </div>
+      <div id="cases-loading" class="text-center py-20">
+        <div class="inline-block w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-heading font-bold text-white mb-4">
+        <span data-lang="zh">想让你的项目也成为案例？</span>
+        <span data-lang="en" style="display:none">Want your project to be next?</span>
+      </h2>
+      <p class="text-white/70 mb-8">
+        <span data-lang="zh">从图纸到开业，我们全程陪跑</span>
+        <span data-lang="en" style="display:none">From blueprints to grand opening, we're with you every step.</span>
+      </p>
+      <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors">
+        <span data-lang="zh">立即联系</span>
+        <span data-lang="en" style="display:none">Contact Us</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#1a1a1a] text-white py-16"></footer>
+
+<!-- 案例详情弹窗 -->
+<div id="case-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;padding:16px;">
+  <div style="background:#fff;border-radius:16px;max-width:900px;width:100%;max-height:90vh;overflow-y:auto;position:relative;">
+    <button onclick="closeModal()" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#999;z-index:1;">✕</button>
+    <div id="case-modal-content"></div>
+  </div>
+</div>
+
+<script src="js/lang.js"></script>
+<script src="js/components.js"></script>
+<script>
+const REPO = 'galelikestofuck262626-netizen/easen-website';
+const BRANCH = 'main';
+var allCases = [];
+var currentFilter = 'all';
+const catMap = {restaurant:{zh:'餐厅',en:'Restaurant'},hotel:{zh:'酒店',en:'Hotel'},cafe:{zh:'咖啡厅',en:'Cafe'},outdoor:{zh:'户外',en:'Outdoor'}};
+
+async function loadCases() {
+  try {
+    const r = await fetch('https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+'/data/cases.json?t='+Date.now());
+    allCases = r.ok ? await r.json() : [];
+  } catch(e) { allCases = []; }
+  document.getElementById('cases-loading').style.display = 'none';
+  renderCases();
+}
+
+function filterCases(cat, btn) {
+  currentFilter = cat;
+  document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('active','bg-primary','text-white'); b.classList.add('bg-white','text-neutral-700'); });
+  btn.classList.add('active','bg-primary','text-white'); btn.classList.remove('bg-white','text-neutral-700');
+  renderCases();
+}
+
+function renderCases() {
+  var lang = localStorage.getItem('easen-lang') || 'zh';
+  var filtered = allCases.filter(function(c){ return currentFilter==='all' || c.category===currentFilter; });
+  var grid = document.getElementById('cases-grid');
+  document.getElementById('cases-empty').style.display = filtered.length===0 ? 'block' : 'none';
+  grid.innerHTML = filtered.map(function(c){
+    var img = c.cover_image ? 'https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+c.cover_image : 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80';
+    var title = lang==='zh' ? (c.title_zh||c.title_en||'') : (c.title_en||c.title_zh||'');
+    var desc = lang==='zh' ? (c.desc_zh||c.desc_en||'') : (c.desc_en||c.desc_zh||'');
+    var cat = catMap[c.category]||{zh:c.category,en:c.category};
+    return '<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1" onclick="showCase(\''+c.id+'\')">'
+      +'<div style="height:260px;overflow:hidden"><img src="'+img+'" style="width:100%;height:260px;object-fit:cover" loading="lazy"></div>'
+      +'<div class="p-6">'
+      +'<span style="font-size:11px;font-weight:500;color:#c8a45c;text-transform:uppercase">'+( lang==='zh'?cat.zh:cat.en)+'</span>'
+      +'<h3 class="text-xl font-heading font-semibold text-primary mt-2 mb-2">'+title+'</h3>'
+      +(desc ? '<p class="text-neutral-500 text-sm leading-relaxed line-clamp-2">'+desc.substring(0,100)+'...</p>' : '')
+      +'<div class="mt-4 text-accent text-sm font-medium">'+(lang==='zh'?'查看案例 →':'View Case →')+'</div>'
+      +'</div></div>';
+  }).join('');
+}
+
+function showCase(id) {
+  var c = allCases.find(function(x){ return String(x.id)===String(id); });
+  if (!c) return;
+  var lang = localStorage.getItem('easen-lang') || 'zh';
+  var title = lang==='zh' ? (c.title_zh||c.title_en||'') : (c.title_en||c.title_zh||'');
+  var desc = lang==='zh' ? (c.desc_zh||c.desc_en||'') : (c.desc_en||c.desc_zh||'');
+  var images = c.images || (c.cover_image ? [c.cover_image] : []);
+  var imgHtml = images.map(function(img){
+    return '<img src="https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+img+'" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:8px" loading="lazy">';
+  }).join('');
+  document.getElementById('case-modal-content').innerHTML =
+    '<div style="padding:32px">'
+    +'<span style="font-size:12px;font-weight:500;color:#c8a45c;text-transform:uppercase;letter-spacing:0.05em">'+(catMap[c.category]?(lang==='zh'?catMap[c.category].zh:catMap[c.category].en):c.category||'')+'</span>'
+    +'<h2 style="font-size:28px;font-weight:700;color:#1a365d;margin:8px 0 16px;font-family:Playfair Display,serif">'+title+'</h2>'
+    +(desc ? '<p style="font-size:15px;color:#555;line-height:1.8;margin-bottom:24px">'+desc+'</p>' : '')
+    +(imgHtml ? '<div>'+imgHtml+'</div>' : '')
+    +'<div style="margin-top:24px"><a href="contact.html" style="display:inline-flex;align-items:center;padding:12px 32px;background:#1a365d;color:#fff;font-weight:600;border-radius:8px;text-decoration:none">'+(lang==='zh'?'咨询此类项目':'Enquire About This Project')+'</a></div>'
+    +'</div>';
+  var modal = document.getElementById('case-modal');
+  modal.style.display = 'flex';
+  modal.addEventListener('click', function(e){ if(e.target===modal)closeModal(); });
+}
+
+function closeModal() { document.getElementById('case-modal').style.display = 'none'; }
+document.addEventListener('keydown', function(e){ if(e.key==='Escape')closeModal(); });
+loadCases();
+</script>
+</body>
+</html>
