@@ -54,29 +54,124 @@ body{font-family:Inter,system-ui,sans-serif;color:#2d343b}
 
   <!-- 筛选栏 -->
   <section class="bg-white border-b border-neutral-200 sticky top-28 z-40">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap gap-2 items-center">
-      <span class="text-sm text-neutral-500 mr-2">
-        <span data-lang="zh">筛选：</span>
-        <span data-lang="en" style="display:none">Filter:</span>
-      </span>
-      <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-primary text-white" onclick="filterProducts('all',this)">
-        <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span><span data-lang="fr" style="display:none">Tout</span><span data-lang="es" style="display:none">Todos</span><span data-lang="de" style="display:none">Alle</span><span data-lang="ar" style="display:none">الكل</span>
-      </button>
-      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('restaurant',this)">
-        <span data-lang="zh">餐厅家具</span><span data-lang="en" style="display:none">Restaurant</span><span data-lang="fr" style="display:none">Restaurant</span><span data-lang="es" style="display:none">Restaurante</span><span data-lang="de" style="display:none">Restaurant</span><span data-lang="ar" style="display:none">المطعم</span>
-      </button>
-      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('hotel',this)">
-        <span data-lang="zh">酒店家具</span><span data-lang="en" style="display:none">Hotel</span><span data-lang="fr" style="display:none">Hôtel</span><span data-lang="es" style="display:none">Hotel</span><span data-lang="de" style="display:none">Hotel</span><span data-lang="ar" style="display:none">الفندق</span>
-      </button>
-      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('cafe',this)">
-        <span data-lang="zh">咖啡厅家具</span><span data-lang="en" style="display:none">Cafe</span><span data-lang="fr" style="display:none">Café</span><span data-lang="es" style="display:none">Cafetería</span><span data-lang="de" style="display:none">Café</span><span data-lang="ar" style="display:none">المقهى</span>
-      </button>
-      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('outdoor',this)">
-        <span data-lang="zh">户外家具</span><span data-lang="en" style="display:none">Outdoor</span><span data-lang="fr" style="display:none">Extérieur</span><span data-lang="es" style="display:none">Exterior</span><span data-lang="de" style="display:none">Außen</span><span data-lang="ar" style="display:none">خارجي</span>
-      </button>
-      <div class="ml-auto">
-        <input type="text" id="searchInput" placeholder="搜索产品..." oninput="searchProducts(this.value)"
-          class="px-4 py-2 border border-neutral-200 rounded-full text-sm outline-none focus:border-accent w-48"/>
+    <div class="max-w-7xl mx-auto px-4 py-4">
+      <!-- 主分类 -->
+      <div class="flex flex-wrap gap-2 items-center mb-3">
+        <span class="text-sm text-neutral-500 mr-2">
+          <span data-lang="zh">分类：</span>
+          <span data-lang="en" style="display:none">Category:</span>
+        </span>
+        <button class="filter-btn main-filter active px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-primary text-white" onclick="filterProducts('all',this)">
+          <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span><span data-lang="fr" style="display:none">Tout</span><span data-lang="es" style="display:none">Todos</span><span data-lang="de" style="display:none">Alle</span><span data-lang="ar" style="display:none">الكل</span>
+        </button>
+        <button class="filter-btn main-filter px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('restaurant',this)">
+          <span data-lang="zh">餐厅家具</span><span data-lang="en" style="display:none">Restaurant</span><span data-lang="fr" style="display:none">Restaurant</span><span data-lang="es" style="display:none">Restaurante</span><span data-lang="de" style="display:none">Restaurant</span><span data-lang="ar" style="display:none">المطعم</span>
+        </button>
+        <button class="filter-btn main-filter px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('hotel',this)">
+          <span data-lang="zh">酒店家具</span><span data-lang="en" style="display:none">Hotel</span><span data-lang="fr" style="display:none">Hôtel</span><span data-lang="es" style="display:none">Hotel</span><span data-lang="de" style="display:none">Hotel</span><span data-lang="ar" style="display:none">الفندق</span>
+        </button>
+        <button class="filter-btn main-filter px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('cafe',this)">
+          <span data-lang="zh">咖啡厅家具</span><span data-lang="en" style="display:none">Cafe</span><span data-lang="fr" style="display:none">Café</span><span data-lang="es" style="display:none">Cafetería</span><span data-lang="de" style="display:none">Café</span><span data-lang="ar" style="display:none">المقهى</span>
+        </button>
+        <button class="filter-btn main-filter px-4 py-2 rounded-full text-sm font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterProducts('outdoor',this)">
+          <span data-lang="zh">户外家具</span><span data-lang="en" style="display:none">Outdoor</span><span data-lang="fr" style="display:none">Extérieur</span><span data-lang="es" style="display:none">Exterior</span><span data-lang="de" style="display:none">Außen</span><span data-lang="ar" style="display:none">خارجي</span>
+        </button>
+        <div class="ml-auto">
+          <input type="text" id="searchInput" placeholder="搜索产品..." oninput="searchProducts(this.value)"
+            class="px-4 py-2 border border-neutral-200 rounded-full text-sm outline-none focus:border-accent w-48"/>
+        </div>
+      </div>
+
+      <!-- 餐厅家具子分类 -->
+      <div id="restaurant-subcategory" class="flex flex-wrap gap-2 items-center border-t border-neutral-100 pt-3" style="display:none">
+        <span class="text-sm text-neutral-500 mr-2">
+          <span data-lang="zh">细分：</span>
+          <span data-lang="en" style="display:none">Type:</span>
+        </span>
+        <button class="filter-btn sub-filter active px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-accent text-white" onclick="filterSubCategory('all',this)">
+          <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('booth',this)">
+          <span data-lang="zh">卡座</span><span data-lang="en" style="display:none">Booth</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('chair',this)">
+          <span data-lang="zh">椅子</span><span data-lang="en" style="display:none">Chair</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('sofa',this)">
+          <span data-lang="zh">沙发</span><span data-lang="en" style="display:none">Sofa</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('table',this)">
+          <span data-lang="zh">桌子</span><span data-lang="en" style="display:none">Table</span>
+        </button>
+      </div>
+
+      <!-- 酒店家具子分类 -->
+      <div id="hotel-subcategory" class="flex flex-wrap gap-2 items-center border-t border-neutral-100 pt-3" style="display:none">
+        <span class="text-sm text-neutral-500 mr-2">
+          <span data-lang="zh">细分：</span>
+          <span data-lang="en" style="display:none">Type:</span>
+        </span>
+        <button class="filter-btn sub-filter active px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-accent text-white" onclick="filterSubCategory('all',this)">
+          <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('lobby',this)">
+          <span data-lang="zh">大堂家具</span><span data-lang="en" style="display:none">Lobby</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('room',this)">
+          <span data-lang="zh">客房家具</span><span data-lang="en" style="display:none">Room</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('lounge',this)">
+          <span data-lang="zh">休闲沙发</span><span data-lang="en" style="display:none">Lounge</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('desk',this)">
+          <span data-lang="zh">书桌</span><span data-lang="en" style="display:none">Desk</span>
+        </button>
+      </div>
+
+      <!-- 咖啡厅家具子分类 -->
+      <div id="cafe-subcategory" class="flex flex-wrap gap-2 items-center border-t border-neutral-100 pt-3" style="display:none">
+        <span class="text-sm text-neutral-500 mr-2">
+          <span data-lang="zh">细分：</span>
+          <span data-lang="en" style="display:none">Type:</span>
+        </span>
+        <button class="filter-btn sub-filter active px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-accent text-white" onclick="filterSubCategory('all',this)">
+          <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('chair',this)">
+          <span data-lang="zh">咖啡椅</span><span data-lang="en" style="display:none">Chair</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('barstool',this)">
+          <span data-lang="zh">吧台椅</span><span data-lang="en" style="display:none">Bar Stool</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('table',this)">
+          <span data-lang="zh">咖啡桌</span><span data-lang="en" style="display:none">Table</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('sofa',this)">
+          <span data-lang="zh">休闲沙发</span><span data-lang="en" style="display:none">Sofa</span>
+        </button>
+      </div>
+
+      <!-- 户外家具子分类 -->
+      <div id="outdoor-subcategory" class="flex flex-wrap gap-2 items-center border-t border-neutral-100 pt-3" style="display:none">
+        <span class="text-sm text-neutral-500 mr-2">
+          <span data-lang="zh">细分：</span>
+          <span data-lang="en" style="display:none">Type:</span>
+        </span>
+        <button class="filter-btn sub-filter active px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-accent text-white" onclick="filterSubCategory('all',this)">
+          <span data-lang="zh">全部</span><span data-lang="en" style="display:none">All</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('outdoor-chair',this)">
+          <span data-lang="zh">户外椅</span><span data-lang="en" style="display:none">Chair</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('outdoor-table',this)">
+          <span data-lang="zh">户外桌</span><span data-lang="en" style="display:none">Table</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('rattan',this)">
+          <span data-lang="zh">藤编家具</span><span data-lang="en" style="display:none">Rattan</span>
+        </button>
+        <button class="filter-btn sub-filter px-3 py-1.5 rounded-full text-xs font-medium border border-neutral-200 bg-white text-neutral-700" onclick="filterSubCategory('lounge',this)">
+          <span data-lang="zh">躺椅</span><span data-lang="en" style="display:none">Lounge</span>
+        </button>
       </div>
     </div>
   </section>
@@ -166,12 +261,52 @@ async function loadProducts() {
 
 function filterProducts(cat, btn) {
   currentFilter = cat;
-  document.querySelectorAll('.filter-btn').forEach(b => {
+  currentSubFilter = 'all';
+
+  // 更新主分类按钮样式
+  document.querySelectorAll('.main-filter').forEach(b => {
     b.classList.remove('active','bg-primary','text-white');
     b.classList.add('bg-white','text-neutral-700');
   });
   btn.classList.add('active','bg-primary','text-white');
   btn.classList.remove('bg-white','text-neutral-700');
+
+  // 隐藏所有子分类
+  document.getElementById('restaurant-subcategory').style.display = 'none';
+  document.getElementById('hotel-subcategory').style.display = 'none';
+  document.getElementById('cafe-subcategory').style.display = 'none';
+  document.getElementById('outdoor-subcategory').style.display = 'none';
+
+  // 显示对应的子分类
+  var subCatId = cat + '-subcategory';
+  var subCat = document.getElementById(subCatId);
+  if (subCat) {
+    subCat.style.display = 'flex';
+    // 重置子分类为全部
+    subCat.querySelectorAll('.sub-filter').forEach(b => {
+      b.classList.remove('active','bg-accent','text-white');
+      b.classList.add('bg-white','text-neutral-700');
+    });
+    subCat.querySelectorAll('.sub-filter')[0].classList.add('active','bg-accent','text-white');
+    subCat.querySelectorAll('.sub-filter')[0].classList.remove('bg-white','text-neutral-700');
+  }
+
+  renderProducts();
+}
+
+var currentSubFilter = 'all';
+
+function filterSubCategory(subCat, btn) {
+  currentSubFilter = subCat;
+
+  // 更新子分类按钮样式
+  document.querySelectorAll('.sub-filter').forEach(b => {
+    b.classList.remove('active','bg-accent','text-white');
+    b.classList.add('bg-white','text-neutral-700');
+  });
+  btn.classList.add('active','bg-accent','text-white');
+  btn.classList.remove('bg-white','text-neutral-700');
+
   renderProducts();
 }
 
@@ -185,6 +320,65 @@ function renderProducts() {
   var filtered = allProducts.filter(function(p) {
     if (p.status === 'offline') return false;
     if (currentFilter !== 'all' && p.category !== currentFilter) return false;
+
+    // 子分类筛选
+    if (currentSubFilter !== 'all') {
+      var title = (p.title_zh || '').toLowerCase();
+      var titleEn = (p.title_en || '').toLowerCase();
+      var matchSub = false;
+
+      // 餐厅家具子分类
+      if (currentFilter === 'restaurant') {
+        if (currentSubFilter === 'booth') {
+          matchSub = title.indexOf('卡座') >= 0 || titleEn.indexOf('booth') >= 0;
+        } else if (currentSubFilter === 'chair') {
+          matchSub = title.indexOf('椅') >= 0 || titleEn.indexOf('chair') >= 0;
+        } else if (currentSubFilter === 'sofa') {
+          matchSub = title.indexOf('沙发') >= 0 || titleEn.indexOf('sofa') >= 0;
+        } else if (currentSubFilter === 'table') {
+          matchSub = title.indexOf('桌') >= 0 || titleEn.indexOf('table') >= 0;
+        }
+      }
+      // 酒店家具子分类
+      else if (currentFilter === 'hotel') {
+        if (currentSubFilter === 'lobby') {
+          matchSub = title.indexOf('大堂') >= 0 || titleEn.indexOf('lobby') >= 0;
+        } else if (currentSubFilter === 'room') {
+          matchSub = title.indexOf('客房') >= 0 || titleEn.indexOf('room') >= 0 || titleEn.indexOf('bedroom') >= 0;
+        } else if (currentSubFilter === 'lounge') {
+          matchSub = title.indexOf('休闲') >= 0 || title.indexOf('沙发') >= 0 || titleEn.indexOf('lounge') >= 0;
+        } else if (currentSubFilter === 'desk') {
+          matchSub = title.indexOf('书桌') >= 0 || titleEn.indexOf('desk') >= 0;
+        }
+      }
+      // 咖啡厅家具子分类
+      else if (currentFilter === 'cafe') {
+        if (currentSubFilter === 'chair') {
+          matchSub = title.indexOf('椅') >= 0 || titleEn.indexOf('chair') >= 0;
+        } else if (currentSubFilter === 'barstool') {
+          matchSub = title.indexOf('吧台') >= 0 || title.indexOf('高脚') >= 0 || titleEn.indexOf('bar') >= 0 || titleEn.indexOf('stool') >= 0;
+        } else if (currentSubFilter === 'table') {
+          matchSub = title.indexOf('桌') >= 0 || titleEn.indexOf('table') >= 0;
+        } else if (currentSubFilter === 'sofa') {
+          matchSub = title.indexOf('沙发') >= 0 || titleEn.indexOf('sofa') >= 0;
+        }
+      }
+      // 户外家具子分类
+      else if (currentFilter === 'outdoor') {
+        if (currentSubFilter === 'outdoor-chair') {
+          matchSub = title.indexOf('椅') >= 0 || titleEn.indexOf('chair') >= 0;
+        } else if (currentSubFilter === 'outdoor-table') {
+          matchSub = title.indexOf('桌') >= 0 || titleEn.indexOf('table') >= 0;
+        } else if (currentSubFilter === 'rattan') {
+          matchSub = title.indexOf('藤') >= 0 || titleEn.indexOf('rattan') >= 0 || titleEn.indexOf('wicker') >= 0;
+        } else if (currentSubFilter === 'lounge') {
+          matchSub = title.indexOf('躺') >= 0 || titleEn.indexOf('lounge') >= 0 || titleEn.indexOf('chaise') >= 0;
+        }
+      }
+
+      if (!matchSub) return false;
+    }
+
     if (currentSearch) {
       var title = (lang === 'zh' ? p.title_zh : p.title_en) || p.title_zh || '';
       if (title.toLowerCase().indexOf(currentSearch) < 0) return false;
