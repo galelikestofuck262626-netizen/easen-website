@@ -1,12 +1,12 @@
 [
   {
     "id": 1001,
-    "title_zh": "高端餐厅项目",
-    "title_en": "Premium Restaurant Project",
+    "title_zh": "新加坡高端酒店餐饮空间家具项目",
+    "title_en": "Singapore Luxury Hotel Dining Space Furniture Project",
     "category": "restaurant",
     "location": "新加坡",
-    "desc_zh": "精品酒店餐厅及商务接待空间家具项目，融合中式典雅与现代商业设计。圆桌宴席区采用红棕皮质餐椅，包厢区配置实木卡座与边几，吧台区运用现代风格座椅，整体空间格调统一，兼顾仪式感与实用性。",
-    "desc_en": "Boutique hotel dining and business reception furniture project, blending Chinese elegance with modern commercial design. Round banquet area features reddish-brown leather dining chairs, private rooms with solid wood booth seating, and a modern-style bar area.",
+    "desc_zh": "该项目位于新加坡一处高端酒店餐饮空间，整体定位为精品酒店餐厅与商务宴请接待空间。空间以深色木饰面、镜面天花、暖色灯光、艺术吊灯、定制餐桌及高质感软装为主要设计语言，强调安静、私密、精致的用餐体验。\n\n【客户核心需求】家具必须符合酒店餐饮空间的高端定位；座椅和卡座需要兼顾舒适度与耐用性；不同区域需要不同家具解决方案；家具落地效果要保持统一。\n\n【我们的解决方案】根据酒店空间风格进行家具深化匹配，以沉稳、高级、耐用为核心，避免过度装饰。圆桌宴请区以单椅为主；靠墙卡座区采用双向对坐结构；半开放包厢区通过木质隔断、固定卡座、壁灯和餐桌形成完整的用餐单元；休闲等候区采用更低矮、更放松的单人椅和小圆桌。\n\n【落地效果】圆桌宴会区整体更加稳重正式；卡座区域通过浅色坐垫和深木结构的搭配让空间更有层次；半开放包厢区在保证私密性的同时没有完全封闭空间；整体实现了酒店设计感、商业耐用性、舒适体验、空间统一性之间的平衡。",
+    "desc_en": "Located in a high-end hotel in Singapore, this project serves as a boutique hotel restaurant and business dining reception space. The design language features dark wood paneling, mirrored ceilings, warm lighting, artistic chandeliers and custom dining tables, emphasizing a quiet, private and refined dining experience.\n\nOur solution matched the hotel's spatial style with a focus on composure, premium quality and durability. The round banquet area uses individual chairs; wall-side booth areas feature double-facing structures; semi-open private rooms combine wooden partitions, fixed booth seating, wall lights and dining tables into complete dining units.",
     "images": [
       "/images/cases/restaurant-card.jpg",
       "/images/cases/restaurant-gallery/restaurant-gallery-1.jpg",
@@ -19,17 +19,21 @@
   },
   {
     "id": 1002,
-    "title_zh": "精品酒店项目",
-    "title_en": "Boutique Hotel Project",
+    "title_zh": "纽约高端酒店软包家具项目",
+    "title_en": "New York Luxury Hotel Upholstered Furniture Project",
     "category": "hotel",
     "location": "纽约",
-    "desc_zh": "纽约精品酒店软包家具工程案例。客户希望酒店家具与整体空间设计融合，兼顾高端视觉效果与商业耐用性。项目涵盖大堂休闲区、客房区、泳池边及私密休息区的全套软包座椅配置，选材注重质感与品牌调性统一。",
-    "desc_en": "New York boutique hotel upholstered furniture project. Covers lobby lounge, guest rooms, poolside and private rest areas with premium upholstered seating, balancing high-end aesthetics with commercial durability.",
+    "desc_zh": "该项目位于美国纽约，是一个定位高端的城市酒店项目。酒店整体空间融合了现代奢华、东方艺术感与纽约都市气质，公共区域包含大堂休闲区、酒廊、会客区、泳池休闲区及部分套房空间。酒店大量运用了深色木饰面、暖色灯光、金属细节、壁炉、水景、艺术装置以及大面积落地窗，整体氛围沉稳、私密、精致。\n\n【客户需求】家具风格必须与酒店整体设计统一；产品需要适合酒店高频使用；坐感要舒适但造型不能松垮；细节工艺要经得起近距离观察。\n\n【我们的解决方案】酒廊和会客区域以低重心沙发、休闲椅和组合座椅为主；大堂休闲区强调开放式会客体验；泳池及休闲空间注重轻盈感和舒适度；套房和私密休息区域强调安静、舒适和居住感。\n\n【落地效果】酒廊区域沙发和休闲椅与深色吧台、暖色灯带、壁炉和木饰面形成统一氛围；公共休闲区米灰色、暖棕色和局部橙红色软包家具让空间更有层次；泳池与休息区域浅色软包座椅与水面、灯光、立柱和大型吊灯形成呼应。",
+    "desc_en": "A high-end urban hotel project in New York City, blending modern luxury, Eastern artistry and New York urban character. Public areas include lobby lounge, bar, meeting areas, poolside leisure and suite spaces, featuring dark wood paneling, warm lighting, metal details, fireplaces and floor-to-ceiling windows.\n\nOur solution covered low-profile sofas and lounge chairs for bar and meeting areas; open social seating for the main lobby; lightweight comfortable pieces for poolside; and quiet, comfortable residential-feel pieces for suites and private rest areas.",
     "images": [
       "/images/cases/hotel-card.jpg",
       "/images/cases/hotel-gallery/hotel-gallery-1.png",
       "/images/cases/hotel-gallery/hotel-gallery-2.jpg",
-      "/images/cases/hotel-gallery/hotel-gallery-3.jpg"
+      "/images/cases/hotel-gallery/hotel-gallery-3.jpg",
+      "/images/cases/hotel-gallery/hotel-gallery-4.jpg",
+      "/images/cases/hotel-gallery/hotel-gallery-5.jpg",
+      "/images/cases/hotel-gallery/hotel-gallery-6.jpg",
+      "/images/cases/hotel-gallery/hotel-gallery-7.jpg"
     ],
     "cover_image": "/images/cases/hotel-card.jpg",
     "created_at": "2026-01-02T00:00:00.000Z"
@@ -40,34 +44,59 @@
     "title_en": "Custom Furniture for a Contemporary Café Space",
     "category": "cafe",
     "location": "佛山",
-    "desc_zh": "高端现代咖啡厅全套商业家具配置方案。空间以大面积落地玻璃、暖木色调、金属网格吊顶与户外绿景为主要设计语言。家具围绕轻量化、舒适度、耐用性与空间统一性四个方向展开，涵盖靠窗区餐椅、吧台休闲椅、软包卡座与条纹休闲椅。",
-    "desc_en": "Complete commercial furniture solution for a high-end modern café. Features slim metal-leg dining chairs, leather leisure chairs, warm brown booth seating and stripe accent chairs, unified by a natural warm-tone palette.",
+    "desc_zh": "本项目为一处现代商业咖啡厅空间，整体定位偏向高端、安静、松弛的城市咖啡体验。空间以大面积落地玻璃、自然采光、浅木色墙面、金属网格吊顶、暖色纸灯笼以及绿色户外景观为主要设计语言，整体氛围介于精品咖啡馆、城市休闲餐厅与轻社交空间之间。\n\n【客户核心需求】家具需要符合咖啡厅整体设计调性，具备一定设计感，同时保持简洁、克制；要适合高频商业使用；空间内不同区域需要不同的家具组合；家具颜色不能抢空间，但要有质感。\n\n【我们的解决方案】临窗区域配置木质靠背餐椅、黑色软包坐垫及圆形小餐桌，细金属脚架不遮挡落地窗景观；吧台与墙面区域采用黑色皮面与暖棕木色结合的休闲椅；休闲停留区搭配软包卡座、条纹布艺单椅、圆形边几。\n\n【家具配置亮点】靠窗区小圆桌与轻便餐椅适合高频翻台；卡座区软包长椅提升舒适度；休闲区条纹布艺单椅形成视觉记忆点；整体颜色控制在黑色、暖棕色、浅木色、银色金属之间，既不抢空间，又有质感。",
+    "desc_en": "A high-end modern commercial café space positioned around a calm, natural urban coffee experience. Floor-to-ceiling glass, warm wood tones, metal grid ceilings and outdoor greenery define the space.\n\nOur solution: slim metal-leg wooden dining chairs with black cushioned seats for the window zone; black leather and warm brown wood leisure chairs for the bar counter zone; warm brown upholstered booth seating and stripe accent chairs for the lounge zone.\n\nKey highlights: window seating optimised for turnover; booth seating enhances dwell time; stripe accent chairs create visual identity; unified palette of black, warm brown, light wood and silver metal.",
     "images": [
       "/images/cases/cafe-card.jpg",
       "/images/cases/cafe/cafe-1.jpg",
       "/images/cases/cafe/cafe-2.jpg",
       "/images/cases/cafe/cafe-3.jpg",
-      "/images/cases/cafe/cafe-4.jpg"
+      "/images/cases/cafe/cafe-4.jpg",
+      "/images/cases/cafe/cafe-5.jpg",
+      "/images/cases/cafe/cafe-6.jpg",
+      "/images/cases/cafe/cafe-7.jpg",
+      "/images/cases/cafe/cafe-8.jpg"
     ],
     "cover_image": "/images/cases/cafe-card.jpg",
     "created_at": "2026-01-03T00:00:00.000Z"
   },
   {
     "id": 1004,
-    "title_zh": "德基广场空中花园户外咖啡厅",
+    "title_zh": "德基广场空中花园户外咖啡厅家具项目",
     "title_en": "Deji Plaza Sky Garden Café Furniture Project",
     "category": "outdoor",
     "location": "南京",
-    "desc_zh": "德基广场一期七层空中花园休闲区户外家具项目。空间以城市绿洲为核心概念，家具以暖木色、咖色、米色为主，融入绿植、暖光与建筑曲线，形成具有度假感与社交感的户外咖啡厅场景。配置涵盖高脚吧椅、咖啡桌椅、休闲椅及公共长椅。",
-    "desc_en": "Sky garden outdoor café furniture project at Deji Plaza. Urban oasis concept with warm wood, café brown and beige tones, featuring high bar stools, café tables, lounge chairs and public benches integrated with greenery and architectural curves.",
+    "desc_zh": "德基广场作为南京高端商业地标之一，本项目位于德基广场一期七层餐饮区及空中花园休闲区域，以"城市绿洲""室内花园""自然社交场"为核心概念，将餐饮、咖啡、休憩、社交与打卡体验融合在同一空间中。\n\n【客户需求】家具必须与空中花园的自然氛围融合；需要具备较强的商业耐用性；造型要有设计感；需要适应咖啡外摆区、吧台高脚椅区、公共休闲区、绿植围合区等不同功能区域。\n\n【我们的解决方案】材质以暖木色、咖色、米色和低饱和自然色为主；产品类型涵盖高脚吧椅、异形吧台桌、咖啡桌椅、休闲椅、公共长椅及定制化座位组合；根据动线、人流停留点和绿植围合关系进行空间落位建议。\n\n【落地效果】暖木色座椅、简洁的咖啡桌、弧形吧台和高脚椅与周围绿植、灯光、建筑曲线形成了统一的视觉关系。家具作为连接人与空间的媒介，让空间同时具备了翻台效率、停留舒适度和品牌调性。",
+    "desc_en": "Located in the sky garden leisure area of Deji Plaza's first phase, this project embraces the 'urban oasis' concept, integrating dining, coffee, rest, social interaction and photo opportunities in one space.\n\nOur solution used warm wood, café brown and beige tones to integrate with the greenery and architecture. Product range: high bar stools, irregular bar tables, café tables and chairs, lounge chairs, public benches and custom seating combinations.\n\nResult: warm-toned seating, clean café tables, curved bar counters and high stools formed a unified visual relationship with surrounding greenery, lighting and architectural curves — creating a space with both operational efficiency and brand character.",
     "images": [
       "/images/cases/outdoor-card.png",
       "/images/cases/outdoor/outdoor-1.png",
       "/images/cases/outdoor/outdoor-2.png",
       "/images/cases/outdoor/outdoor-3.png",
-      "/images/cases/outdoor/outdoor-4.png"
+      "/images/cases/outdoor/outdoor-4.png",
+      "/images/cases/outdoor/outdoor-5.png",
+      "/images/cases/outdoor/outdoor-6.png",
+      "/images/cases/outdoor/outdoor-7.png",
+      "/images/cases/outdoor/outdoor-8.png"
     ],
     "cover_image": "/images/cases/outdoor-card.png",
     "created_at": "2026-01-04T00:00:00.000Z"
+  },
+  {
+    "id": 1005,
+    "title_zh": "伦敦高端西餐厅连锁门店家具项目",
+    "title_en": "Premium Western Restaurant Chain Furniture Project – London",
+    "category": "restaurant",
+    "location": "伦敦",
+    "desc_zh": "该项目为伦敦某高端西餐厅连锁品牌的多门店家具定制工程。客户对各门店视觉风格的高度统一有严格要求，整体以深胡桃木色、皮革黑与暖铜金属为主色调，营造沉稳而不失精致的现代欧式就餐氛围。\n\n【客户核心需求】各门店家具必须保持品牌一致性；座椅需要兼顾正式感与舒适度；吧台区需要有设计感的高脚椅；面料须通过英国商业耐磨及防火标准。\n\n【我们的解决方案】主厅区域选用高背皮革餐椅，深棕色与黑色交替排列，与木纹桌面和铜色桌脚形成统一调性；卡座组合区以固定木框卡座搭配活动餐椅，兼顾空间灵活性与视觉整洁；吧台区定制高脚椅，座面采用皮革软包，脚踏使用抛光铜管；等候休闲区搭配低矮休闲单椅与边几。\n\n【落地效果】全系列产品采用商用级海绵填充，面料通过耐磨及防火测试，满足英国BS7176商业家具使用标准。多门店落地后视觉风格高度统一，品牌辨识度显著提升，获得客户及其设计团队的高度认可。",
+    "desc_en": "A multi-location custom furniture project for a premium Western restaurant chain in London. Strict brand consistency requirements across all outlets, with a palette of deep walnut, leather black and warm brass metal creating a refined modern-European dining atmosphere.\n\nOur solution: high-back leather dining chairs in alternating dark brown and black for the main hall; fixed wood-frame booth seating combined with moveable chairs for flexibility; custom brass-detail bar stools with leather cushioned seats; low lounge chairs and side tables for waiting areas.\n\nAll pieces use commercial-grade foam and fabrics passing UK BS7176 abrasion and fire-resistance standards. Visual consistency was achieved across all locations, earning high praise from the client and their design team.",
+    "images": [
+      "/images/cases/restaurant-gallery/restaurant-gallery-5.jpg",
+      "/images/cases/restaurant-gallery/restaurant-gallery-6.jpg",
+      "/images/cases/restaurant-gallery/restaurant-gallery-7.jpg",
+      "/images/cases/restaurant-gallery/restaurant-gallery-8.jpg"
+    ],
+    "cover_image": "/images/cases/restaurant-gallery/restaurant-gallery-5.jpg",
+    "created_at": "2026-06-14T00:00:00.000Z"
   }
 ]
