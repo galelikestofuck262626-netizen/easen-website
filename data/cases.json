@@ -1,1 +1,73 @@
-[]
+[
+  {
+    "id": 1001,
+    "title_zh": "高端餐厅项目",
+    "title_en": "Premium Restaurant Project",
+    "category": "restaurant",
+    "location": "新加坡",
+    "desc_zh": "精品酒店餐厅及商务接待空间家具项目，融合中式典雅与现代商业设计。圆桌宴席区采用红棕皮质餐椅，包厢区配置实木卡座与边几，吧台区运用现代风格座椅，整体空间格调统一，兼顾仪式感与实用性。",
+    "desc_en": "Boutique hotel dining and business reception furniture project, blending Chinese elegance with modern commercial design. Round banquet area features reddish-brown leather dining chairs, private rooms with solid wood booth seating, and a modern-style bar area.",
+    "images": [
+      "/images/cases/restaurant-card.jpg",
+      "/images/cases/restaurant-gallery/restaurant-gallery-1.jpg",
+      "/images/cases/restaurant-gallery/restaurant-gallery-2.jpg",
+      "/images/cases/restaurant-gallery/restaurant-gallery-3.jpg",
+      "/images/cases/restaurant-gallery/restaurant-gallery-4.jpg"
+    ],
+    "cover_image": "/images/cases/restaurant-card.jpg",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 1002,
+    "title_zh": "精品酒店项目",
+    "title_en": "Boutique Hotel Project",
+    "category": "hotel",
+    "location": "纽约",
+    "desc_zh": "纽约精品酒店软包家具工程案例。客户希望酒店家具与整体空间设计融合，兼顾高端视觉效果与商业耐用性。项目涵盖大堂休闲区、客房区、泳池边及私密休息区的全套软包座椅配置，选材注重质感与品牌调性统一。",
+    "desc_en": "New York boutique hotel upholstered furniture project. Covers lobby lounge, guest rooms, poolside and private rest areas with premium upholstered seating, balancing high-end aesthetics with commercial durability.",
+    "images": [
+      "/images/cases/hotel-card.jpg",
+      "/images/cases/hotel-gallery/hotel-gallery-1.png",
+      "/images/cases/hotel-gallery/hotel-gallery-2.jpg",
+      "/images/cases/hotel-gallery/hotel-gallery-3.jpg"
+    ],
+    "cover_image": "/images/cases/hotel-card.jpg",
+    "created_at": "2026-01-02T00:00:00.000Z"
+  },
+  {
+    "id": 1003,
+    "title_zh": "高端咖啡厅家具工程案例",
+    "title_en": "Custom Furniture for a Contemporary Café Space",
+    "category": "cafe",
+    "location": "佛山",
+    "desc_zh": "高端现代咖啡厅全套商业家具配置方案。空间以大面积落地玻璃、暖木色调、金属网格吊顶与户外绿景为主要设计语言。家具围绕轻量化、舒适度、耐用性与空间统一性四个方向展开，涵盖靠窗区餐椅、吧台休闲椅、软包卡座与条纹休闲椅。",
+    "desc_en": "Complete commercial furniture solution for a high-end modern café. Features slim metal-leg dining chairs, leather leisure chairs, warm brown booth seating and stripe accent chairs, unified by a natural warm-tone palette.",
+    "images": [
+      "/images/cases/cafe-card.jpg",
+      "/images/cases/cafe/cafe-1.jpg",
+      "/images/cases/cafe/cafe-2.jpg",
+      "/images/cases/cafe/cafe-3.jpg",
+      "/images/cases/cafe/cafe-4.jpg"
+    ],
+    "cover_image": "/images/cases/cafe-card.jpg",
+    "created_at": "2026-01-03T00:00:00.000Z"
+  },
+  {
+    "id": 1004,
+    "title_zh": "德基广场空中花园户外咖啡厅",
+    "title_en": "Deji Plaza Sky Garden Café Furniture Project",
+    "category": "outdoor",
+    "location": "南京",
+    "desc_zh": "德基广场一期七层空中花园休闲区户外家具项目。空间以城市绿洲为核心概念，家具以暖木色、咖色、米色为主，融入绿植、暖光与建筑曲线，形成具有度假感与社交感的户外咖啡厅场景。配置涵盖高脚吧椅、咖啡桌椅、休闲椅及公共长椅。",
+    "desc_en": "Sky garden outdoor café furniture project at Deji Plaza. Urban oasis concept with warm wood, café brown and beige tones, featuring high bar stools, café tables, lounge chairs and public benches integrated with greenery and architectural curves.",
+    "images": [
+      "/images/cases/outdoor-card.png",
+      "/images/cases/outdoor/outdoor-1.png",
+      "/images/cases/outdoor/outdoor-2.png",
+      "/images/cases/outdoor/outdoor-3.png",
+      "/images/cases/outdoor/outdoor-4.png"
+    ],
+    "cover_image": "/images/cases/outdoor-card.png",
+    "created_at": "2026-01-04T00:00:00.000Z"
+  }
+]
