@@ -1295,5 +1295,43 @@ header a:hover { color: #1a365d !important; }
 </style>
 
 <script src="js/lang.js"></script><script src="js/components.js"></script>
+<script>
+(function() {
+  var wrapper = document.getElementById('videoWrapper');
+  var overlay = document.getElementById('playOverlay');
+  var video = document.getElementById('factoryVideo');
+  if (!wrapper || !overlay || !video) return;
+
+  wrapper.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (video.paused) {
+      video.muted = false;
+      var p = video.play();
+      if (p !== undefined) {
+        p.then(function() {
+          overlay.style.opacity = '0';
+          setTimeout(function() { overlay.style.display = 'none'; }, 500);
+        }).catch(function() {
+          video.muted = true;
+          video.play().then(function() {
+            overlay.style.opacity = '0';
+            setTimeout(function() { overlay.style.display = 'none'; }, 500);
+          });
+        });
+      }
+    } else {
+      video.pause();
+      overlay.style.display = 'flex';
+      setTimeout(function() { overlay.style.opacity = '1'; }, 10);
+    }
+  });
+
+  video.addEventListener('ended', function() {
+    overlay.style.display = 'flex';
+    setTimeout(function() { overlay.style.opacity = '1'; }, 10);
+  });
+})();
+</script>
 </body>
 </html>
