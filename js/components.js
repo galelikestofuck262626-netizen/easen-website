@@ -155,12 +155,11 @@
   function getDe(k){ return {index:'Startseite',products:'Produkte',cases:'Referenzen',about:'Über Uns',contact:'Kontakt'}[k]||k; }
   function getAr(k){ return {index:'الرئيسية',products:'المنتجات',cases:'المشاريع',about:'من نحن',contact:'اتصل بنا'}[k]||k; }
 
-  // 手机端底部固定导航栏
+  // 手机端底部固定导航栏（所有设备注入，CSS控制显示）
   function injectMobileNav() {
-    if (window.innerWidth > 768) return;
     var nav = document.createElement('div');
     nav.id = 'mobile-bottom-nav';
-    nav.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#fff;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-around;padding:8px 0 max(8px,env(safe-area-inset-bottom));box-shadow:0 -2px 10px rgba(0,0,0,0.08);';
+    nav.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#fff;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-around;padding:8px 0 8px;box-shadow:0 -2px 10px rgba(0,0,0,0.08);';
     var items = [
       { key:'index',   zh:'首页',  en:'Home',     icon:'🏠', href: prefix+'index.html' },
       { key:'products',zh:'产品',  en:'Products', icon:'🛋️', href: prefix+'products.html' },
@@ -177,9 +176,11 @@
         +'<span data-lang="en" style="display:none">'+item.en+'</span>'
         +'</span></a>';
     }).join('');
+    // CSS：只在手机端显示
+    var style = document.createElement('style');
+    style.textContent = '#mobile-bottom-nav{display:none}@media(max-width:768px){#mobile-bottom-nav{display:flex!important}body{padding-bottom:65px!important}}';
+    document.head.appendChild(style);
     document.body.appendChild(nav);
-    // 底部加 padding 防止内容被遮住
-    document.body.style.paddingBottom = '65px';
   }
 
   // 执行注入
