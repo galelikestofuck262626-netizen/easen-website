@@ -206,7 +206,8 @@ function renderProducts() {
     var imgUrl = p.main_image
       ? 'https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+p.main_image
       : 'https://via.placeholder.com/400x300?text=No+Image';
-    var title = lang === 'zh' ? (p.title_zh||p.title_en||'') : (p.title_en||p.title_zh||'');
+    var title = p.title_zh || p.title_en || '';
+    if (lang !== 'zh' && p.title_en) title = p.title_en;
     var cat = catMap[p.category] || {zh:p.category, en:p.category};
     var catLabel = lang === 'zh' ? cat.zh : cat.en;
     var specs = [p.dimensions, p.material, p.fabric].filter(Boolean).join(' · ');
@@ -228,8 +229,11 @@ function showProduct(id) {
   var p = allProducts.find(function(x){ return String(x.id) === String(id); });
   if (!p) return;
   var lang = localStorage.getItem('easen-lang') || 'zh';
-  var title = lang==='zh' ? (p.title_zh||p.title_en||'') : (p.title_en||p.title_zh||'');
-  var desc = lang==='zh' ? (p.desc_zh||p.desc_en||'') : (p.desc_en||p.desc_zh||'');
+  // 始终优先显示有内容的字段，中文作为最终备用
+  var title = p.title_zh || p.title_en || '';
+  if (lang !== 'zh' && p.title_en) title = p.title_en;
+  var desc = p.desc_zh || p.desc_en || '';
+  if (lang !== 'zh' && p.desc_en) desc = p.desc_en;
   var cat = catMap[p.category] || {zh:p.category, en:p.category};
   var images = p.images || (p.main_image ? [p.main_image] : []);
 
