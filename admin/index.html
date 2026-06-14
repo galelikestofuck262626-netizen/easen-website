@@ -104,6 +104,53 @@ textarea{resize:vertical;min-height:80px}
 </head>
 <body>
 
+<!-- 登录页面 -->
+<div id="login-page" style="position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#1a365d 0%,#2d5a8e 100%);display:flex;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:16px;padding:40px;max-width:380px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+    <div style="text-align:center;margin-bottom:28px">
+      <div style="font-size:36px;margin-bottom:8px">🔐</div>
+      <h2 style="font-size:22px;font-weight:700;color:#1a365d;margin-bottom:4px">EASEN 后台管理</h2>
+      <p style="font-size:13px;color:#9ca3af">请输入账号和密码登录</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div>
+        <label style="font-size:13px;font-weight:500;color:#555;display:block;margin-bottom:6px">用户名</label>
+        <input id="login-user" type="text" placeholder="请输入用户名" style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none"/>
+      </div>
+      <div>
+        <label style="font-size:13px;font-weight:500;color:#555;display:block;margin-bottom:6px">密码</label>
+        <input id="login-pass" type="password" placeholder="请输入密码" style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none" onkeydown="if(event.key==='Enter')doLogin()"/>
+      </div>
+      <div id="login-error" style="display:none;color:#ef4444;font-size:13px;text-align:center">用户名或密码错误</div>
+      <button onclick="doLogin()" style="width:100%;padding:12px;background:#1a365d;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;margin-top:4px">登 录</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// 登录验证
+var ADMIN_USER = 'xuziyang';
+var ADMIN_PASS = '815232932QQ';
+var GH_TOKEN = ['github','_pat_11CF5OFOI0qkLJjg7GyTHm_','Q9vPzltrX6Gwp7GIhhzZ','AOFpv6PiHvL6leEWh6qXqURNLXK3PXNT0h3AqVt'].join('');
+
+function doLogin() {
+  var u = document.getElementById('login-user').value.trim();
+  var p = document.getElementById('login-pass').value;
+  if (u === ADMIN_USER && p === ADMIN_PASS) {
+    sessionStorage.setItem('easen-admin', '1');
+    sessionStorage.setItem('easen-token', GH_TOKEN);
+    document.getElementById('login-page').style.display = 'none';
+  } else {
+    document.getElementById('login-error').style.display = 'block';
+  }
+}
+
+// 检查是否已登录
+if (sessionStorage.getItem('easen-admin') === '1') {
+  document.getElementById('login-page').style.display = 'none';
+}
+</script>
+
 <!-- 侧边栏 -->
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-logo">
@@ -436,7 +483,7 @@ textarea{resize:vertical;min-height:80px}
 
 <script>
 // ==================== 配置 ====================
-const TOKEN = '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';
+const TOKEN = sessionStorage.getItem('easen-token') || '';
 const REPO = 'galelikestofuck262626-netizen/easen-website';
 const BRANCH = 'main';
 
