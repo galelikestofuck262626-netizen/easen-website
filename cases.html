@@ -157,7 +157,7 @@ function showCase(id) {
   var desc = lang==='zh' ? (c.desc_zh||c.desc_en||'') : (c.desc_en||c.desc_zh||'');
   var images = c.images || (c.cover_image ? [c.cover_image] : []);
   var imgHtml = images.map(function(img){
-    return '<img src="https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+img+'" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:8px" loading="lazy">';
+    return '<img src="https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+img+'" style="width:100%;height:auto;border-radius:8px;margin-bottom:8px" loading="lazy">';
   }).join('');
   var descHtml = desc ? desc.split('\n\n').map(function(para){
     return '<p style="font-size:15px;color:#555;line-height:1.8;margin-bottom:16px">'+para.replace(/\n/g,'<br>')+'</p>';
