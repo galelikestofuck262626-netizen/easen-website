@@ -139,7 +139,7 @@ function renderCases() {
     var desc = lang==='zh' ? (c.desc_zh||c.desc_en||'') : (c.desc_en||c.desc_zh||'');
     var cat = catMap[c.category]||{zh:c.category,en:c.category};
     return '<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1" onclick="showCase(\''+c.id+'\')">'
-      +'<div style="height:320px;overflow:hidden"><img src="'+img+'" style="width:100%;height:320px;object-fit:cover" loading="lazy"></div>'
+      +'<div style="height:400px;overflow:hidden"><img src="'+img+'" style="width:100%;height:400px;object-fit:cover" loading="lazy"></div>'
       +'<div class="p-6">'
       +'<span style="font-size:11px;font-weight:500;color:#c8a45c;text-transform:uppercase">'+( lang==='zh'?cat.zh:cat.en)+'</span>'
       +'<h3 class="text-xl font-heading font-semibold text-primary mt-2 mb-2">'+title+'</h3>'
