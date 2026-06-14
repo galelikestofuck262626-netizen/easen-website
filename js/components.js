@@ -155,16 +155,45 @@
   function getDe(k){ return {index:'Startseite',products:'Produkte',cases:'Referenzen',about:'Über Uns',contact:'Kontakt'}[k]||k; }
   function getAr(k){ return {index:'الرئيسية',products:'المنتجات',cases:'المشاريع',about:'من نحن',contact:'اتصل بنا'}[k]||k; }
 
+  // 手机端底部固定导航栏
+  function injectMobileNav() {
+    if (window.innerWidth > 768) return;
+    var nav = document.createElement('div');
+    nav.id = 'mobile-bottom-nav';
+    nav.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#fff;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-around;padding:8px 0 max(8px,env(safe-area-inset-bottom));box-shadow:0 -2px 10px rgba(0,0,0,0.08);';
+    var items = [
+      { key:'index',   zh:'首页',  en:'Home',     icon:'🏠', href: prefix+'index.html' },
+      { key:'products',zh:'产品',  en:'Products', icon:'🛋️', href: prefix+'products.html' },
+      { key:'cases',   zh:'案例',  en:'Cases',    icon:'📷', href: prefix+'cases.html' },
+      { key:'about',   zh:'关于',  en:'About',    icon:'🏭', href: prefix+'about.html' },
+      { key:'contact', zh:'联系',  en:'Contact',  icon:'📞', href: prefix+'contact.html' },
+    ];
+    nav.innerHTML = items.map(function(item){
+      var active = isActive(item.key);
+      return '<a href="'+item.href+'" style="display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;flex:1;padding:4px 0;'+(active?'color:#1a365d;':'color:#9ca3af;')+'">'
+        +'<span style="font-size:20px;line-height:1">'+item.icon+'</span>'
+        +'<span style="font-size:10px;font-weight:'+(active?'700':'500')+';">'
+        +'<span data-lang="zh">'+item.zh+'</span>'
+        +'<span data-lang="en" style="display:none">'+item.en+'</span>'
+        +'</span></a>';
+    }).join('');
+    document.body.appendChild(nav);
+    // 底部加 padding 防止内容被遮住
+    document.body.style.paddingBottom = '65px';
+  }
+
   // 执行注入
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function(){
       injectNav();
       injectFooter();
       injectContactFloat();
+      injectMobileNav();
     });
   } else {
     injectNav();
     injectFooter();
     injectContactFloat();
+    injectMobileNav();
   }
 })();
