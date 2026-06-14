@@ -235,8 +235,9 @@ function showProduct(id) {
 
   var imgHtml = images.length > 0
     ? '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;padding:20px 20px 0">'
-      + images.map(function(img){
-          return '<img src="https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+img+'" style="width:100%;height:200px;object-fit:cover;border-radius:8px" loading="lazy">';
+      + images.map(function(img, idx){
+          var url = 'https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+img;
+          return '<img src="'+url+'" style="width:100%;height:200px;object-fit:cover;border-radius:8px;cursor:zoom-in" loading="lazy" onclick="openLightbox(\''+url+'\')">';
         }).join('')
       + '</div>'
     : '';
@@ -274,6 +275,27 @@ function closeModal() {
 }
 
 document.addEventListener('keydown', function(e){ if(e.key==='Escape')closeModal(); });
+
+// 灯箱放大图片
+function openLightbox(url) {
+  var lb = document.getElementById('lightbox');
+  if (!lb) {
+    lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,0.92);display:flex;align-items:center;justify-content:center;cursor:zoom-out;';
+    lb.innerHTML = '<img id="lightbox-img" style="max-width:95vw;max-height:95vh;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5)">'
+      +'<button onclick="closeLightbox()" style="position:absolute;top:20px;right:24px;background:rgba(255,255,255,0.15);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;">✕</button>';
+    lb.addEventListener('click', function(e){ if(e.target===lb)closeLightbox(); });
+    document.body.appendChild(lb);
+  }
+  document.getElementById('lightbox-img').src = url;
+  lb.style.display = 'flex';
+}
+function closeLightbox() {
+  var lb = document.getElementById('lightbox');
+  if (lb) lb.style.display = 'none';
+}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape')closeLightbox(); });
 
 loadProducts();
 </script>
