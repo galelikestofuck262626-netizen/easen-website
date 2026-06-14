@@ -121,6 +121,11 @@ textarea{resize:vertical;min-height:80px}
         <label style="font-size:13px;font-weight:500;color:#555;display:block;margin-bottom:6px">密码</label>
         <input id="login-pass" type="password" placeholder="请输入密码" style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none" onkeydown="if(event.key==='Enter')doLogin()"/>
       </div>
+      <div>
+        <label style="font-size:13px;font-weight:500;color:#555;display:block;margin-bottom:6px">GitHub Token</label>
+        <input id="login-token" type="password" placeholder="github_pat_..." style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none" onkeydown="if(event.key==='Enter')doLogin()"/>
+        <p style="font-size:11px;color:#bbb;margin-top:4px">首次登录需输入，之后自动记住</p>
+      </div>
       <div id="login-error" style="display:none;color:#ef4444;font-size:13px;text-align:center">用户名或密码错误</div>
       <button onclick="doLogin()" style="width:100%;padding:12px;background:#1a365d;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;margin-top:4px">登 录</button>
     </div>
@@ -131,16 +136,21 @@ textarea{resize:vertical;min-height:80px}
 // 登录验证
 var ADMIN_USER = 'xuziyang';
 var ADMIN_PASS = '815232932QQ';
-var GH_TOKEN = ['github','_pat_11CF5OFOI0qkLJjg7GyTHm_','Q9vPzltrX6Gwp7GIhhzZ','AOFpv6PiHvL6leEWh6qXqURNLXK3PXNT0h3AqVt'].join('');
 
 function doLogin() {
   var u = document.getElementById('login-user').value.trim();
   var p = document.getElementById('login-pass').value;
-  if (u === ADMIN_USER && p === ADMIN_PASS) {
+  var t = document.getElementById('login-token').value.trim();
+  if (u === ADMIN_USER && p === ADMIN_PASS && t.length > 10) {
     sessionStorage.setItem('easen-admin', '1');
-    sessionStorage.setItem('easen-token', GH_TOKEN);
+    sessionStorage.setItem('easen-token', t);
+    localStorage.setItem('easen-token-saved', t); // 保存方便下次
     document.getElementById('login-page').style.display = 'none';
+  } else if (u !== ADMIN_USER || p !== ADMIN_PASS) {
+    document.getElementById('login-error').textContent = '用户名或密码错误';
+    document.getElementById('login-error').style.display = 'block';
   } else {
+    document.getElementById('login-error').textContent = '请输入 GitHub Token';
     document.getElementById('login-error').style.display = 'block';
   }
 }
@@ -149,6 +159,12 @@ function doLogin() {
 if (sessionStorage.getItem('easen-admin') === '1') {
   document.getElementById('login-page').style.display = 'none';
 }
+
+// 自动填入上次保存的 token
+window.addEventListener('DOMContentLoaded', function() {
+  var saved = localStorage.getItem('easen-token-saved');
+  if (saved) document.getElementById('login-token').value = saved;
+});
 </script>
 
 <!-- 侧边栏 -->
