@@ -231,6 +231,131 @@
     </div>
   </section>
 
+  <!-- 3D全景工厂 -->
+  <section class="py-20 bg-gradient-to-b from-neutral-50 to-white relative overflow-hidden">
+    <!-- 背景装饰 -->
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-4">
+          <span class="text-2xl">🏭</span>
+          <span class="text-sm font-semibold text-accent">
+            <span data-lang="zh">360° 虚拟参观</span>
+            <span data-lang="en" style="display:none">360° Virtual Tour</span>
+          </span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-primary mb-4">
+          <span data-lang="zh">3D全景工厂</span>
+          <span data-lang="en" style="display:none">3D Factory Panorama</span>
+          <span data-lang="fr" style="display:none">Panorama d'Usine 3D</span>
+          <span data-lang="es" style="display:none">Panorama de Fábrica 3D</span>
+          <span data-lang="de" style="display:none">3D-Fabrik-Panorama</span>
+          <span data-lang="ar" style="display:none">بانوراما المصنع ثلاثية الأبعاد</span>
+        </h2>
+        <p class="text-neutral-600 text-lg max-w-3xl mx-auto">
+          <span data-lang="zh">拖动鼠标左右查看工厂全景，感受10,000㎡现代化生产基地的真实场景</span>
+          <span data-lang="en" style="display:none">Drag to explore our 10,000㎡ modern production facility in panoramic view</span>
+          <span data-lang="fr" style="display:none">Faites glisser pour explorer notre installation de production moderne de 10 000 m² en vue panoramique</span>
+          <span data-lang="es" style="display:none">Arrastra para explorar nuestra instalación de producción moderna de 10,000㎡ en vista panorámica</span>
+          <span data-lang="de" style="display:none">Ziehen Sie, um unsere 10.000㎡ moderne Produktionsanlage in Panoramaansicht zu erkunden</span>
+          <span data-lang="ar" style="display:none">اسحب لاستكشاف منشأتنا الإنتاجية الحديثة بمساحة 10,000 متر مربع في عرض بانورامي</span>
+        </p>
+      </div>
+
+      <!-- 3D全景容器 -->
+      <div class="relative">
+        <!-- 外层发光边框 -->
+        <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-2xl"></div>
+
+        <!-- 全景查看器 -->
+        <div class="relative bg-black rounded-2xl overflow-hidden shadow-2xl" style="height: 500px;">
+          <!-- 全景图片容器 -->
+          <div id="panoramaContainer" class="w-full h-full overflow-hidden cursor-move select-none relative">
+            <img
+              id="panoramaImage"
+              src="images/factory-360.png"
+              alt="Factory 360 Panorama"
+              class="absolute top-0 left-0 h-full select-none"
+              draggable="false"
+              style="width: auto; max-width: none; transition: transform 0.1s ease-out;"
+            >
+            <!-- 拖动提示 -->
+            <div id="panoramaTip" class="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm transition-opacity duration-500 pointer-events-none">
+              <div class="text-center text-white">
+                <div class="text-5xl mb-4 animate-bounce">👆</div>
+                <p class="text-xl font-semibold mb-2">
+                  <span data-lang="zh">拖动查看全景</span>
+                  <span data-lang="en" style="display:none">Drag to Explore</span>
+                </p>
+                <p class="text-sm text-white/80">
+                  <span data-lang="zh">左右拖动鼠标或滑动屏幕</span>
+                  <span data-lang="en" style="display:none">Drag mouse or swipe screen</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 控制按钮 -->
+          <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex items-center gap-4 bg-black/60 backdrop-blur-md px-6 py-3 rounded-full">
+            <button onclick="resetPanorama()" class="text-white hover:text-accent transition-colors" title="Reset View">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+            </button>
+            <div class="h-6 w-px bg-white/30"></div>
+            <button onclick="autoPanorama()" id="autoPlayBtn" class="text-white hover:text-accent transition-colors" title="Auto Play">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </button>
+            <button onclick="fullscreenPanorama()" class="text-white hover:text-accent transition-colors" title="Fullscreen">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 标注点（可选） -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+          <div class="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-2">🏭</div>
+            <p class="font-semibold text-primary text-sm">
+              <span data-lang="zh">生产车间</span>
+              <span data-lang="en" style="display:none">Production Floor</span>
+            </p>
+          </div>
+          <div class="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-2">✅</div>
+            <p class="font-semibold text-primary text-sm">
+              <span data-lang="zh">质检区域</span>
+              <span data-lang="en" style="display:none">QC Area</span>
+            </p>
+          </div>
+          <div class="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-2">📦</div>
+            <p class="font-semibold text-primary text-sm">
+              <span data-lang="zh">包装仓库</span>
+              <span data-lang="en" style="display:none">Packing Warehouse</span>
+            </p>
+          </div>
+          <div class="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-2">🚛</div>
+            <p class="font-semibold text-primary text-sm">
+              <span data-lang="zh">物流发货</span>
+              <span data-lang="en" style="display:none">Logistics</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 合作品牌墙 -->
   <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4">
@@ -589,6 +714,131 @@
     overlay.style.opacity = '1';
     overlay.style.pointerEvents = 'auto';
   });
+})();
+
+// 3D全景工厂交互控制
+(function(){
+  var container = document.getElementById('panoramaContainer');
+  var image = document.getElementById('panoramaImage');
+  var tip = document.getElementById('panoramaTip');
+
+  if (!container || !image) return;
+
+  var isDragging = false;
+  var startX = 0;
+  var currentX = 0;
+  var velocity = 0;
+  var autoPlayInterval = null;
+
+  // 隐藏提示
+  function hideTip() {
+    if (tip) {
+      tip.style.opacity = '0';
+      setTimeout(function(){ tip.style.display = 'none'; }, 500);
+    }
+  }
+
+  // 鼠标/触摸开始
+  function onStart(e) {
+    isDragging = true;
+    startX = (e.type === 'mousedown' ? e.clientX : e.touches[0].clientX) - currentX;
+    velocity = 0;
+    stopAutoPlay();
+    hideTip();
+    container.style.cursor = 'grabbing';
+  }
+
+  // 鼠标/触摸移动
+  function onMove(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    var clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+    var deltaX = clientX - startX;
+
+    // 限制拖动范围
+    var maxX = 0;
+    var minX = container.offsetWidth - image.offsetWidth;
+    currentX = Math.max(minX, Math.min(maxX, deltaX));
+
+    image.style.transform = 'translateX(' + currentX + 'px)';
+  }
+
+  // 鼠标/触摸结束
+  function onEnd() {
+    isDragging = false;
+    container.style.cursor = 'move';
+  }
+
+  // 重置视图
+  window.resetPanorama = function() {
+    currentX = 0;
+    image.style.transition = 'transform 0.5s ease';
+    image.style.transform = 'translateX(0)';
+    setTimeout(function(){ image.style.transition = 'transform 0.1s ease-out'; }, 500);
+    stopAutoPlay();
+  };
+
+  // 自动播放
+  window.autoPanorama = function() {
+    if (autoPlayInterval) {
+      stopAutoPlay();
+    } else {
+      startAutoPlay();
+    }
+  };
+
+  function startAutoPlay() {
+    var btn = document.getElementById('autoPlayBtn');
+    if (btn) {
+      btn.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>';
+    }
+
+    autoPlayInterval = setInterval(function(){
+      currentX -= 2;
+      var minX = container.offsetWidth - image.offsetWidth;
+      if (currentX < minX) currentX = 0;
+      image.style.transform = 'translateX(' + currentX + 'px)';
+    }, 30);
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+      var btn = document.getElementById('autoPlayBtn');
+      if (btn) {
+        btn.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>';
+      }
+    }
+  }
+
+  // 全屏
+  window.fullscreenPanorama = function() {
+    if (container.requestFullscreen) {
+      container.requestFullscreen();
+    } else if (container.webkitRequestFullscreen) {
+      container.webkitRequestFullscreen();
+    } else if (container.msRequestFullscreen) {
+      container.msRequestFullscreen();
+    }
+  };
+
+  // 事件监听
+  container.addEventListener('mousedown', onStart);
+  container.addEventListener('mousemove', onMove);
+  container.addEventListener('mouseup', onEnd);
+  container.addEventListener('mouseleave', onEnd);
+
+  container.addEventListener('touchstart', onStart);
+  container.addEventListener('touchmove', onMove);
+  container.addEventListener('touchend', onEnd);
+
+  // 防止图片被拖拽
+  image.addEventListener('dragstart', function(e){ e.preventDefault(); });
+
+  // 5秒后自动隐藏提示
+  setTimeout(hideTip, 5000);
 })();
 </script>
 
