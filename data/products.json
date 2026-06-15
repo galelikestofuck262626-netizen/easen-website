@@ -17,7 +17,8 @@
       "/images/products/cafe/2.png"
     ],
     "main_image": "/images/products/cafe/1.png",
-    "created_at": "2026-06-14T17:15:30.000Z"
+    "created_at": "2026-06-14T17:15:30.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330294,
@@ -37,7 +38,8 @@
       "/images/products/cafe/4.png"
     ],
     "main_image": "/images/products/cafe/3.png",
-    "created_at": "2026-06-14T17:15:30.000Z"
+    "created_at": "2026-06-14T17:15:30.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330295,
@@ -57,7 +59,8 @@
       "/images/products/cafe/6.png"
     ],
     "main_image": "/images/products/cafe/5.png",
-    "created_at": "2026-06-14T17:15:31.000Z"
+    "created_at": "2026-06-14T17:15:31.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330296,
@@ -77,7 +80,8 @@
       "/images/products/cafe/8.png"
     ],
     "main_image": "/images/products/cafe/7.png",
-    "created_at": "2026-06-14T17:15:31.000Z"
+    "created_at": "2026-06-14T17:15:31.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330297,
@@ -97,7 +101,8 @@
       "/images/products/cafe/10.png"
     ],
     "main_image": "/images/products/cafe/9.png",
-    "created_at": "2026-06-14T17:15:31.000Z"
+    "created_at": "2026-06-14T17:15:31.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330298,
@@ -117,7 +122,8 @@
       "/images/products/cafe/12.png"
     ],
     "main_image": "/images/products/cafe/11.png",
-    "created_at": "2026-06-14T17:15:32.000Z"
+    "created_at": "2026-06-14T17:15:32.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330299,
@@ -137,7 +143,8 @@
       "/images/products/cafe/14.png"
     ],
     "main_image": "/images/products/cafe/13.png",
-    "created_at": "2026-06-14T17:15:32.000Z"
+    "created_at": "2026-06-14T17:15:32.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330300,
@@ -157,7 +164,8 @@
       "/images/products/cafe/16.png"
     ],
     "main_image": "/images/products/cafe/15.png",
-    "created_at": "2026-06-14T17:15:32.000Z"
+    "created_at": "2026-06-14T17:15:32.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330301,
@@ -177,7 +185,8 @@
       "/images/products/cafe/18.png"
     ],
     "main_image": "/images/products/cafe/17.jpg",
-    "created_at": "2026-06-14T17:15:33.000Z"
+    "created_at": "2026-06-14T17:15:33.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330302,
@@ -197,7 +206,8 @@
       "/images/products/cafe/20.png"
     ],
     "main_image": "/images/products/cafe/19.png",
-    "created_at": "2026-06-14T17:15:33.000Z"
+    "created_at": "2026-06-14T17:15:33.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330303,
@@ -217,7 +227,8 @@
       "/images/products/cafe/22.png"
     ],
     "main_image": "/images/products/cafe/21.png",
-    "created_at": "2026-06-14T17:15:33.000Z"
+    "created_at": "2026-06-14T17:15:33.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330304,
@@ -237,7 +248,8 @@
       "/images/products/cafe/24.png"
     ],
     "main_image": "/images/products/cafe/23.png",
-    "created_at": "2026-06-14T17:15:34.000Z"
+    "created_at": "2026-06-14T17:15:34.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330305,
@@ -257,7 +269,8 @@
       "/images/products/cafe/26.png"
     ],
     "main_image": "/images/products/cafe/25.png",
-    "created_at": "2026-06-14T17:15:34.000Z"
+    "created_at": "2026-06-14T17:15:34.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330306,
@@ -277,7 +290,8 @@
       "/images/products/cafe/28.png"
     ],
     "main_image": "/images/products/cafe/27.png",
-    "created_at": "2026-06-14T17:15:34.000Z"
+    "created_at": "2026-06-14T17:15:34.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330307,
@@ -297,7 +311,8 @@
       "/images/products/cafe/30.png"
     ],
     "main_image": "/images/products/cafe/29.png",
-    "created_at": "2026-06-14T17:15:34.000Z"
+    "created_at": "2026-06-14T17:15:34.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330308,
@@ -317,7 +332,8 @@
       "/images/products/cafe/32.png"
     ],
     "main_image": "/images/products/cafe/31.png",
-    "created_at": "2026-06-14T17:15:35.000Z"
+    "created_at": "2026-06-14T17:15:35.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330309,
@@ -337,7 +353,8 @@
       "/images/products/cafe/34.png"
     ],
     "main_image": "/images/products/cafe/33.png",
-    "created_at": "2026-06-14T17:15:35.000Z"
+    "created_at": "2026-06-14T17:15:35.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330310,
@@ -357,7 +374,8 @@
       "/images/products/cafe/36.png"
     ],
     "main_image": "/images/products/cafe/35.png",
-    "created_at": "2026-06-14T17:15:35.000Z"
+    "created_at": "2026-06-14T17:15:35.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330311,
@@ -377,7 +395,8 @@
       "/images/products/cafe/38.png"
     ],
     "main_image": "/images/products/cafe/37.png",
-    "created_at": "2026-06-14T17:15:36.000Z"
+    "created_at": "2026-06-14T17:15:36.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330312,
@@ -397,7 +416,8 @@
       "/images/products/cafe/40.png"
     ],
     "main_image": "/images/products/cafe/39.png",
-    "created_at": "2026-06-14T17:15:36.000Z"
+    "created_at": "2026-06-14T17:15:36.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330313,
@@ -417,7 +437,8 @@
       "/images/products/cafe/42.png"
     ],
     "main_image": "/images/products/cafe/41.png",
-    "created_at": "2026-06-14T17:15:36.000Z"
+    "created_at": "2026-06-14T17:15:36.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330314,
@@ -437,7 +458,8 @@
       "/images/products/cafe/44.png"
     ],
     "main_image": "/images/products/cafe/43.png",
-    "created_at": "2026-06-14T17:15:37.000Z"
+    "created_at": "2026-06-14T17:15:37.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330315,
@@ -457,7 +479,8 @@
       "/images/products/cafe/46.png"
     ],
     "main_image": "/images/products/cafe/45.png",
-    "created_at": "2026-06-14T17:15:37.000Z"
+    "created_at": "2026-06-14T17:15:37.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330316,
@@ -477,7 +500,8 @@
       "/images/products/cafe/48.png"
     ],
     "main_image": "/images/products/cafe/47.png",
-    "created_at": "2026-06-14T17:15:37.000Z"
+    "created_at": "2026-06-14T17:15:37.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330317,
@@ -497,7 +521,8 @@
       "/images/products/cafe/50.png"
     ],
     "main_image": "/images/products/cafe/49.png",
-    "created_at": "2026-06-14T17:15:37.000Z"
+    "created_at": "2026-06-14T17:15:37.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330318,
@@ -517,7 +542,8 @@
       "/images/products/cafe/52.png"
     ],
     "main_image": "/images/products/cafe/51.png",
-    "created_at": "2026-06-14T17:15:38.000Z"
+    "created_at": "2026-06-14T17:15:38.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330319,
@@ -537,7 +563,8 @@
       "/images/products/cafe/54.png"
     ],
     "main_image": "/images/products/cafe/53.png",
-    "created_at": "2026-06-14T17:15:38.000Z"
+    "created_at": "2026-06-14T17:15:38.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330320,
@@ -557,7 +584,8 @@
       "/images/products/cafe/56.png"
     ],
     "main_image": "/images/products/cafe/55.png",
-    "created_at": "2026-06-14T17:15:38.000Z"
+    "created_at": "2026-06-14T17:15:38.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330321,
@@ -577,7 +605,8 @@
       "/images/products/cafe/58.png"
     ],
     "main_image": "/images/products/cafe/57.png",
-    "created_at": "2026-06-14T17:15:39.000Z"
+    "created_at": "2026-06-14T17:15:39.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330322,
@@ -597,7 +626,8 @@
       "/images/products/cafe/60.png"
     ],
     "main_image": "/images/products/cafe/59.png",
-    "created_at": "2026-06-14T17:15:39.000Z"
+    "created_at": "2026-06-14T17:15:39.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330323,
@@ -617,7 +647,8 @@
       "/images/products/cafe/62.png"
     ],
     "main_image": "/images/products/cafe/61.jpg",
-    "created_at": "2026-06-14T17:15:39.000Z"
+    "created_at": "2026-06-14T17:15:39.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330324,
@@ -637,7 +668,8 @@
       "/images/products/cafe/64.png"
     ],
     "main_image": "/images/products/cafe/63.png",
-    "created_at": "2026-06-14T17:15:40.000Z"
+    "created_at": "2026-06-14T17:15:40.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330325,
@@ -657,7 +689,8 @@
       "/images/products/cafe/66.png"
     ],
     "main_image": "/images/products/cafe/65.png",
-    "created_at": "2026-06-14T17:15:40.000Z"
+    "created_at": "2026-06-14T17:15:40.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330326,
@@ -677,7 +710,8 @@
       "/images/products/cafe/68.png"
     ],
     "main_image": "/images/products/cafe/67.png",
-    "created_at": "2026-06-14T17:15:40.000Z"
+    "created_at": "2026-06-14T17:15:40.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330327,
@@ -697,7 +731,8 @@
       "/images/products/cafe/70.png"
     ],
     "main_image": "/images/products/cafe/69.png",
-    "created_at": "2026-06-14T17:15:40.000Z"
+    "created_at": "2026-06-14T17:15:40.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330328,
@@ -717,7 +752,8 @@
       "/images/products/cafe/72.png"
     ],
     "main_image": "/images/products/cafe/71.png",
-    "created_at": "2026-06-14T17:15:41.000Z"
+    "created_at": "2026-06-14T17:15:41.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330329,
@@ -737,7 +773,8 @@
       "/images/products/cafe/74.png"
     ],
     "main_image": "/images/products/cafe/73.png",
-    "created_at": "2026-06-14T17:15:41.000Z"
+    "created_at": "2026-06-14T17:15:41.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330330,
@@ -757,7 +794,8 @@
       "/images/products/cafe/76.png"
     ],
     "main_image": "/images/products/cafe/75.png",
-    "created_at": "2026-06-14T17:15:41.000Z"
+    "created_at": "2026-06-14T17:15:41.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330331,
@@ -777,7 +815,8 @@
       "/images/products/cafe/386EC71A426BCBF49C3EBF69A0AEB9E2.png"
     ],
     "main_image": "/images/products/cafe/094BDA44AB8C37E2A973F6889A3EAB48.png",
-    "created_at": "2026-06-14T17:15:42.000Z"
+    "created_at": "2026-06-14T17:15:42.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330332,
@@ -797,7 +836,8 @@
       "/images/products/cafe/17921B543091C6752D21F32476B71B46.png"
     ],
     "main_image": "/images/products/cafe/3498C32566B42304CBA1FC03C013DD54.png",
-    "created_at": "2026-06-14T17:15:42.000Z"
+    "created_at": "2026-06-14T17:15:42.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330333,
@@ -817,7 +857,8 @@
       "/images/products/cafe/96997004A0962A1A6716D6DA563EE948.png"
     ],
     "main_image": "/images/products/cafe/3723476CCADC4DB5EFB87A0329287CFF.png",
-    "created_at": "2026-06-14T17:15:42.000Z"
+    "created_at": "2026-06-14T17:15:42.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330334,
@@ -837,7 +878,8 @@
       "/images/products/cafe/D5E77700E9996FBE32991B582CA3719F.png"
     ],
     "main_image": "/images/products/cafe/C3E780FA691EBA454F95DB40E0C2ED3E.png",
-    "created_at": "2026-06-14T17:15:43.000Z"
+    "created_at": "2026-06-14T17:15:43.000Z",
+    "imageCategory": "cafe"
   },
   {
     "id": 1781457330335,
@@ -857,7 +899,8 @@
       "/images/products/outdoor/2.png"
     ],
     "main_image": "/images/products/outdoor/1.png",
-    "created_at": "2026-06-14T17:15:43.000Z"
+    "created_at": "2026-06-14T17:15:43.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330336,
@@ -877,7 +920,8 @@
       "/images/products/outdoor/4.png"
     ],
     "main_image": "/images/products/outdoor/3.png",
-    "created_at": "2026-06-14T17:15:43.000Z"
+    "created_at": "2026-06-14T17:15:43.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330337,
@@ -897,7 +941,8 @@
       "/images/products/outdoor/6.png"
     ],
     "main_image": "/images/products/outdoor/5.png",
-    "created_at": "2026-06-14T17:15:44.000Z"
+    "created_at": "2026-06-14T17:15:44.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330338,
@@ -917,7 +962,8 @@
       "/images/products/outdoor/8.png"
     ],
     "main_image": "/images/products/outdoor/7.png",
-    "created_at": "2026-06-14T17:15:44.000Z"
+    "created_at": "2026-06-14T17:15:44.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330339,
@@ -937,7 +983,8 @@
       "/images/products/outdoor/10.png"
     ],
     "main_image": "/images/products/outdoor/9.png",
-    "created_at": "2026-06-14T17:15:44.000Z"
+    "created_at": "2026-06-14T17:15:44.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330340,
@@ -957,7 +1004,8 @@
       "/images/products/outdoor/12.png"
     ],
     "main_image": "/images/products/outdoor/11.png",
-    "created_at": "2026-06-14T17:15:44.000Z"
+    "created_at": "2026-06-14T17:15:44.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330341,
@@ -977,7 +1025,8 @@
       "/images/products/outdoor/14.png"
     ],
     "main_image": "/images/products/outdoor/13.png",
-    "created_at": "2026-06-14T17:15:45.000Z"
+    "created_at": "2026-06-14T17:15:45.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330342,
@@ -997,7 +1046,8 @@
       "/images/products/outdoor/16.png"
     ],
     "main_image": "/images/products/outdoor/15.png",
-    "created_at": "2026-06-14T17:15:45.000Z"
+    "created_at": "2026-06-14T17:15:45.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330343,
@@ -1017,7 +1067,8 @@
       "/images/products/outdoor/18.png"
     ],
     "main_image": "/images/products/outdoor/17.png",
-    "created_at": "2026-06-14T17:15:45.000Z"
+    "created_at": "2026-06-14T17:15:45.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330344,
@@ -1037,7 +1088,8 @@
       "/images/products/outdoor/20.png"
     ],
     "main_image": "/images/products/outdoor/19.png",
-    "created_at": "2026-06-14T17:15:46.000Z"
+    "created_at": "2026-06-14T17:15:46.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330345,
@@ -1057,7 +1109,8 @@
       "/images/products/outdoor/22.png"
     ],
     "main_image": "/images/products/outdoor/21.png",
-    "created_at": "2026-06-14T17:15:46.000Z"
+    "created_at": "2026-06-14T17:15:46.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330346,
@@ -1077,7 +1130,8 @@
       "/images/products/outdoor/24.png"
     ],
     "main_image": "/images/products/outdoor/23.png",
-    "created_at": "2026-06-14T17:15:46.000Z"
+    "created_at": "2026-06-14T17:15:46.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330347,
@@ -1097,7 +1151,8 @@
       "/images/products/outdoor/26.png"
     ],
     "main_image": "/images/products/outdoor/25.png",
-    "created_at": "2026-06-14T17:15:47.000Z"
+    "created_at": "2026-06-14T17:15:47.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330348,
@@ -1117,7 +1172,8 @@
       "/images/products/outdoor/28.png"
     ],
     "main_image": "/images/products/outdoor/27.png",
-    "created_at": "2026-06-14T17:15:47.000Z"
+    "created_at": "2026-06-14T17:15:47.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330349,
@@ -1137,7 +1193,8 @@
       "/images/products/outdoor/30.png"
     ],
     "main_image": "/images/products/outdoor/29.png",
-    "created_at": "2026-06-14T17:15:47.000Z"
+    "created_at": "2026-06-14T17:15:47.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330350,
@@ -1157,7 +1214,8 @@
       "/images/products/outdoor/32.png"
     ],
     "main_image": "/images/products/outdoor/31.png",
-    "created_at": "2026-06-14T17:15:47.000Z"
+    "created_at": "2026-06-14T17:15:47.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330351,
@@ -1177,7 +1235,8 @@
       "/images/products/outdoor/34.png"
     ],
     "main_image": "/images/products/outdoor/33.png",
-    "created_at": "2026-06-14T17:15:48.000Z"
+    "created_at": "2026-06-14T17:15:48.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330352,
@@ -1197,7 +1256,8 @@
       "/images/products/outdoor/36.png"
     ],
     "main_image": "/images/products/outdoor/35.png",
-    "created_at": "2026-06-14T17:15:48.000Z"
+    "created_at": "2026-06-14T17:15:48.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330353,
@@ -1217,7 +1277,8 @@
       "/images/products/outdoor/38.png"
     ],
     "main_image": "/images/products/outdoor/37.png",
-    "created_at": "2026-06-14T17:15:48.000Z"
+    "created_at": "2026-06-14T17:15:48.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330354,
@@ -1237,7 +1298,8 @@
       "/images/products/outdoor/40.png"
     ],
     "main_image": "/images/products/outdoor/39.png",
-    "created_at": "2026-06-14T17:15:49.000Z"
+    "created_at": "2026-06-14T17:15:49.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330355,
@@ -1257,7 +1319,8 @@
       "/images/products/outdoor/42.png"
     ],
     "main_image": "/images/products/outdoor/41.png",
-    "created_at": "2026-06-14T17:15:49.000Z"
+    "created_at": "2026-06-14T17:15:49.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330356,
@@ -1277,7 +1340,8 @@
       "/images/products/outdoor/330E39EDDAD13CC6F2253AA0DF1F9963.png"
     ],
     "main_image": "/images/products/outdoor/94AF1CB0DD5AD75EBD4A447B47EA01CB.png",
-    "created_at": "2026-06-14T17:15:49.000Z"
+    "created_at": "2026-06-14T17:15:49.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330357,
@@ -1297,7 +1361,8 @@
       "/images/products/outdoor/6329BBE8BF706143803AB6E71897AE35.png"
     ],
     "main_image": "/images/products/outdoor/1379FA913E608EA8F532114D6E2E89B5.png",
-    "created_at": "2026-06-14T17:15:50.000Z"
+    "created_at": "2026-06-14T17:15:50.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330358,
@@ -1317,7 +1382,8 @@
       "/images/products/outdoor/AF7CC660C3D261535A163C76D72F7140.png"
     ],
     "main_image": "/images/products/outdoor/A7C88E5FDC130F3B2EB557BFDDCA9B2A.png",
-    "created_at": "2026-06-14T17:15:50.000Z"
+    "created_at": "2026-06-14T17:15:50.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330359,
@@ -1337,7 +1403,8 @@
       "/images/products/outdoor/CB655C0CCF2AF679720A8694674D9983.png"
     ],
     "main_image": "/images/products/outdoor/C52E13BD69BF88C07B2B1BC5DE7D9AE7.png",
-    "created_at": "2026-06-14T17:15:50.000Z"
+    "created_at": "2026-06-14T17:15:50.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330360,
@@ -1357,7 +1424,8 @@
       "/images/products/outdoor/啊啊.png"
     ],
     "main_image": "/images/products/outdoor/D80E7C69B6698EC57288E73290A317EF.png",
-    "created_at": "2026-06-14T17:15:51.000Z"
+    "created_at": "2026-06-14T17:15:51.000Z",
+    "imageCategory": "outdoor"
   },
   {
     "id": 1781457330361,
@@ -1377,7 +1445,8 @@
       "/images/products/restaurant/2.png"
     ],
     "main_image": "/images/products/restaurant/1.png",
-    "created_at": "2026-06-14T17:15:51.000Z"
+    "created_at": "2026-06-14T17:15:51.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330362,
@@ -1397,7 +1466,8 @@
       "/images/products/restaurant/4.png"
     ],
     "main_image": "/images/products/restaurant/3.png",
-    "created_at": "2026-06-14T17:15:51.000Z"
+    "created_at": "2026-06-14T17:15:51.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330363,
@@ -1417,7 +1487,8 @@
       "/images/products/restaurant/6.png"
     ],
     "main_image": "/images/products/restaurant/5.png",
-    "created_at": "2026-06-14T17:15:52.000Z"
+    "created_at": "2026-06-14T17:15:52.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330364,
@@ -1437,7 +1508,8 @@
       "/images/products/restaurant/8.png"
     ],
     "main_image": "/images/products/restaurant/7.png",
-    "created_at": "2026-06-14T17:15:52.000Z"
+    "created_at": "2026-06-14T17:15:52.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330365,
@@ -1457,7 +1529,8 @@
       "/images/products/restaurant/10.png"
     ],
     "main_image": "/images/products/restaurant/9.png",
-    "created_at": "2026-06-14T17:15:52.000Z"
+    "created_at": "2026-06-14T17:15:52.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330366,
@@ -1477,7 +1550,8 @@
       "/images/products/restaurant/12.png"
     ],
     "main_image": "/images/products/restaurant/11.png",
-    "created_at": "2026-06-14T17:15:53.000Z"
+    "created_at": "2026-06-14T17:15:53.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330367,
@@ -1497,7 +1571,8 @@
       "/images/products/restaurant/14.png"
     ],
     "main_image": "/images/products/restaurant/13.png",
-    "created_at": "2026-06-14T17:15:53.000Z"
+    "created_at": "2026-06-14T17:15:53.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330368,
@@ -1517,7 +1592,8 @@
       "/images/products/restaurant/16.png"
     ],
     "main_image": "/images/products/restaurant/15.png",
-    "created_at": "2026-06-14T17:15:53.000Z"
+    "created_at": "2026-06-14T17:15:53.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330369,
@@ -1537,7 +1613,8 @@
       "/images/products/restaurant/18.png"
     ],
     "main_image": "/images/products/restaurant/17.jpg",
-    "created_at": "2026-06-14T17:15:53.000Z"
+    "created_at": "2026-06-14T17:15:53.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330370,
@@ -1557,7 +1634,8 @@
       "/images/products/restaurant/20.png"
     ],
     "main_image": "/images/products/restaurant/19.png",
-    "created_at": "2026-06-14T17:15:54.000Z"
+    "created_at": "2026-06-14T17:15:54.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330371,
@@ -1577,7 +1655,8 @@
       "/images/products/restaurant/22.png"
     ],
     "main_image": "/images/products/restaurant/21.png",
-    "created_at": "2026-06-14T17:15:54.000Z"
+    "created_at": "2026-06-14T17:15:54.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330372,
@@ -1597,7 +1676,8 @@
       "/images/products/restaurant/24.png"
     ],
     "main_image": "/images/products/restaurant/23.png",
-    "created_at": "2026-06-14T17:15:54.000Z"
+    "created_at": "2026-06-14T17:15:54.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330373,
@@ -1617,7 +1697,8 @@
       "/images/products/restaurant/26.png"
     ],
     "main_image": "/images/products/restaurant/25.png",
-    "created_at": "2026-06-14T17:15:55.000Z"
+    "created_at": "2026-06-14T17:15:55.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330374,
@@ -1637,7 +1718,8 @@
       "/images/products/restaurant/28.png"
     ],
     "main_image": "/images/products/restaurant/27.png",
-    "created_at": "2026-06-14T17:15:55.000Z"
+    "created_at": "2026-06-14T17:15:55.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330375,
@@ -1657,7 +1739,8 @@
       "/images/products/restaurant/30.png"
     ],
     "main_image": "/images/products/restaurant/29.png",
-    "created_at": "2026-06-14T17:15:55.000Z"
+    "created_at": "2026-06-14T17:15:55.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330376,
@@ -1677,7 +1760,8 @@
       "/images/products/restaurant/32.png"
     ],
     "main_image": "/images/products/restaurant/31.png",
-    "created_at": "2026-06-14T17:15:55.000Z"
+    "created_at": "2026-06-14T17:15:55.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330377,
@@ -1697,7 +1781,8 @@
       "/images/products/restaurant/34.png"
     ],
     "main_image": "/images/products/restaurant/33.png",
-    "created_at": "2026-06-14T17:15:56.000Z"
+    "created_at": "2026-06-14T17:15:56.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330378,
@@ -1717,7 +1802,8 @@
       "/images/products/restaurant/36.png"
     ],
     "main_image": "/images/products/restaurant/35.png",
-    "created_at": "2026-06-14T17:15:56.000Z"
+    "created_at": "2026-06-14T17:15:56.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330379,
@@ -1737,7 +1823,8 @@
       "/images/products/restaurant/38.png"
     ],
     "main_image": "/images/products/restaurant/37.png",
-    "created_at": "2026-06-14T17:15:56.000Z"
+    "created_at": "2026-06-14T17:15:56.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330380,
@@ -1757,7 +1844,8 @@
       "/images/products/restaurant/40.png"
     ],
     "main_image": "/images/products/restaurant/39.png",
-    "created_at": "2026-06-14T17:15:57.000Z"
+    "created_at": "2026-06-14T17:15:57.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330381,
@@ -1777,7 +1865,8 @@
       "/images/products/restaurant/42.png"
     ],
     "main_image": "/images/products/restaurant/41.png",
-    "created_at": "2026-06-14T17:15:57.000Z"
+    "created_at": "2026-06-14T17:15:57.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330382,
@@ -1797,7 +1886,8 @@
       "/images/products/restaurant/44.png"
     ],
     "main_image": "/images/products/restaurant/43.png",
-    "created_at": "2026-06-14T17:15:57.000Z"
+    "created_at": "2026-06-14T17:15:57.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330383,
@@ -1817,7 +1907,8 @@
       "/images/products/restaurant/46.png"
     ],
     "main_image": "/images/products/restaurant/45.png",
-    "created_at": "2026-06-14T17:15:57.000Z"
+    "created_at": "2026-06-14T17:15:57.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330384,
@@ -1837,7 +1928,8 @@
       "/images/products/restaurant/48.png"
     ],
     "main_image": "/images/products/restaurant/47.png",
-    "created_at": "2026-06-14T17:15:58.000Z"
+    "created_at": "2026-06-14T17:15:58.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330385,
@@ -1857,7 +1949,8 @@
       "/images/products/restaurant/50.png"
     ],
     "main_image": "/images/products/restaurant/49.png",
-    "created_at": "2026-06-14T17:15:58.000Z"
+    "created_at": "2026-06-14T17:15:58.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330386,
@@ -1877,7 +1970,8 @@
       "/images/products/restaurant/52.png"
     ],
     "main_image": "/images/products/restaurant/51.png",
-    "created_at": "2026-06-14T17:15:58.000Z"
+    "created_at": "2026-06-14T17:15:58.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330387,
@@ -1897,7 +1991,8 @@
       "/images/products/restaurant/54.png"
     ],
     "main_image": "/images/products/restaurant/53.png",
-    "created_at": "2026-06-14T17:15:59.000Z"
+    "created_at": "2026-06-14T17:15:59.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330388,
@@ -1917,7 +2012,8 @@
       "/images/products/restaurant/56.png"
     ],
     "main_image": "/images/products/restaurant/55.png",
-    "created_at": "2026-06-14T17:15:59.000Z"
+    "created_at": "2026-06-14T17:15:59.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330389,
@@ -1937,7 +2033,8 @@
       "/images/products/restaurant/58.png"
     ],
     "main_image": "/images/products/restaurant/57.png",
-    "created_at": "2026-06-14T17:15:59.000Z"
+    "created_at": "2026-06-14T17:15:59.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330390,
@@ -1957,7 +2054,8 @@
       "/images/products/restaurant/60.png"
     ],
     "main_image": "/images/products/restaurant/59.png",
-    "created_at": "2026-06-14T17:16:00.000Z"
+    "created_at": "2026-06-14T17:16:00.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330391,
@@ -1977,7 +2075,8 @@
       "/images/products/restaurant/62.png"
     ],
     "main_image": "/images/products/restaurant/61.png",
-    "created_at": "2026-06-14T17:16:00.000Z"
+    "created_at": "2026-06-14T17:16:00.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330392,
@@ -1997,7 +2096,8 @@
       "/images/products/restaurant/64.png"
     ],
     "main_image": "/images/products/restaurant/63.png",
-    "created_at": "2026-06-14T17:16:00.000Z"
+    "created_at": "2026-06-14T17:16:00.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330393,
@@ -2017,7 +2117,8 @@
       "/images/products/restaurant/66.png"
     ],
     "main_image": "/images/products/restaurant/65.png",
-    "created_at": "2026-06-14T17:16:00.000Z"
+    "created_at": "2026-06-14T17:16:00.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330394,
@@ -2037,7 +2138,8 @@
       "/images/products/restaurant/68.png"
     ],
     "main_image": "/images/products/restaurant/67.jpg",
-    "created_at": "2026-06-14T17:16:01.000Z"
+    "created_at": "2026-06-14T17:16:01.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330395,
@@ -2057,7 +2159,8 @@
       "/images/products/restaurant/70.png"
     ],
     "main_image": "/images/products/restaurant/69.png",
-    "created_at": "2026-06-14T17:16:01.000Z"
+    "created_at": "2026-06-14T17:16:01.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330396,
@@ -2077,7 +2180,8 @@
       "/images/products/restaurant/72.png"
     ],
     "main_image": "/images/products/restaurant/71.png",
-    "created_at": "2026-06-14T17:16:01.000Z"
+    "created_at": "2026-06-14T17:16:01.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330397,
@@ -2097,7 +2201,8 @@
       "/images/products/restaurant/74.png"
     ],
     "main_image": "/images/products/restaurant/73.png",
-    "created_at": "2026-06-14T17:16:02.000Z"
+    "created_at": "2026-06-14T17:16:02.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330398,
@@ -2117,7 +2222,8 @@
       "/images/products/restaurant/76.png"
     ],
     "main_image": "/images/products/restaurant/75.png",
-    "created_at": "2026-06-14T17:16:02.000Z"
+    "created_at": "2026-06-14T17:16:02.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330399,
@@ -2137,7 +2243,8 @@
       "/images/products/restaurant/78.png"
     ],
     "main_image": "/images/products/restaurant/77.png",
-    "created_at": "2026-06-14T17:16:02.000Z"
+    "created_at": "2026-06-14T17:16:02.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330400,
@@ -2157,7 +2264,8 @@
       "/images/products/restaurant/80.png"
     ],
     "main_image": "/images/products/restaurant/79.png",
-    "created_at": "2026-06-14T17:16:03.000Z"
+    "created_at": "2026-06-14T17:16:03.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330401,
@@ -2177,7 +2285,8 @@
       "/images/products/restaurant/82.png"
     ],
     "main_image": "/images/products/restaurant/81.png",
-    "created_at": "2026-06-14T17:16:03.000Z"
+    "created_at": "2026-06-14T17:16:03.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330402,
@@ -2197,7 +2306,8 @@
       "/images/products/restaurant/84.png"
     ],
     "main_image": "/images/products/restaurant/83.png",
-    "created_at": "2026-06-14T17:16:03.000Z"
+    "created_at": "2026-06-14T17:16:03.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330403,
@@ -2217,7 +2327,8 @@
       "/images/products/restaurant/86.png"
     ],
     "main_image": "/images/products/restaurant/85.png",
-    "created_at": "2026-06-14T17:16:03.000Z"
+    "created_at": "2026-06-14T17:16:03.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330404,
@@ -2237,7 +2348,8 @@
       "/images/products/restaurant/88.png"
     ],
     "main_image": "/images/products/restaurant/87.png",
-    "created_at": "2026-06-14T17:16:04.000Z"
+    "created_at": "2026-06-14T17:16:04.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330405,
@@ -2257,7 +2369,8 @@
       "/images/products/restaurant/90.png"
     ],
     "main_image": "/images/products/restaurant/89.png",
-    "created_at": "2026-06-14T17:16:04.000Z"
+    "created_at": "2026-06-14T17:16:04.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330406,
@@ -2277,7 +2390,8 @@
       "/images/products/restaurant/92.png"
     ],
     "main_image": "/images/products/restaurant/91.png",
-    "created_at": "2026-06-14T17:16:04.000Z"
+    "created_at": "2026-06-14T17:16:04.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330407,
@@ -2297,7 +2411,8 @@
       "/images/products/restaurant/94.png"
     ],
     "main_image": "/images/products/restaurant/93.png",
-    "created_at": "2026-06-14T17:16:05.000Z"
+    "created_at": "2026-06-14T17:16:05.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330408,
@@ -2317,7 +2432,8 @@
       "/images/products/restaurant/96.png"
     ],
     "main_image": "/images/products/restaurant/95.png",
-    "created_at": "2026-06-14T17:16:05.000Z"
+    "created_at": "2026-06-14T17:16:05.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330409,
@@ -2337,7 +2453,8 @@
       "/images/products/restaurant/98.png"
     ],
     "main_image": "/images/products/restaurant/97.png",
-    "created_at": "2026-06-14T17:16:05.000Z"
+    "created_at": "2026-06-14T17:16:05.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330410,
@@ -2357,7 +2474,8 @@
       "/images/products/restaurant/100.png"
     ],
     "main_image": "/images/products/restaurant/99.png",
-    "created_at": "2026-06-14T17:16:06.000Z"
+    "created_at": "2026-06-14T17:16:06.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330411,
@@ -2377,7 +2495,8 @@
       "/images/products/restaurant/102.png"
     ],
     "main_image": "/images/products/restaurant/101.png",
-    "created_at": "2026-06-14T17:16:06.000Z"
+    "created_at": "2026-06-14T17:16:06.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330412,
@@ -2397,7 +2516,8 @@
       "/images/products/restaurant/104.png"
     ],
     "main_image": "/images/products/restaurant/103.png",
-    "created_at": "2026-06-14T17:16:06.000Z"
+    "created_at": "2026-06-14T17:16:06.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330413,
@@ -2417,7 +2537,8 @@
       "/images/products/restaurant/106.png"
     ],
     "main_image": "/images/products/restaurant/105.png",
-    "created_at": "2026-06-14T17:16:07.000Z"
+    "created_at": "2026-06-14T17:16:07.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330414,
@@ -2437,7 +2558,8 @@
       "/images/products/restaurant/108.png"
     ],
     "main_image": "/images/products/restaurant/107.png",
-    "created_at": "2026-06-14T17:16:07.000Z"
+    "created_at": "2026-06-14T17:16:07.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330415,
@@ -2457,7 +2579,8 @@
       "/images/products/restaurant/110.png"
     ],
     "main_image": "/images/products/restaurant/109.png",
-    "created_at": "2026-06-14T17:16:07.000Z"
+    "created_at": "2026-06-14T17:16:07.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330416,
@@ -2477,7 +2600,8 @@
       "/images/products/restaurant/112.png"
     ],
     "main_image": "/images/products/restaurant/111.png",
-    "created_at": "2026-06-14T17:16:07.000Z"
+    "created_at": "2026-06-14T17:16:07.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330417,
@@ -2497,7 +2621,8 @@
       "/images/products/restaurant/114.png"
     ],
     "main_image": "/images/products/restaurant/113.png",
-    "created_at": "2026-06-14T17:16:08.000Z"
+    "created_at": "2026-06-14T17:16:08.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330418,
@@ -2517,7 +2642,8 @@
       "/images/products/restaurant/116.png"
     ],
     "main_image": "/images/products/restaurant/115.png",
-    "created_at": "2026-06-14T17:16:08.000Z"
+    "created_at": "2026-06-14T17:16:08.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330419,
@@ -2537,7 +2663,8 @@
       "/images/products/restaurant/118.png"
     ],
     "main_image": "/images/products/restaurant/117.png",
-    "created_at": "2026-06-14T17:16:08.000Z"
+    "created_at": "2026-06-14T17:16:08.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330420,
@@ -2557,7 +2684,8 @@
       "/images/products/restaurant/120.png"
     ],
     "main_image": "/images/products/restaurant/119.png",
-    "created_at": "2026-06-14T17:16:09.000Z"
+    "created_at": "2026-06-14T17:16:09.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330421,
@@ -2577,7 +2705,8 @@
       "/images/products/restaurant/122.png"
     ],
     "main_image": "/images/products/restaurant/121.png",
-    "created_at": "2026-06-14T17:16:09.000Z"
+    "created_at": "2026-06-14T17:16:09.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330422,
@@ -2597,7 +2726,8 @@
       "/images/products/restaurant/124.png"
     ],
     "main_image": "/images/products/restaurant/123.png",
-    "created_at": "2026-06-14T17:16:09.000Z"
+    "created_at": "2026-06-14T17:16:09.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330423,
@@ -2617,7 +2747,8 @@
       "/images/products/restaurant/126.png"
     ],
     "main_image": "/images/products/restaurant/125.png",
-    "created_at": "2026-06-14T17:16:09.000Z"
+    "created_at": "2026-06-14T17:16:09.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330424,
@@ -2637,7 +2768,8 @@
       "/images/products/restaurant/130.png"
     ],
     "main_image": "/images/products/restaurant/129.png",
-    "created_at": "2026-06-14T17:16:10.000Z"
+    "created_at": "2026-06-14T17:16:10.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330425,
@@ -2657,7 +2789,8 @@
       "/images/products/restaurant/132.JPG"
     ],
     "main_image": "/images/products/restaurant/131.JPG",
-    "created_at": "2026-06-14T17:16:10.000Z"
+    "created_at": "2026-06-14T17:16:10.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330426,
@@ -2677,7 +2810,8 @@
       "/images/products/restaurant/134.JPG"
     ],
     "main_image": "/images/products/restaurant/133.JPG",
-    "created_at": "2026-06-14T17:16:10.000Z"
+    "created_at": "2026-06-14T17:16:10.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330427,
@@ -2697,7 +2831,8 @@
       "/images/products/restaurant/136.JPG"
     ],
     "main_image": "/images/products/restaurant/135.JPG",
-    "created_at": "2026-06-14T17:16:11.000Z"
+    "created_at": "2026-06-14T17:16:11.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330428,
@@ -2717,7 +2852,8 @@
       "/images/products/restaurant/138.JPG"
     ],
     "main_image": "/images/products/restaurant/137.JPG",
-    "created_at": "2026-06-14T17:16:11.000Z"
+    "created_at": "2026-06-14T17:16:11.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330429,
@@ -2737,7 +2873,8 @@
       "/images/products/restaurant/140.JPG"
     ],
     "main_image": "/images/products/restaurant/139.JPG",
-    "created_at": "2026-06-14T17:16:11.000Z"
+    "created_at": "2026-06-14T17:16:11.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330430,
@@ -2757,7 +2894,8 @@
       "/images/products/restaurant/142.JPG"
     ],
     "main_image": "/images/products/restaurant/141.JPG",
-    "created_at": "2026-06-14T17:16:11.000Z"
+    "created_at": "2026-06-14T17:16:11.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330431,
@@ -2777,7 +2915,8 @@
       "/images/products/restaurant/144.JPG"
     ],
     "main_image": "/images/products/restaurant/143.JPG",
-    "created_at": "2026-06-14T17:16:12.000Z"
+    "created_at": "2026-06-14T17:16:12.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330432,
@@ -2797,7 +2936,8 @@
       "/images/products/restaurant/146.JPG"
     ],
     "main_image": "/images/products/restaurant/145.JPG",
-    "created_at": "2026-06-14T17:16:12.000Z"
+    "created_at": "2026-06-14T17:16:12.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330433,
@@ -2817,7 +2957,8 @@
       "/images/products/restaurant/148.JPG"
     ],
     "main_image": "/images/products/restaurant/147.JPG",
-    "created_at": "2026-06-14T17:16:12.000Z"
+    "created_at": "2026-06-14T17:16:12.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330434,
@@ -2837,7 +2978,8 @@
       "/images/products/restaurant/150.JPG"
     ],
     "main_image": "/images/products/restaurant/149.JPG",
-    "created_at": "2026-06-14T17:16:13.000Z"
+    "created_at": "2026-06-14T17:16:13.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330435,
@@ -2857,7 +2999,8 @@
       "/images/products/restaurant/152.JPG"
     ],
     "main_image": "/images/products/restaurant/151.JPG",
-    "created_at": "2026-06-14T17:16:13.000Z"
+    "created_at": "2026-06-14T17:16:13.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330436,
@@ -2877,7 +3020,8 @@
       "/images/products/restaurant/154.JPG"
     ],
     "main_image": "/images/products/restaurant/153.JPG",
-    "created_at": "2026-06-14T17:16:13.000Z"
+    "created_at": "2026-06-14T17:16:13.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330437,
@@ -2897,7 +3041,8 @@
       "/images/products/restaurant/156.JPG"
     ],
     "main_image": "/images/products/restaurant/155.JPG",
-    "created_at": "2026-06-14T17:16:14.000Z"
+    "created_at": "2026-06-14T17:16:14.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330438,
@@ -2917,7 +3062,8 @@
       "/images/products/restaurant/158.JPG"
     ],
     "main_image": "/images/products/restaurant/157.JPG",
-    "created_at": "2026-06-14T17:16:14.000Z"
+    "created_at": "2026-06-14T17:16:14.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330439,
@@ -2937,7 +3083,8 @@
       "/images/products/restaurant/160.JPG"
     ],
     "main_image": "/images/products/restaurant/159.JPG",
-    "created_at": "2026-06-14T17:16:14.000Z"
+    "created_at": "2026-06-14T17:16:14.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330440,
@@ -2957,7 +3104,8 @@
       "/images/products/restaurant/162.JPG"
     ],
     "main_image": "/images/products/restaurant/161.JPG",
-    "created_at": "2026-06-14T17:16:14.000Z"
+    "created_at": "2026-06-14T17:16:14.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330441,
@@ -2977,7 +3125,8 @@
       "/images/products/restaurant/164.JPG"
     ],
     "main_image": "/images/products/restaurant/163.JPG",
-    "created_at": "2026-06-14T17:16:15.000Z"
+    "created_at": "2026-06-14T17:16:15.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330442,
@@ -2997,7 +3146,8 @@
       "/images/products/restaurant/166.JPG"
     ],
     "main_image": "/images/products/restaurant/165.JPG",
-    "created_at": "2026-06-14T17:16:15.000Z"
+    "created_at": "2026-06-14T17:16:15.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330443,
@@ -3017,7 +3167,8 @@
       "/images/products/restaurant/168.JPG"
     ],
     "main_image": "/images/products/restaurant/167.JPG",
-    "created_at": "2026-06-14T17:16:15.000Z"
+    "created_at": "2026-06-14T17:16:15.000Z",
+    "imageCategory": "restaurant"
   },
   {
     "id": 1781457330444,
@@ -3037,6 +3188,7 @@
       "/images/products/restaurant/170.JPG"
     ],
     "main_image": "/images/products/restaurant/169.JPG",
-    "created_at": "2026-06-14T17:16:15.000Z"
+    "created_at": "2026-06-14T17:16:15.000Z",
+    "imageCategory": "restaurant"
   }
 ]
