@@ -253,11 +253,10 @@
         src="images/factory/factory-1.png"
         alt="Background"
         class="w-full h-full object-cover"
+        style="filter: brightness(0.3);"
       />
-      <!-- 深色渐变遮罩 - 加深以提高可读性 -->
-      <div class="absolute inset-0 bg-gradient-to-br from-black/85 via-black/80 to-black/85"></div>
-      <!-- 额外的深色遮罩层 -->
-      <div class="absolute inset-0 bg-black/20"></div>
+      <!-- 深色渐变遮罩 -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/50 to-black/60"></div>
       <!-- 几何装饰 -->
       <div class="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
       <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
@@ -265,7 +264,7 @@
 
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
       <!-- 标签 -->
-      <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
         <span class="text-2xl">✨</span>
         <span class="text-sm font-semibold text-white uppercase tracking-wider">
           <span data-lang="zh">下一个成功案例</span>
@@ -274,7 +273,7 @@
       </div>
 
       <!-- 主标题 -->
-      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight" style="text-shadow: 0 4px 8px rgba(0,0,0,0.8);">
         <span data-lang="zh">想让你的项目<br/>也成为案例？</span>
         <span data-lang="en" style="display:none">Want Your Project<br/>To Be Our Next Case?</span>
         <span data-lang="fr" style="display:none">Voulez-vous que Votre Projet<br/>Soit Notre Prochain Cas?</span>
@@ -284,7 +283,7 @@
       </h2>
 
       <!-- 副标题 -->
-      <p class="text-xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-xl text-white mb-4 max-w-3xl mx-auto leading-relaxed" style="text-shadow: 0 2px 6px rgba(0,0,0,0.7);">
         <span data-lang="zh">从概念设计到落地执行，我们为全球3000+商业空间提供定制家具解决方案</span>
         <span data-lang="en" style="display:none">From concept design to execution, we provide custom furniture solutions for 3000+ commercial spaces worldwide</span>
         <span data-lang="fr" style="display:none">De la conception à l'exécution, nous fournissons des solutions de mobilier sur mesure pour plus de 3000 espaces commerciaux dans le monde</span>
@@ -294,7 +293,7 @@
       </p>
 
       <!-- 特色标签 -->
-      <div class="flex flex-wrap items-center justify-center gap-4 mb-10 text-white/80 text-sm">
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-10 text-white text-sm font-semibold" style="text-shadow: 0 2px 4px rgba(0,0,0,0.6);">
         <span class="flex items-center gap-2">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
@@ -357,29 +356,29 @@
       <!-- 底部数据 -->
       <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="text-center">
-          <div class="text-4xl font-heading font-bold text-white mb-2">3000+</div>
-          <p class="text-white/70 text-sm">
+          <div class="text-4xl font-heading font-bold text-white mb-2" style="text-shadow: 0 3px 6px rgba(0,0,0,0.8);">3000+</div>
+          <p class="text-white text-sm font-semibold" style="text-shadow: 0 2px 4px rgba(0,0,0,0.7);">
             <span data-lang="zh">成功案例</span>
             <span data-lang="en" style="display:none">Success Cases</span>
           </p>
         </div>
         <div class="text-center">
-          <div class="text-4xl font-heading font-bold text-white mb-2">50+</div>
-          <p class="text-white/70 text-sm">
+          <div class="text-4xl font-heading font-bold text-white mb-2" style="text-shadow: 0 3px 6px rgba(0,0,0,0.8);">50+</div>
+          <p class="text-white text-sm font-semibold" style="text-shadow: 0 2px 4px rgba(0,0,0,0.7);">
             <span data-lang="zh">出口国家</span>
             <span data-lang="en" style="display:none">Countries</span>
           </p>
         </div>
         <div class="text-center">
-          <div class="text-4xl font-heading font-bold text-white mb-2">98%</div>
-          <p class="text-white/70 text-sm">
+          <div class="text-4xl font-heading font-bold text-white mb-2" style="text-shadow: 0 3px 6px rgba(0,0,0,0.8);">98%</div>
+          <p class="text-white text-sm font-semibold" style="text-shadow: 0 2px 4px rgba(0,0,0,0.7);">
             <span data-lang="zh">客户满意度</span>
             <span data-lang="en" style="display:none">Satisfaction</span>
           </p>
         </div>
         <div class="text-center">
-          <div class="text-4xl font-heading font-bold text-white mb-2">24h</div>
-          <p class="text-white/70 text-sm">
+          <div class="text-4xl font-heading font-bold text-white mb-2" style="text-shadow: 0 3px 6px rgba(0,0,0,0.8);">24h</div>
+          <p class="text-white text-sm font-semibold" style="text-shadow: 0 2px 4px rgba(0,0,0,0.7);">
             <span data-lang="zh">快速响应</span>
             <span data-lang="en" style="display:none">Fast Response</span>
           </p>
