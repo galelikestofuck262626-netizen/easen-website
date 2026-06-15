@@ -3,7 +3,7 @@
     "id": 1781457330293,
     "title_zh": "新月椅",
     "title_en": "Crescent Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -18,13 +18,12 @@
     ],
     "main_image": "/images/products/cafe/1.png",
     "created_at": "2026-06-14T17:15:30.000Z"
-  }
-,
+  },
   {
     "id": 1781457330294,
     "title_zh": "拥抱椅",
     "title_en": "Embrace Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -39,13 +38,12 @@
     ],
     "main_image": "/images/products/cafe/3.png",
     "created_at": "2026-06-14T17:15:30.000Z"
-  }
-,
+  },
   {
     "id": 1781457330295,
     "title_zh": "漂流椅",
     "title_en": "Drift Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -60,13 +58,12 @@
     ],
     "main_image": "/images/products/cafe/5.png",
     "created_at": "2026-06-14T17:15:31.000Z"
-  }
-,
+  },
   {
     "id": 1781457330296,
     "title_zh": "筑巢椅",
     "title_en": "Nest Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -81,13 +78,12 @@
     ],
     "main_image": "/images/products/cafe/7.png",
     "created_at": "2026-06-14T17:15:31.000Z"
-  }
-,
+  },
   {
     "id": 1781457330297,
     "title_zh": "花瓣椅",
     "title_en": "Petal Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -102,13 +98,12 @@
     ],
     "main_image": "/images/products/cafe/9.png",
     "created_at": "2026-06-14T17:15:31.000Z"
-  }
-,
+  },
   {
     "id": 1781457330298,
     "title_zh": "折纸椅",
     "title_en": "Origami Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -123,13 +118,12 @@
     ],
     "main_image": "/images/products/cafe/11.png",
     "created_at": "2026-06-14T17:15:32.000Z"
-  }
-,
+  },
   {
     "id": 1781457330299,
     "title_zh": "涟漪椅",
     "title_en": "Ripple Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -144,13 +138,12 @@
     ],
     "main_image": "/images/products/cafe/13.png",
     "created_at": "2026-06-14T17:15:32.000Z"
-  }
-,
+  },
   {
     "id": 1781457330300,
     "title_zh": "茧形椅",
     "title_en": "Cocoon Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -165,13 +158,12 @@
     ],
     "main_image": "/images/products/cafe/15.png",
     "created_at": "2026-06-14T17:15:32.000Z"
-  }
-,
+  },
   {
     "id": 1781457330301,
     "title_zh": "低语椅",
     "title_en": "Whisper Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -186,13 +178,12 @@
     ],
     "main_image": "/images/products/cafe/17.jpg",
     "created_at": "2026-06-14T17:15:33.000Z"
-  }
-,
+  },
   {
     "id": 1781457330302,
     "title_zh": "地平线椅",
     "title_en": "Horizon Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -207,13 +198,12 @@
     ],
     "main_image": "/images/products/cafe/19.png",
     "created_at": "2026-06-14T17:15:33.000Z"
-  }
-,
+  },
   {
     "id": 1781457330303,
     "title_zh": "回声椅",
     "title_en": "Echo Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -228,13 +218,12 @@
     ],
     "main_image": "/images/products/cafe/21.png",
     "created_at": "2026-06-14T17:15:33.000Z"
-  }
-,
+  },
   {
     "id": 1781457330304,
     "title_zh": "渐变椅",
     "title_en": "Gradient Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -249,13 +238,12 @@
     ],
     "main_image": "/images/products/cafe/23.png",
     "created_at": "2026-06-14T17:15:34.000Z"
-  }
-,
+  },
   {
     "id": 1781457330305,
     "title_zh": "编织椅",
     "title_en": "Weave Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -270,13 +258,12 @@
     ],
     "main_image": "/images/products/cafe/25.png",
     "created_at": "2026-06-14T17:15:34.000Z"
-  }
-,
+  },
   {
     "id": 1781457330306,
     "title_zh": "锚点椅",
     "title_en": "Anchor Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -291,13 +278,12 @@
     ],
     "main_image": "/images/products/cafe/27.png",
     "created_at": "2026-06-14T17:15:34.000Z"
-  }
-,
+  },
   {
     "id": 1781457330307,
     "title_zh": "悬浮椅",
     "title_en": "Float Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -312,13 +298,12 @@
     ],
     "main_image": "/images/products/cafe/29.png",
     "created_at": "2026-06-14T17:15:34.000Z"
-  }
-,
+  },
   {
     "id": 1781457330308,
     "title_zh": "拱桥椅",
     "title_en": "Arch Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -333,13 +318,12 @@
     ],
     "main_image": "/images/products/cafe/31.png",
     "created_at": "2026-06-14T17:15:35.000Z"
-  }
-,
+  },
   {
     "id": 1781457330309,
     "title_zh": "华盖椅",
     "title_en": "Canopy Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -354,13 +338,12 @@
     ],
     "main_image": "/images/products/cafe/33.png",
     "created_at": "2026-06-14T17:15:35.000Z"
-  }
-,
+  },
   {
     "id": 1781457330310,
     "title_zh": "剪影椅",
     "title_en": "Silhouette Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -375,13 +358,12 @@
     ],
     "main_image": "/images/products/cafe/35.png",
     "created_at": "2026-06-14T17:15:35.000Z"
-  }
-,
+  },
   {
     "id": 1781457330311,
     "title_zh": "韵律椅",
     "title_en": "Rhythm Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -396,13 +378,12 @@
     ],
     "main_image": "/images/products/cafe/37.png",
     "created_at": "2026-06-14T17:15:36.000Z"
-  }
-,
+  },
   {
     "id": 1781457330312,
     "title_zh": "画框椅",
     "title_en": "Frame Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -417,13 +398,12 @@
     ],
     "main_image": "/images/products/cafe/39.png",
     "created_at": "2026-06-14T17:15:36.000Z"
-  }
-,
+  },
   {
     "id": 1781457330313,
     "title_zh": "棱镜椅",
     "title_en": "Prism Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -438,13 +418,12 @@
     ],
     "main_image": "/images/products/cafe/41.png",
     "created_at": "2026-06-14T17:15:36.000Z"
-  }
-,
+  },
   {
     "id": 1781457330314,
     "title_zh": "衬线椅",
     "title_en": "Serif Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -459,13 +438,12 @@
     ],
     "main_image": "/images/products/cafe/43.png",
     "created_at": "2026-06-14T17:15:37.000Z"
-  }
-,
+  },
   {
     "id": 1781457330315,
     "title_zh": "交汇椅",
     "title_en": "Junction Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -480,13 +458,12 @@
     ],
     "main_image": "/images/products/cafe/45.png",
     "created_at": "2026-06-14T17:15:37.000Z"
-  }
-,
+  },
   {
     "id": 1781457330316,
     "title_zh": "光环椅",
     "title_en": "Halo Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -501,13 +478,12 @@
     ],
     "main_image": "/images/products/cafe/47.png",
     "created_at": "2026-06-14T17:15:37.000Z"
-  }
-,
+  },
   {
     "id": 1781457330317,
     "title_zh": "脊梁椅",
     "title_en": "Spine Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -522,13 +498,12 @@
     ],
     "main_image": "/images/products/cafe/49.png",
     "created_at": "2026-06-14T17:15:37.000Z"
-  }
-,
+  },
   {
     "id": 1781457330318,
     "title_zh": "绽放椅",
     "title_en": "Bloom Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -543,13 +518,12 @@
     ],
     "main_image": "/images/products/cafe/51.png",
     "created_at": "2026-06-14T17:15:38.000Z"
-  }
-,
+  },
   {
     "id": 1781457330319,
     "title_zh": "格栅椅",
     "title_en": "Lattice Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -564,13 +538,12 @@
     ],
     "main_image": "/images/products/cafe/53.png",
     "created_at": "2026-06-14T17:15:38.000Z"
-  }
-,
+  },
   {
     "id": 1781457330320,
     "title_zh": "轮廓椅",
     "title_en": "Contour Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -585,13 +558,12 @@
     ],
     "main_image": "/images/products/cafe/55.png",
     "created_at": "2026-06-14T17:15:38.000Z"
-  }
-,
+  },
   {
     "id": 1781457330321,
     "title_zh": "枢轴椅",
     "title_en": "Pivot Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -606,13 +578,12 @@
     ],
     "main_image": "/images/products/cafe/57.png",
     "created_at": "2026-06-14T17:15:39.000Z"
-  }
-,
+  },
   {
     "id": 1781457330322,
     "title_zh": "瀑布椅",
     "title_en": "Cascade Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -627,13 +598,12 @@
     ],
     "main_image": "/images/products/cafe/59.png",
     "created_at": "2026-06-14T17:15:39.000Z"
-  }
-,
+  },
   {
     "id": 1781457330323,
     "title_zh": "门槛椅",
     "title_en": "Threshold Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -648,13 +618,12 @@
     ],
     "main_image": "/images/products/cafe/61.jpg",
     "created_at": "2026-06-14T17:15:39.000Z"
-  }
-,
+  },
   {
     "id": 1781457330324,
     "title_zh": "轨道椅",
     "title_en": "Orbit Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -669,13 +638,12 @@
     ],
     "main_image": "/images/products/cafe/63.png",
     "created_at": "2026-06-14T17:15:40.000Z"
-  }
-,
+  },
   {
     "id": 1781457330325,
     "title_zh": "纹理椅",
     "title_en": "Grain Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -690,13 +658,12 @@
     ],
     "main_image": "/images/products/cafe/65.png",
     "created_at": "2026-06-14T17:15:40.000Z"
-  }
-,
+  },
   {
     "id": 1781457330326,
     "title_zh": "切面椅",
     "title_en": "Facet Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -711,13 +678,12 @@
     ],
     "main_image": "/images/products/cafe/67.png",
     "created_at": "2026-06-14T17:15:40.000Z"
-  }
-,
+  },
   {
     "id": 1781457330327,
     "title_zh": "锥形椅",
     "title_en": "Taper Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -732,13 +698,12 @@
     ],
     "main_image": "/images/products/cafe/69.png",
     "created_at": "2026-06-14T17:15:40.000Z"
-  }
-,
+  },
   {
     "id": 1781457330328,
     "title_zh": "楔形椅",
     "title_en": "Wedge Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -753,13 +718,12 @@
     ],
     "main_image": "/images/products/cafe/71.png",
     "created_at": "2026-06-14T17:15:41.000Z"
-  }
-,
+  },
   {
     "id": 1781457330329,
     "title_zh": "褶皱椅",
     "title_en": "Pleat Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -774,13 +738,12 @@
     ],
     "main_image": "/images/products/cafe/73.png",
     "created_at": "2026-06-14T17:15:41.000Z"
-  }
-,
+  },
   {
     "id": 1781457330330,
     "title_zh": "胶囊椅",
     "title_en": "Capsule Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -795,13 +758,12 @@
     ],
     "main_image": "/images/products/cafe/75.png",
     "created_at": "2026-06-14T17:15:41.000Z"
-  }
-,
+  },
   {
     "id": 1781457330331,
     "title_zh": "拱门桌",
     "title_en": "Archway Table",
-    "category": "cafe",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -816,13 +778,12 @@
     ],
     "main_image": "/images/products/cafe/094BDA44AB8C37E2A973F6889A3EAB48.png",
     "created_at": "2026-06-14T17:15:42.000Z"
-  }
-,
+  },
   {
     "id": 1781457330332,
     "title_zh": "锚点桌",
     "title_en": "Anchor Table",
-    "category": "cafe",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -837,13 +798,12 @@
     ],
     "main_image": "/images/products/cafe/3498C32566B42304CBA1FC03C013DD54.png",
     "created_at": "2026-06-14T17:15:42.000Z"
-  }
-,
+  },
   {
     "id": 1781457330333,
     "title_zh": "画板桌",
     "title_en": "Canvas Table",
-    "category": "cafe",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -858,13 +818,12 @@
     ],
     "main_image": "/images/products/cafe/3723476CCADC4DB5EFB87A0329287CFF.png",
     "created_at": "2026-06-14T17:15:42.000Z"
-  }
-,
+  },
   {
     "id": 1781457330334,
     "title_zh": "顶点椅",
     "title_en": "Vertex Chair",
-    "category": "cafe",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -879,13 +838,12 @@
     ],
     "main_image": "/images/products/cafe/C3E780FA691EBA454F95DB40E0C2ED3E.png",
     "created_at": "2026-06-14T17:15:43.000Z"
-  }
-,
+  },
   {
     "id": 1781457330335,
     "title_zh": "浮木椅",
     "title_en": "Driftwood Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -900,13 +858,12 @@
     ],
     "main_image": "/images/products/outdoor/1.png",
     "created_at": "2026-06-14T17:15:43.000Z"
-  }
-,
+  },
   {
     "id": 1781457330336,
     "title_zh": "磐石椅",
     "title_en": "Stone Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -921,13 +878,12 @@
     ],
     "main_image": "/images/products/outdoor/3.png",
     "created_at": "2026-06-14T17:15:43.000Z"
-  }
-,
+  },
   {
     "id": 1781457330337,
     "title_zh": "潮汐椅",
     "title_en": "Tide Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -942,13 +898,12 @@
     ],
     "main_image": "/images/products/outdoor/5.png",
     "created_at": "2026-06-14T17:15:44.000Z"
-  }
-,
+  },
   {
     "id": 1781457330338,
     "title_zh": "蕨叶椅",
     "title_en": "Fern Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -963,13 +918,12 @@
     ],
     "main_image": "/images/products/outdoor/7.png",
     "created_at": "2026-06-14T17:15:44.000Z"
-  }
-,
+  },
   {
     "id": 1781457330339,
     "title_zh": "台地椅",
     "title_en": "Mesa Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -984,13 +938,12 @@
     ],
     "main_image": "/images/products/outdoor/9.png",
     "created_at": "2026-06-14T17:15:44.000Z"
-  }
-,
+  },
   {
     "id": 1781457330340,
     "title_zh": "锻造椅",
     "title_en": "Forge Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1005,13 +958,12 @@
     ],
     "main_image": "/images/products/outdoor/11.png",
     "created_at": "2026-06-14T17:15:44.000Z"
-  }
-,
+  },
   {
     "id": 1781457330341,
     "title_zh": "陶土椅",
     "title_en": "Terracotta Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1026,13 +978,12 @@
     ],
     "main_image": "/images/products/outdoor/13.png",
     "created_at": "2026-06-14T17:15:45.000Z"
-  }
-,
+  },
   {
     "id": 1781457330342,
     "title_zh": "亚麻椅",
     "title_en": "Linen Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1047,13 +998,12 @@
     ],
     "main_image": "/images/products/outdoor/15.png",
     "created_at": "2026-06-14T17:15:45.000Z"
-  }
-,
+  },
   {
     "id": 1781457330343,
     "title_zh": "藤韵椅",
     "title_en": "Rattan Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1068,13 +1018,12 @@
     ],
     "main_image": "/images/products/outdoor/17.png",
     "created_at": "2026-06-14T17:15:45.000Z"
-  }
-,
+  },
   {
     "id": 1781457330344,
     "title_zh": "季风椅",
     "title_en": "Monsoon Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1089,13 +1038,12 @@
     ],
     "main_image": "/images/products/outdoor/19.png",
     "created_at": "2026-06-14T17:15:46.000Z"
-  }
-,
+  },
   {
     "id": 1781457330345,
     "title_zh": "铜绿椅",
     "title_en": "Patina Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1110,13 +1058,12 @@
     ],
     "main_image": "/images/products/outdoor/21.png",
     "created_at": "2026-06-14T17:15:46.000Z"
-  }
-,
+  },
   {
     "id": 1781457330346,
     "title_zh": "藤架椅",
     "title_en": "Trellis Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1131,13 +1078,12 @@
     ],
     "main_image": "/images/products/outdoor/23.png",
     "created_at": "2026-06-14T17:15:46.000Z"
-  }
-,
+  },
   {
     "id": 1781457330347,
     "title_zh": "草甸椅",
     "title_en": "Meadow Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1152,13 +1098,12 @@
     ],
     "main_image": "/images/products/outdoor/25.png",
     "created_at": "2026-06-14T17:15:47.000Z"
-  }
-,
+  },
   {
     "id": 1781457330348,
     "title_zh": "采石椅",
     "title_en": "Quarry Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1173,13 +1118,12 @@
     ],
     "main_image": "/images/products/outdoor/27.png",
     "created_at": "2026-06-14T17:15:47.000Z"
-  }
-,
+  },
   {
     "id": 1781457330349,
     "title_zh": "礁石椅",
     "title_en": "Reef Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1194,13 +1138,12 @@
     ],
     "main_image": "/images/products/outdoor/29.png",
     "created_at": "2026-06-14T17:15:47.000Z"
-  }
-,
+  },
   {
     "id": 1781457330350,
     "title_zh": "苔藓椅",
     "title_en": "Lichen Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1215,13 +1158,12 @@
     ],
     "main_image": "/images/products/outdoor/31.png",
     "created_at": "2026-06-14T17:15:47.000Z"
-  }
-,
+  },
   {
     "id": 1781457330351,
     "title_zh": "沉积椅",
     "title_en": "Sediment Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1236,13 +1178,12 @@
     ],
     "main_image": "/images/products/outdoor/33.png",
     "created_at": "2026-06-14T17:15:48.000Z"
-  }
-,
+  },
   {
     "id": 1781457330352,
     "title_zh": "树皮椅",
     "title_en": "Bark Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1257,13 +1198,12 @@
     ],
     "main_image": "/images/products/outdoor/35.png",
     "created_at": "2026-06-14T17:15:48.000Z"
-  }
-,
+  },
   {
     "id": 1781457330353,
     "title_zh": "侵蚀椅",
     "title_en": "Erosion Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1278,13 +1218,12 @@
     ],
     "main_image": "/images/products/outdoor/37.png",
     "created_at": "2026-06-14T17:15:48.000Z"
-  }
-,
+  },
   {
     "id": 1781457330354,
     "title_zh": "葡萄园椅",
     "title_en": "Vineyard Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1299,13 +1238,12 @@
     ],
     "main_image": "/images/products/outdoor/39.png",
     "created_at": "2026-06-14T17:15:49.000Z"
-  }
-,
+  },
   {
     "id": 1781457330355,
     "title_zh": "化石椅",
     "title_en": "Fossil Chair",
-    "category": "outdoor",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1320,13 +1258,12 @@
     ],
     "main_image": "/images/products/outdoor/41.png",
     "created_at": "2026-06-14T17:15:49.000Z"
-  }
-,
+  },
   {
     "id": 1781457330356,
     "title_zh": "峡谷桌",
     "title_en": "Canyon Table",
-    "category": "outdoor",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1341,13 +1278,12 @@
     ],
     "main_image": "/images/products/outdoor/94AF1CB0DD5AD75EBD4A447B47EA01CB.png",
     "created_at": "2026-06-14T17:15:49.000Z"
-  }
-,
+  },
   {
     "id": 1781457330357,
     "title_zh": "微风桌",
     "title_en": "Breeze Table",
-    "category": "outdoor",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1362,13 +1298,12 @@
     ],
     "main_image": "/images/products/outdoor/1379FA913E608EA8F532114D6E2E89B5.png",
     "created_at": "2026-06-14T17:15:50.000Z"
-  }
-,
+  },
   {
     "id": 1781457330358,
     "title_zh": "卵石桌",
     "title_en": "Pebble Table",
-    "category": "outdoor",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1383,13 +1318,12 @@
     ],
     "main_image": "/images/products/outdoor/A7C88E5FDC130F3B2EB557BFDDCA9B2A.png",
     "created_at": "2026-06-14T17:15:50.000Z"
-  }
-,
+  },
   {
     "id": 1781457330359,
     "title_zh": "乡野桌",
     "title_en": "Rustic Table",
-    "category": "outdoor",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1404,13 +1338,12 @@
     ],
     "main_image": "/images/products/outdoor/C52E13BD69BF88C07B2B1BC5DE7D9AE7.png",
     "created_at": "2026-06-14T17:15:50.000Z"
-  }
-,
+  },
   {
     "id": 1781457330360,
     "title_zh": "原木桌",
     "title_en": "Timber Table",
-    "category": "outdoor",
+    "category": "table",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1425,13 +1358,12 @@
     ],
     "main_image": "/images/products/outdoor/D80E7C69B6698EC57288E73290A317EF.png",
     "created_at": "2026-06-14T17:15:51.000Z"
-  }
-,
+  },
   {
     "id": 1781457330361,
     "title_zh": "尊贵椅",
     "title_en": "Majesty Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1446,13 +1378,12 @@
     ],
     "main_image": "/images/products/restaurant/1.png",
     "created_at": "2026-06-14T17:15:51.000Z"
-  }
-,
+  },
   {
     "id": 1781457330362,
     "title_zh": "传承椅",
     "title_en": "Heritage Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1467,13 +1398,12 @@
     ],
     "main_image": "/images/products/restaurant/3.png",
     "created_at": "2026-06-14T17:15:51.000Z"
-  }
-,
+  },
   {
     "id": 1781457330363,
     "title_zh": "至尊椅",
     "title_en": "Sovereign Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1488,13 +1418,12 @@
     ],
     "main_image": "/images/products/restaurant/5.png",
     "created_at": "2026-06-14T17:15:52.000Z"
-  }
-,
+  },
   {
     "id": 1781457330364,
     "title_zh": "雅言椅",
     "title_en": "Eloquence Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1509,13 +1438,12 @@
     ],
     "main_image": "/images/products/restaurant/7.png",
     "created_at": "2026-06-14T17:15:52.000Z"
-  }
-,
+  },
   {
     "id": 1781457330365,
     "title_zh": "大师椅",
     "title_en": "Virtuoso Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1530,13 +1458,12 @@
     ],
     "main_image": "/images/products/restaurant/9.png",
     "created_at": "2026-06-14T17:15:52.000Z"
-  }
-,
+  },
   {
     "id": 1781457330366,
     "title_zh": "威望椅",
     "title_en": "Prestige Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1551,13 +1478,12 @@
     ],
     "main_image": "/images/products/restaurant/11.png",
     "created_at": "2026-06-14T17:15:53.000Z"
-  }
-,
+  },
   {
     "id": 1781457330367,
     "title_zh": "遗产椅",
     "title_en": "Legacy Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1572,13 +1498,12 @@
     ],
     "main_image": "/images/products/restaurant/13.png",
     "created_at": "2026-06-14T17:15:53.000Z"
-  }
-,
+  },
   {
     "id": 1781457330368,
     "title_zh": "侯爵椅",
     "title_en": "Marquess Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1593,13 +1518,12 @@
     ],
     "main_image": "/images/products/restaurant/15.png",
     "created_at": "2026-06-14T17:15:53.000Z"
-  }
-,
+  },
   {
     "id": 1781457330369,
     "title_zh": "工坊椅",
     "title_en": "Atelier Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1614,13 +1538,12 @@
     ],
     "main_image": "/images/products/restaurant/17.jpg",
     "created_at": "2026-06-14T17:15:53.000Z"
-  }
-,
+  },
   {
     "id": 1781457330370,
     "title_zh": "巨匠椅",
     "title_en": "Maestro Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1635,13 +1558,12 @@
     ],
     "main_image": "/images/products/restaurant/19.png",
     "created_at": "2026-06-14T17:15:54.000Z"
-  }
-,
+  },
   {
     "id": 1781457330371,
     "title_zh": "御用椅",
     "title_en": "Regalia Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1656,13 +1578,12 @@
     ],
     "main_image": "/images/products/restaurant/21.png",
     "created_at": "2026-06-14T17:15:54.000Z"
-  }
-,
+  },
   {
     "id": 1781457330372,
     "title_zh": "巅峰椅",
     "title_en": "Pinnacle Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1677,13 +1598,12 @@
     ],
     "main_image": "/images/products/restaurant/23.png",
     "created_at": "2026-06-14T17:15:54.000Z"
-  }
-,
+  },
   {
     "id": 1781457330373,
     "title_zh": "卓著椅",
     "title_en": "Distinction Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1698,13 +1618,12 @@
     ],
     "main_image": "/images/products/restaurant/25.png",
     "created_at": "2026-06-14T17:15:55.000Z"
-  }
-,
+  },
   {
     "id": 1781457330374,
     "title_zh": "宏伟椅",
     "title_en": "Grandeur Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1719,13 +1638,12 @@
     ],
     "main_image": "/images/products/restaurant/27.png",
     "created_at": "2026-06-14T17:15:55.000Z"
-  }
-,
+  },
   {
     "id": 1781457330375,
     "title_zh": "名家椅",
     "title_en": "Luminary Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1740,13 +1658,12 @@
     ],
     "main_image": "/images/products/restaurant/29.png",
     "created_at": "2026-06-14T17:15:55.000Z"
-  }
-,
+  },
   {
     "id": 1781457330376,
     "title_zh": "华丽椅",
     "title_en": "Opulence Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1761,13 +1678,12 @@
     ],
     "main_image": "/images/products/restaurant/31.png",
     "created_at": "2026-06-14T17:15:55.000Z"
-  }
-,
+  },
   {
     "id": 1781457330377,
     "title_zh": "尊崇椅",
     "title_en": "Venerable Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1782,13 +1698,12 @@
     ],
     "main_image": "/images/products/restaurant/33.png",
     "created_at": "2026-06-14T17:15:56.000Z"
-  }
-,
+  },
   {
     "id": 1781457330378,
     "title_zh": "精致椅",
     "title_en": "Refined Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1803,13 +1718,12 @@
     ],
     "main_image": "/images/products/restaurant/35.png",
     "created_at": "2026-06-14T17:15:56.000Z"
-  }
-,
+  },
   {
     "id": 1781457330379,
     "title_zh": "高贵椅",
     "title_en": "Noble Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1824,13 +1738,12 @@
     ],
     "main_image": "/images/products/restaurant/37.png",
     "created_at": "2026-06-14T17:15:56.000Z"
-  }
-,
+  },
   {
     "id": 1781457330380,
     "title_zh": "优雅椅",
     "title_en": "Gracious Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1845,13 +1758,12 @@
     ],
     "main_image": "/images/products/restaurant/39.png",
     "created_at": "2026-06-14T17:15:57.000Z"
-  }
-,
+  },
   {
     "id": 1781457330381,
     "title_zh": "庄重椅",
     "title_en": "Dignified Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1866,13 +1778,12 @@
     ],
     "main_image": "/images/products/restaurant/41.png",
     "created_at": "2026-06-14T17:15:57.000Z"
-  }
-,
+  },
   {
     "id": 1781457330382,
     "title_zh": "显赫椅",
     "title_en": "Illustrious Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1887,13 +1798,12 @@
     ],
     "main_image": "/images/products/restaurant/43.png",
     "created_at": "2026-06-14T17:15:57.000Z"
-  }
-,
+  },
   {
     "id": 1781457330383,
     "title_zh": "至高椅",
     "title_en": "Paramount Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1908,13 +1818,12 @@
     ],
     "main_image": "/images/products/restaurant/45.png",
     "created_at": "2026-06-14T17:15:57.000Z"
-  }
-,
+  },
   {
     "id": 1781457330384,
     "title_zh": "辉煌椅",
     "title_en": "Splendor Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1929,13 +1838,12 @@
     ],
     "main_image": "/images/products/restaurant/47.png",
     "created_at": "2026-06-14T17:15:58.000Z"
-  }
-,
+  },
   {
     "id": 1781457330385,
     "title_zh": "王者椅",
     "title_en": "Regal Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1950,13 +1858,12 @@
     ],
     "main_image": "/images/products/restaurant/49.png",
     "created_at": "2026-06-14T17:15:58.000Z"
-  }
-,
+  },
   {
     "id": 1781457330386,
     "title_zh": "顶峰椅",
     "title_en": "Apex Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1971,13 +1878,12 @@
     ],
     "main_image": "/images/products/restaurant/51.png",
     "created_at": "2026-06-14T17:15:58.000Z"
-  }
-,
+  },
   {
     "id": 1781457330387,
     "title_zh": "峰顶椅",
     "title_en": "Summit Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -1992,13 +1898,12 @@
     ],
     "main_image": "/images/products/restaurant/53.png",
     "created_at": "2026-06-14T17:15:59.000Z"
-  }
-,
+  },
   {
     "id": 1781457330388,
     "title_zh": "皇冠椅",
     "title_en": "Crown Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2013,13 +1918,12 @@
     ],
     "main_image": "/images/products/restaurant/55.png",
     "created_at": "2026-06-14T17:15:59.000Z"
-  }
-,
+  },
   {
     "id": 1781457330389,
     "title_zh": "徽章椅",
     "title_en": "Crest Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2034,13 +1938,12 @@
     ],
     "main_image": "/images/products/restaurant/57.png",
     "created_at": "2026-06-14T17:15:59.000Z"
-  }
-,
+  },
   {
     "id": 1781457330390,
     "title_zh": "君主椅",
     "title_en": "Sovereign Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2055,13 +1958,12 @@
     ],
     "main_image": "/images/products/restaurant/59.png",
     "created_at": "2026-06-14T17:16:00.000Z"
-  }
-,
+  },
   {
     "id": 1781457330391,
     "title_zh": "大臣椅",
     "title_en": "Chancellor Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2076,13 +1978,12 @@
     ],
     "main_image": "/images/products/restaurant/61.png",
     "created_at": "2026-06-14T17:16:00.000Z"
-  }
-,
+  },
   {
     "id": 1781457330392,
     "title_zh": "使节椅",
     "title_en": "Ambassador Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2097,13 +1998,12 @@
     ],
     "main_image": "/images/products/restaurant/63.png",
     "created_at": "2026-06-14T17:16:00.000Z"
-  }
-,
+  },
   {
     "id": 1781457330393,
     "title_zh": "元老椅",
     "title_en": "Senator Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2118,13 +2018,12 @@
     ],
     "main_image": "/images/products/restaurant/65.png",
     "created_at": "2026-06-14T17:16:00.000Z"
-  }
-,
+  },
   {
     "id": 1781457330394,
     "title_zh": "执政椅",
     "title_en": "Magistrate Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2139,13 +2038,12 @@
     ],
     "main_image": "/images/products/restaurant/67.jpg",
     "created_at": "2026-06-14T17:16:01.000Z"
-  }
-,
+  },
   {
     "id": 1781457330395,
     "title_zh": "总督椅",
     "title_en": "Viceroy Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2160,13 +2058,12 @@
     ],
     "main_image": "/images/products/restaurant/69.png",
     "created_at": "2026-06-14T17:16:01.000Z"
-  }
-,
+  },
   {
     "id": 1781457330396,
     "title_zh": "族长椅",
     "title_en": "Patriarch Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2181,13 +2078,12 @@
     ],
     "main_image": "/images/products/restaurant/71.png",
     "created_at": "2026-06-14T17:16:01.000Z"
-  }
-,
+  },
   {
     "id": 1781457330397,
     "title_zh": "长者椅",
     "title_en": "Elder Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2202,13 +2098,12 @@
     ],
     "main_image": "/images/products/restaurant/73.png",
     "created_at": "2026-06-14T17:16:02.000Z"
-  }
-,
+  },
   {
     "id": 1781457330398,
     "title_zh": "守护椅",
     "title_en": "Guardian Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2223,13 +2118,12 @@
     ],
     "main_image": "/images/products/restaurant/75.png",
     "created_at": "2026-06-14T17:16:02.000Z"
-  }
-,
+  },
   {
     "id": 1781457330399,
     "title_zh": "哨兵椅",
     "title_en": "Sentinel Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2244,13 +2138,12 @@
     ],
     "main_image": "/images/products/restaurant/77.png",
     "created_at": "2026-06-14T17:16:02.000Z"
-  }
-,
+  },
   {
     "id": 1781457330400,
     "title_zh": "典狱椅",
     "title_en": "Warden Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2265,13 +2158,12 @@
     ],
     "main_image": "/images/products/restaurant/79.png",
     "created_at": "2026-06-14T17:16:03.000Z"
-  }
-,
+  },
   {
     "id": 1781457330401,
     "title_zh": "馆长椅",
     "title_en": "Curator Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2286,13 +2178,12 @@
     ],
     "main_image": "/images/products/restaurant/81.png",
     "created_at": "2026-06-14T17:16:03.000Z"
-  }
-,
+  },
   {
     "id": 1781457330402,
     "title_zh": "院长椅",
     "title_en": "Rector Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2307,13 +2198,12 @@
     ],
     "main_image": "/images/products/restaurant/83.png",
     "created_at": "2026-06-14T17:16:03.000Z"
-  }
-,
+  },
   {
     "id": 1781457330403,
     "title_zh": "教务椅",
     "title_en": "Provost Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2328,13 +2218,12 @@
     ],
     "main_image": "/images/products/restaurant/85.png",
     "created_at": "2026-06-14T17:16:03.000Z"
-  }
-,
+  },
   {
     "id": 1781457330404,
     "title_zh": "系主椅",
     "title_en": "Dean Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2349,13 +2238,12 @@
     ],
     "main_image": "/images/products/restaurant/87.png",
     "created_at": "2026-06-14T17:16:04.000Z"
-  }
-,
+  },
   {
     "id": 1781457330405,
     "title_zh": "学者椅",
     "title_en": "Scholar Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2370,13 +2258,12 @@
     ],
     "main_image": "/images/products/restaurant/89.png",
     "created_at": "2026-06-14T17:16:04.000Z"
-  }
-,
+  },
   {
     "id": 1781457330406,
     "title_zh": "智者椅",
     "title_en": "Sage Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2391,13 +2278,12 @@
     ],
     "main_image": "/images/products/restaurant/91.png",
     "created_at": "2026-06-14T17:16:04.000Z"
-  }
-,
+  },
   {
     "id": 1781457330407,
     "title_zh": "神谕椅",
     "title_en": "Oracle Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2412,13 +2298,12 @@
     ],
     "main_image": "/images/products/restaurant/93.png",
     "created_at": "2026-06-14T17:16:05.000Z"
-  }
-,
+  },
   {
     "id": 1781457330408,
     "title_zh": "神秘椅",
     "title_en": "Mystic Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2433,13 +2318,12 @@
     ],
     "main_image": "/images/products/restaurant/95.png",
     "created_at": "2026-06-14T17:16:05.000Z"
-  }
-,
+  },
   {
     "id": 1781457330409,
     "title_zh": "奥秘椅",
     "title_en": "Arcane Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2454,13 +2338,12 @@
     ],
     "main_image": "/images/products/restaurant/97.png",
     "created_at": "2026-06-14T17:16:05.000Z"
-  }
-,
+  },
   {
     "id": 1781457330410,
     "title_zh": "空灵椅",
     "title_en": "Ethereal Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2475,13 +2358,12 @@
     ],
     "main_image": "/images/products/restaurant/99.png",
     "created_at": "2026-06-14T17:16:06.000Z"
-  }
-,
+  },
   {
     "id": 1781457330411,
     "title_zh": "天界椅",
     "title_en": "Celestial Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2496,13 +2378,12 @@
     ],
     "main_image": "/images/products/restaurant/101.png",
     "created_at": "2026-06-14T17:16:06.000Z"
-  }
-,
+  },
   {
     "id": 1781457330412,
     "title_zh": "神圣椅",
     "title_en": "Divine Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2517,13 +2398,12 @@
     ],
     "main_image": "/images/products/restaurant/103.png",
     "created_at": "2026-06-14T17:16:06.000Z"
-  }
-,
+  },
   {
     "id": 1781457330413,
     "title_zh": "圣所椅",
     "title_en": "Sanctum Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2538,13 +2418,12 @@
     ],
     "main_image": "/images/products/restaurant/105.png",
     "created_at": "2026-06-14T17:16:07.000Z"
-  }
-,
+  },
   {
     "id": 1781457330414,
     "title_zh": "祭坛椅",
     "title_en": "Altar Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2559,13 +2438,12 @@
     ],
     "main_image": "/images/products/restaurant/107.png",
     "created_at": "2026-06-14T17:16:07.000Z"
-  }
-,
+  },
   {
     "id": 1781457330415,
     "title_zh": "礼拜椅",
     "title_en": "Chapel Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2580,13 +2458,12 @@
     ],
     "main_image": "/images/products/restaurant/109.png",
     "created_at": "2026-06-14T17:16:07.000Z"
-  }
-,
+  },
   {
     "id": 1781457330416,
     "title_zh": "大教堂椅",
     "title_en": "Cathedral Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2601,13 +2478,12 @@
     ],
     "main_image": "/images/products/restaurant/111.png",
     "created_at": "2026-06-14T17:16:07.000Z"
-  }
-,
+  },
   {
     "id": 1781457330417,
     "title_zh": "圣殿椅",
     "title_en": "Basilica Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2622,13 +2498,12 @@
     ],
     "main_image": "/images/products/restaurant/113.png",
     "created_at": "2026-06-14T17:16:08.000Z"
-  }
-,
+  },
   {
     "id": 1781457330418,
     "title_zh": "修道椅",
     "title_en": "Monastery Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2643,13 +2518,12 @@
     ],
     "main_image": "/images/products/restaurant/115.png",
     "created_at": "2026-06-14T17:16:08.000Z"
-  }
-,
+  },
   {
     "id": 1781457330419,
     "title_zh": "修道院椅",
     "title_en": "Abbey Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2664,13 +2538,12 @@
     ],
     "main_image": "/images/products/restaurant/117.png",
     "created_at": "2026-06-14T17:16:08.000Z"
-  }
-,
+  },
   {
     "id": 1781457330420,
     "title_zh": "小修道椅",
     "title_en": "Priory Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2685,13 +2558,12 @@
     ],
     "main_image": "/images/products/restaurant/119.png",
     "created_at": "2026-06-14T17:16:09.000Z"
-  }
-,
+  },
   {
     "id": 1781457330421,
     "title_zh": "回廊椅",
     "title_en": "Cloister Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2706,13 +2578,12 @@
     ],
     "main_image": "/images/products/restaurant/121.png",
     "created_at": "2026-06-14T17:16:09.000Z"
-  }
-,
+  },
   {
     "id": 1781457330422,
     "title_zh": "餐厅椅",
     "title_en": "Refectory Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2727,13 +2598,12 @@
     ],
     "main_image": "/images/products/restaurant/123.png",
     "created_at": "2026-06-14T17:16:09.000Z"
-  }
-,
+  },
   {
     "id": 1781457330423,
     "title_zh": "宴会椅",
     "title_en": "Banquet Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2748,13 +2618,12 @@
     ],
     "main_image": "/images/products/restaurant/125.png",
     "created_at": "2026-06-14T17:16:09.000Z"
-  }
-,
+  },
   {
     "id": 1781457330424,
     "title_zh": "盛宴椅",
     "title_en": "Feast Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2769,13 +2638,12 @@
     ],
     "main_image": "/images/products/restaurant/129.png",
     "created_at": "2026-06-14T17:16:10.000Z"
-  }
-,
+  },
   {
     "id": 1781457330425,
     "title_zh": "论坛椅",
     "title_en": "Symposium Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2790,13 +2658,12 @@
     ],
     "main_image": "/images/products/restaurant/131.JPG",
     "created_at": "2026-06-14T17:16:10.000Z"
-  }
-,
+  },
   {
     "id": 1781457330426,
     "title_zh": "议会椅",
     "title_en": "Council Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2811,13 +2678,12 @@
     ],
     "main_image": "/images/products/restaurant/133.JPG",
     "created_at": "2026-06-14T17:16:10.000Z"
-  }
-,
+  },
   {
     "id": 1781457330427,
     "title_zh": "集会椅",
     "title_en": "Assembly Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2832,13 +2698,12 @@
     ],
     "main_image": "/images/products/restaurant/135.JPG",
     "created_at": "2026-06-14T17:16:11.000Z"
-  }
-,
+  },
   {
     "id": 1781457330428,
     "title_zh": "论坛椅",
     "title_en": "Forum Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2853,13 +2718,12 @@
     ],
     "main_image": "/images/products/restaurant/137.JPG",
     "created_at": "2026-06-14T17:16:11.000Z"
-  }
-,
+  },
   {
     "id": 1781457330429,
     "title_zh": "护民椅",
     "title_en": "Tribune Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2874,13 +2738,12 @@
     ],
     "main_image": "/images/products/restaurant/139.JPG",
     "created_at": "2026-06-14T17:16:11.000Z"
-  }
-,
+  },
   {
     "id": 1781457330430,
     "title_zh": "执政椅",
     "title_en": "Consul Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2895,13 +2758,12 @@
     ],
     "main_image": "/images/products/restaurant/141.JPG",
     "created_at": "2026-06-14T17:16:11.000Z"
-  }
-,
+  },
   {
     "id": 1781457330431,
     "title_zh": "裁判椅",
     "title_en": "Praetor Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2916,13 +2778,12 @@
     ],
     "main_image": "/images/products/restaurant/143.JPG",
     "created_at": "2026-06-14T17:16:12.000Z"
-  }
-,
+  },
   {
     "id": 1781457330432,
     "title_zh": "特使椅",
     "title_en": "Legate Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2937,13 +2798,12 @@
     ],
     "main_image": "/images/products/restaurant/145.JPG",
     "created_at": "2026-06-14T17:16:12.000Z"
-  }
-,
+  },
   {
     "id": 1781457330433,
     "title_zh": "使者椅",
     "title_en": "Emissary Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2958,13 +2818,12 @@
     ],
     "main_image": "/images/products/restaurant/147.JPG",
     "created_at": "2026-06-14T17:16:12.000Z"
-  }
-,
+  },
   {
     "id": 1781457330434,
     "title_zh": "公使椅",
     "title_en": "Envoy Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -2979,13 +2838,12 @@
     ],
     "main_image": "/images/products/restaurant/149.JPG",
     "created_at": "2026-06-14T17:16:13.000Z"
-  }
-,
+  },
   {
     "id": 1781457330435,
     "title_zh": "代表椅",
     "title_en": "Delegate Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3000,13 +2858,12 @@
     ],
     "main_image": "/images/products/restaurant/151.JPG",
     "created_at": "2026-06-14T17:16:13.000Z"
-  }
-,
+  },
   {
     "id": 1781457330436,
     "title_zh": "副手椅",
     "title_en": "Deputy Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3021,13 +2878,12 @@
     ],
     "main_image": "/images/products/restaurant/153.JPG",
     "created_at": "2026-06-14T17:16:13.000Z"
-  }
-,
+  },
   {
     "id": 1781457330437,
     "title_zh": "副官椅",
     "title_en": "Adjutant Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3042,13 +2898,12 @@
     ],
     "main_image": "/images/products/restaurant/155.JPG",
     "created_at": "2026-06-14T17:16:14.000Z"
-  }
-,
+  },
   {
     "id": 1781457330438,
     "title_zh": "元帅椅",
     "title_en": "Marshal Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3063,13 +2918,12 @@
     ],
     "main_image": "/images/products/restaurant/157.JPG",
     "created_at": "2026-06-14T17:16:14.000Z"
-  }
-,
+  },
   {
     "id": 1781457330439,
     "title_zh": "海军椅",
     "title_en": "Admiral Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3084,13 +2938,12 @@
     ],
     "main_image": "/images/products/restaurant/159.JPG",
     "created_at": "2026-06-14T17:16:14.000Z"
-  }
-,
+  },
   {
     "id": 1781457330440,
     "title_zh": "将军椅",
     "title_en": "General Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3105,13 +2958,12 @@
     ],
     "main_image": "/images/products/restaurant/161.JPG",
     "created_at": "2026-06-14T17:16:14.000Z"
-  }
-,
+  },
   {
     "id": 1781457330441,
     "title_zh": "上校椅",
     "title_en": "Colonel Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3126,13 +2978,12 @@
     ],
     "main_image": "/images/products/restaurant/163.JPG",
     "created_at": "2026-06-14T17:16:15.000Z"
-  }
-,
+  },
   {
     "id": 1781457330442,
     "title_zh": "船长椅",
     "title_en": "Captain Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3147,13 +2998,12 @@
     ],
     "main_image": "/images/products/restaurant/165.JPG",
     "created_at": "2026-06-14T17:16:15.000Z"
-  }
-,
+  },
   {
     "id": 1781457330443,
     "title_zh": "指挥椅",
     "title_en": "Commander Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3168,13 +3018,12 @@
     ],
     "main_image": "/images/products/restaurant/167.JPG",
     "created_at": "2026-06-14T17:16:15.000Z"
-  }
-,
+  },
   {
     "id": 1781457330444,
     "title_zh": "系列 1",
     "title_en": "Collection 1 Chair",
-    "category": "restaurant",
+    "category": "chair",
     "sku": "",
     "dimensions": "",
     "material": "",
@@ -3190,5 +3039,4 @@
     "main_image": "/images/products/restaurant/169.JPG",
     "created_at": "2026-06-14T17:16:15.000Z"
   }
-
 ]
