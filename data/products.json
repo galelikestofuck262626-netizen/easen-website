@@ -3512,10 +3512,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/1.JPG",
-      "/images/products/restaurant/2.JPG"
+      "/images/products/restaurant/booth-1.JPG",
+      "/images/products/restaurant/booth-2.JPG"
     ],
-    "main_image": "/images/products/restaurant/1.JPG",
+    "main_image": "/images/products/restaurant/booth-1.JPG",
     "created_at": "2026-06-15T14:38:00.000Z"
   },
   {
@@ -3535,10 +3535,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/3.JPG",
-      "/images/products/restaurant/4.JPG"
+      "/images/products/restaurant/booth-3.JPG",
+      "/images/products/restaurant/booth-4.JPG"
     ],
-    "main_image": "/images/products/restaurant/3.JPG",
+    "main_image": "/images/products/restaurant/booth-3.JPG",
     "created_at": "2026-06-15T14:38:00.000Z"
   },
   {
@@ -3558,10 +3558,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/5.JPG",
-      "/images/products/restaurant/6.JPG"
+      "/images/products/restaurant/booth-5.JPG",
+      "/images/products/restaurant/booth-6.JPG"
     ],
-    "main_image": "/images/products/restaurant/5.JPG",
+    "main_image": "/images/products/restaurant/booth-5.JPG",
     "created_at": "2026-06-15T14:38:00.000Z"
   },
   {
@@ -3581,10 +3581,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/7.JPG",
-      "/images/products/restaurant/8.JPG"
+      "/images/products/restaurant/booth-7.JPG",
+      "/images/products/restaurant/booth-8.JPG"
     ],
-    "main_image": "/images/products/restaurant/7.JPG",
+    "main_image": "/images/products/restaurant/booth-7.JPG",
     "created_at": "2026-06-15T14:38:01.000Z"
   },
   {
@@ -3604,10 +3604,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/1.JPG",
-      "/images/products/cafe/2.JPG"
+      "/images/products/cafe/cafe615-1.JPG",
+      "/images/products/cafe/cafe615-2.JPG"
     ],
-    "main_image": "/images/products/cafe/1.JPG",
+    "main_image": "/images/products/cafe/cafe615-1.JPG",
     "created_at": "2026-06-15T14:38:01.000Z"
   },
   {
@@ -3627,10 +3627,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/3.JPG",
-      "/images/products/cafe/4.JPG"
+      "/images/products/cafe/cafe615-3.JPG",
+      "/images/products/cafe/cafe615-4.JPG"
     ],
-    "main_image": "/images/products/cafe/3.JPG",
+    "main_image": "/images/products/cafe/cafe615-3.JPG",
     "created_at": "2026-06-15T14:38:01.000Z"
   },
   {
@@ -3650,10 +3650,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/5.JPG",
-      "/images/products/cafe/6.JPG"
+      "/images/products/cafe/cafe615-5.JPG",
+      "/images/products/cafe/cafe615-6.JPG"
     ],
-    "main_image": "/images/products/cafe/5.JPG",
+    "main_image": "/images/products/cafe/cafe615-5.JPG",
     "created_at": "2026-06-15T14:38:02.000Z"
   },
   {
@@ -3673,10 +3673,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/7.JPG",
-      "/images/products/cafe/8.JPG"
+      "/images/products/cafe/cafe615-7.JPG",
+      "/images/products/cafe/cafe615-8.JPG"
     ],
-    "main_image": "/images/products/cafe/7.JPG",
+    "main_image": "/images/products/cafe/cafe615-7.JPG",
     "created_at": "2026-06-15T14:38:02.000Z"
   },
   {
@@ -3696,10 +3696,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/9.JPG",
-      "/images/products/cafe/10.JPG"
+      "/images/products/cafe/cafe615-9.JPG",
+      "/images/products/cafe/cafe615-10.JPG"
     ],
-    "main_image": "/images/products/cafe/9.JPG",
+    "main_image": "/images/products/cafe/cafe615-9.JPG",
     "created_at": "2026-06-15T14:38:02.000Z"
   },
   {
@@ -3719,10 +3719,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/11.JPG",
-      "/images/products/cafe/12.JPG"
+      "/images/products/cafe/cafe615-11.JPG",
+      "/images/products/cafe/cafe615-12.JPG"
     ],
-    "main_image": "/images/products/cafe/11.JPG",
+    "main_image": "/images/products/cafe/cafe615-11.JPG",
     "created_at": "2026-06-15T14:38:03.000Z"
   },
   {
@@ -3742,10 +3742,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/13.JPG",
-      "/images/products/cafe/14.JPG"
+      "/images/products/cafe/cafe615-13.JPG",
+      "/images/products/cafe/cafe615-14.JPG"
     ],
-    "main_image": "/images/products/cafe/13.JPG",
+    "main_image": "/images/products/cafe/cafe615-13.JPG",
     "created_at": "2026-06-15T14:38:03.000Z"
   },
   {
@@ -3765,10 +3765,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/15.JPG",
-      "/images/products/cafe/16.JPG"
+      "/images/products/cafe/cafe615-15.JPG",
+      "/images/products/cafe/cafe615-16.JPG"
     ],
-    "main_image": "/images/products/cafe/15.JPG",
+    "main_image": "/images/products/cafe/cafe615-15.JPG",
     "created_at": "2026-06-15T14:38:03.000Z"
   },
   {
@@ -3788,10 +3788,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/17.JPG",
-      "/images/products/cafe/18.JPG"
+      "/images/products/cafe/cafe615-17.JPG",
+      "/images/products/cafe/cafe615-18.JPG"
     ],
-    "main_image": "/images/products/cafe/17.JPG",
+    "main_image": "/images/products/cafe/cafe615-17.JPG",
     "created_at": "2026-06-15T14:38:04.000Z"
   },
   {
@@ -3811,10 +3811,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/19.JPG",
-      "/images/products/cafe/20.JPG"
+      "/images/products/cafe/cafe615-19.JPG",
+      "/images/products/cafe/cafe615-20.JPG"
     ],
-    "main_image": "/images/products/cafe/19.JPG",
+    "main_image": "/images/products/cafe/cafe615-19.JPG",
     "created_at": "2026-06-15T14:38:04.000Z"
   },
   {
@@ -3834,10 +3834,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/21.JPG",
-      "/images/products/cafe/22.JPG"
+      "/images/products/cafe/cafe615-21.JPG",
+      "/images/products/cafe/cafe615-22.JPG"
     ],
-    "main_image": "/images/products/cafe/21.JPG",
+    "main_image": "/images/products/cafe/cafe615-21.JPG",
     "created_at": "2026-06-15T14:38:04.000Z"
   },
   {
@@ -3857,10 +3857,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/23.JPG",
-      "/images/products/cafe/24.JPG"
+      "/images/products/cafe/cafe615-23.JPG",
+      "/images/products/cafe/cafe615-24.JPG"
     ],
-    "main_image": "/images/products/cafe/23.JPG",
+    "main_image": "/images/products/cafe/cafe615-23.JPG",
     "created_at": "2026-06-15T14:38:04.000Z"
   },
   {
@@ -3880,10 +3880,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/25.JPG",
-      "/images/products/cafe/26.JPG"
+      "/images/products/cafe/cafe615-25.JPG",
+      "/images/products/cafe/cafe615-26.JPG"
     ],
-    "main_image": "/images/products/cafe/25.JPG",
+    "main_image": "/images/products/cafe/cafe615-25.JPG",
     "created_at": "2026-06-15T14:38:05.000Z"
   },
   {
@@ -3903,10 +3903,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/27.JPG",
-      "/images/products/cafe/28.JPG"
+      "/images/products/cafe/cafe615-27.JPG",
+      "/images/products/cafe/cafe615-28.JPG"
     ],
-    "main_image": "/images/products/cafe/27.JPG",
+    "main_image": "/images/products/cafe/cafe615-27.JPG",
     "created_at": "2026-06-15T14:38:05.000Z"
   },
   {
@@ -3926,10 +3926,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/29.JPG",
-      "/images/products/cafe/30.JPG"
+      "/images/products/cafe/cafe615-29.JPG",
+      "/images/products/cafe/cafe615-30.JPG"
     ],
-    "main_image": "/images/products/cafe/29.JPG",
+    "main_image": "/images/products/cafe/cafe615-29.JPG",
     "created_at": "2026-06-15T14:38:05.000Z"
   },
   {
@@ -3949,10 +3949,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/31.JPG",
-      "/images/products/cafe/32.JPG"
+      "/images/products/cafe/cafe615-31.JPG",
+      "/images/products/cafe/cafe615-32.JPG"
     ],
-    "main_image": "/images/products/cafe/31.JPG",
+    "main_image": "/images/products/cafe/cafe615-31.JPG",
     "created_at": "2026-06-15T14:38:06.000Z"
   },
   {
@@ -3972,10 +3972,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/33.JPG",
-      "/images/products/cafe/34.JPG"
+      "/images/products/cafe/cafe615-33.JPG",
+      "/images/products/cafe/cafe615-34.JPG"
     ],
-    "main_image": "/images/products/cafe/33.JPG",
+    "main_image": "/images/products/cafe/cafe615-33.JPG",
     "created_at": "2026-06-15T14:38:06.000Z"
   },
   {
@@ -3995,10 +3995,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/35.JPG",
-      "/images/products/cafe/36.JPG"
+      "/images/products/cafe/cafe615-35.JPG",
+      "/images/products/cafe/cafe615-36.JPG"
     ],
-    "main_image": "/images/products/cafe/35.JPG",
+    "main_image": "/images/products/cafe/cafe615-35.JPG",
     "created_at": "2026-06-15T14:38:06.000Z"
   },
   {
@@ -4018,10 +4018,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/cafe/37.JPG",
-      "/images/products/cafe/38.JPG"
+      "/images/products/cafe/cafe615-37.JPG",
+      "/images/products/cafe/cafe615-38.JPG"
     ],
-    "main_image": "/images/products/cafe/37.JPG",
+    "main_image": "/images/products/cafe/cafe615-37.JPG",
     "created_at": "2026-06-15T14:38:07.000Z"
   },
   {
@@ -4041,10 +4041,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/1.JPG",
-      "/images/products/restaurant/2.JPG"
+      "/images/products/restaurant/chair615-1.JPG",
+      "/images/products/restaurant/chair615-2.JPG"
     ],
-    "main_image": "/images/products/restaurant/1.JPG",
+    "main_image": "/images/products/restaurant/chair615-1.JPG",
     "created_at": "2026-06-15T14:38:07.000Z"
   },
   {
@@ -4064,10 +4064,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/3.JPG",
-      "/images/products/restaurant/4.JPG"
+      "/images/products/restaurant/chair615-3.JPG",
+      "/images/products/restaurant/chair615-4.JPG"
     ],
-    "main_image": "/images/products/restaurant/3.JPG",
+    "main_image": "/images/products/restaurant/chair615-3.JPG",
     "created_at": "2026-06-15T14:38:07.000Z"
   },
   {
@@ -4087,10 +4087,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/5.JPG",
-      "/images/products/restaurant/6.JPG"
+      "/images/products/restaurant/chair615-5.JPG",
+      "/images/products/restaurant/chair615-6.JPG"
     ],
-    "main_image": "/images/products/restaurant/5.JPG",
+    "main_image": "/images/products/restaurant/chair615-5.JPG",
     "created_at": "2026-06-15T14:38:08.000Z"
   },
   {
@@ -4110,10 +4110,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/7.JPG",
-      "/images/products/restaurant/8.JPG"
+      "/images/products/restaurant/chair615-7.JPG",
+      "/images/products/restaurant/chair615-8.JPG"
     ],
-    "main_image": "/images/products/restaurant/7.JPG",
+    "main_image": "/images/products/restaurant/chair615-7.JPG",
     "created_at": "2026-06-15T14:38:08.000Z"
   },
   {
@@ -4133,10 +4133,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/9.JPG",
-      "/images/products/restaurant/10.JPG"
+      "/images/products/restaurant/chair615-9.JPG",
+      "/images/products/restaurant/chair615-10.JPG"
     ],
-    "main_image": "/images/products/restaurant/9.JPG",
+    "main_image": "/images/products/restaurant/chair615-9.JPG",
     "created_at": "2026-06-15T14:38:08.000Z"
   },
   {
@@ -4156,10 +4156,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/11.JPG",
-      "/images/products/restaurant/12.JPG"
+      "/images/products/restaurant/chair615-11.JPG",
+      "/images/products/restaurant/chair615-12.JPG"
     ],
-    "main_image": "/images/products/restaurant/11.JPG",
+    "main_image": "/images/products/restaurant/chair615-11.JPG",
     "created_at": "2026-06-15T14:38:09.000Z"
   },
   {
@@ -4179,10 +4179,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/13.JPG",
-      "/images/products/restaurant/14.JPG"
+      "/images/products/restaurant/chair615-13.JPG",
+      "/images/products/restaurant/chair615-14.JPG"
     ],
-    "main_image": "/images/products/restaurant/13.JPG",
+    "main_image": "/images/products/restaurant/chair615-13.JPG",
     "created_at": "2026-06-15T14:38:09.000Z"
   },
   {
@@ -4202,10 +4202,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/15.JPG",
-      "/images/products/restaurant/16.JPG"
+      "/images/products/restaurant/chair615-15.JPG",
+      "/images/products/restaurant/chair615-16.JPG"
     ],
-    "main_image": "/images/products/restaurant/15.JPG",
+    "main_image": "/images/products/restaurant/chair615-15.JPG",
     "created_at": "2026-06-15T14:38:09.000Z"
   },
   {
@@ -4225,10 +4225,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/17.JPG",
-      "/images/products/restaurant/18.JPG"
+      "/images/products/restaurant/chair615-17.JPG",
+      "/images/products/restaurant/chair615-18.JPG"
     ],
-    "main_image": "/images/products/restaurant/17.JPG",
+    "main_image": "/images/products/restaurant/chair615-17.JPG",
     "created_at": "2026-06-15T14:38:10.000Z"
   },
   {
@@ -4248,10 +4248,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/19.JPG",
-      "/images/products/restaurant/20.JPG"
+      "/images/products/restaurant/chair615-19.JPG",
+      "/images/products/restaurant/chair615-20.JPG"
     ],
-    "main_image": "/images/products/restaurant/19.JPG",
+    "main_image": "/images/products/restaurant/chair615-19.JPG",
     "created_at": "2026-06-15T14:38:10.000Z"
   },
   {
@@ -4271,10 +4271,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/21.JPG",
-      "/images/products/restaurant/22.JPG"
+      "/images/products/restaurant/chair615-21.JPG",
+      "/images/products/restaurant/chair615-22.JPG"
     ],
-    "main_image": "/images/products/restaurant/21.JPG",
+    "main_image": "/images/products/restaurant/chair615-21.JPG",
     "created_at": "2026-06-15T14:38:10.000Z"
   },
   {
@@ -4294,10 +4294,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/23.JPG",
-      "/images/products/restaurant/24.JPG"
+      "/images/products/restaurant/chair615-23.JPG",
+      "/images/products/restaurant/chair615-24.JPG"
     ],
-    "main_image": "/images/products/restaurant/23.JPG",
+    "main_image": "/images/products/restaurant/chair615-23.JPG",
     "created_at": "2026-06-15T14:38:11.000Z"
   },
   {
@@ -4317,10 +4317,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/25.JPG",
-      "/images/products/restaurant/26.JPG"
+      "/images/products/restaurant/chair615-25.JPG",
+      "/images/products/restaurant/chair615-26.JPG"
     ],
-    "main_image": "/images/products/restaurant/25.JPG",
+    "main_image": "/images/products/restaurant/chair615-25.JPG",
     "created_at": "2026-06-15T14:38:11.000Z"
   },
   {
@@ -4340,10 +4340,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/27.JPG",
-      "/images/products/restaurant/28.JPG"
+      "/images/products/restaurant/chair615-27.JPG",
+      "/images/products/restaurant/chair615-28.JPG"
     ],
-    "main_image": "/images/products/restaurant/27.JPG",
+    "main_image": "/images/products/restaurant/chair615-27.JPG",
     "created_at": "2026-06-15T14:38:11.000Z"
   },
   {
@@ -4363,10 +4363,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/29.JPG",
-      "/images/products/restaurant/30.JPG"
+      "/images/products/restaurant/chair615-29.JPG",
+      "/images/products/restaurant/chair615-30.JPG"
     ],
-    "main_image": "/images/products/restaurant/29.JPG",
+    "main_image": "/images/products/restaurant/chair615-29.JPG",
     "created_at": "2026-06-15T14:38:12.000Z"
   },
   {
@@ -4386,10 +4386,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/31.JPG",
-      "/images/products/restaurant/32.JPG"
+      "/images/products/restaurant/chair615-31.JPG",
+      "/images/products/restaurant/chair615-32.JPG"
     ],
-    "main_image": "/images/products/restaurant/31.JPG",
+    "main_image": "/images/products/restaurant/chair615-31.JPG",
     "created_at": "2026-06-15T14:38:12.000Z"
   },
   {
@@ -4409,10 +4409,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/33.JPG",
-      "/images/products/restaurant/34.JPG"
+      "/images/products/restaurant/chair615-33.JPG",
+      "/images/products/restaurant/chair615-34.JPG"
     ],
-    "main_image": "/images/products/restaurant/33.JPG",
+    "main_image": "/images/products/restaurant/chair615-33.JPG",
     "created_at": "2026-06-15T14:38:12.000Z"
   },
   {
@@ -4432,10 +4432,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/35.JPG",
-      "/images/products/restaurant/36.JPG"
+      "/images/products/restaurant/chair615-35.JPG",
+      "/images/products/restaurant/chair615-36.JPG"
     ],
-    "main_image": "/images/products/restaurant/35.JPG",
+    "main_image": "/images/products/restaurant/chair615-35.JPG",
     "created_at": "2026-06-15T14:38:13.000Z"
   },
   {
@@ -4455,10 +4455,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/37.JPG",
-      "/images/products/restaurant/38.JPG"
+      "/images/products/restaurant/chair615-37.JPG",
+      "/images/products/restaurant/chair615-38.JPG"
     ],
-    "main_image": "/images/products/restaurant/37.JPG",
+    "main_image": "/images/products/restaurant/chair615-37.JPG",
     "created_at": "2026-06-15T14:38:13.000Z"
   },
   {
@@ -4478,10 +4478,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/39.JPG",
-      "/images/products/restaurant/40.JPG"
+      "/images/products/restaurant/chair615-39.JPG",
+      "/images/products/restaurant/chair615-40.JPG"
     ],
-    "main_image": "/images/products/restaurant/39.JPG",
+    "main_image": "/images/products/restaurant/chair615-39.JPG",
     "created_at": "2026-06-15T14:38:13.000Z"
   },
   {
@@ -4501,10 +4501,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/41.JPG",
-      "/images/products/restaurant/42.JPG"
+      "/images/products/restaurant/chair615-41.JPG",
+      "/images/products/restaurant/chair615-42.JPG"
     ],
-    "main_image": "/images/products/restaurant/41.JPG",
+    "main_image": "/images/products/restaurant/chair615-41.JPG",
     "created_at": "2026-06-15T14:38:14.000Z"
   },
   {
@@ -4524,10 +4524,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/43.JPG",
-      "/images/products/restaurant/44.JPG"
+      "/images/products/restaurant/chair615-43.JPG",
+      "/images/products/restaurant/chair615-44.JPG"
     ],
-    "main_image": "/images/products/restaurant/43.JPG",
+    "main_image": "/images/products/restaurant/chair615-43.JPG",
     "created_at": "2026-06-15T14:38:14.000Z"
   },
   {
@@ -4547,10 +4547,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/45.JPG",
-      "/images/products/restaurant/46.JPG"
+      "/images/products/restaurant/chair615-45.JPG",
+      "/images/products/restaurant/chair615-46.JPG"
     ],
-    "main_image": "/images/products/restaurant/45.JPG",
+    "main_image": "/images/products/restaurant/chair615-45.JPG",
     "created_at": "2026-06-15T14:38:14.000Z"
   },
   {
@@ -4570,10 +4570,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/47.JPG",
-      "/images/products/restaurant/48.JPG"
+      "/images/products/restaurant/chair615-47.JPG",
+      "/images/products/restaurant/chair615-48.JPG"
     ],
-    "main_image": "/images/products/restaurant/47.JPG",
+    "main_image": "/images/products/restaurant/chair615-47.JPG",
     "created_at": "2026-06-15T14:38:15.000Z"
   },
   {
@@ -4593,10 +4593,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/49.JPG",
-      "/images/products/restaurant/50.JPG"
+      "/images/products/restaurant/chair615-49.JPG",
+      "/images/products/restaurant/chair615-50.JPG"
     ],
-    "main_image": "/images/products/restaurant/49.JPG",
+    "main_image": "/images/products/restaurant/chair615-49.JPG",
     "created_at": "2026-06-15T14:38:15.000Z"
   },
   {
@@ -4616,10 +4616,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/51.JPG",
-      "/images/products/restaurant/52.JPG"
+      "/images/products/restaurant/chair615-51.JPG",
+      "/images/products/restaurant/chair615-52.JPG"
     ],
-    "main_image": "/images/products/restaurant/51.JPG",
+    "main_image": "/images/products/restaurant/chair615-51.JPG",
     "created_at": "2026-06-15T14:38:15.000Z"
   },
   {
@@ -4639,10 +4639,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/53.JPG",
-      "/images/products/restaurant/54.JPG"
+      "/images/products/restaurant/chair615-53.JPG",
+      "/images/products/restaurant/chair615-54.JPG"
     ],
-    "main_image": "/images/products/restaurant/53.JPG",
+    "main_image": "/images/products/restaurant/chair615-53.JPG",
     "created_at": "2026-06-15T14:38:16.000Z"
   },
   {
@@ -4662,10 +4662,10 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/55.JPG",
-      "/images/products/restaurant/56.JPG"
+      "/images/products/restaurant/chair615-55.JPG",
+      "/images/products/restaurant/chair615-56.JPG"
     ],
-    "main_image": "/images/products/restaurant/55.JPG",
+    "main_image": "/images/products/restaurant/chair615-55.JPG",
     "created_at": "2026-06-15T14:38:16.000Z"
   }
 ]
