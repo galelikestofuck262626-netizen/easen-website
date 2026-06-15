@@ -321,35 +321,62 @@ function renderProducts() {
     if (p.status === 'offline') return false;
     if (currentFilter !== 'all' && p.category !== currentFilter) return false;
 
-    // 子分类筛选 - 使用 type 字段
+    // 子分类筛选
     if (currentSubFilter !== 'all') {
+      var title = (p.title_zh || '').toLowerCase();
+      var titleEn = (p.title_en || '').toLowerCase();
       var matchSub = false;
 
-      // 直接使用 type 字段匹配
-      if (currentSubFilter === 'chair' || currentSubFilter === 'outdoor-chair') {
-        matchSub = p.type === 'chair';
-      } else if (currentSubFilter === 'table' || currentSubFilter === 'outdoor-table') {
-        matchSub = p.type === 'table';
-      } else if (currentSubFilter === 'sofa') {
-        matchSub = p.type === 'sofa';
-      } else if (currentSubFilter === 'booth') {
-        matchSub = (p.title_zh || '').indexOf('卡座') >= 0 || (p.title_en || '').toLowerCase().indexOf('booth') >= 0;
-      } else if (currentSubFilter === 'barstool') {
-        matchSub = (p.title_zh || '').indexOf('吧台') >= 0 || (p.title_zh || '').indexOf('高脚') >= 0 || (p.title_en || '').toLowerCase().indexOf('bar') >= 0;
-      } else if (currentSubFilter === 'rattan') {
-        matchSub = (p.title_zh || '').indexOf('藤') >= 0 || (p.title_en || '').toLowerCase().indexOf('rattan') >= 0;
-      } else if (currentSubFilter === 'lounge') {
-        matchSub = (p.title_zh || '').indexOf('休闲') >= 0 || (p.title_zh || '').indexOf('躺') >= 0 || (p.title_en || '').toLowerCase().indexOf('lounge') >= 0;
-      } else if (currentSubFilter === 'lobby') {
-        matchSub = (p.title_zh || '').indexOf('大堂') >= 0 || (p.title_en || '').toLowerCase().indexOf('lobby') >= 0;
-      } else if (currentSubFilter === 'room') {
-        matchSub = (p.title_zh || '').indexOf('客房') >= 0 || (p.title_en || '').toLowerCase().indexOf('room') >= 0;
-      } else if (currentSubFilter === 'desk') {
-        matchSub = (p.title_zh || '').indexOf('书桌') >= 0 || (p.title_en || '').toLowerCase().indexOf('desk') >= 0;
+      // 餐厅家具子分类
+      if (currentFilter === 'restaurant') {
+        if (currentSubFilter === 'booth') {
+          matchSub = title.indexOf('卡座') >= 0 || titleEn.indexOf('booth') >= 0;
+        } else if (currentSubFilter === 'chair') {
+          matchSub = title.indexOf('椅') >= 0 || titleEn.indexOf('chair') >= 0;
+        } else if (currentSubFilter === 'sofa') {
+          matchSub = title.indexOf('沙发') >= 0 || titleEn.indexOf('sofa') >= 0;
+        } else if (currentSubFilter === 'table') {
+          matchSub = title.indexOf('桌') >= 0 || titleEn.indexOf('table') >= 0;
+        }
+      }
+      // 酒店家具子分类
+      else if (currentFilter === 'hotel') {
+        if (currentSubFilter === 'lobby') {
+          matchSub = title.indexOf('大堂') >= 0 || titleEn.indexOf('lobby') >= 0;
+        } else if (currentSubFilter === 'room') {
+          matchSub = title.indexOf('客房') >= 0 || titleEn.indexOf('room') >= 0 || titleEn.indexOf('bedroom') >= 0;
+        } else if (currentSubFilter === 'lounge') {
+          matchSub = title.indexOf('休闲') >= 0 || title.indexOf('沙发') >= 0 || titleEn.indexOf('lounge') >= 0;
+        } else if (currentSubFilter === 'desk') {
+          matchSub = title.indexOf('书桌') >= 0 || titleEn.indexOf('desk') >= 0;
+        }
+      }
+      // 咖啡厅家具子分类
+      else if (currentFilter === 'cafe') {
+        if (currentSubFilter === 'chair') {
+          matchSub = title.indexOf('椅') >= 0 || titleEn.indexOf('chair') >= 0;
+        } else if (currentSubFilter === 'barstool') {
+          matchSub = title.indexOf('吧台') >= 0 || title.indexOf('高脚') >= 0 || titleEn.indexOf('bar') >= 0 || titleEn.indexOf('stool') >= 0;
+        } else if (currentSubFilter === 'table') {
+          matchSub = title.indexOf('桌') >= 0 || titleEn.indexOf('table') >= 0;
+        } else if (currentSubFilter === 'sofa') {
+          matchSub = title.indexOf('沙发') >= 0 || titleEn.indexOf('sofa') >= 0;
+        }
+      }
+      // 户外家具子分类
+      else if (currentFilter === 'outdoor') {
+        if (currentSubFilter === 'outdoor-chair') {
+          matchSub = title.indexOf('椅') >= 0 || titleEn.indexOf('chair') >= 0;
+        } else if (currentSubFilter === 'outdoor-table') {
+          matchSub = title.indexOf('桌') >= 0 || titleEn.indexOf('table') >= 0;
+        } else if (currentSubFilter === 'rattan') {
+          matchSub = title.indexOf('藤') >= 0 || titleEn.indexOf('rattan') >= 0 || titleEn.indexOf('wicker') >= 0;
+        } else if (currentSubFilter === 'lounge') {
+          matchSub = title.indexOf('躺') >= 0 || titleEn.indexOf('lounge') >= 0 || titleEn.indexOf('chaise') >= 0;
+        }
       }
 
       if (!matchSub) return false;
-    }
     }
 
     if (currentSearch) {
