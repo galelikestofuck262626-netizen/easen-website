@@ -107,6 +107,130 @@
     </div>
   </section>
 
+  <!-- 工厂实景视频 -->
+  <section class="py-20 bg-gradient-to-b from-white to-neutral-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-primary mb-4">
+          <span data-lang="zh">走进宜森工厂</span>
+          <span data-lang="en" style="display:none">Inside EASEN Factory</span>
+          <span data-lang="fr" style="display:none">À l'Intérieur de l'Usine EASEN</span>
+          <span data-lang="es" style="display:none">Dentro de la Fábrica EASEN</span>
+          <span data-lang="de" style="display:none">Einblick in die EASEN Fabrik</span>
+          <span data-lang="ar" style="display:none">داخل مصنع إيسن</span>
+        </h2>
+        <p class="text-neutral-600 text-lg">
+          <span data-lang="zh">10,000㎡现代化生产基地，从原材料到成品，每一步都经过严格把控</span>
+          <span data-lang="en" style="display:none">10,000㎡ modern production facility - every step from raw materials to finished products is strictly controlled</span>
+          <span data-lang="fr" style="display:none">Installation de production moderne de 10 000 m² - chaque étape des matières premières aux produits finis est strictement contrôlée</span>
+          <span data-lang="es" style="display:none">Instalación de producción moderna de 10,000㎡ - cada paso desde las materias primas hasta los productos terminados está estrictamente controlado</span>
+          <span data-lang="de" style="display:none">10.000㎡ moderne Produktionsanlage - jeder Schritt von Rohmaterialien bis zu fertigen Produkten wird streng kontrolliert</span>
+          <span data-lang="ar" style="display:none">منشأة إنتاج حديثة بمساحة 10,000 متر مربع - كل خطوة من المواد الخام إلى المنتجات النهائية تخضع لرقابة صارمة</span>
+        </p>
+      </div>
+
+      <!-- 视频容器 -->
+      <div class="relative group">
+        <!-- 外层光晕 -->
+        <div class="absolute -inset-2 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-2xl blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- 视频包装器 -->
+        <div class="relative bg-black rounded-2xl overflow-hidden shadow-2xl">
+          <!-- 视频元素 -->
+          <video
+            id="factoryTourVideo"
+            class="w-full aspect-video object-cover"
+            controls
+            preload="metadata"
+            poster="images/factory-poster.jpg"
+          >
+            <source src="videos/factory-tour.mp4" type="video/mp4">
+            <span data-lang="zh">您的浏览器不支持视频播放</span>
+            <span data-lang="en" style="display:none">Your browser does not support video playback</span>
+          </video>
+
+          <!-- 播放按钮覆盖层 -->
+          <div id="factoryPlayOverlay" class="absolute inset-0 flex items-center justify-center bg-black/40 transition-opacity duration-500 cursor-pointer">
+            <!-- 脉冲动画 -->
+            <div class="absolute w-32 h-32 rounded-full border-2 border-white/30 animate-ping"></div>
+            <div class="absolute w-28 h-28 rounded-full border-2 border-white/40 animate-ping" style="animation-delay: 0.3s;"></div>
+
+            <!-- 播放按钮 -->
+            <div class="relative flex items-center justify-center w-24 h-24 rounded-full bg-white/95 backdrop-blur-sm shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-accent">
+              <svg class="w-10 h-10 text-primary group-hover:text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 视频下方特色说明 -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div class="text-center">
+          <div class="text-3xl mb-2">🏭</div>
+          <h4 class="font-semibold text-primary mb-1">
+            <span data-lang="zh">现代化设备</span>
+            <span data-lang="en" style="display:none">Modern Equipment</span>
+            <span data-lang="fr" style="display:none">Équipement Moderne</span>
+            <span data-lang="es" style="display:none">Equipo Moderno</span>
+            <span data-lang="de" style="display:none">Moderne Ausrüstung</span>
+            <span data-lang="ar" style="display:none">معدات حديثة</span>
+          </h4>
+          <p class="text-sm text-neutral-600">
+            <span data-lang="zh">全自动生产线</span>
+            <span data-lang="en" style="display:none">Fully Automated Lines</span>
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl mb-2">👷</div>
+          <h4 class="font-semibold text-primary mb-1">
+            <span data-lang="zh">专业团队</span>
+            <span data-lang="en" style="display:none">Professional Team</span>
+            <span data-lang="fr" style="display:none">Équipe Professionnelle</span>
+            <span data-lang="es" style="display:none">Equipo Profesional</span>
+            <span data-lang="de" style="display:none">Professionelles Team</span>
+            <span data-lang="ar" style="display:none">فريق محترف</span>
+          </h4>
+          <p class="text-sm text-neutral-600">
+            <span data-lang="zh">150+技术工人</span>
+            <span data-lang="en" style="display:none">150+ Skilled Workers</span>
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl mb-2">✅</div>
+          <h4 class="font-semibold text-primary mb-1">
+            <span data-lang="zh">严格质检</span>
+            <span data-lang="en" style="display:none">Strict QC</span>
+            <span data-lang="fr" style="display:none">CQ Strict</span>
+            <span data-lang="es" style="display:none">CC Estricto</span>
+            <span data-lang="de" style="display:none">Strenge QK</span>
+            <span data-lang="ar" style="display:none">رقابة صارمة</span>
+          </h4>
+          <p class="text-sm text-neutral-600">
+            <span data-lang="zh">7道质检工序</span>
+            <span data-lang="en" style="display:none">7-Step QC Process</span>
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl mb-2">📦</div>
+          <h4 class="font-semibold text-primary mb-1">
+            <span data-lang="zh">专业包装</span>
+            <span data-lang="en" style="display:none">Professional Packing</span>
+            <span data-lang="fr" style="display:none">Emballage Professionnel</span>
+            <span data-lang="es" style="display:none">Embalaje Profesional</span>
+            <span data-lang="de" style="display:none">Professionelle Verpackung</span>
+            <span data-lang="ar" style="display:none">تعبئة احترافية</span>
+          </h4>
+          <p class="text-sm text-neutral-600">
+            <span data-lang="zh">确保运输安全</span>
+            <span data-lang="en" style="display:none">Safe Transportation</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 我们的优势 -->
   <section class="py-20 bg-neutral-50">
     <div class="max-w-7xl mx-auto px-4">
@@ -152,6 +276,41 @@
   </section>
 
 </main>
+
+<script>
+// 工厂视频播放控制
+(function(){
+  var video = document.getElementById('factoryTourVideo');
+  var overlay = document.getElementById('factoryPlayOverlay');
+
+  if (!video || !overlay) return;
+
+  // 点击遮罩层播放视频
+  overlay.addEventListener('click', function(){
+    video.play();
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+  });
+
+  // 视频播放时隐藏遮罩
+  video.addEventListener('play', function(){
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+  });
+
+  // 视频暂停时显示遮罩
+  video.addEventListener('pause', function(){
+    overlay.style.opacity = '1';
+    overlay.style.pointerEvents = 'auto';
+  });
+
+  // 视频结束时显示遮罩
+  video.addEventListener('ended', function(){
+    overlay.style.opacity = '1';
+    overlay.style.pointerEvents = 'auto';
+  });
+})();
+</script>
 
 <script src="js/lang.js"></script><script src="js/components.js"></script>
 </body>
