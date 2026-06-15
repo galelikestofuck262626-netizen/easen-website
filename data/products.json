@@ -19,7 +19,8 @@
     "main_image": "/images/products/cafe/1.png",
     "created_at": "2026-06-14T17:15:30.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330294,
@@ -41,7 +42,8 @@
     "main_image": "/images/products/cafe/3.png",
     "created_at": "2026-06-14T17:15:30.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330295,
@@ -63,7 +65,8 @@
     "main_image": "/images/products/cafe/5.png",
     "created_at": "2026-06-14T17:15:31.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330296,
@@ -85,7 +88,8 @@
     "main_image": "/images/products/cafe/7.png",
     "created_at": "2026-06-14T17:15:31.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330297,
@@ -107,7 +111,8 @@
     "main_image": "/images/products/cafe/9.png",
     "created_at": "2026-06-14T17:15:31.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330298,
@@ -129,7 +134,8 @@
     "main_image": "/images/products/cafe/11.png",
     "created_at": "2026-06-14T17:15:32.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330299,
@@ -151,7 +157,8 @@
     "main_image": "/images/products/cafe/13.png",
     "created_at": "2026-06-14T17:15:32.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330300,
@@ -173,7 +180,8 @@
     "main_image": "/images/products/cafe/15.png",
     "created_at": "2026-06-14T17:15:32.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330301,
@@ -195,7 +203,8 @@
     "main_image": "/images/products/cafe/17.jpg",
     "created_at": "2026-06-14T17:15:33.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330302,
@@ -217,7 +226,8 @@
     "main_image": "/images/products/cafe/19.png",
     "created_at": "2026-06-14T17:15:33.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330303,
@@ -239,7 +249,8 @@
     "main_image": "/images/products/cafe/21.png",
     "created_at": "2026-06-14T17:15:33.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330304,
@@ -261,7 +272,8 @@
     "main_image": "/images/products/cafe/23.png",
     "created_at": "2026-06-14T17:15:34.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330305,
@@ -283,7 +295,8 @@
     "main_image": "/images/products/cafe/25.png",
     "created_at": "2026-06-14T17:15:34.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330306,
@@ -305,7 +318,8 @@
     "main_image": "/images/products/cafe/27.png",
     "created_at": "2026-06-14T17:15:34.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330307,
@@ -327,7 +341,8 @@
     "main_image": "/images/products/cafe/29.png",
     "created_at": "2026-06-14T17:15:34.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330308,
@@ -349,7 +364,8 @@
     "main_image": "/images/products/cafe/31.png",
     "created_at": "2026-06-14T17:15:35.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330309,
@@ -371,7 +387,8 @@
     "main_image": "/images/products/cafe/33.png",
     "created_at": "2026-06-14T17:15:35.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330310,
@@ -393,7 +410,8 @@
     "main_image": "/images/products/cafe/35.png",
     "created_at": "2026-06-14T17:15:35.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330311,
@@ -415,7 +433,8 @@
     "main_image": "/images/products/cafe/37.png",
     "created_at": "2026-06-14T17:15:36.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330312,
@@ -437,7 +456,8 @@
     "main_image": "/images/products/cafe/39.png",
     "created_at": "2026-06-14T17:15:36.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330313,
@@ -459,7 +479,8 @@
     "main_image": "/images/products/cafe/41.png",
     "created_at": "2026-06-14T17:15:36.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330314,
@@ -481,7 +502,8 @@
     "main_image": "/images/products/cafe/43.png",
     "created_at": "2026-06-14T17:15:37.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330315,
@@ -503,7 +525,8 @@
     "main_image": "/images/products/cafe/45.png",
     "created_at": "2026-06-14T17:15:37.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330316,
@@ -525,7 +548,8 @@
     "main_image": "/images/products/cafe/47.png",
     "created_at": "2026-06-14T17:15:37.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330317,
@@ -547,7 +571,8 @@
     "main_image": "/images/products/cafe/49.png",
     "created_at": "2026-06-14T17:15:37.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330318,
@@ -569,7 +594,8 @@
     "main_image": "/images/products/cafe/51.png",
     "created_at": "2026-06-14T17:15:38.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330319,
@@ -591,7 +617,8 @@
     "main_image": "/images/products/cafe/53.png",
     "created_at": "2026-06-14T17:15:38.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330320,
@@ -613,7 +640,8 @@
     "main_image": "/images/products/cafe/55.png",
     "created_at": "2026-06-14T17:15:38.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330321,
@@ -635,7 +663,8 @@
     "main_image": "/images/products/cafe/57.png",
     "created_at": "2026-06-14T17:15:39.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330322,
@@ -657,7 +686,8 @@
     "main_image": "/images/products/cafe/59.png",
     "created_at": "2026-06-14T17:15:39.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330323,
@@ -679,7 +709,8 @@
     "main_image": "/images/products/cafe/61.jpg",
     "created_at": "2026-06-14T17:15:39.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330324,
@@ -701,7 +732,8 @@
     "main_image": "/images/products/cafe/63.png",
     "created_at": "2026-06-14T17:15:40.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330325,
@@ -723,7 +755,8 @@
     "main_image": "/images/products/cafe/65.png",
     "created_at": "2026-06-14T17:15:40.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330326,
@@ -745,7 +778,8 @@
     "main_image": "/images/products/cafe/67.png",
     "created_at": "2026-06-14T17:15:40.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330327,
@@ -767,7 +801,8 @@
     "main_image": "/images/products/cafe/69.png",
     "created_at": "2026-06-14T17:15:40.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330328,
@@ -789,7 +824,8 @@
     "main_image": "/images/products/cafe/71.png",
     "created_at": "2026-06-14T17:15:41.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330329,
@@ -811,7 +847,8 @@
     "main_image": "/images/products/cafe/73.png",
     "created_at": "2026-06-14T17:15:41.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330330,
@@ -833,7 +870,8 @@
     "main_image": "/images/products/cafe/75.png",
     "created_at": "2026-06-14T17:15:41.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330331,
@@ -855,7 +893,8 @@
     "main_image": "/images/products/cafe/094BDA44AB8C37E2A973F6889A3EAB48.png",
     "created_at": "2026-06-14T17:15:42.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-table"
+    "subcategory": "cafe-table",
+    "type": "table"
   },
   {
     "id": 1781457330332,
@@ -877,7 +916,8 @@
     "main_image": "/images/products/cafe/3498C32566B42304CBA1FC03C013DD54.png",
     "created_at": "2026-06-14T17:15:42.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-table"
+    "subcategory": "cafe-table",
+    "type": "table"
   },
   {
     "id": 1781457330333,
@@ -899,7 +939,8 @@
     "main_image": "/images/products/cafe/3723476CCADC4DB5EFB87A0329287CFF.png",
     "created_at": "2026-06-14T17:15:42.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-table"
+    "subcategory": "cafe-table",
+    "type": "table"
   },
   {
     "id": 1781457330334,
@@ -921,7 +962,8 @@
     "main_image": "/images/products/cafe/C3E780FA691EBA454F95DB40E0C2ED3E.png",
     "created_at": "2026-06-14T17:15:43.000Z",
     "imageCategory": "cafe",
-    "subcategory": "cafe-chair"
+    "subcategory": "cafe-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330335,
@@ -943,7 +985,8 @@
     "main_image": "/images/products/outdoor/1.png",
     "created_at": "2026-06-14T17:15:43.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330336,
@@ -965,7 +1008,8 @@
     "main_image": "/images/products/outdoor/3.png",
     "created_at": "2026-06-14T17:15:43.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330337,
@@ -987,7 +1031,8 @@
     "main_image": "/images/products/outdoor/5.png",
     "created_at": "2026-06-14T17:15:44.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330338,
@@ -1009,7 +1054,8 @@
     "main_image": "/images/products/outdoor/7.png",
     "created_at": "2026-06-14T17:15:44.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330339,
@@ -1031,7 +1077,8 @@
     "main_image": "/images/products/outdoor/9.png",
     "created_at": "2026-06-14T17:15:44.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330340,
@@ -1053,7 +1100,8 @@
     "main_image": "/images/products/outdoor/11.png",
     "created_at": "2026-06-14T17:15:44.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330341,
@@ -1075,7 +1123,8 @@
     "main_image": "/images/products/outdoor/13.png",
     "created_at": "2026-06-14T17:15:45.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330342,
@@ -1097,7 +1146,8 @@
     "main_image": "/images/products/outdoor/15.png",
     "created_at": "2026-06-14T17:15:45.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330343,
@@ -1119,7 +1169,8 @@
     "main_image": "/images/products/outdoor/17.png",
     "created_at": "2026-06-14T17:15:45.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330344,
@@ -1141,7 +1192,8 @@
     "main_image": "/images/products/outdoor/19.png",
     "created_at": "2026-06-14T17:15:46.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330345,
@@ -1163,7 +1215,8 @@
     "main_image": "/images/products/outdoor/21.png",
     "created_at": "2026-06-14T17:15:46.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330346,
@@ -1185,7 +1238,8 @@
     "main_image": "/images/products/outdoor/23.png",
     "created_at": "2026-06-14T17:15:46.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330347,
@@ -1207,7 +1261,8 @@
     "main_image": "/images/products/outdoor/25.png",
     "created_at": "2026-06-14T17:15:47.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330348,
@@ -1229,7 +1284,8 @@
     "main_image": "/images/products/outdoor/27.png",
     "created_at": "2026-06-14T17:15:47.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330349,
@@ -1251,7 +1307,8 @@
     "main_image": "/images/products/outdoor/29.png",
     "created_at": "2026-06-14T17:15:47.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330350,
@@ -1273,7 +1330,8 @@
     "main_image": "/images/products/outdoor/31.png",
     "created_at": "2026-06-14T17:15:47.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330351,
@@ -1295,7 +1353,8 @@
     "main_image": "/images/products/outdoor/33.png",
     "created_at": "2026-06-14T17:15:48.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330352,
@@ -1317,7 +1376,8 @@
     "main_image": "/images/products/outdoor/35.png",
     "created_at": "2026-06-14T17:15:48.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330353,
@@ -1339,7 +1399,8 @@
     "main_image": "/images/products/outdoor/37.png",
     "created_at": "2026-06-14T17:15:48.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330354,
@@ -1361,7 +1422,8 @@
     "main_image": "/images/products/outdoor/39.png",
     "created_at": "2026-06-14T17:15:49.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330355,
@@ -1383,7 +1445,8 @@
     "main_image": "/images/products/outdoor/41.png",
     "created_at": "2026-06-14T17:15:49.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-chair"
+    "subcategory": "outdoor-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330356,
@@ -1405,7 +1468,8 @@
     "main_image": "/images/products/outdoor/94AF1CB0DD5AD75EBD4A447B47EA01CB.png",
     "created_at": "2026-06-14T17:15:49.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-table"
+    "subcategory": "outdoor-table",
+    "type": "table"
   },
   {
     "id": 1781457330357,
@@ -1427,7 +1491,8 @@
     "main_image": "/images/products/outdoor/1379FA913E608EA8F532114D6E2E89B5.png",
     "created_at": "2026-06-14T17:15:50.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-table"
+    "subcategory": "outdoor-table",
+    "type": "table"
   },
   {
     "id": 1781457330358,
@@ -1449,7 +1514,8 @@
     "main_image": "/images/products/outdoor/A7C88E5FDC130F3B2EB557BFDDCA9B2A.png",
     "created_at": "2026-06-14T17:15:50.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-table"
+    "subcategory": "outdoor-table",
+    "type": "table"
   },
   {
     "id": 1781457330359,
@@ -1471,7 +1537,8 @@
     "main_image": "/images/products/outdoor/C52E13BD69BF88C07B2B1BC5DE7D9AE7.png",
     "created_at": "2026-06-14T17:15:50.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-table"
+    "subcategory": "outdoor-table",
+    "type": "table"
   },
   {
     "id": 1781457330360,
@@ -1493,7 +1560,8 @@
     "main_image": "/images/products/outdoor/D80E7C69B6698EC57288E73290A317EF.png",
     "created_at": "2026-06-14T17:15:51.000Z",
     "imageCategory": "outdoor",
-    "subcategory": "outdoor-table"
+    "subcategory": "outdoor-table",
+    "type": "table"
   },
   {
     "id": 1781457330361,
@@ -1515,7 +1583,8 @@
     "main_image": "/images/products/restaurant/1.png",
     "created_at": "2026-06-14T17:15:51.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330362,
@@ -1537,7 +1606,8 @@
     "main_image": "/images/products/restaurant/3.png",
     "created_at": "2026-06-14T17:15:51.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330363,
@@ -1559,7 +1629,8 @@
     "main_image": "/images/products/restaurant/5.png",
     "created_at": "2026-06-14T17:15:52.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330364,
@@ -1581,7 +1652,8 @@
     "main_image": "/images/products/restaurant/7.png",
     "created_at": "2026-06-14T17:15:52.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330365,
@@ -1603,7 +1675,8 @@
     "main_image": "/images/products/restaurant/9.png",
     "created_at": "2026-06-14T17:15:52.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330366,
@@ -1625,7 +1698,8 @@
     "main_image": "/images/products/restaurant/11.png",
     "created_at": "2026-06-14T17:15:53.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330367,
@@ -1647,7 +1721,8 @@
     "main_image": "/images/products/restaurant/13.png",
     "created_at": "2026-06-14T17:15:53.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330368,
@@ -1669,7 +1744,8 @@
     "main_image": "/images/products/restaurant/15.png",
     "created_at": "2026-06-14T17:15:53.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330369,
@@ -1691,7 +1767,8 @@
     "main_image": "/images/products/restaurant/17.jpg",
     "created_at": "2026-06-14T17:15:53.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330370,
@@ -1713,7 +1790,8 @@
     "main_image": "/images/products/restaurant/19.png",
     "created_at": "2026-06-14T17:15:54.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330371,
@@ -1735,7 +1813,8 @@
     "main_image": "/images/products/restaurant/21.png",
     "created_at": "2026-06-14T17:15:54.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330372,
@@ -1757,7 +1836,8 @@
     "main_image": "/images/products/restaurant/23.png",
     "created_at": "2026-06-14T17:15:54.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330373,
@@ -1779,7 +1859,8 @@
     "main_image": "/images/products/restaurant/25.png",
     "created_at": "2026-06-14T17:15:55.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330374,
@@ -1801,7 +1882,8 @@
     "main_image": "/images/products/restaurant/27.png",
     "created_at": "2026-06-14T17:15:55.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330375,
@@ -1823,7 +1905,8 @@
     "main_image": "/images/products/restaurant/29.png",
     "created_at": "2026-06-14T17:15:55.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330376,
@@ -1845,7 +1928,8 @@
     "main_image": "/images/products/restaurant/31.png",
     "created_at": "2026-06-14T17:15:55.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330377,
@@ -1867,7 +1951,8 @@
     "main_image": "/images/products/restaurant/33.png",
     "created_at": "2026-06-14T17:15:56.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330378,
@@ -1889,7 +1974,8 @@
     "main_image": "/images/products/restaurant/35.png",
     "created_at": "2026-06-14T17:15:56.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330379,
@@ -1911,7 +1997,8 @@
     "main_image": "/images/products/restaurant/37.png",
     "created_at": "2026-06-14T17:15:56.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330380,
@@ -1933,7 +2020,8 @@
     "main_image": "/images/products/restaurant/39.png",
     "created_at": "2026-06-14T17:15:57.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330381,
@@ -1955,7 +2043,8 @@
     "main_image": "/images/products/restaurant/41.png",
     "created_at": "2026-06-14T17:15:57.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330382,
@@ -1977,7 +2066,8 @@
     "main_image": "/images/products/restaurant/43.png",
     "created_at": "2026-06-14T17:15:57.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330383,
@@ -1999,7 +2089,8 @@
     "main_image": "/images/products/restaurant/45.png",
     "created_at": "2026-06-14T17:15:57.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330384,
@@ -2021,7 +2112,8 @@
     "main_image": "/images/products/restaurant/47.png",
     "created_at": "2026-06-14T17:15:58.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330385,
@@ -2043,7 +2135,8 @@
     "main_image": "/images/products/restaurant/49.png",
     "created_at": "2026-06-14T17:15:58.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330386,
@@ -2065,7 +2158,8 @@
     "main_image": "/images/products/restaurant/51.png",
     "created_at": "2026-06-14T17:15:58.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330387,
@@ -2087,7 +2181,8 @@
     "main_image": "/images/products/restaurant/53.png",
     "created_at": "2026-06-14T17:15:59.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330388,
@@ -2109,7 +2204,8 @@
     "main_image": "/images/products/restaurant/55.png",
     "created_at": "2026-06-14T17:15:59.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330389,
@@ -2131,7 +2227,8 @@
     "main_image": "/images/products/restaurant/57.png",
     "created_at": "2026-06-14T17:15:59.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330390,
@@ -2153,7 +2250,8 @@
     "main_image": "/images/products/restaurant/59.png",
     "created_at": "2026-06-14T17:16:00.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330391,
@@ -2175,7 +2273,8 @@
     "main_image": "/images/products/restaurant/61.png",
     "created_at": "2026-06-14T17:16:00.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330392,
@@ -2197,7 +2296,8 @@
     "main_image": "/images/products/restaurant/63.png",
     "created_at": "2026-06-14T17:16:00.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330393,
@@ -2219,7 +2319,8 @@
     "main_image": "/images/products/restaurant/65.png",
     "created_at": "2026-06-14T17:16:00.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330394,
@@ -2241,7 +2342,8 @@
     "main_image": "/images/products/restaurant/67.jpg",
     "created_at": "2026-06-14T17:16:01.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330395,
@@ -2263,7 +2365,8 @@
     "main_image": "/images/products/restaurant/69.png",
     "created_at": "2026-06-14T17:16:01.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330396,
@@ -2285,7 +2388,8 @@
     "main_image": "/images/products/restaurant/71.png",
     "created_at": "2026-06-14T17:16:01.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330397,
@@ -2307,7 +2411,8 @@
     "main_image": "/images/products/restaurant/73.png",
     "created_at": "2026-06-14T17:16:02.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330398,
@@ -2329,7 +2434,8 @@
     "main_image": "/images/products/restaurant/75.png",
     "created_at": "2026-06-14T17:16:02.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330399,
@@ -2351,7 +2457,8 @@
     "main_image": "/images/products/restaurant/77.png",
     "created_at": "2026-06-14T17:16:02.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330400,
@@ -2373,7 +2480,8 @@
     "main_image": "/images/products/restaurant/79.png",
     "created_at": "2026-06-14T17:16:03.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330401,
@@ -2395,7 +2503,8 @@
     "main_image": "/images/products/restaurant/81.png",
     "created_at": "2026-06-14T17:16:03.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330402,
@@ -2417,7 +2526,8 @@
     "main_image": "/images/products/restaurant/83.png",
     "created_at": "2026-06-14T17:16:03.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330403,
@@ -2439,7 +2549,8 @@
     "main_image": "/images/products/restaurant/85.png",
     "created_at": "2026-06-14T17:16:03.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330404,
@@ -2461,7 +2572,8 @@
     "main_image": "/images/products/restaurant/87.png",
     "created_at": "2026-06-14T17:16:04.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330405,
@@ -2483,7 +2595,8 @@
     "main_image": "/images/products/restaurant/89.png",
     "created_at": "2026-06-14T17:16:04.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330406,
@@ -2505,7 +2618,8 @@
     "main_image": "/images/products/restaurant/91.png",
     "created_at": "2026-06-14T17:16:04.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330407,
@@ -2527,7 +2641,8 @@
     "main_image": "/images/products/restaurant/93.png",
     "created_at": "2026-06-14T17:16:05.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330408,
@@ -2549,7 +2664,8 @@
     "main_image": "/images/products/restaurant/95.png",
     "created_at": "2026-06-14T17:16:05.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330409,
@@ -2571,7 +2687,8 @@
     "main_image": "/images/products/restaurant/97.png",
     "created_at": "2026-06-14T17:16:05.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330410,
@@ -2593,7 +2710,8 @@
     "main_image": "/images/products/restaurant/99.png",
     "created_at": "2026-06-14T17:16:06.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330411,
@@ -2615,7 +2733,8 @@
     "main_image": "/images/products/restaurant/101.png",
     "created_at": "2026-06-14T17:16:06.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330412,
@@ -2637,7 +2756,8 @@
     "main_image": "/images/products/restaurant/103.png",
     "created_at": "2026-06-14T17:16:06.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330413,
@@ -2659,7 +2779,8 @@
     "main_image": "/images/products/restaurant/105.png",
     "created_at": "2026-06-14T17:16:07.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330414,
@@ -2681,7 +2802,8 @@
     "main_image": "/images/products/restaurant/107.png",
     "created_at": "2026-06-14T17:16:07.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330415,
@@ -2703,7 +2825,8 @@
     "main_image": "/images/products/restaurant/109.png",
     "created_at": "2026-06-14T17:16:07.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330416,
@@ -2725,7 +2848,8 @@
     "main_image": "/images/products/restaurant/111.png",
     "created_at": "2026-06-14T17:16:07.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330417,
@@ -2747,7 +2871,8 @@
     "main_image": "/images/products/restaurant/113.png",
     "created_at": "2026-06-14T17:16:08.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330418,
@@ -2769,7 +2894,8 @@
     "main_image": "/images/products/restaurant/115.png",
     "created_at": "2026-06-14T17:16:08.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330419,
@@ -2791,7 +2917,8 @@
     "main_image": "/images/products/restaurant/117.png",
     "created_at": "2026-06-14T17:16:08.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330420,
@@ -2813,7 +2940,8 @@
     "main_image": "/images/products/restaurant/119.png",
     "created_at": "2026-06-14T17:16:09.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330421,
@@ -2835,7 +2963,8 @@
     "main_image": "/images/products/restaurant/121.png",
     "created_at": "2026-06-14T17:16:09.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330422,
@@ -2857,7 +2986,8 @@
     "main_image": "/images/products/restaurant/123.png",
     "created_at": "2026-06-14T17:16:09.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330423,
@@ -2879,7 +3009,8 @@
     "main_image": "/images/products/restaurant/125.png",
     "created_at": "2026-06-14T17:16:09.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330424,
@@ -2901,7 +3032,8 @@
     "main_image": "/images/products/restaurant/129.png",
     "created_at": "2026-06-14T17:16:10.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330425,
@@ -2923,7 +3055,8 @@
     "main_image": "/images/products/restaurant/131.JPG",
     "created_at": "2026-06-14T17:16:10.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330426,
@@ -2945,7 +3078,8 @@
     "main_image": "/images/products/restaurant/133.JPG",
     "created_at": "2026-06-14T17:16:10.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330427,
@@ -2967,7 +3101,8 @@
     "main_image": "/images/products/restaurant/135.JPG",
     "created_at": "2026-06-14T17:16:11.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330428,
@@ -2989,7 +3124,8 @@
     "main_image": "/images/products/restaurant/137.JPG",
     "created_at": "2026-06-14T17:16:11.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330429,
@@ -3011,7 +3147,8 @@
     "main_image": "/images/products/restaurant/139.JPG",
     "created_at": "2026-06-14T17:16:11.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330430,
@@ -3033,7 +3170,8 @@
     "main_image": "/images/products/restaurant/141.JPG",
     "created_at": "2026-06-14T17:16:11.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330431,
@@ -3055,7 +3193,8 @@
     "main_image": "/images/products/restaurant/143.JPG",
     "created_at": "2026-06-14T17:16:12.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330432,
@@ -3077,7 +3216,8 @@
     "main_image": "/images/products/restaurant/145.JPG",
     "created_at": "2026-06-14T17:16:12.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330433,
@@ -3099,7 +3239,8 @@
     "main_image": "/images/products/restaurant/147.JPG",
     "created_at": "2026-06-14T17:16:12.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330434,
@@ -3121,7 +3262,8 @@
     "main_image": "/images/products/restaurant/149.JPG",
     "created_at": "2026-06-14T17:16:13.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330435,
@@ -3143,7 +3285,8 @@
     "main_image": "/images/products/restaurant/151.JPG",
     "created_at": "2026-06-14T17:16:13.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330436,
@@ -3165,7 +3308,8 @@
     "main_image": "/images/products/restaurant/153.JPG",
     "created_at": "2026-06-14T17:16:13.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330437,
@@ -3187,7 +3331,8 @@
     "main_image": "/images/products/restaurant/155.JPG",
     "created_at": "2026-06-14T17:16:14.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330438,
@@ -3209,7 +3354,8 @@
     "main_image": "/images/products/restaurant/157.JPG",
     "created_at": "2026-06-14T17:16:14.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330439,
@@ -3231,7 +3377,8 @@
     "main_image": "/images/products/restaurant/159.JPG",
     "created_at": "2026-06-14T17:16:14.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330440,
@@ -3253,7 +3400,8 @@
     "main_image": "/images/products/restaurant/161.JPG",
     "created_at": "2026-06-14T17:16:14.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330441,
@@ -3275,7 +3423,8 @@
     "main_image": "/images/products/restaurant/163.JPG",
     "created_at": "2026-06-14T17:16:15.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330442,
@@ -3297,7 +3446,8 @@
     "main_image": "/images/products/restaurant/165.JPG",
     "created_at": "2026-06-14T17:16:15.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330443,
@@ -3319,7 +3469,8 @@
     "main_image": "/images/products/restaurant/167.JPG",
     "created_at": "2026-06-14T17:16:15.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   },
   {
     "id": 1781457330444,
@@ -3341,6 +3492,7 @@
     "main_image": "/images/products/restaurant/169.JPG",
     "created_at": "2026-06-14T17:16:15.000Z",
     "imageCategory": "restaurant",
-    "subcategory": "restaurant-chair"
+    "subcategory": "restaurant-chair",
+    "type": "chair"
   }
 ]
