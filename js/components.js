@@ -190,11 +190,54 @@
       injectFooter();
       injectContactFloat();
       injectMobileNav();
+      initVideoControls();
     });
   } else {
     injectNav();
     injectFooter();
     injectContactFloat();
     injectMobileNav();
+    initVideoControls();
   }
+
+  // 视频播放控制（首页工厂视频）
+  function initVideoControls() {
+    var video = document.getElementById('factoryVideo');
+    var overlay = document.getElementById('playOverlay');
+    var wrapper = document.getElementById('videoWrapper');
+
+    if (!video || !overlay || !wrapper) return;
+
+    // 点击播放/暂停
+    wrapper.addEventListener('click', function(e){
+      if (video.paused) {
+        video.play();
+        overlay.style.opacity = '0';
+        overlay.style.pointerEvents = 'none';
+      } else {
+        video.pause();
+        overlay.style.opacity = '1';
+        overlay.style.pointerEvents = 'auto';
+      }
+    });
+
+    // 视频播放时隐藏遮罩
+    video.addEventListener('play', function(){
+      overlay.style.opacity = '0';
+      overlay.style.pointerEvents = 'none';
+    });
+
+    // 视频暂停时显示遮罩
+    video.addEventListener('pause', function(){
+      overlay.style.opacity = '1';
+      overlay.style.pointerEvents = 'auto';
+    });
+
+    // 视频结束时显示遮罩
+    video.addEventListener('ended', function(){
+      overlay.style.opacity = '1';
+      overlay.style.pointerEvents = 'auto';
+    });
+  }
+
 })();
