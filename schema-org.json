@@ -1,0 +1,83 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://chinaeasen.com/#organization",
+      "name": "EASEN Commercial Furniture",
+      "alternateName": "宜森商业家具",
+      "url": "https://chinaeasen.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://chinaeasen.com/images/logo.jpg",
+        "width": 250,
+        "height": 60
+      },
+      "description": "Professional commercial furniture manufacturer with over 20 years of expertise, serving 3000+ clients in 50+ countries worldwide.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CN",
+        "addressRegion": "Guangdong",
+        "addressLocality": "Foshan"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15159581871",
+        "email": "chinaeasen@outlook.com",
+        "contactType": "Sales",
+        "availableLanguage": ["English", "Chinese", "French", "Spanish", "German", "Arabic"]
+      },
+      "sameAs": [
+        "https://chinaeasen.com"
+      ],
+      "foundingDate": "2016",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "50+"
+      },
+      "areaServed": {
+        "@type": "GeoShape",
+        "name": "Worldwide - 50+ countries"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://chinaeasen.com/#website",
+      "url": "https://chinaeasen.com",
+      "name": "EASEN Commercial Furniture",
+      "publisher": {
+        "@id": "https://chinaeasen.com/#organization"
+      },
+      "inLanguage": ["en", "zh", "fr", "es", "de", "ar"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://chinaeasen.com/products.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://chinaeasen.com/#localbusiness",
+      "name": "EASEN Commercial Furniture Manufacturing",
+      "image": "https://chinaeasen.com/images/factory/factory-1.png",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CN",
+        "addressRegion": "Guangdong Province",
+        "addressLocality": "Foshan City"
+      },
+      "telephone": "+86-15159581871",
+      "email": "chinaeasen@outlook.com",
+      "openingHours": "Mo-Su 00:00-24:00",
+      "url": "https://chinaeasen.com",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer, Letter of Credit",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "3000",
+        "bestRating": "5"
+      }
+    }
+  ]
+}
