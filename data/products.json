@@ -5635,7 +5635,7 @@
     "created_at": "2026-06-16T10:27:13.000Z"
   },
   {
-    "id": 1781623338845,
+    "id": 1781623684379,
     "title_zh": "圣所座",
     "title_en": "Sanctuary Booth",
     "category": "restaurant",
@@ -5651,13 +5651,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-1.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:19.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-1.png",
+    "created_at": "2026-06-16T15:28:04.378Z"
   },
   {
-    "id": 1781623338846,
+    "id": 1781623684380,
     "title_zh": "隐逸座",
     "title_en": "Retreat Booth",
     "category": "restaurant",
@@ -5673,13 +5673,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(1).png"
+      "/images/products/restaurant/booth-ai-0-10.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(1).png",
-    "created_at": "2026-06-16T15:22:20.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-10.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338847,
+    "id": 1781623684381,
     "title_zh": "亭阁座",
     "title_en": "Pavilion Booth",
     "category": "restaurant",
@@ -5695,13 +5695,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-11.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:20.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-11.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338848,
+    "id": 1781623684382,
     "title_zh": "凉廊座",
     "title_en": "Pergola Booth",
     "category": "restaurant",
@@ -5717,13 +5717,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(2).png"
+      "/images/products/restaurant/booth-ai-0-12.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(2).png",
-    "created_at": "2026-06-16T15:22:20.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-12.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338849,
+    "id": 1781623684383,
     "title_zh": "藤架座",
     "title_en": "Arbor Booth",
     "category": "restaurant",
@@ -5739,13 +5739,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-13.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:21.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-13.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338850,
+    "id": 1781623684384,
     "title_zh": "凉亭座",
     "title_en": "Gazebo Booth",
     "category": "restaurant",
@@ -5761,13 +5761,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(3).png"
+      "/images/products/restaurant/booth-ai-0-14.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(3).png",
-    "created_at": "2026-06-16T15:22:21.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-14.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338851,
+    "id": 1781623684385,
     "title_zh": "露台座",
     "title_en": "Terrace Booth",
     "category": "restaurant",
@@ -5783,13 +5783,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-15.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:21.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-15.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338852,
+    "id": 1781623684386,
     "title_zh": "走廊座",
     "title_en": "Veranda Booth",
     "category": "restaurant",
@@ -5805,13 +5805,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(4).png"
+      "/images/products/restaurant/booth-ai-0-16.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(4).png",
-    "created_at": "2026-06-16T15:22:22.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-16.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338853,
+    "id": 1781623684387,
     "title_zh": "阳台座",
     "title_en": "Balcony Booth",
     "category": "restaurant",
@@ -5827,13 +5827,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-17.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:22.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-17.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338854,
+    "id": 1781623684388,
     "title_zh": "敞廊座",
     "title_en": "Loggia Booth",
     "category": "restaurant",
@@ -5849,13 +5849,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(5).png"
+      "/images/products/restaurant/booth-ai-0-18.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(5).png",
-    "created_at": "2026-06-16T15:22:22.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-18.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338855,
+    "id": 1781623684389,
     "title_zh": "柱廊座",
     "title_en": "Colonnade Booth",
     "category": "restaurant",
@@ -5871,13 +5871,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-19.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:23.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-19.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338856,
+    "id": 1781623684390,
     "title_zh": "拱廊座",
     "title_en": "Arcade Booth",
     "category": "restaurant",
@@ -5893,13 +5893,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(6).png"
+      "/images/products/restaurant/booth-ai-0-2.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(6).png",
-    "created_at": "2026-06-16T15:22:23.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-2.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338857,
+    "id": 1781623684391,
     "title_zh": "中庭座",
     "title_en": "Atrium Booth",
     "category": "restaurant",
@@ -5915,13 +5915,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-20.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:23.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-20.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338858,
+    "id": 1781623684392,
     "title_zh": "庭院座",
     "title_en": "Courtyard Booth",
     "category": "restaurant",
@@ -5937,13 +5937,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(7).png"
+      "/images/products/restaurant/booth-ai-0-21.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(7).png",
-    "created_at": "2026-06-16T15:22:24.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-21.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338859,
+    "id": 1781623684393,
     "title_zh": "广场座",
     "title_en": "Plaza Booth",
     "category": "restaurant",
@@ -5959,13 +5959,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-22.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:24.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-22.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338860,
+    "id": 1781623684394,
     "title_zh": "集会座",
     "title_en": "Forum Booth",
     "category": "restaurant",
@@ -5981,13 +5981,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(8).png"
+      "/images/products/restaurant/booth-ai-0-23.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(8).png",
-    "created_at": "2026-06-16T15:22:24.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-23.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338861,
+    "id": 1781623684395,
     "title_zh": "议事座",
     "title_en": "Agora Booth",
     "category": "restaurant",
@@ -6003,13 +6003,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-24.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:25.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-24.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338862,
+    "id": 1781623684396,
     "title_zh": "议院座",
     "title_en": "Chamber Booth",
     "category": "restaurant",
@@ -6025,13 +6025,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(9).png"
+      "/images/products/restaurant/booth-ai-0-25.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(9).png",
-    "created_at": "2026-06-16T15:22:25.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-25.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338863,
+    "id": 1781623684397,
     "title_zh": "大厅座",
     "title_en": "Hall Booth",
     "category": "restaurant",
@@ -6047,13 +6047,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-26.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:26.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-26.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338864,
+    "id": 1781623684398,
     "title_zh": "沙龙座",
     "title_en": "Salon Booth",
     "category": "restaurant",
@@ -6069,13 +6069,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(10).png"
+      "/images/products/restaurant/booth-ai-0-27.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(10).png",
-    "created_at": "2026-06-16T15:22:26.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-27.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338865,
+    "id": 1781623684399,
     "title_zh": "休憩座",
     "title_en": "Lounge Booth",
     "category": "restaurant",
@@ -6091,13 +6091,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-28.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:26.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-28.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338866,
+    "id": 1781623684400,
     "title_zh": "会客座",
     "title_en": "Parlor Booth",
     "category": "restaurant",
@@ -6113,13 +6113,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(11).png"
+      "/images/products/restaurant/booth-ai-0-29.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(11).png",
-    "created_at": "2026-06-16T15:22:27.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-29.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338867,
+    "id": 1781623684401,
     "title_zh": "书房座",
     "title_en": "Study Booth",
     "category": "restaurant",
@@ -6135,13 +6135,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-3.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:27.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-3.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338868,
+    "id": 1781623684402,
     "title_zh": "书斋座",
     "title_en": "Library Booth",
     "category": "restaurant",
@@ -6157,13 +6157,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(12).png"
+      "/images/products/restaurant/booth-ai-0-30.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(12).png",
-    "created_at": "2026-06-16T15:22:27.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-30.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338869,
+    "id": 1781623684403,
     "title_zh": "画廊座",
     "title_en": "Gallery Booth",
     "category": "restaurant",
@@ -6179,13 +6179,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-31.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:28.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-31.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338870,
+    "id": 1781623684404,
     "title_zh": "工作座",
     "title_en": "Studio Booth",
     "category": "restaurant",
@@ -6201,13 +6201,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(13).png"
+      "/images/products/restaurant/booth-ai-0-32.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(13).png",
-    "created_at": "2026-06-16T15:22:28.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-32.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338871,
+    "id": 1781623684405,
     "title_zh": "作坊座",
     "title_en": "Workshop Booth",
     "category": "restaurant",
@@ -6223,13 +6223,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-33.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:28.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-33.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338872,
+    "id": 1781623684406,
     "title_zh": "画室座",
     "title_en": "Atelier Booth",
     "category": "restaurant",
@@ -6245,13 +6245,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(14).png"
+      "/images/products/restaurant/booth-ai-0-34.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(14).png",
-    "created_at": "2026-06-16T15:22:29.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-34.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338873,
+    "id": 1781623684407,
     "title_zh": "温室座",
     "title_en": "Conservatory Booth",
     "category": "restaurant",
@@ -6267,13 +6267,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-35.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:29.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-35.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338874,
+    "id": 1781623684408,
     "title_zh": "橘园座",
     "title_en": "Orangery Booth",
     "category": "restaurant",
@@ -6289,13 +6289,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(15).png"
+      "/images/products/restaurant/booth-ai-0-36.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(15).png",
-    "created_at": "2026-06-16T15:22:29.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-36.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338875,
+    "id": 1781623684409,
     "title_zh": "日光座",
     "title_en": "Solarium Booth",
     "category": "restaurant",
@@ -6311,13 +6311,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-37.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:30.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-37.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338876,
+    "id": 1781623684410,
     "title_zh": "阳光座",
     "title_en": "Sunroom Booth",
     "category": "restaurant",
@@ -6333,13 +6333,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(16).png"
+      "/images/products/restaurant/booth-ai-0-38.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(16).png",
-    "created_at": "2026-06-16T15:22:30.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-38.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338877,
+    "id": 1781623684411,
     "title_zh": "暖房座",
     "title_en": "Greenhouse Booth",
     "category": "restaurant",
@@ -6355,13 +6355,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-39.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:30.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-39.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338878,
+    "id": 1781623684412,
     "title_zh": "展馆座",
     "title_en": "Pavilion Booth",
     "category": "restaurant",
@@ -6377,13 +6377,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(17).png"
+      "/images/products/restaurant/booth-ai-0-4.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(17).png",
-    "created_at": "2026-06-16T15:22:31.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-4.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338879,
+    "id": 1781623684413,
     "title_zh": "圆厅座",
     "title_en": "Rotunda Booth",
     "category": "restaurant",
@@ -6399,13 +6399,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-40.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:31.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-40.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338880,
+    "id": 1781623684414,
     "title_zh": "穹顶座",
     "title_en": "Dome Booth",
     "category": "restaurant",
@@ -6421,13 +6421,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(18).png"
+      "/images/products/restaurant/booth-ai-0-41.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(18).png",
-    "created_at": "2026-06-16T15:22:31.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-41.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338881,
+    "id": 1781623684415,
     "title_zh": "塔楼座",
     "title_en": "Tower Booth",
     "category": "restaurant",
@@ -6443,13 +6443,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-42.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:32.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-42.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338882,
+    "id": 1781623684416,
     "title_zh": "角楼座",
     "title_en": "Turret Booth",
     "category": "restaurant",
@@ -6465,13 +6465,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(19).png"
+      "/images/products/restaurant/booth-ai-0-43.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(19).png",
-    "created_at": "2026-06-16T15:22:32.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-43.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338883,
+    "id": 1781623684417,
     "title_zh": "尖塔座",
     "title_en": "Spire Booth",
     "category": "restaurant",
@@ -6487,13 +6487,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-44.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:32.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-44.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338884,
+    "id": 1781623684418,
     "title_zh": "钟楼座",
     "title_en": "Belfry Booth",
     "category": "restaurant",
@@ -6509,13 +6509,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(20).png"
+      "/images/products/restaurant/booth-ai-0-45.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(20).png",
-    "created_at": "2026-06-16T15:22:33.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-45.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338885,
+    "id": 1781623684419,
     "title_zh": "尖塔座",
     "title_en": "Minaret Booth",
     "category": "restaurant",
@@ -6531,13 +6531,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-46.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:33.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-46.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338886,
+    "id": 1781623684420,
     "title_zh": "圆顶座",
     "title_en": "Cupola Booth",
     "category": "restaurant",
@@ -6553,13 +6553,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(21).png"
+      "/images/products/restaurant/booth-ai-0-47.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(21).png",
-    "created_at": "2026-06-16T15:22:33.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-47.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338887,
+    "id": 1781623684421,
     "title_zh": "天灯座",
     "title_en": "Lantern Booth",
     "category": "restaurant",
@@ -6575,13 +6575,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-48.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:34.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-48.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338888,
+    "id": 1781623684422,
     "title_zh": "天窗座",
     "title_en": "Clerestory Booth",
     "category": "restaurant",
@@ -6597,13 +6597,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(22).png"
+      "/images/products/restaurant/booth-ai-0-49.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(22).png",
-    "created_at": "2026-06-16T15:22:34.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-49.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338889,
+    "id": 1781623684423,
     "title_zh": "采光座",
     "title_en": "Skylight Booth",
     "category": "restaurant",
@@ -6619,13 +6619,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-5.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:34.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-5.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338890,
+    "id": 1781623684424,
     "title_zh": "窗景座",
     "title_en": "Window Booth",
     "category": "restaurant",
@@ -6641,13 +6641,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(23).png"
+      "/images/products/restaurant/booth-ai-0-50.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(23).png",
-    "created_at": "2026-06-16T15:22:35.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-50.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338891,
+    "id": 1781623684425,
     "title_zh": "凸窗座",
     "title_en": "Bay Booth",
     "category": "restaurant",
@@ -6663,13 +6663,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-51.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:35.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-51.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338892,
+    "id": 1781623684426,
     "title_zh": "飘窗座",
     "title_en": "Oriel Booth",
     "category": "restaurant",
@@ -6685,13 +6685,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(24).png"
+      "/images/products/restaurant/booth-ai-0-52.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(24).png",
-    "created_at": "2026-06-16T15:22:35.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-52.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338893,
+    "id": 1781623684427,
     "title_zh": "老虎窗座",
     "title_en": "Dormer Booth",
     "category": "restaurant",
@@ -6707,13 +6707,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-53.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:36.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-53.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338894,
+    "id": 1781623684428,
     "title_zh": "门廊座",
     "title_en": "Portal Booth",
     "category": "restaurant",
@@ -6729,13 +6729,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(25).png"
+      "/images/products/restaurant/booth-ai-0-54.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(25).png",
-    "created_at": "2026-06-16T15:22:36.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-54.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338895,
+    "id": 1781623684429,
     "title_zh": "入口座",
     "title_en": "Entrance Booth",
     "category": "restaurant",
@@ -6751,13 +6751,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-55.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:36.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-55.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338896,
+    "id": 1781623684430,
     "title_zh": "前厅座",
     "title_en": "Vestibule Booth",
     "category": "restaurant",
@@ -6773,13 +6773,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(26).png"
+      "/images/products/restaurant/booth-ai-0-56.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(26).png",
-    "created_at": "2026-06-16T15:22:37.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-56.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338897,
+    "id": 1781623684431,
     "title_zh": "门厅座",
     "title_en": "Foyer Booth",
     "category": "restaurant",
@@ -6795,13 +6795,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-57.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:37.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-57.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338898,
+    "id": 1781623684432,
     "title_zh": "大堂座",
     "title_en": "Lobby Booth",
     "category": "restaurant",
@@ -6817,13 +6817,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(27).png"
+      "/images/products/restaurant/booth-ai-0-58.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(27).png",
-    "created_at": "2026-06-16T15:22:37.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-58.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338899,
+    "id": 1781623684433,
     "title_zh": "接待座",
     "title_en": "Reception Booth",
     "category": "restaurant",
@@ -6839,13 +6839,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-6.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:38.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-6.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338900,
+    "id": 1781623684434,
     "title_zh": "候客座",
     "title_en": "Anteroom Booth",
     "category": "restaurant",
@@ -6861,13 +6861,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(28).png"
+      "/images/products/restaurant/booth-ai-0-7.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(28).png",
-    "created_at": "2026-06-16T15:22:38.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-7.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338901,
+    "id": 1781623684435,
     "title_zh": "等候座",
     "title_en": "Waiting Booth",
     "category": "restaurant",
@@ -6883,13 +6883,13 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-0"
+      "/images/products/restaurant/booth-ai-0-8.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:38.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-8.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   },
   {
-    "id": 1781623338902,
+    "id": 1781623684436,
     "title_zh": "通道座",
     "title_en": "Passage Booth",
     "category": "restaurant",
@@ -6905,1285 +6905,9 @@
     "desc_zh": "",
     "desc_en": "",
     "images": [
-      "/images/products/restaurant/booth-ai-(29).png"
+      "/images/products/restaurant/booth-ai-0-9.png"
     ],
-    "main_image": "/images/products/restaurant/booth-ai-(29).png",
-    "created_at": "2026-06-16T15:22:38.000Z"
-  },
-  {
-    "id": 1781623338903,
-    "title_zh": "卡座系列 1",
-    "title_en": "Booth Series 1 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338904,
-    "title_zh": "卡座系列 2",
-    "title_en": "Booth Series 2 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(30).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(30).png",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338905,
-    "title_zh": "卡座系列 3",
-    "title_en": "Booth Series 3 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338906,
-    "title_zh": "卡座系列 4",
-    "title_en": "Booth Series 4 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(31).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(31).png",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338907,
-    "title_zh": "卡座系列 5",
-    "title_en": "Booth Series 5 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338908,
-    "title_zh": "卡座系列 6",
-    "title_en": "Booth Series 6 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(32).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(32).png",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338909,
-    "title_zh": "卡座系列 7",
-    "title_en": "Booth Series 7 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338910,
-    "title_zh": "卡座系列 8",
-    "title_en": "Booth Series 8 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(33).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(33).png",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338911,
-    "title_zh": "卡座系列 9",
-    "title_en": "Booth Series 9 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:39.000Z"
-  },
-  {
-    "id": 1781623338912,
-    "title_zh": "卡座系列 10",
-    "title_en": "Booth Series 10 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(34).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(34).png",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338913,
-    "title_zh": "卡座系列 11",
-    "title_en": "Booth Series 11 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338914,
-    "title_zh": "卡座系列 12",
-    "title_en": "Booth Series 12 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(35).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(35).png",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338915,
-    "title_zh": "卡座系列 13",
-    "title_en": "Booth Series 13 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338916,
-    "title_zh": "卡座系列 14",
-    "title_en": "Booth Series 14 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(36).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(36).png",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338917,
-    "title_zh": "卡座系列 15",
-    "title_en": "Booth Series 15 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338918,
-    "title_zh": "卡座系列 16",
-    "title_en": "Booth Series 16 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(37).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(37).png",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338919,
-    "title_zh": "卡座系列 17",
-    "title_en": "Booth Series 17 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338920,
-    "title_zh": "卡座系列 18",
-    "title_en": "Booth Series 18 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(38).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(38).png",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338921,
-    "title_zh": "卡座系列 19",
-    "title_en": "Booth Series 19 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:40.000Z"
-  },
-  {
-    "id": 1781623338922,
-    "title_zh": "卡座系列 20",
-    "title_en": "Booth Series 20 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(39).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(39).png",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338923,
-    "title_zh": "卡座系列 21",
-    "title_en": "Booth Series 21 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338924,
-    "title_zh": "卡座系列 22",
-    "title_en": "Booth Series 22 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(40).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(40).png",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338925,
-    "title_zh": "卡座系列 23",
-    "title_en": "Booth Series 23 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338926,
-    "title_zh": "卡座系列 24",
-    "title_en": "Booth Series 24 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(41).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(41).png",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338927,
-    "title_zh": "卡座系列 25",
-    "title_en": "Booth Series 25 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338928,
-    "title_zh": "卡座系列 26",
-    "title_en": "Booth Series 26 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(42).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(42).png",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338929,
-    "title_zh": "卡座系列 27",
-    "title_en": "Booth Series 27 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338930,
-    "title_zh": "卡座系列 28",
-    "title_en": "Booth Series 28 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(43).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(43).png",
-    "created_at": "2026-06-16T15:22:41.000Z"
-  },
-  {
-    "id": 1781623338931,
-    "title_zh": "卡座系列 29",
-    "title_en": "Booth Series 29 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338932,
-    "title_zh": "卡座系列 30",
-    "title_en": "Booth Series 30 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(44).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(44).png",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338933,
-    "title_zh": "卡座系列 31",
-    "title_en": "Booth Series 31 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338934,
-    "title_zh": "卡座系列 32",
-    "title_en": "Booth Series 32 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(45).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(45).png",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338935,
-    "title_zh": "卡座系列 33",
-    "title_en": "Booth Series 33 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338936,
-    "title_zh": "卡座系列 34",
-    "title_en": "Booth Series 34 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(46).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(46).png",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338937,
-    "title_zh": "卡座系列 35",
-    "title_en": "Booth Series 35 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338938,
-    "title_zh": "卡座系列 36",
-    "title_en": "Booth Series 36 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(47).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(47).png",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338939,
-    "title_zh": "卡座系列 37",
-    "title_en": "Booth Series 37 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338940,
-    "title_zh": "卡座系列 38",
-    "title_en": "Booth Series 38 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(48).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(48).png",
-    "created_at": "2026-06-16T15:22:42.000Z"
-  },
-  {
-    "id": 1781623338941,
-    "title_zh": "卡座系列 39",
-    "title_en": "Booth Series 39 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338942,
-    "title_zh": "卡座系列 40",
-    "title_en": "Booth Series 40 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(49).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(49).png",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338943,
-    "title_zh": "卡座系列 41",
-    "title_en": "Booth Series 41 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338944,
-    "title_zh": "卡座系列 42",
-    "title_en": "Booth Series 42 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(50).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(50).png",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338945,
-    "title_zh": "卡座系列 43",
-    "title_en": "Booth Series 43 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338946,
-    "title_zh": "卡座系列 44",
-    "title_en": "Booth Series 44 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(51).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(51).png",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338947,
-    "title_zh": "卡座系列 45",
-    "title_en": "Booth Series 45 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338948,
-    "title_zh": "卡座系列 46",
-    "title_en": "Booth Series 46 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(52).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(52).png",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338949,
-    "title_zh": "卡座系列 47",
-    "title_en": "Booth Series 47 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:43.000Z"
-  },
-  {
-    "id": 1781623338950,
-    "title_zh": "卡座系列 48",
-    "title_en": "Booth Series 48 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(53).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(53).png",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338951,
-    "title_zh": "卡座系列 49",
-    "title_en": "Booth Series 49 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338952,
-    "title_zh": "卡座系列 50",
-    "title_en": "Booth Series 50 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(54).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(54).png",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338953,
-    "title_zh": "卡座系列 51",
-    "title_en": "Booth Series 51 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338954,
-    "title_zh": "卡座系列 52",
-    "title_en": "Booth Series 52 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(55).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(55).png",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338955,
-    "title_zh": "卡座系列 53",
-    "title_en": "Booth Series 53 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338956,
-    "title_zh": "卡座系列 54",
-    "title_en": "Booth Series 54 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(56).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(56).png",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338957,
-    "title_zh": "卡座系列 55",
-    "title_en": "Booth Series 55 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338958,
-    "title_zh": "卡座系列 56",
-    "title_en": "Booth Series 56 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(57).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(57).png",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338959,
-    "title_zh": "卡座系列 57",
-    "title_en": "Booth Series 57 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-0"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-0",
-    "created_at": "2026-06-16T15:22:44.000Z"
-  },
-  {
-    "id": 1781623338960,
-    "title_zh": "卡座系列 58",
-    "title_en": "Booth Series 58 Booth",
-    "category": "restaurant",
-    "subcategory": "restaurant-booth",
-    "type": "booth",
-    "imageCategory": "restaurant",
-    "sku": "",
-    "dimensions": "",
-    "material": "",
-    "fabric": "",
-    "color": "",
-    "status": "online",
-    "desc_zh": "",
-    "desc_en": "",
-    "images": [
-      "/images/products/restaurant/booth-ai-(58).png"
-    ],
-    "main_image": "/images/products/restaurant/booth-ai-(58).png",
-    "created_at": "2026-06-16T15:22:45.000Z"
+    "main_image": "/images/products/restaurant/booth-ai-0-9.png",
+    "created_at": "2026-06-16T15:28:04.379Z"
   }
 ]
