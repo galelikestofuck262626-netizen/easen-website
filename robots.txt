@@ -1,0 +1,41 @@
+# Robots.txt for EASEN Commercial Furniture
+# https://chinaeasen.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /admin/index.html
+Disallow: /admin/products/
+
+# Disallow 404 page from indexing
+Disallow: /404
+Disallow: /404.html
+
+# Allow images and CSS/JS
+Allow: /images/
+Allow: /js/
+Allow: /videos/
+
+# Sitemap
+Sitemap: https://chinaeasen.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Special rules for popular search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /
