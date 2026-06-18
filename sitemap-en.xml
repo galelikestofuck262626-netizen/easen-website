@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://chinaeasen.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/case-cafe.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-cafe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-cafe.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/case-cafe.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/case-hotel.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-hotel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-hotel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/case-hotel.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/case-outdoor.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-outdoor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-outdoor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/case-outdoor.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/case-restaurant.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-restaurant.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-restaurant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/case-restaurant.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/cases.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/insight-furniture-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/insight-furniture-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/insight-furniture-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/insight-furniture-guide.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/insight-project-cafe.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/insight-project-cafe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/insight-project-cafe.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/insight-project-cafe.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/insight-quality-compliance.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/insight-quality-compliance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/insight-quality-compliance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/insight-quality-compliance.html"/>
+  </url>
+  <url>
+    <loc>https://chinaeasen.com/en/products.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/products.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/products.html"/>
+  </url>
+</urlset>

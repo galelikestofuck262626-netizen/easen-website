@@ -368,7 +368,9 @@
     }
   };
 
-  var current=localStorage.getItem('easen-lang')||'zh';
+  // 子目录语言(/en/ /zh/...)优先于 localStorage；根目录维持原 localStorage 行为
+  var urlLang=(location.pathname.match(/^\/(zh|en|fr|es|de|ar)(\/|$)/)||[])[1]||null;
+  var current=urlLang||localStorage.getItem('easen-lang')||'zh';
 
   function getLang(code){
     for(var i=0;i<LANGS.length;i++){if(LANGS[i].code===code)return LANGS[i];}
@@ -385,7 +387,7 @@
 
   function applyLang(lang){
     current=lang;
-    localStorage.setItem('easen-lang',lang);
+    if(!urlLang)localStorage.setItem('easen-lang',lang);
     var showZh=(lang==='zh');
     var allCodes=['zh','en','fr','es','de','ar'];
     allCodes.forEach(function(code){
@@ -436,7 +438,10 @@
     var panel=document.createElement('div');
     panel.id='easen-lang-panel';
     panel.style.cssText='display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,0.13);overflow:hidden;min-width:160px;';
-    LANGS.forEach(function(l){
+    var availMeta=document.querySelector('meta[name="i18n-langs"]');
+    var availCodes=(urlLang&&availMeta)?availMeta.getAttribute('content').split(','):null;
+    var switchLangs=availCodes?LANGS.filter(function(l){return availCodes.indexOf(l.code)>=0;}):LANGS;
+    switchLangs.forEach(function(l){
       var item=document.createElement('button');
       item.className='easen-lang-item';
       item.dataset.code=l.code;
@@ -444,7 +449,7 @@
       item.style.cssText='display:flex;align-items:center;gap:10px;width:100%;padding:10px 14px;border:none;background:transparent;cursor:pointer;text-align:left;color:#374151;transition:background 0.15s;';
       item.addEventListener('mouseenter',function(){if(current!==l.code)this.style.background='#f9fafb';});
       item.addEventListener('mouseleave',function(){if(current!==l.code)this.style.background='transparent';});
-      item.addEventListener('click',function(e){e.stopPropagation();applyLang(l.code);panel.style.display='none';});
+      item.addEventListener('click',function(e){e.stopPropagation();if(urlLang){location.href=location.pathname.replace(/^\/(zh|en|fr|es|de|ar)(\/|$)/,'/'+l.code+'/');}else{applyLang(l.code);panel.style.display='none';}});
       panel.appendChild(item);
     });
     btn.addEventListener('click',function(e){e.stopPropagation();panel.style.display=panel.style.display==='none'?'block':'none';});

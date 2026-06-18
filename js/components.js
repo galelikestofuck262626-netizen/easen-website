@@ -14,6 +14,9 @@
   var depth = (path.match(/\//g)||[]).length - 1;
   var prefix = '';
   for (var i=0; i<depth; i++) prefix += '../';
+  var urlLang = (path.match(/^\/(zh|en|fr|es|de|ar)(\/|$)/)||[])[1] || null;
+  var pageBase = urlLang ? '/'+urlLang+'/' : prefix;
+  var assetBase = urlLang ? '/' : prefix;
 
   function isActive(page) {
     if (page === 'index' && (isRoot || path === '/')) return true;
@@ -26,11 +29,11 @@
     if (!existing) return;
 
     var nav = [
-      { key:'index',    zh:'首页',    en:'Home',        href: prefix + 'index.html' },
-      { key:'products', zh:'产品',    en:'Products',    href: prefix + 'products.html' },
-      { key:'cases',    zh:'案例',    en:'Cases',       href: prefix + 'cases.html' },
-      { key:'about',    zh:'关于我们', en:'About Us',    href: prefix + 'about.html' },
-      { key:'contact',  zh:'联系我们', en:'Contact Us',  href: prefix + 'contact.html' },
+      { key:'index',    zh:'首页',    en:'Home',        href: pageBase + 'index.html' },
+      { key:'products', zh:'产品',    en:'Products',    href: pageBase + 'products.html' },
+      { key:'cases',    zh:'案例',    en:'Cases',       href: pageBase + 'cases.html' },
+      { key:'about',    zh:'关于我们', en:'About Us',    href: pageBase + 'about.html' },
+      { key:'contact',  zh:'联系我们', en:'Contact Us',  href: pageBase + 'contact.html' },
     ];
 
     var navLinks = nav.map(function(n){
@@ -56,8 +59,8 @@
     existing.innerHTML =
       '<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">'
       +'<div class="flex items-center justify-between h-28">'
-      +'<a href="'+prefix+'index.html" class="flex items-center gap-4">'
-      +'<img src="'+prefix+'images/logo.jpg" alt="EASEN Logo" class="h-28 w-auto"/>'
+      +'<a href="'+pageBase+'index.html" class="flex items-center gap-4">'
+      +'<img src="'+assetBase+'images/logo.jpg" alt="EASEN Logo" class="h-28 w-auto"/>'
       +'<div class="flex items-center gap-3">'
       +'<span class="text-3xl font-heading font-bold text-primary">EASEN</span>'
       +'<span class="text-neutral-400 text-2xl">|</span>'
@@ -99,11 +102,11 @@
       +'<div>'
       +'<h3 class="font-semibold text-lg mb-4"><span data-lang="zh">快速链接</span><span data-lang="en" style="display:none">Quick Links</span></h3>'
       +'<div class="space-y-2 text-sm">'
-      +'<a href="'+prefix+'index.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">首页</span><span data-lang="en" style="display:none">Home</span></a>'
-      +'<a href="'+prefix+'products.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">产品</span><span data-lang="en" style="display:none">Products</span></a>'
-      +'<a href="'+prefix+'cases.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">案例</span><span data-lang="en" style="display:none">Cases</span></a>'
-      +'<a href="'+prefix+'about.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">关于我们</span><span data-lang="en" style="display:none">About Us</span></a>'
-      +'<a href="'+prefix+'contact.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">联系我们</span><span data-lang="en" style="display:none">Contact Us</span></a>'
+      +'<a href="'+pageBase+'index.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">首页</span><span data-lang="en" style="display:none">Home</span></a>'
+      +'<a href="'+pageBase+'products.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">产品</span><span data-lang="en" style="display:none">Products</span></a>'
+      +'<a href="'+pageBase+'cases.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">案例</span><span data-lang="en" style="display:none">Cases</span></a>'
+      +'<a href="'+pageBase+'about.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">关于我们</span><span data-lang="en" style="display:none">About Us</span></a>'
+      +'<a href="'+pageBase+'contact.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">联系我们</span><span data-lang="en" style="display:none">Contact Us</span></a>'
       +'</div></div>'
       +'<div>'
       +'<h3 class="font-semibold text-lg mb-4"><span data-lang="zh">联系信息</span><span data-lang="en" style="display:none">Contact Info</span></h3>'
@@ -133,7 +136,7 @@
       +'<a href="mailto:chinaeasen@outlook.com" style="display:flex;align-items:center;gap:10px;padding:10px 8px;border-radius:10px;text-decoration:none;color:#1a1a1a;font-size:14px;" onmouseover="this.style.background=\'#f5f5f5\'" onmouseout="this.style.background=\'transparent\'">'
       +'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c8a45c" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>'
       +'Email</a>'
-      +'<a href="'+prefix+'contact.html" style="display:flex;align-items:center;gap:10px;padding:10px 8px;border-radius:10px;text-decoration:none;color:#1a1a1a;font-size:14px;" onmouseover="this.style.background=\'#f5f5f5\'" onmouseout="this.style.background=\'transparent\'">'
+      +'<a href="'+pageBase+'contact.html" style="display:flex;align-items:center;gap:10px;padding:10px 8px;border-radius:10px;text-decoration:none;color:#1a1a1a;font-size:14px;" onmouseover="this.style.background=\'#f5f5f5\'" onmouseout="this.style.background=\'transparent\'">'
       +'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c8a45c" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>'
       +'<span data-lang="zh">在线留言</span><span data-lang="en" style="display:none">Contact Form</span></a>'
       +'</div>'
@@ -161,11 +164,11 @@
     nav.id = 'mobile-bottom-nav';
     nav.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#fff;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-around;padding:8px 0 8px;box-shadow:0 -2px 10px rgba(0,0,0,0.08);';
     var items = [
-      { key:'index',   zh:'首页',  en:'Home',     icon:'🏠', href: prefix+'index.html' },
-      { key:'products',zh:'产品',  en:'Products', icon:'🛋️', href: prefix+'products.html' },
-      { key:'cases',   zh:'案例',  en:'Cases',    icon:'📷', href: prefix+'cases.html' },
-      { key:'about',   zh:'关于',  en:'About',    icon:'🏭', href: prefix+'about.html' },
-      { key:'contact', zh:'联系',  en:'Contact',  icon:'📞', href: prefix+'contact.html' },
+      { key:'index',   zh:'首页',  en:'Home',     icon:'🏠', href: pageBase+'index.html' },
+      { key:'products',zh:'产品',  en:'Products', icon:'🛋️', href: pageBase+'products.html' },
+      { key:'cases',   zh:'案例',  en:'Cases',    icon:'📷', href: pageBase+'cases.html' },
+      { key:'about',   zh:'关于',  en:'About',    icon:'🏭', href: pageBase+'about.html' },
+      { key:'contact', zh:'联系',  en:'Contact',  icon:'📞', href: pageBase+'contact.html' },
     ];
     nav.innerHTML = items.map(function(item){
       var active = isActive(item.key);
@@ -191,6 +194,7 @@
       injectContactFloat();
       injectMobileNav();
       initVideoControls();
+      if(window.applyLangGlobal)window.applyLangGlobal(urlLang||localStorage.getItem('easen-lang')||'zh');
     });
   } else {
     injectNav();
@@ -198,6 +202,7 @@
     injectContactFloat();
     injectMobileNav();
     initVideoControls();
+      if(window.applyLangGlobal)window.applyLangGlobal(urlLang||localStorage.getItem('easen-lang')||'zh');
   }
 
   // 视频播放控制（首页工厂视频）
