@@ -17,7 +17,7 @@ gen_i18n.py — 从根目录多语言页面生成 /zh /en /fr /es /de /ar 单语
   - head: <html lang>(ar 加 dir=rtl)、canonical 自指、I18N:HREFLANG 标记块注入完整集群。
   - 护栏: 生成页与源页的 <script>/<style> 区段必须字节完全一致，否则中止。
 """
-import os, re, sys, shutil
+import os, re, sys, shutil, json, html
 
 ROOT = r"G:\网站代码\easen-netlify-deploy-clean"
 DOMAIN = "https://chinaeasen.com"
@@ -26,6 +26,44 @@ ACTIVE_LANGS = LANGS[:]  # 本次生成/部署的语言集合(决定 hreflang �
 OG_LOCALE = {"zh": "zh_CN", "en": "en_US", "fr": "fr_FR", "es": "es_ES", "de": "de_DE", "ar": "ar_AR"}
 # 不生成 /L/404.html（GitHub Pages 只用根 /404.html）
 EXCLUDE_GEN = {"404.html"}
+
+# 翻译词典(从 lang.js 的 T 抽取, 与运行时同源)。fr/es/de/ar 对 en 回退文本套用。
+def _load_json(name):
+    try:
+        return json.load(open(os.path.join(os.path.dirname(__file__), name), encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+DICT = _load_json("i18n_dict.json")          # 从 lang.js 抽取的常用词典
+_extra = _load_json("i18n_extra.json")        # 补译(详情页长文本)
+for _L, _m in (_extra or {}).items():
+    DICT.setdefault(_L, {}).update(_m)
+
+
+def norm_key(s):
+    s = (s.replace("’", "'").replace("‘", "'").replace("”", '"')
+         .replace("“", '"').replace("—", "--").replace("–", "-"))
+    return re.sub(r"\s+", " ", s).strip()
+
+
+MISSES = {}  # L -> set(未被词典覆盖的英文串)
+
+
+def translate(inner_html, L):
+    """把 en span 的纯文本内容译成 L(查 DICT)。有嵌套标签或查不到则返回 None(保留英文)。"""
+    if "<" in inner_html:
+        return None
+    raw = html.unescape(inner_html).strip()
+    if not raw:
+        return None
+    d = DICT.get(L, {})
+    t = d.get(norm_key(raw)) or d.get(raw)
+    if t is None:
+        MISSES.setdefault(L, set()).add(raw)
+        return None
+    return html.escape(t, quote=False)
+
 
 MASK_RE = re.compile(r"<(script|style)\b[^>]*>.*?</\1>", re.I | re.S)
 TAG_RE = re.compile(r"<(/?)span\b([^>]*)>", re.I)
@@ -88,8 +126,10 @@ def group_spans(text, spans):
     return groups
 
 
-def strip_display_none(starttag):
-    s = starttag.replace(' style="display:none"', "")
+def fix_kept_starttag(starttag, L):
+    # 保留的 span 统一改成 data-lang="L"(使 applyLang(L) 显示它)并去 display:none
+    s = re.sub(r'data-lang="[^"]*"', 'data-lang="%s"' % L, starttag, count=1)
+    s = s.replace(' style="display:none"', "")
     s = re.sub(r'(style=")display:\s*none;?\s*', r"\1", s)
     s = s.replace(' style=""', "")
     return s
@@ -114,9 +154,15 @@ def trim_languages(text, L):
                    (not has_L and not has_en and lang == "zh")
             if keep:
                 st = text[s:cs]
-                st2 = strip_display_none(st)
+                st2 = fix_kept_starttag(st, L)
                 if st2 != st:
                     edits.append((s, cs, st2))
+                # en 回退到 fr/es/de/ar 时, 用词典把内容译成目标语言
+                if lang == "en" and not has_L and L in ("fr", "es", "de", "ar"):
+                    inner = text[cs:e - 7]  # </span> = 7 chars
+                    tr = translate(inner, L)
+                    if tr is not None and tr != inner:
+                        edits.append((cs, e - 7, tr))
             else:
                 edits.append((s, e, ""))
     return apply_edits(text, edits)
@@ -300,6 +346,13 @@ def main():
         open(os.path.join(ROOT, ".nojekyll"), "wb").write(b"")
         print("  根页面 hreflang 已更新 + sitemap(%d lang)+index + .nojekyll" % len(ACTIVE_LANGS))
 
+    if MISSES:
+        allmiss = sorted(set().union(*MISSES.values()))
+        with open(os.path.join(os.path.dirname(__file__), "i18n_missing.json"), "w", encoding="utf-8") as f:
+            json.dump(allmiss, f, ensure_ascii=False, indent=0)
+        print("  未译(词典未覆盖): " + " ".join("%s=%d" % (L, len(MISSES.get(L, set())))
+                                            for L in ("fr", "es", "de", "ar") if L in ACTIVE_LANGS)
+              + " | 唯一串=%d -> tools/i18n_missing.json" % len(allmiss))
     print("生成完成: %d 个文件 (langs=%s, pages=%d)" % (total, ",".join(ACTIVE_LANGS), len(gen_pages)))
 
 
