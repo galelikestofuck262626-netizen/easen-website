@@ -977,9 +977,13 @@ header a:hover { color: #1a365d !important; }
     <p class="text-center text-neutral-600 mb-16"><span data-lang="zh">获取免费报价方案</span><span data-lang="en" style="display:none">Get a Free Quote</span></p>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <div>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
-          <input type="hidden" name="form-name" value="contact"/>
-          <p style="display:none"><input name="bot-field"/></p>
+        <form name="contact" method="POST" action="https://formsubmit.co/chinaeasen@outlook.com" class="space-y-4">
+          <input type="hidden" name="_subject" value="EASEN 首页询盘 / New Website Enquiry"/>
+          <input type="hidden" name="_template" value="table"/>
+          <input type="hidden" name="_captcha" value="false"/>
+          <input type="hidden" name="_next" value="https://chinaeasen.com/index.html?sent=1"/>
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting EASEN Commercial Furniture. We have received your enquiry and will reply within 24 hours. 感谢您联系宜森商业家具，我们已收到您的询盘，将在24小时内回复。"/>
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
           <div>
             <label class="block text-sm font-medium text-neutral-700 mb-1"><span data-lang="zh">姓名</span><span data-lang="en" style="display:none">Name</span></label>
             <input type="text" name="name" required class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" />
@@ -1135,9 +1139,13 @@ header a:hover { color: #1a365d !important; }
       <span data-lang="de" style="display:none">Kostenloses Angebot Anfordern</span>
       <span data-lang="ar" style="display:none">احصل على عرض سعر مجاني</span>
     </p>
-    <form name="contact-modal" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;flex-direction:column;gap:12px;">
-      <input type="hidden" name="form-name" value="contact-modal"/>
-      <p style="display:none"><input name="bot-field"/></p>
+    <form name="contact-modal" method="POST" action="https://formsubmit.co/chinaeasen@outlook.com" style="display:flex;flex-direction:column;gap:12px;">
+      <input type="hidden" name="_subject" value="EASEN 首页弹窗询盘 / New Website Enquiry"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="https://chinaeasen.com/index.html?sent=1"/>
+      <input type="hidden" name="_autoresponse" value="Thank you for contacting EASEN Commercial Furniture. We have received your enquiry and will reply within 24 hours. 感谢您联系宜森商业家具，我们已收到您的询盘，将在24小时内回复。"/>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
       <input type="text" name="name" required id="modal-name-placeholder" placeholder="姓名 / Name" style="width:100%;padding:10px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none;"/>
       <input type="email" name="email" required placeholder="邮箱 / Email" style="width:100%;padding:10px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none;"/>
       <input type="tel" name="phone" id="modal-phone-placeholder" placeholder="电话 / Phone (optional)" style="width:100%;padding:10px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none;"/>
@@ -1297,5 +1305,10 @@ header a:hover { color: #1a365d !important; }
 </style>
 
 <script src="js/lang.js"></script><script src="js/components.js"></script>
+<div id="form-success-toast" style="display:none;position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9999;background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;padding:14px 22px;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.12);font-weight:600;">
+  <span data-lang="zh">✓ 询盘已提交，我们会尽快与您联系。</span>
+  <span data-lang="en" style="display:none">✓ Your enquiry has been submitted. We will get back to you shortly.</span>
+</div>
+<script>(function(){if(/[?&]sent=1(&|$)/.test(location.search)){var t=document.getElementById('form-success-toast');if(t){t.style.display='block';setTimeout(function(){t.style.display='none';},6000);}if(window.history&&history.replaceState)history.replaceState(null,'',location.pathname);}})();</script>
 </body>
 </html>
