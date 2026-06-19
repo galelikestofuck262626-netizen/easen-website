@@ -59,20 +59,20 @@
     existing.innerHTML =
       '<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">'
       +'<div class="flex items-center justify-between h-28">'
-      +'<a href="'+pageBase+'index.html" class="flex items-center gap-4">'
-      +'<img src="'+assetBase+'images/logo.jpg" alt="EASEN Logo" class="h-28 w-auto"/>'
-      +'<div class="flex items-center gap-3">'
-      +'<span class="text-3xl font-heading font-bold text-primary">EASEN</span>'
-      +'<span class="text-neutral-400 text-2xl">|</span>'
-      +'<span class="text-lg font-medium text-neutral-600">'
+      +'<a href="'+pageBase+'index.html" class="flex items-center gap-3">'
+      +'<img src="'+assetBase+'images/logo.jpg" alt="EASEN Logo" style="height:64px;width:auto"/>'
+      +'<span id="easen-header-name" style="font-size:15px;letter-spacing:0.08em;color:#64748b;font-weight:500">'
       +'<span data-lang="zh">宜森商业空间家具</span>'
       +'<span data-lang="en" style="display:none">EASEN Commercial Furniture</span>'
-      +'</span></div></a>'
+      +'</span></a>'
+      +'<div class="flex items-center gap-8">'
       +'<nav class="hidden md:flex items-center gap-8">'+navLinks+'</nav>'
+      +'<div id="easen-lang-mount" class="flex items-center"></div>'
       +'<button id="nav-mobile-btn" class="md:hidden p-2">'
       +'<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">'
       +'<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>'
       +'</svg></button>'
+      +'</div>'
       +'</div></div>';
 
     // 移动端菜单
@@ -86,6 +86,12 @@
       var m = document.getElementById('mobile-nav-menu');
       m.style.display = m.style.display === 'none' ? 'block' : 'none';
     });
+
+    // 把 lang.js 创建的浮动语言切换器移入页头
+    var _sw = document.getElementById('easen-lang-switcher');
+    var _mt = document.getElementById('easen-lang-mount');
+    if (_sw && _mt) { _sw.style.cssText = 'position:relative;z-index:50;font-family:Inter,system-ui,sans-serif;'; _mt.appendChild(_sw); }
+    if (!document.getElementById('easen-hdr-style')) { var _hs = document.createElement('style'); _hs.id='easen-hdr-style'; _hs.textContent='@media(max-width:600px){#easen-header-name{display:none}}'; document.head.appendChild(_hs); }
   }
 
   // 注入页脚
