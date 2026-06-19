@@ -170,16 +170,16 @@
     nav.id = 'mobile-bottom-nav';
     nav.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#fff;border-top:1px solid #e5e7eb;align-items:center;justify-content:space-around;padding:8px 0 8px;box-shadow:0 -2px 10px rgba(0,0,0,0.08);';
     var items = [
-      { key:'index',   zh:'首页',  en:'Home',     icon:'🏠', href: pageBase+'index.html' },
-      { key:'products',zh:'产品',  en:'Products', icon:'🛋️', href: pageBase+'products.html' },
-      { key:'cases',   zh:'案例',  en:'Cases',    icon:'📷', href: pageBase+'cases.html' },
-      { key:'about',   zh:'关于',  en:'About',    icon:'🏭', href: pageBase+'about.html' },
-      { key:'contact', zh:'联系',  en:'Contact',  icon:'📞', href: pageBase+'contact.html' },
+      { key:'index',   zh:'首页',  en:'Home',     icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z"/></svg>', href: pageBase+'index.html' },
+      { key:'products',zh:'产品',  en:'Products', icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>', href: pageBase+'products.html' },
+      { key:'cases',   zh:'案例',  en:'Cases',    icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>', href: pageBase+'cases.html' },
+      { key:'about',   zh:'关于',  en:'About',    icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 8h.01M15 8h.01M9 12h.01M15 12h.01M9 16h.01M15 16h.01"/></svg>', href: pageBase+'about.html' },
+      { key:'contact', zh:'联系',  en:'Contact',  icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>', href: pageBase+'contact.html' },
     ];
     nav.innerHTML = items.map(function(item){
       var active = isActive(item.key);
-      return '<a href="'+item.href+'" style="display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;flex:1;padding:4px 0;'+(active?'color:#1a365d;':'color:#9ca3af;')+'">'
-        +'<span style="font-size:20px;line-height:1">'+item.icon+'</span>'
+      return '<a href="'+item.href+'" style="display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none;flex:1;padding:4px 0;'+(active?'color:#1a365d;':'color:#9ca3af;')+'">'
+        +item.icon
         +'<span style="font-size:10px;font-weight:'+(active?'700':'500')+';">'
         +'<span data-lang="zh">'+item.zh+'</span>'
         +'<span data-lang="en" style="display:none">'+item.en+'</span>'
