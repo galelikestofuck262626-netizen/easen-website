@@ -99,14 +99,14 @@
     var existing = document.querySelector('footer');
     if (!existing) return;
     existing.innerHTML =
-      '<div class="max-w-7xl mx-auto px-4">'
+      '<div style="height:3px;background:linear-gradient(90deg,transparent,#c8a45c 50%,transparent);margin-bottom:40px"></div><div class="max-w-7xl mx-auto px-4">'
       +'<div class="grid grid-cols-1 md:grid-cols-3 gap-8">'
       +'<div>'
-      +'<h3 class="font-semibold text-lg mb-4"><span data-lang="zh">宜森商业空间家具</span><span data-lang="en" style="display:none">EASEN Commercial Furniture</span></h3>'
+      +'<h3 class="font-semibold text-lg mb-4" style="color:#c8a45c"><span data-lang="zh">宜森商业空间家具</span><span data-lang="en" style="display:none">EASEN Commercial Furniture</span></h3>'
       +'<p class="text-neutral-400 text-sm"><span data-lang="zh">为全球客户提供高品质定制家具。</span><span data-lang="en" style="display:none">Providing high-quality custom furniture for global clients.</span></p>'
       +'</div>'
       +'<div>'
-      +'<h3 class="font-semibold text-lg mb-4"><span data-lang="zh">快速链接</span><span data-lang="en" style="display:none">Quick Links</span></h3>'
+      +'<h3 class="font-semibold text-lg mb-4" style="color:#c8a45c"><span data-lang="zh">快速链接</span><span data-lang="en" style="display:none">Quick Links</span></h3>'
       +'<div class="space-y-2 text-sm">'
       +'<a href="'+pageBase+'index.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">首页</span><span data-lang="en" style="display:none">Home</span></a>'
       +'<a href="'+pageBase+'products.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">产品</span><span data-lang="en" style="display:none">Products</span></a>'
@@ -115,7 +115,7 @@
       +'<a href="'+pageBase+'contact.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">联系我们</span><span data-lang="en" style="display:none">Contact Us</span></a>'
       +'</div></div>'
       +'<div>'
-      +'<h3 class="font-semibold text-lg mb-4"><span data-lang="zh">联系信息</span><span data-lang="en" style="display:none">Contact Info</span></h3>'
+      +'<h3 class="font-semibold text-lg mb-4" style="color:#c8a45c"><span data-lang="zh">联系信息</span><span data-lang="en" style="display:none">Contact Info</span></h3>'
       +'<div class="space-y-2 text-sm text-neutral-400">'
       +'<p><span data-lang="zh">广东省佛山市顺德区乐从镇</span><span data-lang="en" style="display:none">Lecong, Shunde, Foshan, China</span></p>'
       +'<p>chinaeasen@outlook.com</p>'
