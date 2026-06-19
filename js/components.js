@@ -162,7 +162,7 @@
   function injectMobileNav() {
     var nav = document.createElement('div');
     nav.id = 'mobile-bottom-nav';
-    nav.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#fff;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-around;padding:8px 0 8px;box-shadow:0 -2px 10px rgba(0,0,0,0.08);';
+    nav.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#fff;border-top:1px solid #e5e7eb;align-items:center;justify-content:space-around;padding:8px 0 8px;box-shadow:0 -2px 10px rgba(0,0,0,0.08);';
     var items = [
       { key:'index',   zh:'首页',  en:'Home',     icon:'🏠', href: pageBase+'index.html' },
       { key:'products',zh:'产品',  en:'Products', icon:'🛋️', href: pageBase+'products.html' },
