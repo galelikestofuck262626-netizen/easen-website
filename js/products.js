@@ -71,6 +71,6 @@ function renderProducts(products){
   }
   renderBatch();btn.onclick=function(e){e.stopPropagation();renderBatch();};
 }
-function loadProducts(){var cat=getCategory();if(!cat){updateFab();return;}fetch("https://raw.githubusercontent.com/"+REPO+"/"+BRANCH+"/data/products.json?t="+Date.now()).then(function(r){return r.json();}).then(function(products){renderProducts(products);}).catch(function(){});}
+function loadProducts(){updateFab();var cat=getCategory();if(!cat){return;}fetch("https://raw.githubusercontent.com/"+REPO+"/"+BRANCH+"/data/products.json?t="+Date.now()).then(function(r){return r.json();}).then(function(products){renderProducts(products);}).catch(function(){});}
 if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",loadProducts);}else{loadProducts();}
 })();
