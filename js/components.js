@@ -31,6 +31,7 @@
     var nav = [
       { key:'index',    zh:'首页',    en:'Home',        href: pageBase + 'index.html' },
       { key:'products', zh:'产品',    en:'Products',    href: pageBase + 'products.html' },
+      { key:'visualizer', zh:'AI看效果', en:'AI Preview', href: '/visualizer.html' },
       { key:'cases',    zh:'案例',    en:'Cases',       href: pageBase + 'cases.html' },
       { key:'about',    zh:'关于我们', en:'About Us',    href: pageBase + 'about.html' },
       { key:'contact',  zh:'联系我们', en:'Contact Us',  href: pageBase + 'contact.html' },
@@ -159,10 +160,10 @@
   }
 
   // 多语言翻译辅助
-  function getFr(k){ return {index:'Accueil',products:'Produits',cases:'Références',about:'À Propos',contact:'Contact'}[k]||k; }
-  function getEs(k){ return {index:'Inicio',products:'Productos',cases:'Casos',about:'Sobre Nosotros',contact:'Contacto'}[k]||k; }
-  function getDe(k){ return {index:'Startseite',products:'Produkte',cases:'Referenzen',about:'Über Uns',contact:'Kontakt'}[k]||k; }
-  function getAr(k){ return {index:'الرئيسية',products:'المنتجات',cases:'المشاريع',about:'من نحن',contact:'اتصل بنا'}[k]||k; }
+  function getFr(k){ return {index:'Accueil',products:'Produits',visualizer:'Aperçu IA',cases:'Références',about:'À Propos',contact:'Contact'}[k]||k; }
+  function getEs(k){ return {index:'Inicio',products:'Productos',visualizer:'Vista IA',cases:'Casos',about:'Sobre Nosotros',contact:'Contacto'}[k]||k; }
+  function getDe(k){ return {index:'Startseite',products:'Produkte',visualizer:'KI-Vorschau',cases:'Referenzen',about:'Über Uns',contact:'Kontakt'}[k]||k; }
+  function getAr(k){ return {index:'الرئيسية',products:'المنتجات',visualizer:'معاينة AI',cases:'المشاريع',about:'من نحن',contact:'اتصل بنا'}[k]||k; }
 
   // 手机端底部固定导航栏（所有设备注入，CSS控制显示）
   function injectMobileNav() {
