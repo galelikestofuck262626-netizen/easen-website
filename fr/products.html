@@ -250,6 +250,7 @@ function b64ToUtf8(str) {
 }
 
 var allProducts = [];
+var _PNI = {};
 var currentFilter = 'all';
 var currentSearch = '';
 
@@ -278,6 +279,7 @@ async function loadProducts() {
   } catch(e) {
     allProducts = [];
   }
+  try { const ri = await fetch('https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+'/data/products-i18n.json?t='+Date.now()); if (ri.ok) _PNI = await ri.json(); } catch(e) {}
   document.getElementById('products-loading').style.display = 'none';
   renderProducts();
   _aiFab();
@@ -426,7 +428,7 @@ function renderProducts() {
       ? 'https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+p.main_image
       : 'https://via.placeholder.com/400x300?text=No+Image';
     var title = p.title_zh || p.title_en || '';
-    if (lang !== 'zh' && p.title_en) title = p.title_en;
+    if (lang !== 'zh') { var _t = (lang!=='en' && _PNI[p.id] && _PNI[p.id][lang]); title = _t || p.title_en || p.title_zh || ''; }
     var cat = catMap[p.category] || {zh:p.category, en:p.category};
     var catLabel = cat[lang] || cat.en;
     var specs = [p.dimensions, p.material, p.fabric].filter(Boolean).join(' · ');
@@ -451,7 +453,7 @@ function showProduct(id) {
   var lang = (location.pathname.match(/^\/(zh|en|fr|es|de|ar)(\/|$)/)||[])[1] || localStorage.getItem('easen-lang') || 'zh';
   // 始终优先显示有内容的字段，中文作为最终备用
   var title = p.title_zh || p.title_en || '';
-  if (lang !== 'zh' && p.title_en) title = p.title_en;
+  if (lang !== 'zh') { var _t = (lang!=='en' && _PNI[p.id] && _PNI[p.id][lang]); title = _t || p.title_en || p.title_zh || ''; }
   var desc = p.desc_zh || p.desc_en || '';
   if (lang !== 'zh' && p.desc_en) desc = p.desc_en;
   var cat = catMap[p.category] || {zh:p.category, en:p.category};
