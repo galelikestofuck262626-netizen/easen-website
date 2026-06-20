@@ -120,4 +120,14 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://chinaeasen.com/ar/products.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/products.html"/>
   </url>
+  <url>
+    <loc>https://chinaeasen.com/zh/visualizer.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/visualizer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/visualizer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/visualizer.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://chinaeasen.com/es/visualizer.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://chinaeasen.com/de/visualizer.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://chinaeasen.com/ar/visualizer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chinaeasen.com/visualizer.html"/>
+  </url>
 </urlset>

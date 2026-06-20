@@ -38,8 +38,9 @@
     ];
 
     var navLinks = nav.map(function(n){
-      var active = isActive(n.key) ? 'style="color:#c8a45c;font-weight:600"' : '';
-      return '<a href="'+n.href+'" class="text-sm font-medium text-neutral-700 hover:text-accent transition-colors" '+active+'>'
+      var isViz = n.key==='visualizer';
+      var active = (isActive(n.key)||isViz) ? 'style="color:#c8a45c;font-weight:600"' : '';
+      return '<a href="'+n.href+'" class="text-sm font-medium '+(isViz?'':'text-neutral-700 ')+'hover:text-accent transition-colors" '+active+'>'+(isViz?'<span style="margin-right:3px">✦</span>':'')
         +'<span data-lang="zh">'+n.zh+'</span>'
         +'<span data-lang="en" style="display:none">'+n.en+'</span>'
         +'<span data-lang="fr" style="display:none">'+getFr(n.key)+'</span>'
