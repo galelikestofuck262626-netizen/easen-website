@@ -22,20 +22,24 @@
   *{box-sizing:border-box}
   html,body{margin:0;height:100%}
   body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#0f1b30;display:flex;flex-direction:column;height:100vh;height:100dvh}
-  /* 顶部品牌条 */
-  .bar{display:flex;align-items:center;gap:14px;padding:12px 22px;background:#fff;flex:0 0 auto;position:relative;box-shadow:0 1px 0 rgba(0,0,0,.04)}
-  .bar::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#c8a45c 50%,transparent)}
-  .bar img{height:36px;width:auto;display:block}
-  .brand{display:flex;align-items:baseline;gap:9px;min-width:0}
-  .brand .name{font-family:Montserrat,Inter,sans-serif;font-weight:700;letter-spacing:.06em;color:#1a365d;font-size:17px}
-  .brand .sep{color:#d8c08a;font-size:16px}
-  .brand .t{display:inline-flex;align-items:center;gap:7px;color:#1a365d;font-size:14px;font-weight:600;white-space:nowrap}
-  .brand .t .spark{color:#c8a45c}
-  .brand .tag{color:#94a3b8;font-size:12.5px;white-space:nowrap;border-left:1px solid #e8e8ec;padding-left:12px;margin-left:2px}
-  .back{margin-left:auto;display:inline-flex;align-items:center;gap:6px;color:#1a365d;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #e3e6ec;padding:8px 16px;border-radius:999px;white-space:nowrap;transition:all .2s}
-  .back:hover{background:#1a365d;color:#fff;border-color:#1a365d}
+  a{color:inherit}
+  /* —— 与官网统一的页头(components.js 注入内部，下面是其所需的工具类垫片) —— */
+  header.site-header{flex:0 0 auto;position:relative;z-index:50;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  header.site-header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#c8a45c 50%,transparent)}
+  .max-w-7xl{max-width:80rem}.mx-auto{margin-left:auto;margin-right:auto}
+  .px-4{padding-left:1rem;padding-right:1rem}
+  .flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}
+  .h-28{height:7rem}.gap-3{gap:.75rem}.gap-8{gap:2rem}
+  .hidden{display:none}
+  .text-sm{font-size:.875rem;line-height:1.25rem}.font-medium{font-weight:500}
+  .text-neutral-700{color:#374151}.transition-colors{transition:color .2s ease}
+  .p-2{padding:.5rem}.w-6{width:1.5rem}.h-6{height:1.5rem}
+  .hover\:text-accent:hover{color:#c8a45c}
+  @media(min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}
+  @media(min-width:768px){.md\:flex{display:flex}.md\:hidden{display:none}}
+  @media(min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}
   /* 工具区 */
-  .stage{flex:1 1 auto;position:relative;background:#0f1b30}
+  .stage{flex:1 1 auto;position:relative;background:#0f1b30;min-height:0}
   iframe{width:100%;height:100%;border:0;display:block;position:relative;z-index:1}
   /* 加载态 */
   .loading{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#0f1b30;color:#cdd7e6;transition:opacity .5s ease}
@@ -43,49 +47,38 @@
   .spin{width:46px;height:46px;border-radius:50%;border:3px solid rgba(200,164,92,.25);border-top-color:#c8a45c;animation:spin 1s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
   .loading p{margin:0;font-size:14px;letter-spacing:.02em;color:#9fb0c8}
-  @media(max-width:560px){.brand .tag{display:none}.bar{padding:10px 14px;gap:10px}.brand .name{font-size:15px}}
 </style>
 </head>
 <body>
-  <div class="bar">
-    <picture><source type="image/webp" srcset="/images/logo.webp"><img src="/images/logo.jpg" alt="EASEN"/></picture>
-    <div class="brand">
-      <span class="name">EASEN</span>
-      <span class="sep">|</span>
-      <span class="t"><span class="spark">✦</span><span data-i18n="title">AI 看效果</span></span>
-      <span class="tag" data-i18n="tag">上传空间照 · AI 即刻预览家具效果</span>
-    </div>
-    <a class="back" href="/index.html"><span aria-hidden="true">←</span> <span data-i18n="back">返回官网</span></a>
-  </div>
+  <header class="site-header"></header>
   <div class="stage">
-    <div class="loading" id="ld"><div class="spin"></div><p data-i18n="loading">正在为你加载 AI 看效果…</p></div>
+    <div class="loading" id="ld"><div class="spin"></div><p>
+      
+      
+      <span data-lang="fr">Chargement de l'aperçu IA…</span>
+      
+      
+      
+    </p></div>
     <iframe id="fr" title="AI 看效果" allow="clipboard-write; camera" loading="eager"></iframe>
   </div>
 <script>
 (function(){
-  var I={
-    zh:{title:"AI 看效果",tag:"上传空间照 · AI 即刻预览家具效果",back:"返回官网",loading:"正在为你加载 AI 看效果…"},
-    en:{title:"AI Room Preview",tag:"Upload a room photo · preview EASEN furniture instantly",back:"Back to site",loading:"Loading the AI preview for you…"},
-    fr:{title:"Aperçu IA",tag:"Importez une photo · prévisualisez le mobilier par IA",back:"Retour au site",loading:"Chargement de l'aperçu IA…"},
-    es:{title:"Vista IA",tag:"Suba una foto · previsualice el mobiliario con IA",back:"Volver al sitio",loading:"Cargando la vista previa con IA…"},
-    de:{title:"KI-Vorschau",tag:"Foto hochladen · Möbel sofort per KI ansehen",back:"Zur Website",loading:"KI-Vorschau wird geladen…"},
-    ar:{title:"معاينة AI",tag:"ارفع صورة المكان · عاين الأثاث فوراً بالذكاء الاصطناعي",back:"العودة للموقع",loading:"جارٍ تحميل معاينة الذكاء الاصطناعي…"}
-  };
   var lang=(location.pathname.match(/^\/(zh|en|fr|es|de|ar)(\/|$)/)||[])[1]
-         ||(location.search.match(/[?&]lang=(zh|en|fr|es|de|ar)/)||[])[1]
          ||(localStorage.getItem('easen-lang'))
-         ||(navigator.language||'').slice(0,2)||'zh';
-  if(!I[lang])lang='en';
-  var d=I[lang];
-  document.documentElement.lang=lang;
-  if(lang==='ar')document.documentElement.dir='rtl';
-  document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.getAttribute('data-i18n');if(d[k])el.textContent=d[k];});
-  // 把语言带给内嵌工具
+         ||((navigator.language||'').slice(0,2))||'zh';
+  if(['zh','en','fr','es','de','ar'].indexOf(lang)<0)lang='en';
+  // 透传所有 URL 参数给内嵌工具（lang + 未来的 product/cart 等），并补上 lang
+  var q=new URLSearchParams(location.search);
+  q.set('lang',lang);
   var f=document.getElementById('fr');
-  f.src='https://easen-crm.galelikestofuck262626.workers.dev/visualizer?lang='+lang;
-  f.addEventListener('load',function(){var l=document.getElementById('ld');if(l)l.classList.add('hide');});
-  setTimeout(function(){var l=document.getElementById('ld');if(l)l.classList.add('hide');},8000);
+  f.src='https://easen-crm.galelikestofuck262626.workers.dev/visualizer?'+q.toString();
+  function hide(){var l=document.getElementById('ld');if(l)l.classList.add('hide');}
+  f.addEventListener('load',hide);
+  setTimeout(hide,8000);
 })();
 </script>
+<script src="/js/lang.js"></script>
+<script src="/js/components.js"></script>
 </body>
 </html>
