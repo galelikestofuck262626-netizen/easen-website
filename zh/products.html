@@ -204,7 +204,7 @@ body{font-family:Inter,system-ui,sans-serif;color:#2d343b}
       </div>
       <div id="products-loading" class="text-center py-20">
         <div class="inline-block w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin"></div>
-        <p class="text-neutral-400 mt-4 text-sm">加载中...</p>
+        <p class="text-neutral-400 mt-4 text-sm"><span data-lang="zh">加载中...</span></p>
       </div>
     </div>
   </section>
@@ -254,15 +254,15 @@ var currentFilter = 'all';
 var currentSearch = '';
 
 const catMap = {
-  restaurant: {zh:'餐厅家具', en:'Restaurant Furniture'},
-  hotel: {zh:'酒店家具', en:'Hotel Furniture'},
-  cafe: {zh:'咖啡厅家具', en:'Cafe Furniture'},
-  outdoor: {zh:'户外家具', en:'Outdoor Furniture'}
+  restaurant: {zh:"餐厅家具", en:"Restaurant Furniture", fr:"Mobilier de Restaurant", es:"Mobiliario de Restaurante", de:"Restaurantmöbel", ar:"أثاث المطاعم"},
+  hotel: {zh:"酒店家具", en:"Hotel Furniture", fr:"Mobilier d'Hôtel", es:"Mobiliario de Hotel", de:"Hotelmöbel", ar:"أثاث الفنادق"},
+  cafe: {zh:"咖啡厅家具", en:"Cafe Furniture", fr:"Mobilier de Café", es:"Mobiliario de Cafetería", de:"Cafémöbel", ar:"أثاث المقاهي"},
+  outdoor: {zh:"户外家具", en:"Outdoor Furniture", fr:"Mobilier d'Extérieur", es:"Mobiliario de Exterior", de:"Außenmöbel", ar:"الأثاث الخارجي"}
 };
 
 // —— AI 看效果购物车（与产品分类页共用 localStorage 'easen-ai-cart'）——
 function _aiLang(){return (location.pathname.match(/^\/(zh|en|fr|es|de|ar)(\/|$)/)||[])[1]||localStorage.getItem('easen-lang')||'zh';}
-var _AIT={add:{zh:'加入 AI 看效果',en:'Add to AI Preview'},added:{zh:'已加入',en:'Added'},fab:{zh:'AI 看效果',en:'AI Preview'},go:{zh:'生成效果图 →',en:'Generate →'},toast:{zh:'已加入 AI 看效果',en:'Added to AI Preview'}};
+var _AIT={add:{zh:"加入 AI 看效果",en:"Add to AI Preview",fr:"Ajouter à l'aperçu IA",es:"Añadir a vista IA",de:"Zur KI-Vorschau",ar:"أضف إلى المعاينة"},added:{zh:"已加入",en:"Added",fr:"Ajouté",es:"Añadido",de:"Hinzugefügt",ar:"أُضيف"},fab:{zh:"AI 看效果",en:"AI Preview",fr:"Aperçu IA",es:"Vista IA",de:"KI-Vorschau",ar:"معاينة AI"},go:{zh:"生成效果图 →",en:"Generate →",fr:"Générer →",es:"Generar →",de:"Erzeugen →",ar:"إنشاء →"},toast:{zh:"已加入 AI 看效果",en:"Added to AI Preview",fr:"Ajouté à l'aperçu IA",es:"Añadido a vista IA",de:"Zur KI-Vorschau hinzugefügt",ar:"أُضيف إلى المعاينة"},details:{zh:"详情 →",en:"Details →",fr:"Détails →",es:"Detalles →",de:"Details →",ar:"التفاصيل →"},dimensions:{zh:"尺寸",en:"Dimensions",fr:"Dimensions",es:"Dimensiones",de:"Abmessungen",ar:"الأبعاد"},material:{zh:"材料",en:"Material",fr:"Matériau",es:"Material",de:"Material",ar:"المادة"},fabric:{zh:"面料",en:"Fabric",fr:"Tissu",es:"Tela",de:"Stoff",ar:"القماش"},color:{zh:"颜色",en:"Color",fr:"Couleur",es:"Color",de:"Farbe",ar:"اللون"},sku:{zh:"货号",en:"SKU",fr:"Réf",es:"SKU",de:"Art.-Nr.",ar:"رقم الصنف"},quote:{zh:"立即询价",en:"Get a Quote",fr:"Demander un Devis",es:"Solicitar Presupuesto",de:"Angebot Anfragen",ar:"اطلب عرض سعر"},search:{zh:"搜索产品...",en:"Search products...",fr:"Rechercher un produit...",es:"Buscar productos...",de:"Produkte suchen...",ar:"ابحث عن منتج..."}};
 function _aiT(k){var L=_aiLang();return (_AIT[k]&&_AIT[k][L])||_AIT[k].en;}
 function _getCart(){try{return JSON.parse(localStorage.getItem('easen-ai-cart')||'[]');}catch(e){return [];}}
 function _inCart(id){return _getCart().some(function(x){return String(x.id)===String(id);});}
@@ -281,6 +281,7 @@ async function loadProducts() {
   document.getElementById('products-loading').style.display = 'none';
   renderProducts();
   _aiFab();
+  var _si=document.getElementById('searchInput');if(_si)_si.placeholder=_aiT('search');
 }
 
 function filterProducts(cat, btn) {
@@ -427,7 +428,7 @@ function renderProducts() {
     var title = p.title_zh || p.title_en || '';
     if (lang !== 'zh' && p.title_en) title = p.title_en;
     var cat = catMap[p.category] || {zh:p.category, en:p.category};
-    var catLabel = lang === 'zh' ? cat.zh : cat.en;
+    var catLabel = cat[lang] || cat.en;
     var specs = [p.dimensions, p.material, p.fabric].filter(Boolean).join(' · ');
     return '<div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl cursor-pointer" onclick="showProduct(\''+p.id+'\')">'
       +'<div style="height:240px;overflow:hidden;background:#f5f5f5">'
@@ -439,7 +440,7 @@ function renderProducts() {
       +(specs ? '<p class="text-neutral-400 text-xs">'+specs+'</p>' : '')
       +'<div class="mt-3" style="display:flex;align-items:center;gap:8px">'
       +'<button onclick="aiAdd(\''+p.id+'\',event)" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:8px 10px;border-radius:9999px;border:none;cursor:pointer;font-size:12.5px;font-weight:600;transition:background .2s;'+(_inCart(p.id)?'background:rgba(200,164,92,.16);color:#1a365d':'background:#1a365d;color:#fff')+'">'+(_inCart(p.id)?('✓ '+_aiT('added')):('✦ '+_aiT('add')))+'</button>'
-      +'<span class="text-accent" style="font-size:12px;font-weight:500;white-space:nowrap">'+(lang==='zh'?'详情 →':'Details →')+'</span>'
+      +'<span class="text-accent" style="font-size:12px;font-weight:500;white-space:nowrap">'+_aiT('details')+'</span>'
       +'</div></div></div>';
   }).join('');
 }
@@ -466,17 +467,17 @@ function showProduct(id) {
     : '';
 
   var specs = [
-    p.dimensions ? (lang==='zh'?'尺寸':'Dimensions')+': '+p.dimensions : null,
-    p.material ? (lang==='zh'?'材料':'Material')+': '+p.material : null,
-    p.fabric ? (lang==='zh'?'面料':'Fabric')+': '+p.fabric : null,
-    p.color ? (lang==='zh'?'颜色':'Color')+': '+p.color : null,
-    p.sku ? (lang==='zh'?'货号':'SKU')+': '+p.sku : null,
+    p.dimensions ? _aiT('dimensions')+': '+p.dimensions : null,
+    p.material ? _aiT('material')+': '+p.material : null,
+    p.fabric ? _aiT('fabric')+': '+p.fabric : null,
+    p.color ? _aiT('color')+': '+p.color : null,
+    p.sku ? _aiT('sku')+': '+p.sku : null,
   ].filter(Boolean);
 
   document.getElementById('modal-content').innerHTML =
     imgHtml
     +'<div style="padding:24px">'
-    +'<span style="font-size:11px;font-weight:500;color:#c8a45c;text-transform:uppercase">'+(lang==='zh'?cat.zh:cat.en)+'</span>'
+    +'<span style="font-size:11px;font-weight:500;color:#c8a45c;text-transform:uppercase">'+(cat[lang]||cat.en)+'</span>'
     +'<h2 style="font-size:24px;font-weight:700;color:#1a365d;margin:8px 0 12px">'+title+'</h2>'
     +(specs.length > 0
       ? '<div style="background:#f9f9f9;border-radius:10px;padding:16px;margin-bottom:16px">'
@@ -487,7 +488,7 @@ function showProduct(id) {
     +'<div style="display:flex;flex-wrap:wrap;gap:10px">'
     +'<button onclick="aiAdd(\''+p.id+'\',event);closeModal();" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 28px;background:#c8a45c;color:#1a365d;font-weight:700;border:none;border-radius:8px;cursor:pointer;font-size:15px">✦ '+_aiT('add')+'</button>'
     +'<a href="contact.html" style="display:inline-flex;align-items:center;justify-content:center;padding:12px 32px;background:#1a365d;color:#fff;font-weight:600;border-radius:8px;text-decoration:none;font-size:15px">'
-    +(lang==='zh'?'立即询价':'Get a Quote')+'</a>'
+    +_aiT('quote')+'</a>'
     +'</div>'
     +'</div>';
 
