@@ -25,7 +25,7 @@ LANGS = ["zh", "en", "fr", "es", "de", "ar"]
 ACTIVE_LANGS = LANGS[:]  # 本次生成/部署的语言集合(决定 hreflang 集群只引用已存在的语言)
 OG_LOCALE = {"zh": "zh_CN", "en": "en_US", "fr": "fr_FR", "es": "es_ES", "de": "de_DE", "ar": "ar_AR"}
 # 不生成 /L/404.html（GitHub Pages 只用根 /404.html）
-EXCLUDE_GEN = {"404.html"}
+EXCLUDE_GEN = {"404.html", "index-demo.html"}
 
 # 翻译词典(从 lang.js 的 T 抽取, 与运行时同源)。fr/es/de/ar 对 en 回退文本套用。
 def _load_json(name):
@@ -226,12 +226,28 @@ def update_root_hreflang(page):
 
 
 def write_sitemap(path, entries):
+    from datetime import date
+    today = date.today().isoformat()
+    def prio(page):
+        if page in ("index.html",):
+            return "1.0", "daily"
+        if page in ("products.html", "cases.html", "contact.html"):
+            return "0.9", "weekly"
+        if page.startswith("case-") or page.startswith("insight-") or page == "about.html":
+            return "0.8", "monthly"
+        if page == "visualizer.html":
+            return "0.7", "monthly"
+        return "0.6", "monthly"
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
              'xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for page, L in entries:
+        pr, cf = prio(page)
         lines.append("  <url>")
         lines.append("    <loc>%s</loc>" % page_url(page, L))
+        lines.append("    <lastmod>%s</lastmod>" % today)
+        lines.append("    <changefreq>%s</changefreq>" % cf)
+        lines.append("    <priority>%s</priority>" % pr)
         for lg in ACTIVE_LANGS:
             lines.append('    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (lg, page_url(page, lg)))
         lines.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % page_url(page, None))

@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chinaeasen.com/es/about.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/about.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/about.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/about.html"/>
@@ -12,6 +15,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/case-cafe.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-cafe.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-cafe.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/case-cafe.html"/>
@@ -22,6 +28,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/case-hotel.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-hotel.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-hotel.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/case-hotel.html"/>
@@ -32,6 +41,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/case-outdoor.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-outdoor.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-outdoor.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/case-outdoor.html"/>
@@ -42,6 +54,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/case-restaurant.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/case-restaurant.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/case-restaurant.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/case-restaurant.html"/>
@@ -52,6 +67,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/cases.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/cases.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/cases.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/cases.html"/>
@@ -62,6 +80,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/contact.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/contact.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/contact.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/contact.html"/>
@@ -72,6 +93,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/"/>
@@ -82,6 +106,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/insight-furniture-guide.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/insight-furniture-guide.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/insight-furniture-guide.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/insight-furniture-guide.html"/>
@@ -92,6 +119,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/insight-project-cafe.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/insight-project-cafe.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/insight-project-cafe.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/insight-project-cafe.html"/>
@@ -102,6 +132,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/insight-quality-compliance.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/insight-quality-compliance.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/insight-quality-compliance.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/insight-quality-compliance.html"/>
@@ -112,6 +145,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/products.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/products.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/products.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/products.html"/>
@@ -122,6 +158,9 @@
   </url>
   <url>
     <loc>https://chinaeasen.com/es/visualizer.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://chinaeasen.com/zh/visualizer.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chinaeasen.com/en/visualizer.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chinaeasen.com/fr/visualizer.html"/>

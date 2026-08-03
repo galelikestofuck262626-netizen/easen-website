@@ -4,6 +4,13 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /index-demo.html
+Disallow: /*/index-demo.html
+Disallow: /temp-preview/
+Disallow: /tools/
+
+# Host
+Host: https://chinaeasen.com
 
 # Sitemaps
 Sitemap: https://chinaeasen.com/sitemap.xml
