@@ -40,7 +40,7 @@ function markCards(){document.querySelectorAll(".cf-pcard[data-pid]").forEach(fu
 function injectStyle(){if(document.getElementById('cf-pcard-style'))return;var s=document.createElement('style');s.id='cf-pcard-style';s.textContent='.cf-pcard{box-shadow:0 1px 4px rgba(16,24,40,.06);transition:box-shadow .35s ease, transform .35s ease;cursor:pointer}.cf-pcard:hover{box-shadow:0 18px 36px rgba(16,24,40,.14);transform:translateY(-6px)}.cf-imgwrap{position:relative}.cf-ov{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding:16px;background:linear-gradient(to top,rgba(15,27,48,.78),rgba(15,27,48,0) 55%);opacity:0;transition:opacity .3s ease}.cf-pcard:hover .cf-ov{opacity:1}.cf-ov span{color:#fff;font-size:13px;font-weight:600;text-align:center}.cf-add{display:inline-flex;align-items:center;gap:6px;margin-top:4px;padding:9px 16px;border-radius:9999px;background:#1a365d;color:#fff;font-weight:600;font-size:13px;border:none;cursor:pointer;transition:background .2s ease;width:100%;justify-content:center}.cf-add:hover{background:#c8a45c}.cf-add.on{background:rgba(200,164,92,.16);color:#1a365d}';document.head.appendChild(s);}
 function nameSpans(p,tzh,ten){var tr=PI18N[p.id]||{};var o='<span data-lang="zh">'+tzh+'</span><span data-lang="en" data-en-original="'+ten+'">'+ten+'</span>';["fr","es","de","ar"].forEach(function(L){var v=esc(tr[L]||"")||ten;o+='<span data-lang="'+L+'" style="display:none">'+v+'</span>';});return o;}
 function buildCard(p){
-  var imgUrl="https://raw.githubusercontent.com/"+REPO+"/"+BRANCH+p.main_image;
+  var imgUrl=p.main_image||"";
   var a=document.createElement("div");a.className="group block bg-white rounded-2xl overflow-hidden cf-pcard";a.setAttribute("data-pid",p.id);
   var dims=[p.dimensions,p.material,p.fabric].filter(Boolean).join(" / ");
   var tzh=esc(p.title_zh||p.title_en||""),ten=esc(p.title_en||p.title_zh||"");
@@ -72,6 +72,6 @@ function renderProducts(products){
   }
   renderBatch();btn.onclick=function(e){e.stopPropagation();renderBatch();};
 }
-function loadProducts(){updateFab();var cat=getCategory();if(!cat){return;}fetch("https://raw.githubusercontent.com/"+REPO+"/"+BRANCH+"/data/products-i18n.json?t="+Date.now()).then(function(r){return r.json();}).then(function(j){PI18N=j||{};}).catch(function(){}).then(function(){fetch("https://raw.githubusercontent.com/"+REPO+"/"+BRANCH+"/data/products.json?t="+Date.now()).then(function(r){return r.json();}).then(function(products){renderProducts(products);}).catch(function(){});});}
+function loadProducts(){updateFab();var cat=getCategory();if(!cat){return;}fetch("/data/products-i18n.json?t="+Date.now()).then(function(r){return r.json();}).then(function(j){PI18N=j||{};}).catch(function(){}).then(function(){fetch("/data/products.json?t="+Date.now()).then(function(r){return r.json();}).then(function(products){renderProducts(products);}).catch(function(){});});}
 if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",loadProducts);}else{loadProducts();}
 })();
