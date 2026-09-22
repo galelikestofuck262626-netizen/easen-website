@@ -6,7 +6,7 @@
 
   // 当前页面路径检测
   var path = window.location.pathname;
-  var isRoot = path === '/' || path.endsWith('index.html');
+  var isRoot = path === '/' || /^\/(zh|en|fr|es|de|ar)\/$/.test(path) || path.endsWith('index.html');
   var isAdmin = path.indexOf('/admin') > -1;
   if (isAdmin) return; // 后台不注入
 
@@ -29,9 +29,9 @@
     if (!existing) return;
 
     var nav = [
-      { key:'index',    zh:'首页',    en:'Home',        href: pageBase + 'index.html' },
+      { key:'index',    zh:'首页',    en:'Home',        href: pageBase || '/' },
       { key:'products', zh:'产品',    en:'Products',    href: pageBase + 'products.html' },
-      { key:'visualizer', zh:'AI看效果', en:'AI Preview', href: '/visualizer.html' },
+      { key:'visualizer', zh:'AI看效果', en:'AI Preview', href: pageBase + 'visualizer.html' },
       { key:'cases',    zh:'案例',    en:'Cases',       href: pageBase + 'cases.html' },
       { key:'about',    zh:'关于我们', en:'About Us',    href: pageBase + 'about.html' },
       { key:'contact',  zh:'联系我们', en:'Contact Us',  href: pageBase + 'contact.html' },

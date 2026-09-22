@@ -1,0 +1,340 @@
+{
+  "index.html": {
+    "zh": [
+      "佛山餐饮商用家具制造商 | EASEN",
+      "了解佛山 EASEN 的餐厅卡座、餐椅、餐桌和商用家具。与团队沟通项目尺寸、材料、定制要求及报价。"
+    ],
+    "en": [
+      "Restaurant Furniture Manufacturer in Foshan, China | EASEN",
+      "Explore restaurant booths, chairs, tables and commercial furniture from EASEN in Foshan, China. Discuss dimensions, materials and your project requirements."
+    ],
+    "fr": [
+      "Fabricant de mobilier de restaurant à Foshan, Chine | EASEN",
+      "Découvrez les banquettes, chaises, tables et meubles professionnels EASEN à Foshan, en Chine. Échangez sur les dimensions, matériaux et besoins de votre projet."
+    ],
+    "es": [
+      "Fabricante de mobiliario de restaurante en Foshan, China | EASEN",
+      "Descubra bancos, sillas, mesas y mobiliario comercial de EASEN en Foshan, China. Consulte dimensiones, materiales y requisitos de su proyecto."
+    ],
+    "de": [
+      "Hersteller von Restaurantmöbeln in Foshan, China | EASEN",
+      "Entdecken Sie Restaurantbänke, Stühle, Tische und Gewerbemöbel von EASEN in Foshan, China. Besprechen Sie Maße, Materialien und Projektanforderungen."
+    ],
+    "ar": [
+      "مصنّع أثاث المطاعم في فوشان، الصين | EASEN",
+      "تعرّف على مقاعد المطاعم والكراسي والطاولات والأثاث التجاري من EASEN في فوشان بالصين. ناقش المقاسات والمواد ومتطلبات مشروعك."
+    ]
+  },
+  "products.html": {
+    "zh": [
+      "商用家具产品目录 | EASEN",
+      "浏览 EASEN 餐椅、卡座、餐桌及户外家具目录，按类别查找产品，并向团队咨询规格和定制选项。"
+    ],
+    "en": [
+      "Commercial Furniture Catalog | EASEN",
+      "Browse EASEN dining chairs, booths, tables and outdoor furniture. Filter the catalog by category and contact our team for specifications and customization options."
+    ],
+    "fr": [
+      "Catalogue de mobilier professionnel | EASEN",
+      "Parcourez les chaises, banquettes, tables et meubles d’extérieur EASEN. Filtrez par catégorie et contactez notre équipe pour les caractéristiques et options."
+    ],
+    "es": [
+      "Catálogo de mobiliario comercial | EASEN",
+      "Explore sillas, bancos, mesas y muebles de exterior EASEN. Filtre el catálogo por categoría y consulte especificaciones y opciones de personalización."
+    ],
+    "de": [
+      "Katalog für Gewerbemöbel | EASEN",
+      "Stöbern Sie in EASEN-Stühlen, Sitzbänken, Tischen und Außenmöbeln. Filtern Sie nach Kategorie und fragen Sie Spezifikationen und Anpassungsoptionen an."
+    ],
+    "ar": [
+      "كتالوج الأثاث التجاري | EASEN",
+      "تصفّح كراسي وطاولات ومقاعد EASEN والأثاث الخارجي. اختر الفئة وتواصل مع فريقنا لمعرفة المواصفات وخيارات التخصيص."
+    ]
+  },
+  "cases.html": {
+    "zh": [
+      "餐饮与酒店家具项目 | EASEN",
+      "了解餐饮与酒店家具项目、空间布局与家具组合。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "Restaurant & Hospitality Furniture Projects | EASEN",
+      "Explore restaurant and hospitality furniture projects, layouts and furniture combinations. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Projets de mobilier pour restaurants et hôtels | EASEN",
+      "Découvrez les projets de mobilier de restauration et d’hôtellerie, les plans et les combinaisons de meubles. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Proyectos de mobiliario para restaurantes y hoteles | EASEN",
+      "Conozca proyectos de mobiliario para restaurantes y hoteles, distribuciones y combinaciones de muebles. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Möbelprojekte für Restaurants und Hotels | EASEN",
+      "Informieren Sie sich über Möbelprojekte für Gastronomie und Hotellerie, Raumaufteilungen und Möbelkombinationen. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "مشاريع أثاث المطاعم والفنادق | EASEN",
+      "تعرّف على مشاريع أثاث المطاعم والفنادق وتوزيع المساحات وتنسيق الأثاث. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  },
+  "about.html": {
+    "zh": [
+      "关于宜森家具 | EASEN",
+      "了解 EASEN 的商用家具业务、产品范围与项目服务，并联系团队确认适合您项目的制造及定制方案。"
+    ],
+    "en": [
+      "About EASEN Furniture | EASEN",
+      "Learn about EASEN, its commercial furniture range and project services. Contact the team to discuss manufacturing and customization for your project."
+    ],
+    "fr": [
+      "À propos d’EASEN Furniture | EASEN",
+      "Découvrez EASEN, sa gamme de mobilier professionnel et ses services. Contactez l’équipe pour discuter de fabrication et de personnalisation."
+    ],
+    "es": [
+      "Acerca de EASEN Furniture | EASEN",
+      "Conozca EASEN, su gama de mobiliario comercial y sus servicios para proyectos. Consulte al equipo sobre fabricación y personalización."
+    ],
+    "de": [
+      "Über EASEN Furniture | EASEN",
+      "Lernen Sie EASEN, das Gewerbemöbel-Sortiment und die Projektleistungen kennen. Besprechen Sie Fertigung und Anpassung mit dem Team."
+    ],
+    "ar": [
+      "نبذة عن EASEN Furniture | EASEN",
+      "تعرّف على EASEN وتشكيلة أثاثها التجاري وخدمات المشاريع. تواصل مع الفريق لمناقشة التصنيع والتخصيص المناسبين لمشروعك."
+    ]
+  },
+  "contact.html": {
+    "zh": [
+      "联系宜森与项目询价 | EASEN",
+      "通过 EASEN 联系表单、邮箱或 WhatsApp 沟通家具种类、数量、尺寸及交付计划，获取项目报价。"
+    ],
+    "en": [
+      "Contact EASEN & Request a Project Quote | EASEN",
+      "Contact EASEN by form, email or WhatsApp to discuss furniture types, quantities, dimensions and delivery requirements for your commercial project."
+    ],
+    "fr": [
+      "Contacter EASEN et demander un devis | EASEN",
+      "Contactez EASEN par formulaire, e-mail ou WhatsApp pour discuter des meubles, quantités, dimensions et délais souhaités pour votre projet professionnel."
+    ],
+    "es": [
+      "Contactar con EASEN y solicitar presupuesto | EASEN",
+      "Contacte con EASEN por formulario, correo o WhatsApp para hablar de muebles, cantidades, dimensiones y necesidades de entrega de su proyecto."
+    ],
+    "de": [
+      "EASEN kontaktieren und Projektangebot anfragen | EASEN",
+      "Kontaktieren Sie EASEN per Formular, E-Mail oder WhatsApp zu Möbelarten, Mengen, Maßen und Lieferanforderungen für Ihr gewerbliches Projekt."
+    ],
+    "ar": [
+      "تواصل مع EASEN واطلب عرض سعر | EASEN",
+      "تواصل مع EASEN عبر النموذج أو البريد الإلكتروني أو واتساب لمناقشة أنواع الأثاث والكميات والمقاسات ومتطلبات التسليم لمشروعك."
+    ]
+  },
+  "visualizer.html": {
+    "zh": [
+      "AI 家具空间预览 | EASEN",
+      "上传空间照片并选择家具，使用 AI 预览探索布局与搭配。效果图用于设计参考，具体产品和方案请与团队确认。"
+    ],
+    "en": [
+      "AI Furniture Preview | EASEN",
+      "Upload a space photo and select furniture to explore an AI preview. Images are design references; confirm products, dimensions and project details with our team."
+    ],
+    "fr": [
+      "Aperçu de mobilier par IA | EASEN",
+      "Importez une photo et choisissez des meubles pour un aperçu IA. Les images sont des références de conception ; confirmez les détails avec notre équipe."
+    ],
+    "es": [
+      "Vista previa de muebles con IA | EASEN",
+      "Suba una foto del espacio y elija muebles para una vista previa con IA. Las imágenes son referencias de diseño; confirme los detalles con nuestro equipo."
+    ],
+    "de": [
+      "KI-Möbelvorschau | EASEN",
+      "Laden Sie ein Raumfoto hoch und wählen Sie Möbel für eine KI-Vorschau. Die Bilder dienen als Designreferenz; klären Sie Details mit unserem Team."
+    ],
+    "ar": [
+      "معاينة الأثاث بالذكاء الاصطناعي | EASEN",
+      "ارفع صورة للمساحة واختر الأثاث لاستكشاف معاينة بالذكاء الاصطناعي. الصور مرجع تصميمي؛ أكّد المنتجات والمقاسات والتفاصيل مع فريقنا."
+    ]
+  },
+  "case-restaurant.html": {
+    "zh": [
+      "餐厅家具方案 | EASEN",
+      "了解餐厅座椅、卡座与餐桌配置。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "Restaurant Furniture Project | EASEN",
+      "Explore restaurant seating, booth layouts and table configurations. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Projet de mobilier de restaurant | EASEN",
+      "Découvrez les sièges de restaurant, les banquettes et la disposition des tables. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Proyecto de mobiliario de restaurante | EASEN",
+      "Conozca asientos de restaurante, bancos y configuración de mesas. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Restaurantmöbel-Projekt | EASEN",
+      "Informieren Sie sich über Restaurantsitzplätze, Bankanordnungen und Tischkonfigurationen. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "مشروع أثاث مطعم | EASEN",
+      "تعرّف على مقاعد المطاعم وتوزيع الجلسات والطاولات. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  },
+  "case-hotel.html": {
+    "zh": [
+      "酒店家具方案 | EASEN",
+      "了解酒店软包座椅与家具搭配。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "Hotel Furniture Project | EASEN",
+      "Explore upholstered hotel seating and furniture combinations. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Projet de mobilier hôtelier | EASEN",
+      "Découvrez les sièges rembourrés et les combinaisons de mobilier hôtelier. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Proyecto de mobiliario hotelero | EASEN",
+      "Conozca asientos tapizados y combinaciones de mobiliario hotelero. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Hotelmöbel-Projekt | EASEN",
+      "Informieren Sie sich über gepolsterte Hotelsitzmöbel und Möbelkombinationen. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "مشروع أثاث فندقي | EASEN",
+      "تعرّف على المقاعد المنجدة وتنسيق أثاث الفنادق. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  },
+  "case-cafe.html": {
+    "zh": [
+      "咖啡厅家具方案 | EASEN",
+      "了解咖啡厅餐椅、卡座与休闲家具搭配。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "Café Furniture Project | EASEN",
+      "Explore café dining chairs, booth seating and lounge furniture. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Projet de mobilier de café | EASEN",
+      "Découvrez les chaises, banquettes et meubles de détente pour cafés. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Proyecto de mobiliario de cafetería | EASEN",
+      "Conozca sillas, bancos y muebles de descanso para cafeterías. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Cafémöbel-Projekt | EASEN",
+      "Informieren Sie sich über Caféstühle, Sitzbänke und Loungemöbel. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "مشروع أثاث مقهى | EASEN",
+      "تعرّف على كراسي المقاهي والمقاعد وأثاث الاستراحة. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  },
+  "case-outdoor.html": {
+    "zh": [
+      "户外餐饮家具方案 | EASEN",
+      "了解户外餐饮座椅、餐桌与空间搭配。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "Outdoor Dining Furniture Project | EASEN",
+      "Explore outdoor dining seating, tables and space layouts. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Projet de mobilier de restauration en extérieur | EASEN",
+      "Découvrez les sièges, tables et aménagements de restauration en extérieur. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Proyecto de mobiliario para restaurantes al aire libre | EASEN",
+      "Conozca asientos, mesas y distribución de espacios para restaurantes al aire libre. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Möbelprojekt für die Außengastronomie | EASEN",
+      "Informieren Sie sich über Außengastronomie-Sitzmöbel, Tische und Raumaufteilungen. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "مشروع أثاث للمطاعم الخارجية | EASEN",
+      "تعرّف على مقاعد وطاولات المطاعم الخارجية وتخطيط مساحاتها. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  },
+  "insight-furniture-guide.html": {
+    "zh": [
+      "餐厅卡座：皮革与布艺对比 | EASEN",
+      "了解卡座皮革与布艺在清洁、舒适度和外观方面的选择。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "PU Leather vs Fabric for Restaurant Booths | EASEN",
+      "Explore upholstery choices for restaurant booths, including cleaning, comfort and appearance. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Similicuir ou tissu pour les banquettes de restaurant | EASEN",
+      "Découvrez le choix des revêtements de banquettes selon le nettoyage, le confort et l’aspect. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Cuero sintético o tela para bancos de restaurante | EASEN",
+      "Conozca tapicerías para bancos de restaurante según limpieza, comodidad y aspecto. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Kunstleder oder Stoff für Restaurantbänke | EASEN",
+      "Informieren Sie sich über Polsterbezüge für Restaurantbänke im Hinblick auf Reinigung, Komfort und Optik. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "الجلد الصناعي أم القماش لمقاعد المطاعم | EASEN",
+      "تعرّف على اختيار تنجيد مقاعد المطاعم من حيث التنظيف والراحة والمظهر. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  },
+  "insight-project-cafe.html": {
+    "zh": [
+      "咖啡厅家具配置与空间规划 | EASEN",
+      "了解咖啡厅的家具配置、动线与材料选择。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "Café Furniture and Space Planning | EASEN",
+      "Explore café furniture configurations, circulation and material choices. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Mobilier de café et aménagement de l’espace | EASEN",
+      "Découvrez les configurations de mobilier de café, la circulation et les matériaux. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Mobiliario de cafetería y planificación del espacio | EASEN",
+      "Conozca configuraciones de muebles de cafetería, circulación y materiales. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Cafémöbel und Raumplanung | EASEN",
+      "Informieren Sie sich über Cafémöbel-Konfigurationen, Laufwege und Materialauswahl. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "أثاث المقاهي وتخطيط المساحات | EASEN",
+      "تعرّف على توزيع أثاث المقاهي ومسارات الحركة واختيار المواد. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  },
+  "insight-quality-compliance.html": {
+    "zh": [
+      "商用家具质量检查与材料选择 | EASEN",
+      "了解商用家具的材料检查、尺寸确认与包装流程。与 EASEN 团队讨论您的项目需求，并确认具体产品和材料。"
+    ],
+    "en": [
+      "Commercial Furniture Quality Checks & Materials | EASEN",
+      "Explore commercial furniture material checks, dimensional reviews and packing procedures. Discuss your project requirements and confirm product details with the EASEN team."
+    ],
+    "fr": [
+      "Contrôles qualité et matériaux du mobilier professionnel | EASEN",
+      "Découvrez les contrôles des matériaux, des dimensions et de l’emballage du mobilier professionnel. Discutez de vos besoins et confirmez les détails avec l’équipe EASEN."
+    ],
+    "es": [
+      "Controles de calidad y materiales del mobiliario comercial | EASEN",
+      "Conozca revisiones de materiales, dimensiones y embalaje del mobiliario comercial. Consulte sus necesidades y confirme los detalles con el equipo de EASEN."
+    ],
+    "de": [
+      "Qualitätsprüfung und Materialien für Gewerbemöbel | EASEN",
+      "Informieren Sie sich über Materialkontrollen, Maßprüfungen und Verpackungsabläufe für Gewerbemöbel. Besprechen Sie Anforderungen und Details mit dem EASEN-Team."
+    ],
+    "ar": [
+      "فحص جودة الأثاث التجاري واختيار المواد | EASEN",
+      "تعرّف على فحص مواد الأثاث التجاري ومراجعة المقاسات وإجراءات التغليف. ناقش متطلبات مشروعك وأكّد التفاصيل مع فريق EASEN."
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+<meta name="robots" content="noindex,nofollow"/>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>EASEN 后台管理</title>
@@ -110,61 +111,65 @@ textarea{resize:vertical;min-height:80px}
     <div style="text-align:center;margin-bottom:28px">
       <div style="font-size:36px;margin-bottom:8px">🔐</div>
       <h2 style="font-size:22px;font-weight:700;color:#1a365d;margin-bottom:4px">EASEN 后台管理</h2>
-      <p style="font-size:13px;color:#9ca3af">请输入账号和密码登录</p>
+      <p style="font-size:13px;color:#9ca3af">使用具有本站仓库权限的 GitHub Token 登录</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:14px">
       <div>
-        <label style="font-size:13px;font-weight:500;color:#555;display:block;margin-bottom:6px">用户名</label>
-        <input id="login-user" type="text" placeholder="请输入用户名" style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none"/>
-      </div>
-      <div>
-        <label style="font-size:13px;font-weight:500;color:#555;display:block;margin-bottom:6px">密码</label>
-        <input id="login-pass" type="password" placeholder="请输入密码" style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none" onkeydown="if(event.key==='Enter')doLogin()"/>
-      </div>
-      <div>
         <label style="font-size:13px;font-weight:500;color:#555;display:block;margin-bottom:6px">GitHub Token</label>
-        <input id="login-token" type="password" placeholder="github_pat_..." style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none" onkeydown="if(event.key==='Enter')doLogin()"/>
-        <p style="font-size:11px;color:#bbb;margin-top:4px">首次登录需输入，之后自动记住</p>
+        <input id="login-token" type="password" autocomplete="off" placeholder="github_pat_..." style="width:100%;padding:11px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none" onkeydown="if(event.key==='Enter')doLogin()"/>
+        <p style="font-size:11px;color:#bbb;margin-top:4px">令牌需要本仓库的 Contents 写入权限，仅保存在当前标签页会话中。关闭标签页后需重新输入。</p>
       </div>
-      <div id="login-error" style="display:none;color:#ef4444;font-size:13px;text-align:center">用户名或密码错误</div>
+      <div id="login-error" style="display:none;color:#ef4444;font-size:13px;text-align:center">无法验证仓库权限，请检查令牌</div>
       <button onclick="doLogin()" style="width:100%;padding:12px;background:#1a365d;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;margin-top:4px">登 录</button>
     </div>
   </div>
 </div>
 
 <script>
-// 登录验证
-var ADMIN_USER = 'xuziyang';
-var ADMIN_PASS = '815232932QQ';
-
-function doLogin() {
-  var u = document.getElementById('login-user').value.trim();
-  var p = document.getElementById('login-pass').value;
-  var t = document.getElementById('login-token').value.trim();
-  if (u === ADMIN_USER && p === ADMIN_PASS && t.length > 10) {
+// GitHub enforces repository access. Never publish an application password or
+// persist a repository write token in localStorage.
+var ADMIN_REPO = 'galelikestofuck262626-netizen/easen-website';
+try { localStorage.removeItem('easen-token-saved'); } catch (_) {}
+async function verifyRepositoryToken(token) {
+  if (!token || token.length < 11) throw new Error('请输入有效的 GitHub Token');
+  var response = await fetch('https://api.github.com/repos/' + ADMIN_REPO, {
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' }
+  });
+  if (!response.ok) throw new Error('GitHub 无法验证此令牌，请检查令牌或网络连接');
+  var repository = await response.json();
+  if (!repository.permissions || !repository.permissions.push) {
+    throw new Error('此账号没有本仓库的写入权限');
+  }
+}
+async function doLogin() {
+  var error = document.getElementById('login-error');
+  error.style.display = 'none';
+  var token = document.getElementById('login-token').value.trim();
+  try {
+    await verifyRepositoryToken(token);
+    sessionStorage.setItem('easen-token', token);
     sessionStorage.setItem('easen-admin', '1');
-    sessionStorage.setItem('easen-token', t);
-    localStorage.setItem('easen-token-saved', t); // 保存方便下次
+    document.getElementById('login-token').value = '';
+    location.reload();
+  } catch (failure) {
+    error.textContent = failure.message;
+    error.style.display = 'block';
+  }
+}
+async function restoreAdminSession() {
+  var token = sessionStorage.getItem('easen-token');
+  if (!token) return;
+  try {
+    await verifyRepositoryToken(token);
     document.getElementById('login-page').style.display = 'none';
-  } else if (u !== ADMIN_USER || p !== ADMIN_PASS) {
-    document.getElementById('login-error').textContent = '用户名或密码错误';
-    document.getElementById('login-error').style.display = 'block';
-  } else {
-    document.getElementById('login-error').textContent = '请输入 GitHub Token';
+  } catch (_) {
+    sessionStorage.removeItem('easen-token');
+    sessionStorage.removeItem('easen-admin');
+    document.getElementById('login-error').textContent = '会话验证失败，请重新登录';
     document.getElementById('login-error').style.display = 'block';
   }
 }
-
-// 检查是否已登录
-if (sessionStorage.getItem('easen-admin') === '1') {
-  document.getElementById('login-page').style.display = 'none';
-}
-
-// 自动填入上次保存的 token
-window.addEventListener('DOMContentLoaded', function() {
-  var saved = localStorage.getItem('easen-token-saved');
-  if (saved) document.getElementById('login-token').value = saved;
-});
+window.addEventListener('DOMContentLoaded', restoreAdminSession);
 </script>
 
 <!-- 侧边栏 -->

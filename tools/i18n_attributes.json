@@ -1,0 +1,74 @@
+{
+  "姓名 / Name": {
+    "zh": "姓名",
+    "en": "Name",
+    "fr": "Nom",
+    "es": "Nombre",
+    "de": "Name",
+    "ar": "الاسم"
+  },
+  "邮箱 / Email": {
+    "zh": "邮箱",
+    "en": "Email",
+    "fr": "E-mail",
+    "es": "Correo electrónico",
+    "de": "E-Mail",
+    "ar": "البريد الإلكتروني"
+  },
+  "电话 / Phone (optional)": {
+    "zh": "电话（可选）",
+    "en": "Phone (optional)",
+    "fr": "Téléphone (facultatif)",
+    "es": "Teléfono (opcional)",
+    "de": "Telefon (optional)",
+    "ar": "الهاتف (اختياري)"
+  },
+  "留言 / Message": {
+    "zh": "留言",
+    "en": "Message",
+    "fr": "Message",
+    "es": "Mensaje",
+    "de": "Nachricht",
+    "ar": "الرسالة"
+  },
+  "搜索产品...": {
+    "zh": "搜索产品...",
+    "en": "Search products...",
+    "fr": "Rechercher un produit...",
+    "es": "Buscar productos...",
+    "de": "Produkte suchen...",
+    "ar": "ابحث عن منتج..."
+  },
+  "高端餐厅项目": {
+    "zh": "餐厅家具项目",
+    "en": "Restaurant furniture project",
+    "fr": "Projet de mobilier de restaurant",
+    "es": "Proyecto de mobiliario de restaurante",
+    "de": "Restaurantmöbel-Projekt",
+    "ar": "مشروع أثاث مطعم"
+  },
+  "精品酒店项目": {
+    "zh": "酒店家具项目",
+    "en": "Hotel furniture project",
+    "fr": "Projet de mobilier hôtelier",
+    "es": "Proyecto de mobiliario hotelero",
+    "de": "Hotelmöbel-Projekt",
+    "ar": "مشروع أثاث فندقي"
+  },
+  "连锁咖啡": {
+    "zh": "咖啡厅家具",
+    "en": "Café furniture",
+    "fr": "Mobilier de café",
+    "es": "Mobiliario de cafetería",
+    "de": "Cafémöbel",
+    "ar": "أثاث مقهى"
+  },
+  "户外餐厅": {
+    "zh": "户外餐饮家具",
+    "en": "Outdoor dining furniture",
+    "fr": "Mobilier de restauration en extérieur",
+    "es": "Mobiliario de restaurante al aire libre",
+    "de": "Möbel für die Außengastronomie",
+    "ar": "أثاث مطعم خارجي"
+  }
+}
