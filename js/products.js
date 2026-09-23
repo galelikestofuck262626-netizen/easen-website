@@ -56,6 +56,7 @@ function renderProducts(products){
   var cat=getCategory();
   var filtered=products.filter(function(p){return p.category===cat&&(p.status==="online"||!p.status);}).slice().reverse();
   var grid=document.querySelector(".grid");if(!grid)return;
+  grid.querySelectorAll("[data-static]").forEach(function(n){n.remove();});
   injectStyle();updateFab();
   if(filtered.length===0){grid.innerHTML=EMPTY_HTML;applyLang();return;}
   var BATCH=24,shown=0;

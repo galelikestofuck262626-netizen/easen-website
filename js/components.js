@@ -102,7 +102,7 @@
     if (!existing) return;
     existing.innerHTML =
       '<div style="height:3px;background:linear-gradient(90deg,transparent,#c8a45c 50%,transparent);margin-bottom:40px"></div><div class="max-w-7xl mx-auto px-4">'
-      +'<div class="grid grid-cols-1 md:grid-cols-3 gap-8">'
+      +'<div class="grid grid-cols-1 md:grid-cols-3 gap-8" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr))">'
       +'<div>'
       +'<h3 class="font-semibold text-lg mb-4" style="color:#c8a45c"><span data-lang="zh">宜森商业空间家具</span><span data-lang="en" style="display:none">EASEN Commercial Furniture</span></h3>'
       +'<p class="text-neutral-400 text-sm"><span data-lang="zh">为全球客户提供高品质定制家具。</span><span data-lang="en" style="display:none">Providing high-quality custom furniture for global clients.</span></p>'
@@ -116,6 +116,7 @@
       +'<a href="'+pageBase+'about.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">关于我们</span><span data-lang="en" style="display:none">About Us</span></a>'
       +'<a href="'+pageBase+'contact.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">联系我们</span><span data-lang="en" style="display:none">Contact Us</span></a>'
       +'</div></div>'
+      +'<div><h3 class="font-semibold text-lg mb-4" style="color:#c8a45c"><span data-lang="zh">解决方案</span><span data-lang="en" style="display:none">Solutions</span></h3><div class="space-y-2 text-sm"><a href="/en/solutions.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">全部解决方案</span><span data-lang="en" style="display:none">All Solutions</span></a><a href="/en/custom-booth-seating.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">定制餐厅卡座</span><span data-lang="en" style="display:none">Custom Booth Seating</span></a><a href="/en/restaurant-chairs-manufacturer.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">餐厅椅</span><span data-lang="en" style="display:none">Restaurant Chairs</span></a><a href="/en/restaurant-tables-manufacturer.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">餐厅餐桌</span><span data-lang="en" style="display:none">Restaurant Tables</span></a><a href="/en/hotel-furniture-manufacturer-china.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">酒店家具</span><span data-lang="en" style="display:none">Hotel Furniture</span></a><a href="/en/outdoor-restaurant-furniture.html" class="block text-neutral-400 hover:text-accent"><span data-lang="zh">户外餐厅家具</span><span data-lang="en" style="display:none">Outdoor Restaurant Furniture</span></a></div></div>'
       +'<div>'
       +'<h3 class="font-semibold text-lg mb-4" style="color:#c8a45c"><span data-lang="zh">联系信息</span><span data-lang="en" style="display:none">Contact Info</span></h3>'
       +'<div class="space-y-2 text-sm text-neutral-400">'

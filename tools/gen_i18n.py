@@ -308,8 +308,10 @@ def gen_sitemaps(gen_pages):
         write_sitemap(os.path.join(ROOT, "sitemap-%s.xml" % L), [(p, L) for p in gen_pages if L in available_languages(p)])
     write_sitemap(os.path.join(ROOT, "sitemap-root.xml"), [(p, None) for p in gen_pages])
     subs = ["sitemap-root.xml"] + ["sitemap-%s.xml" % L for L in deployed]
-    if os.path.isfile(os.path.join(ROOT, "video-sitemap.xml")):
-        subs.append("video-sitemap.xml")
+    # video / 着陆页 / 图片 sitemap 由各自工具生成(tools/seo_build.py),存在就挂进索引
+    for extra in ("video-sitemap.xml", "sitemap-landing.xml", "sitemap-images.xml"):
+        if os.path.isfile(os.path.join(ROOT, extra)):
+            subs.append(extra)
     write_sitemap_index(os.path.join(ROOT, "sitemap.xml"), subs)
 
 

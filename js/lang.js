@@ -9,7 +9,7 @@
   ];
   var T={
     fr:{
-      'Home':'Accueil','Our Products':'Nos Produits','About Us':'À Propos','Case Studies':'Références','News':'Actualités','Contact Us':'Contactez-nous','Get a Quote':'Demander un Devis','Insights':'Ressources','Projects':'Projets','Products':'Produits','Quick Links':'Liens Rapides','Contact Info':'Coordonnées','All Rights Reserved':'Tous Droits Réservés',
+      'Solutions':'Solutions','All Solutions':'Toutes les solutions','Custom Booth Seating':'Banquettes sur mesure','Restaurant Chairs':'Chaises de restaurant','Restaurant Tables':'Tables de restaurant','Hotel Furniture':'Mobilier d’hôtel','Outdoor Restaurant Furniture':'Mobilier de terrasse','Home':'Accueil','Our Products':'Nos Produits','About Us':'À Propos','Case Studies':'Références','News':'Actualités','Contact Us':'Contactez-nous','Get a Quote':'Demander un Devis','Insights':'Ressources','Projects':'Projets','Products':'Produits','Quick Links':'Liens Rapides','Contact Info':'Coordonnées','All Rights Reserved':'Tous Droits Réservés',
       'Providing high-quality custom furniture for global clients.':'Mobilier sur mesure de haute qualité pour clients internationaux.',
       'Lecong, Shunde, Foshan, China':'Lecong, Shunde, Foshan, Chine',
       'Lecong Town, Shunde District, Foshan, China':'Lecong, Shunde, Foshan, Chine',
@@ -99,7 +99,7 @@
       'Black/Brown':'Noir/Marron'
     },
     es:{
-      'Home':'Inicio','Our Products':'Nuestros Productos','About Us':'Sobre Nosotros','Case Studies':'Casos de Éxito','News':'Noticias','Contact Us':'Contáctenos','Get a Quote':'Solicitar Presupuesto','Insights':'Recursos','Projects':'Proyectos','Products':'Productos','Quick Links':'Enlaces Rápidos','Contact Info':'Información de Contacto','All Rights Reserved':'Todos los Derechos Reservados',
+      'Solutions':'Soluciones','All Solutions':'Todas las soluciones','Custom Booth Seating':'Reservados a medida','Restaurant Chairs':'Sillas para restaurante','Restaurant Tables':'Mesas para restaurante','Hotel Furniture':'Mobiliario de hotel','Outdoor Restaurant Furniture':'Mobiliario exterior para restaurante','Home':'Inicio','Our Products':'Nuestros Productos','About Us':'Sobre Nosotros','Case Studies':'Casos de Éxito','News':'Noticias','Contact Us':'Contáctenos','Get a Quote':'Solicitar Presupuesto','Insights':'Recursos','Projects':'Proyectos','Products':'Productos','Quick Links':'Enlaces Rápidos','Contact Info':'Información de Contacto','All Rights Reserved':'Todos los Derechos Reservados',
       'Providing high-quality custom furniture for global clients.':'Proveedor de mobiliario personalizado de alta calidad para clientes globales.',
       'Lecong, Shunde, Foshan, China':'Lecong, Shunde, Foshan, China',
       'Lecong Town, Shunde District, Foshan, China':'Lecong, Shunde, Foshan, China',
@@ -170,7 +170,7 @@
       'Black/Brown':'Negro/Marrón'
     },
     de:{
-      'Home':'Startseite','Our Products':'Unsere Produkte','About Us':'Über Uns','Case Studies':'Referenzen','News':'Neuigkeiten','Contact Us':'Kontakt','Get a Quote':'Angebot Anfragen','Insights':'Ressourcen','Projects':'Projekte','Products':'Produkte','Quick Links':'Schnellzugriff','Contact Info':'Kontaktdaten','All Rights Reserved':'Alle Rechte Vorbehalten',
+      'Solutions':'Lösungen','All Solutions':'Alle Lösungen','Custom Booth Seating':'Maßgefertigte Sitznischen','Restaurant Chairs':'Restaurantstühle','Restaurant Tables':'Restauranttische','Hotel Furniture':'Hotelmöbel','Outdoor Restaurant Furniture':'Outdoor-Restaurantmöbel','Home':'Startseite','Our Products':'Unsere Produkte','About Us':'Über Uns','Case Studies':'Referenzen','News':'Neuigkeiten','Contact Us':'Kontakt','Get a Quote':'Angebot Anfragen','Insights':'Ressourcen','Projects':'Projekte','Products':'Produkte','Quick Links':'Schnellzugriff','Contact Info':'Kontaktdaten','All Rights Reserved':'Alle Rechte Vorbehalten',
       'Providing high-quality custom furniture for global clients.':'Hochwertiger Maßmöbelhersteller für internationale Kunden.',
       'Lecong, Shunde, Foshan, China':'Lecong, Shunde, Foshan, China',
       'Lecong Town, Shunde District, Foshan, China':'Lecong, Shunde, Foshan, China',
@@ -241,7 +241,7 @@
       'Black/Brown':'Schwarz/Braun'
     },
     ar:{
-      'Home':'الرئيسية','Our Products':'منتجاتنا','About Us':'من نحن','Case Studies':'دراسات الحالة','News':'الأخبار','Contact Us':'اتصل بنا','Get a Quote':'طلب عرض سعر','Insights':'مقالات','Projects':'المشاريع','Products':'المنتجات','Quick Links':'روابط سريعة','Contact Info':'معلومات الاتصال','All Rights Reserved':'جميع الحقوق محفوظة',
+      'Solutions':'الحلول','All Solutions':'جميع الحلول','Custom Booth Seating':'مقاعد بوث مخصصة','Restaurant Chairs':'كراسي المطاعم','Restaurant Tables':'طاولات المطاعم','Hotel Furniture':'أثاث الفنادق','Outdoor Restaurant Furniture':'أثاث المطاعم الخارجي','Home':'الرئيسية','Our Products':'منتجاتنا','About Us':'من نحن','Case Studies':'دراسات الحالة','News':'الأخبار','Contact Us':'اتصل بنا','Get a Quote':'طلب عرض سعر','Insights':'مقالات','Projects':'المشاريع','Products':'المنتجات','Quick Links':'روابط سريعة','Contact Info':'معلومات الاتصال','All Rights Reserved':'جميع الحقوق محفوظة',
       'Professional Commercial Furniture Manufacturer':'مصنع أثاث تجاري احترافي',
       'View Products':'عرض المنتجات',
       'Years Experience':'سنوات خبرة','Global Clients':'عملاء عالميون','Production Area':'مساحة الإنتاج','Brand Partners':'شركاء العلامات','Export Countries':'دول التصدير',
