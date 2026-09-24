@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture, ccard with context %}
+{% block main %}
+<section class="phero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a><span aria-hidden="true">/</span>{% if cat %}<a href="{{ u(L, 'cases.html') }}">{{ t.nav.projects }}</a><span aria-hidden="true">/</span><span>{{ t.cat[cat] }}</span>{% else %}<span>{{ t.nav.projects }}</span>{% endif %}</nav>
+    <span class="eyebrow">{{ t.cases.eyebrow }}</span>
+    <h1 class="h1">{% if cat %}{{ t.cases.cat_h1|replace('{cat}', t.cat[cat]) }}{% else %}{{ t.cases.h1 }}{% endif %}</h1>
+    <p class="lead">{{ t.cases.lead }}</p>
+  </div>
+</section>
+<div class="filters">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="{{ t.common.category }}">
+      <a class="chip{% if not cat %} on{% endif %}" href="{{ u(L, 'cases.html') }}">{{ t.common.all }} <small>{{ CASES|length }}</small></a>
+      {% for c in CASE_CATS %}<a class="chip{% if cat == c %} on{% endif %}" href="{{ u(L, 'case-' ~ c ~ '.html') }}">{{ t.cat[c] }} <small>{{ CASE_COUNT[c] }}</small></a>{% endfor %}
+    </div>
+  </div>
+</div>
+<section class="sec tight">
+  <div class="wrap">
+    <div class="cgrid" id="cgrid" data-cat="{{ cat or '' }}">
+      {% for c in LIST %}<div class="cwrap" data-id="{{ c.id }}">{{ ccard(c, L, t) }}</div>{% endfor %}
+    </div>
+    {% if not LIST %}<p class="empty">{{ t.cases.empty }}</p>{% endif %}
+  </div>
+</section>
+<section class="cta-band">
+  {{ picture(CTA_IMG, '', sizes='100vw') }}
+  <div class="wrap">
+    <span class="eyebrow">{{ t.home.cta_eyebrow }}</span>
+    <h2 class="h1">{{ t.cases.ask }}</h2>
+    <p class="lead">{{ t.cases.ask_lead }}</p>
+    <div class="hero-cta"><a class="btn light" href="{{ u(L, 'contact.html') }}">{{ t.home.cta_btn }} {{ icon('arrow') }}</a></div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture, form with context %}
+{% block main %}
+{% set C = t.contact %}
+<section class="phero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a><span aria-hidden="true">/</span><span>{{ t.nav.contact }}</span></nav>
+    <span class="eyebrow">{{ C.eyebrow }}</span>
+    <h1 class="h1">{{ C.h1 }}</h1>
+    <p class="lead">{{ C.lead }}</p>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="split wide-l" style="align-items:start">
+      <div>
+        <div class="alert" id="sent" hidden role="status">{{ C.sent }}</div>
+        <h2 class="h3">{{ C.form_title }}</h2>
+        <div class="mt-m">{{ form(t, L, name='contact') }}</div>
+      </div>
+      <div>
+        <h2 class="h3">{{ C.direct }}</h2>
+        <div class="contact-list mt-m">
+          <a href="mailto:{{ S.email }}"><span>{{ C.email_l }}</span><b>{{ S.email }}</b></a>
+          <a href="https://wa.me/{{ S.wa }}" target="_blank" rel="noopener"><span>{{ C.wa_l }}</span><b>{{ S.phone }}</b></a>
+          <a href="tel:{{ S.tel }}"><span>{{ C.phone_l }}</span><b>{{ S.phone }}</b></a>
+          <a href="#" data-wechat><span>{{ C.wechat_l }}</span><b>{{ S.wechat }}</b></a>
+          <div><span>{{ C.addr_l }}</span><b>{{ C.address }}</b></div>
+        </div>
+        <div class="ph ar-43 mt-l">{{ picture(CONTACT_IMG, 'EASEN — Lecong, Foshan', sizes='(max-width:820px) 100vw, 40vw') }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec sand">
+  <div class="wrap narrow">
+    <span class="eyebrow">FAQ</span>
+    <h2 class="h2 mt-s">{{ C.faq_title }}</h2>
+    <div class="faq mt-l">
+      {% for i in range(1,6) %}<details{% if i == 1 %} open{% endif %}><summary>{{ C['fq' ~ i] }}<i></i></summary><p>{{ C['fa' ~ i] }}</p></details>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

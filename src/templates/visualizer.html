@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block head %}<style>.page-ai .fab,.page-ai .ai-fab{display:none!important}</style>{% endblock %}
+{% block main %}
+<h1 class="sr">{{ t.ai.h1 }}</h1>
+<div class="visualizer-stage">
+  <div class="ld" id="ld"><div class="spin"></div><p>{{ t.ai.loading }}</p></div>
+  <iframe id="viz" title="{{ t.ai.h1 }}" allow="clipboard-write; camera"></iframe>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);q.set('lang','{{ L }}');
+  if(!q.get('cart')){try{var c=JSON.parse(localStorage.getItem('easen-ai-cart')||'[]');if(c.length)q.set('cart',c.map(function(x){return x.id}).join(','));}catch(e){}}
+  var f=document.getElementById('viz'),ld=document.getElementById('ld');
+  function hide(){ld.classList.add('hide');}
+  f.addEventListener('load',hide);setTimeout(hide,9000);
+  f.src='https://easen-crm.galelikestofuck262626.workers.dev/visualizer?'+q.toString();
+})();
+</script>
+{% endblock %}

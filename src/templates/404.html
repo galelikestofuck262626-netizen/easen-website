@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon with context %}
+{% block main %}
+<section class="notfound">
+  <div class="wrap narrow center">
+    <span class="eyebrow plain">404</span>
+    <h1 class="h1 mt-s">{{ t.notfound.h1 }}</h1>
+    <p class="lead mt-s">{{ t.notfound.lead }}</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn" href="{{ u(L, '') }}">{{ t.notfound.home }}</a>
+      <a class="btn ghost" href="{{ u(L, 'products.html') }}">{{ t.nav.collection }}</a>
+      <a class="btn ghost" href="{{ u(L, 'contact.html') }}">{{ t.nav.contact }}</a>
+    </div>
+    <p class="mt-l small muted"><a href="/zh/">中文</a> · <a href="/en/">English</a> · <a href="/fr/">Français</a> · <a href="/es/">Español</a> · <a href="/de/">Deutsch</a> · <a href="/ar/">العربية</a></p>
+  </div>
+</section>
+{% endblock %}

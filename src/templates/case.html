@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture, ccard with context %}
+{% block main %}
+{% set nm = cname(c, L) if c else '' %}
+<section class="phero img">
+  {% if c %}{{ picture(c.cover_image, nm, eager=true) }}{% else %}<img data-f="cover" alt="">{% endif %}
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a><span aria-hidden="true">/</span><a href="{{ u(L, 'cases.html') }}">{{ t.nav.projects }}</a></nav>
+    <span class="eyebrow" data-f="eyebrow">{% if c %}{{ cloc(c, L) }} · {{ t.cat[c.category] }}{% endif %}</span>
+    <h1 class="h1" data-f="name">{{ nm }}</h1>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="case-body">
+      <div>
+        <span class="eyebrow">{{ t.cases.overview }}</span>
+        <div class="prose mt-m" data-f="desc">{% if c %}{{ cdesc_html(c, L)|safe }}{% endif %}</div>
+      </div>
+      <aside>
+        <dl>
+          <div><dt>{{ t.common.location }}</dt><dd data-f="loc">{{ cloc(c, L) if c else '' }}</dd></div>
+          <div><dt>{{ t.common.category }}</dt><dd data-f="cat">{{ t.cat[c.category ~ '_long'] if c else '' }}</dd></div>
+          <div><dt>{{ t.cases.gallery }}</dt><dd data-f="count">{{ t.common.photo_count|replace('{n}', (c.images|length)|string) if c else '' }}</dd></div>
+        </dl>
+        <button class="btn block mt-m" type="button" data-quote data-product="{{ nm }}">{{ t.cases.ask }} {{ icon('arrow') }}</button>
+      </aside>
+    </div>
+  </div>
+</section>
+<section class="sec sand tight">
+  <div class="wrap">
+    <span class="eyebrow">{{ t.cases.gallery }}</span>
+    <div class="masonry mt-m" data-f="gallery">
+      {% if c %}{% for im in c.images %}<div class="ph" data-lb="case">{{ picture(im, nm ~ ' — ' ~ loop.index, sizes='(max-width:640px) 100vw, 33vw') }}</div>{% endfor %}{% endif %}
+    </div>
+  </div>
+</section>
+{% if MORE %}
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ t.cases.eyebrow }}</span><h2 class="h2 mt-s">{{ t.common.more_projects }}</h2></div><a class="link" href="{{ u(L, 'cases.html') }}">{{ t.common.view_projects }} {{ icon('arrow') }}</a></div>
+    <div class="cgrid">{% for m in MORE %}{{ ccard(m, L, t) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+<section class="cta-band">
+  {{ picture(CTA_IMG, '', sizes='100vw') }}
+  <div class="wrap">
+    <span class="eyebrow">{{ t.home.cta_eyebrow }}</span>
+    <h2 class="h1">{{ t.cases.ask }}</h2>
+    <p class="lead">{{ t.cases.ask_lead }}</p>
+    <div class="hero-cta"><a class="btn light" href="{{ u(L, 'contact.html') }}">{{ t.home.cta_btn }} {{ icon('arrow') }}</a></div>
+  </div>
+</section>
+{% endblock %}

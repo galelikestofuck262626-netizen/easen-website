@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture with context %}
+{% block main %}
+{% if hero_img %}
+<section class="phero img">
+  {{ picture(hero_img, art.h1, eager=true) }}
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a>{% for b in crumbs %}<span aria-hidden="true">/</span><a href="{{ b.href }}">{{ b.name }}</a>{% endfor %}</nav>
+    {% if art.kicker %}<span class="eyebrow">{{ art.kicker }}</span>{% endif %}
+    <h1 class="h1">{{ art.h1 }}</h1>
+    {% if art.sub %}<p class="lead">{{ art.sub }}</p>{% endif %}
+  </div>
+</section>
+{% else %}
+<section class="phero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a>{% for b in crumbs %}<span aria-hidden="true">/</span><a href="{{ b.href }}">{{ b.name }}</a>{% endfor %}</nav>
+    {% if art.kicker %}<span class="eyebrow">{{ art.kicker }}</span>{% endif %}
+    <h1 class="h1">{{ art.h1 }}</h1>
+    {% if art.sub %}<p class="lead">{{ art.sub }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}
+{% if art.anchors %}
+<nav class="lp-nav" aria-label="On this page"><div class="wrap">{% for a in art.anchors %}<a href="#{{ a.id }}">{{ a.name }}</a>{% endfor %}</div></nav>
+{% endif %}
+{% if art.sections %}
+  {% for s in art.sections %}
+  <section class="lp-sec"{% if s.id %} id="{{ s.id }}"{% endif %}><div class="wrap mid"><div class="prose">{{ s.html|safe }}</div></div></section>
+  {% endfor %}
+{% else %}
+<section class="sec tight">
+  <div class="wrap narrow"><div class="prose">{{ art.html|safe }}</div></div>
+</section>
+{% endif %}
+{% if related %}
+<section class="sec tight">
+  <div class="wrap">
+    <span class="eyebrow">{{ related_title }}</span>
+    <div class="rel mt-m">{% for r in related %}<a href="{{ r.href }}"><span>{{ r.name }}</span>{{ icon('arrow') }}</a>{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+<section class="cta-band">
+  {{ picture(CTA_IMG, '', sizes='100vw') }}
+  <div class="wrap">
+    <span class="eyebrow">{{ t.home.cta_eyebrow }}</span>
+    <h2 class="h1">{{ t.home.cta_title }}</h2>
+    <p class="lead">{{ t.home.cta_lead }}</p>
+    <div class="hero-cta"><a class="btn light" href="{{ u(L, 'contact.html') }}">{{ t.home.cta_btn }} {{ icon('arrow') }}</a><a class="btn line-light" href="https://wa.me/{{ S.wa }}" target="_blank" rel="noopener">{{ icon('wa') }} {{ t.home.cta_wa }}</a></div>
+  </div>
+</section>
+{% endblock %}

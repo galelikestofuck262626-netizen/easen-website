@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://chinaeasen.com/</loc>
+    <loc>https://chinaeasen.com/en/</loc>
     <video:video>
-      <video:thumbnail_loc>https://chinaeasen.com/images/factory-poster.jpg</video:thumbnail_loc>
-      <video:title>EASEN Smart Factory Showcase — Commercial Furniture Manufacturing</video:title>
-      <video:description>Inside EASEN's smart factory: 10,000m² facility producing custom commercial furniture for hotels, restaurants and cafes worldwide.</video:description>
+      <video:thumbnail_loc>https://chinaeasen.com/images/factory/factory-11.jpg</video:thumbnail_loc>
+      <video:title>Inside EASEN — commercial furniture production in Foshan</video:title>
+      <video:description>EASEN's 10,000 m² production base in Lecong, Foshan: frames, upholstery, finishing and packing of restaurant and hospitality furniture.</video:description>
       <video:content_loc>https://chinaeasen.com/videos/factory-showcase-h264.mp4</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
   </url>
-
   <url>
-    <loc>https://chinaeasen.com/about.html</loc>
+    <loc>https://chinaeasen.com/en/about.html</loc>
     <video:video>
-      <video:thumbnail_loc>https://chinaeasen.com/images/factory-poster.jpg</video:thumbnail_loc>
-      <video:title>EASEN Factory Tour — Inside Our Furniture Production</video:title>
-      <video:description>A walkthrough of EASEN's commercial furniture factory in Foshan, China, showing materials, craftsmanship and quality control.</video:description>
+      <video:thumbnail_loc>https://chinaeasen.com/images/factory/factory-3.jpg</video:thumbnail_loc>
+      <video:title>EASEN factory tour</video:title>
+      <video:description>A walk through EASEN's commercial furniture factory in Foshan, China: materials, craftsmanship and quality control.</video:description>
       <video:content_loc>https://chinaeasen.com/videos/factory-tour.mp4</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
   </url>
-
 </urlset>

@@ -1,17 +1,11 @@
-# Robots.txt for EASEN Commercial Furniture
-# https://chinaeasen.com
-
+# EASEN — https://chinaeasen.com
 User-agent: *
 Allow: /
 Disallow: /admin/
-Disallow: /index-demo.html
-Disallow: /*/index-demo.html
 Disallow: /temp-preview/
 Disallow: /tools/
+Disallow: /src/
+Disallow: /*/product.html
+Disallow: /*/case.html
 
-# Host
-Host: https://chinaeasen.com
-
-# Sitemaps
 Sitemap: https://chinaeasen.com/sitemap.xml
-Sitemap: https://chinaeasen.com/video-sitemap.xml

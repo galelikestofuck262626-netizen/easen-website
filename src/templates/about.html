@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture with context %}
+{% block main %}
+{% set A = t.about %}
+<section class="phero img">
+  {{ picture(ABOUT_HERO, A.eyebrow, eager=true) }}
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a><span aria-hidden="true">/</span><span>{{ t.nav.about }}</span></nav>
+    <span class="eyebrow">{{ A.eyebrow }}</span>
+    <h1 class="h1">{{ A.h1 }}</h1>
+    <p class="lead">{{ A.lead }}</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split wide-r">
+      <div class="rv">
+        <div class="ph ar-45">{{ picture(ABOUT_STORY, 'EASEN — Lecong, Foshan', sizes='(max-width:820px) 100vw, 40vw') }}</div>
+      </div>
+      <div class="rv d2">
+        <span class="eyebrow">{{ A.story_eyebrow }}</span>
+        <h2 class="h2 mt-s">{{ A.story_title }}</h2>
+        <div class="stack mt-m" style="color:var(--ink-2)">
+          <p>{{ A.story_p1 }}</p><p>{{ A.story_p2 }}</p><p>{{ A.story_p3 }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="facts">
+      {% for i in range(1,5) %}<div class="rv{% if i > 1 %} d{{ i - 1 }}{% endif %}"><b>{{ A['f' ~ i ~ 'b'] }}</b><span>{{ A['f' ~ i ~ 's'] }}</span></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec sand">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ A.factory_eyebrow }}</span><h2 class="h2 mt-s">{{ A.factory_title }}</h2><p class="lead">{{ A.factory_lead }}</p></div></div>
+    <div class="vid rv" data-video="/videos/factory-tour.mp4">
+      {{ picture(FACTORY_POSTER2, t.common.play_film, sizes='100vw') }}
+      <button class="play" type="button" aria-label="{{ t.common.play_film }}"><i>{{ icon('play') }}</i><span>{{ t.common.play_film }}</span></button>
+    </div>
+    <div class="masonry mt-m">
+      {% for f in FACTORY_ALL %}<div class="ph rv" data-lb="factory">{{ picture(f, 'EASEN factory — Lecong, Foshan', sizes='(max-width:640px) 100vw, 33vw') }}</div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec night">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ A.pano_eyebrow }}</span><h2 class="h2 mt-s">{{ A.pano_title }}</h2></div></div>
+    <div class="pano rv" data-pano><div class="pano-in"><img src="/images/factory-360.webp" alt="EASEN factory 360° panorama" loading="lazy" draggable="false"><img src="/images/factory-360.webp" alt="" loading="lazy" draggable="false" aria-hidden="true"></div><span class="hint">{{ t.common.drag }}</span></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ A.why_eyebrow }}</span><h2 class="h2 mt-s">{{ A.why_title }}</h2></div></div>
+    <div class="flist">
+      {% for i in range(1,7) %}<div class="rv"><h3><i>0{{ i }}</i>{{ A['w' ~ i ~ 't'] }}</h3><p>{{ A['w' ~ i ~ 'p'] }}</p></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec sand">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ t.home.comp_eyebrow }}</span><h2 class="h2 mt-s">{{ t.home.comp_title }}</h2></div>
+    {% if has_insight(L) %}<a class="link" href="{{ insight_url('insight-quality-compliance.html', L) }}">{{ t.common.learn_more }} {{ icon('arrow') }}</a>{% endif %}</div>
+    <div class="flist">
+      {% for i in range(1,7) %}<div class="rv"><h3><i>0{{ i }}</i>{{ t.home['c' ~ i ~ 't'] }}</h3><p>{{ t.home['c' ~ i ~ 'p'] }}</p></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  {{ picture(CTA_IMG, '', sizes='100vw') }}
+  <div class="wrap">
+    <span class="eyebrow">{{ t.home.cta_eyebrow }}</span>
+    <h2 class="h1">{{ t.home.cta_title }}</h2>
+    <p class="lead">{{ t.home.cta_lead }}</p>
+    <div class="hero-cta"><a class="btn light" href="{{ u(L, 'contact.html') }}">{{ t.home.cta_btn }} {{ icon('arrow') }}</a><a class="btn line-light" href="{{ u(L, 'cases.html') }}">{{ t.common.view_projects }}</a></div>
+  </div>
+</section>
+{% endblock %}

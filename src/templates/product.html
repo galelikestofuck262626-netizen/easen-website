@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture, pcard with context %}
+{% block main %}
+{% set nm = pname(p, L) if p else '' %}
+<section class="sec tight page-top" style="padding-top:calc(var(--hdr) + 40px)">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a><span aria-hidden="true">/</span><a href="{{ u(L, 'products.html') }}">{{ t.nav.collection }}</a><span aria-hidden="true">/</span>{% if p %}<a href="{{ cat_url(p.category, L) }}">{{ t.cat[p.category ~ '_long'] }}</a><span aria-hidden="true">/</span><span>{{ nm }}</span>{% else %}<span data-f="name"></span>{% endif %}</nav>
+    <div class="pd" id="pd"{% if not p %} data-dynamic{% endif %}>
+      <div class="gal" data-f="gallery">
+        {% if p %}{% for im in p.images %}<div class="ph" data-lb="p">{{ picture(im, nm ~ ' — ' ~ loop.index, sizes='(max-width:900px) 86vw, 30vw', eager=loop.first) }}</div>{% endfor %}{% endif %}
+      </div>
+      <div class="pd-info">
+        <span class="eyebrow" data-f="eyebrow">{% if p %}{{ t.cat[p.category ~ '_long'] }}{% endif %}</span>
+        <h1 class="h1 mt-s" data-f="name">{{ nm }}</h1>
+        <p class="pd-sub" data-f="sub">{% if p %}{{ t.type[p.type ~ '_one'] }} · {{ t.products.spec_code }} {{ code(p) }}{% endif %}</p>
+        <dl class="specs" data-f="specs">
+          {% if p %}
+          <div><dt>{{ t.products.spec_code }}</dt><dd>{{ code(p) }}</dd></div>
+          <div><dt>{{ t.products.spec_collection }}</dt><dd>{{ t.cat[p.category ~ '_long'] }}</dd></div>
+          <div><dt>{{ t.products.spec_dims }}</dt><dd>{{ p.dimensions or t.products.dims_custom }}</dd></div>
+          <div><dt>{{ t.products.spec_material }}</dt><dd>{{ p.material or t.products.mat_custom }}</dd></div>
+          {% if p.type != 'table' %}<div><dt>{{ t.products.spec_fabric }}</dt><dd>{{ p.fabric or t.products.fab_custom }}</dd></div>{% endif %}
+          {% if p.color %}<div><dt>{{ t.products.spec_color }}</dt><dd>{{ p.color }}</dd></div>{% endif %}
+          <div><dt>{{ t.products.spec_moq }}</dt><dd>{{ t.products.moq_val }}</dd></div>
+          <div><dt>{{ t.products.spec_lead }}</dt><dd>{{ t.products.lead_val }}</dd></div>
+          {% endif %}
+        </dl>
+        {% if p and pdesc(p, L) %}<p class="mt-m" style="color:var(--ink-2)">{{ pdesc(p, L) }}</p>{% endif %}
+        <p class="pd-note">{{ t.products.note }}</p>
+        <div class="pd-actions">
+          <button class="btn" type="button" data-quote data-product="{{ (nm ~ ' (' ~ code(p) ~ ')') if p else '' }}">{{ t.products.ask }} {{ icon('arrow') }}</button>
+          <button class="btn ghost" type="button" data-ai-detail="{{ p.id if p else '' }}" data-name="{{ nm }}" data-img="{{ p.main_image if p else '' }}" data-added="{{ t.products.added_ai }}">{{ icon('spark') }} {{ t.products.add_ai }}</button>
+        </div>
+        <div class="pd-contact">
+          <span>{{ t.products.ask_more }}:</span>
+          <a href="https://wa.me/{{ S.wa }}?text={{ ('EASEN — ' ~ nm ~ ' (' ~ code(p) ~ ')')|urlencode if p else '' }}" target="_blank" rel="noopener" data-f="wa">{{ icon('wa') }} WhatsApp</a>
+          <a href="mailto:{{ S.email }}?subject={{ t.products.enquire_subject|replace('{name}', nm)|replace('{code}', code(p) if p else '')|urlencode }}" data-f="mail">{{ icon('mail') }} {{ t.contact.email_l }}</a>
+          <button type="button" data-wechat style="display:inline-flex;align-items:center;gap:8px;color:var(--ink-2)">{{ icon('wechat') }} {{ t.contact.wechat_l }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if RELATED %}
+<section class="sec sand">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ t.cat[p.category ~ '_long'] }}</span><h2 class="h2 mt-s">{{ t.common.related }}</h2></div><a class="link" href="{{ cat_url(p.category, L) }}">{{ t.common.view_all }} {{ icon('arrow') }}</a></div>
+    <div class="pgrid">{% for r in RELATED %}{{ pcard(r, L, t) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,166 @@
+{% from '_macros.html' import icon, form with context %}<!doctype html>
+<html lang="{{ L }}" dir="{{ t._dir }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.desc }}">
+{% if page.noindex %}<meta name="robots" content="noindex, follow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large">{% endif %}
+<link rel="canonical" href="{{ page.canonical }}">
+{% for a in page.alternates %}<link rel="alternate" hreflang="{{ a.hl }}" href="{{ a.href }}">
+{% endfor %}<meta name="theme-color" content="#FAF8F4">
+<meta property="og:type" content="{{ page.og_type or 'website' }}">
+<meta property="og:site_name" content="{{ t.brand.full }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.desc }}">
+<meta property="og:url" content="{{ page.canonical }}">
+<meta property="og:image" content="{{ page.og_image }}">
+<meta property="og:locale" content="{{ t._locale }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.desc }}">
+<meta name="twitter:image" content="{{ page.og_image }}">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/cormorant-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+{% if L == 'zh' %}<link rel="preload" href="/assets/fonts/serif-sc.woff2?v={{ V.font }}" as="font" type="font/woff2" crossorigin>
+{% endif %}{% if page.preload %}<link rel="preload" as="image" href="{{ page.preload.src }}"{% if page.preload.srcset %} imagesrcset="{{ page.preload.srcset }}" imagesizes="100vw"{% endif %} fetchpriority="high">
+{% endif %}<link rel="stylesheet" href="/assets/site.css?v={{ V.css }}">
+{% if page.root_redirect %}<script>(function(){try{var s=localStorage.getItem('easen-lang'),n=(navigator.language||'').toLowerCase(),l=s||(n.indexOf('zh')===0?'zh':'');if(l&&l!=='en'&&/^(zh|fr|es|de|ar)$/.test(l)&&!/[?&]stay/.test(location.search))location.replace('/'+l+'/{{ page.root_redirect }}'+location.search+location.hash);}catch(e){}})();</script>
+{% endif %}<script>document.documentElement.className+=' js'</script>
+{% for ld in page.jsonld %}<script type="application/ld+json">{{ ld|tojson }}</script>
+{% endfor %}{% block head %}{% endblock %}
+</head>
+<body class="{{ page.body_class or '' }}">
+<a class="skip" href="#main">{{ t.nav.skip }}</a>
+<header class="hdr{% if not page.over %} solid{% endif %}" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="{{ u(L, '') }}" aria-label="{{ t.brand.full }} — {{ t.nav.home }}">
+      <span class="wm"><b>EASEN</b><small>{{ t.brand.tagline }}</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <div class="dd">
+        <button type="button" aria-haspopup="true"{% if page.section == 'products' %} aria-current="page"{% endif %} onclick="location.href='{{ u(L, 'products.html') }}'">{{ t.nav.collection }} {{ icon('chev') }}</button>
+        <div class="dd-panel wide">
+          {% for c in CATS %}<a href="{{ cat_url(c, L) }}"><img src="{{ thumb(CAT_IMG[c]) }}" alt="" width="44" height="44" loading="lazy"><span>{{ t.cat[c ~ '_long'] }}<small>{% if CAT_COUNT[c] %}{{ CAT_COUNT[c] }} {{ t.common.models }}{% else %}{{ t.products.custom }}{% endif %}</small></span></a>{% endfor %}
+          <a href="{{ u(L, 'products.html') }}" style="grid-column:1/-1;justify-content:space-between;border-top:1px solid var(--line-soft);margin-top:4px"><span>{{ t.nav.all_products }}</span>{{ icon('arrow', 'ic') }}</a>
+        </div>
+      </div>
+      <a href="{{ u(L, 'cases.html') }}"{% if page.section == 'cases' %} aria-current="page"{% endif %}>{{ t.nav.projects }}</a>
+      {% if L == 'en' %}<a href="/en/solutions.html"{% if page.section == 'solutions' %} aria-current="page"{% endif %}>{{ t.nav.solutions }}</a>{% endif %}
+      <a href="{{ u(L, 'about.html') }}"{% if page.section == 'about' %} aria-current="page"{% endif %}>{{ t.nav.about }}</a>
+      <a class="ai" href="{{ u(L, 'visualizer.html') }}"{% if page.section == 'ai' %} aria-current="page"{% endif %}>{{ t.nav.ai }}</a>
+      <a href="{{ u(L, 'contact.html') }}"{% if page.section == 'contact' %} aria-current="page"{% endif %}>{{ t.nav.contact }}</a>
+      <div class="lang dd">
+        <button type="button" aria-haspopup="true" aria-label="{{ t.nav.language }}">{{ icon('globe') }}{{ t._short }}</button>
+        <div class="dd-panel">
+          {% for a in page.langs %}<a href="{{ a.href }}" hreflang="{{ a.L }}" lang="{{ a.L }}" data-setlang="{{ a.L }}"{% if a.L == L %} aria-current="true"{% endif %}>{{ a.name }}</a>{% endfor %}
+        </div>
+      </div>
+    </nav>
+    <a class="btn hdr-cta" href="{{ u(L, 'contact.html') }}" data-quote>{{ t.nav.quote }}</a>
+    <button class="burger" type="button" aria-label="{{ t.nav.menu }}" aria-controls="mnav" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<div class="mnav" id="mnav" aria-hidden="true">
+  <button class="mnav-close" type="button" aria-label="{{ t.nav.close }}">{{ icon('close') }}</button>
+  <a class="big" href="{{ u(L, 'products.html') }}">{{ t.nav.collection }} {{ icon('arrow', 'ic') }}</a>
+  <div class="sub">{% for c in CATS %}<a href="{{ cat_url(c, L) }}">{{ t.cat[c ~ '_long'] }}</a>{% endfor %}</div>
+  <a class="big" href="{{ u(L, 'cases.html') }}">{{ t.nav.projects }}</a>
+  {% if L == 'en' %}<a class="big" href="/en/solutions.html">{{ t.nav.solutions }}</a>{% endif %}
+  <a class="big" href="{{ u(L, 'about.html') }}">{{ t.nav.about }}</a>
+  <a class="big" href="{{ u(L, 'visualizer.html') }}">{{ t.nav.ai }}</a>
+  <a class="big" href="{{ u(L, 'contact.html') }}">{{ t.nav.contact }}</a>
+  <div class="langs">{% for a in page.langs %}<a href="{{ a.href }}" hreflang="{{ a.L }}" lang="{{ a.L }}" data-setlang="{{ a.L }}"{% if a.L == L %} aria-current="true"{% endif %}>{{ a.name }}</a>{% endfor %}</div>
+  <a class="btn block" href="{{ u(L, 'contact.html') }}" data-quote>{{ t.nav.quote }}</a>
+</div>
+
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div class="ftr-brand">
+        <div class="wm">EASEN</div>
+        <p>{{ t.footer.about }}</p>
+      </div>
+      <div>
+        <h4>{{ t.footer.collections }}</h4>
+        <ul>{% for c in CATS %}<li><a href="{{ cat_url(c, L) }}">{{ t.cat[c ~ '_long'] }}</a></li>{% endfor %}<li><a href="{{ u(L, 'products.html') }}">{{ t.nav.all_products }}</a></li></ul>
+      </div>
+      <div>
+        <h4>{{ t.footer.explore }}</h4>
+        <ul>
+          <li><a href="{{ u(L, 'cases.html') }}">{{ t.nav.projects }}</a></li>
+          {% if L == 'en' %}<li><a href="/en/solutions.html">{{ t.nav.solutions }}</a></li>{% endif %}
+          <li><a href="{{ u(L, 'about.html') }}">{{ t.nav.about }}</a></li>
+          <li><a href="{{ u(L, 'visualizer.html') }}">{{ t.nav.ai }}</a></li>
+          <li><a href="{{ insight_url('insight-furniture-guide.html', L) }}">{{ t.nav.insights }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>{{ t.footer.contact }}</h4>
+        <ul>
+          <li><a href="mailto:{{ S.email }}">{{ S.email }}</a></li>
+          <li><a href="https://wa.me/{{ S.wa }}" target="_blank" rel="noopener">WhatsApp {{ S.phone }}</a></li>
+          <li><button type="button" data-wechat>{{ t.contact.wechat_l }}: {{ S.wechat }}</button></li>
+          <li style="color:#8D8578">{{ t.contact.address }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span>© {{ YEAR }} {{ t.brand.full }}. {{ t.footer.rights }}</span>
+      <nav class="ftr-langs" aria-label="{{ t.nav.language }}">{% for a in page.langs %}<a href="{{ a.href }}" hreflang="{{ a.L }}" lang="{{ a.L }}" data-setlang="{{ a.L }}"{% if a.L == L %} aria-current="true"{% endif %}>{{ a.name }}</a>{% endfor %}</nav>
+    </div>
+  </div>
+</footer>
+
+<div class="fab" id="fab">
+  <div class="fab-menu" id="fab-menu">
+    <a href="https://wa.me/{{ S.wa }}" target="_blank" rel="noopener">{{ icon('wa') }}{{ t.fab.wa }}</a>
+    <a href="mailto:{{ S.email }}">{{ icon('mail') }}{{ t.fab.email }}</a>
+    <button type="button" data-wechat>{{ icon('wechat') }}{{ t.fab.wechat }}</button>
+    <button type="button" data-quote>{{ icon('chat') }}{{ t.fab.form }}</button>
+  </div>
+  <button class="fab-btn" type="button" aria-label="{{ t.fab.open }}" aria-expanded="false" aria-controls="fab-menu">{{ icon('chat') }}</button>
+</div>
+<a class="ai-fab" id="ai-fab" href="{{ u(L, 'visualizer.html') }}">{{ icon('spark', 'ic') }}<span>{{ t.ai.fab }}</span> <b id="ai-n">0</b></a>
+
+<div class="modal" id="m-quote" role="dialog" aria-modal="true" aria-labelledby="m-quote-t">
+  <div class="modal-box">
+    <button class="modal-x" type="button" data-close aria-label="{{ t.common.close }}">{{ icon('close') }}</button>
+    <span class="eyebrow">EASEN</span>
+    <h2 class="h3 mt-s" id="m-quote-t">{{ t.contact.modal_title }}</h2>
+    <p class="muted mt-s js-mq-product" hidden></p>
+    <p class="muted mt-s">{{ t.contact.modal_lead }}</p>
+    <div class="mt-m">{{ form(t, L, name='quote', full=false) }}</div>
+  </div>
+</div>
+<div class="modal" id="m-wechat" role="dialog" aria-modal="true" aria-labelledby="m-wechat-t">
+  <div class="modal-box wechat-card" style="width:min(420px,100%)">
+    <button class="modal-x" type="button" data-close aria-label="{{ t.common.close }}">{{ icon('close') }}</button>
+    <span class="eyebrow plain">{{ t.contact.wechat_l }}</span>
+    <h2 class="h3 mt-s" id="m-wechat-t">{{ t.contact.wechat_title }}</h2>
+    <b>{{ S.wechat }}</b>
+    <button class="btn ghost" type="button" data-copy="{{ S.wechat }}" data-copied="{{ t.contact.copied }}">{{ t.contact.wechat_copy }}</button>
+  </div>
+</div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Gallery">
+  <button class="x" type="button" aria-label="{{ t.common.close }}">{{ icon('close') }}</button>
+  <button class="p" type="button" aria-label="{{ t.common.prev }}">{{ icon('left') }}</button>
+  <img alt="">
+  <button class="n" type="button" aria-label="{{ t.common.next }}">{{ icon('right') }}</button>
+  <div class="c"></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>window.EASEN={{ jscfg|tojson }};</script>
+<script src="/assets/site.js?v={{ V.js }}" defer></script>
+<script src="/crm-capture.js" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -33,7 +33,7 @@
       if (!body.product && body.type) body.product = body.type;
       body.source = "website";
       body.page = location.pathname;
-      body.language = detectLang();
+      body.language = body.language || detectLang();
 
       // fire-and-forget；keepalive 保证整页跳转(FormSubmit 重定向)时请求仍发得出去
       fetch(CRM_INGEST, {

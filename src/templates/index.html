@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture, pcard, form with context %}
+{% block main %}
+{% set H = t.home %}
+<section class="hero" aria-label="EASEN">
+  <div class="hero-media">{{ picture(HERO, t.cat.restaurant_long ~ ' — EASEN', eager=true) }}</div>
+  <div class="wrap">
+    <span class="eyebrow">{{ H.hero_eyebrow }}</span>
+    <h1 class="display">{{ H.hero_title|safe }}</h1>
+    <p class="lead">{{ H.hero_lead }}</p>
+    <div class="hero-cta">
+      <a class="btn light" href="{{ u(L, 'products.html') }}">{{ H.hero_cta1 }} {{ icon('arrow') }}</a>
+      <a class="btn line-light" href="{{ u(L, 'contact.html') }}" data-quote>{{ H.hero_cta2 }}</a>
+    </div>
+    <div class="hero-foot">
+      <div><b>{{ H.f1b }}</b><span>{{ H.f1s }}</span></div>
+      <div><b>{{ H.f2b }}</b><span>{{ H.f2s }}</span></div>
+      <div><b>{{ H.f3b }}</b><span>{{ H.f3s }}</span></div>
+      <div><b>{{ H.f4b }}</b><span>{{ H.f4s }}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split wide-l">
+      <div class="rv">
+        <span class="eyebrow">{{ H.intro_eyebrow }}</span>
+        <p class="statement mt-m">{{ H.intro|safe }}</p>
+        <a class="link mt-l" href="{{ u(L, 'about.html') }}">{{ H.intro_link }} {{ icon('arrow') }}</a>
+      </div>
+      <div class="rv d2">
+        <div class="ph ar-45">{{ picture(INTRO_IMG, 'EASEN — ' ~ t.about.factory_eyebrow, sizes='(max-width:820px) 100vw, 45vw') }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sand">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">{{ H.cols_eyebrow }}</span>
+        <h2 class="h2 mt-s">{{ H.cols_title }}</h2>
+        <p class="lead">{{ H.cols_lead }}</p>
+      </div>
+      <a class="link" href="{{ u(L, 'products.html') }}">{{ t.common.view_all }} {{ icon('arrow') }}</a>
+    </div>
+    <div class="cols">
+      {% for c, cls in [('restaurant','c-a'),('cafe','c-b'),('outdoor','c-c'),('hotel','c-d')] %}
+      <a class="col-card {{ cls }} rv{% if loop.index is even %} d1{% endif %}" href="{{ cat_url(c, L) }}">
+        <div class="ph">{{ picture(CAT_HERO[c], t.cat[c ~ '_long'], sizes='(max-width:900px) 100vw, 60vw') }}</div>
+        <div class="in">
+          <span class="num">0{{ loop.index }}{% if CAT_COUNT[c] %} · {{ CAT_COUNT[c] }} {{ t.common.models }}{% endif %}</span>
+          <h3 class="h3">{{ t.cat[c ~ '_long'] }}</h3>
+          <p>{{ t.cat[c ~ '_desc'] }}</p>
+          <span class="go">{{ t.common.view_collection }} {{ icon('arrow') }}</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">{{ H.proj_eyebrow }}</span>
+        <h2 class="h2 mt-s">{{ H.proj_title }}</h2>
+        <p class="lead">{{ H.proj_lead }}</p>
+      </div>
+      <a class="link" href="{{ u(L, 'cases.html') }}">{{ t.common.view_projects }} {{ icon('arrow') }}</a>
+    </div>
+    {% for c in FEATURED %}
+    <div class="proj-feature{% if loop.index is even %} rev{% endif %}">
+      <a class="pf-media rv" href="{{ case_url(c, L) }}">
+        <div class="ph zoom ar-45">{{ picture(c.images[c.feat[0]], cname(c, L), sizes='(max-width:900px) 66vw, 40vw') }}</div>
+        <div class="ph zoom">{{ picture(c.images[c.feat[1]], '', sizes='(max-width:900px) 33vw, 20vw') }}</div>
+        <div class="ph zoom">{{ picture(c.images[c.feat[2]], '', sizes='(max-width:900px) 33vw, 20vw') }}</div>
+      </a>
+      <div class="pf-body rv d2">
+        <span class="loc">{{ cloc(c, L) }} · {{ t.cat[c.category] }}</span>
+        <h3 class="h2">{{ cname(c, L) }}</h3>
+        <p>{{ cdesc_short(c, L, 220) }}</p>
+        <a class="link mt-m" href="{{ case_url(c, L) }}">{{ t.common.view_project }} {{ icon('arrow') }}</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">{{ H.how_eyebrow }}</span>
+        <h2 class="h2 mt-s">{{ H.how_title }}</h2>
+        <p class="lead">{{ H.how_lead }}</p>
+      </div>
+    </div>
+    <div class="steps">
+      {% for i in range(1,7) %}
+      <div class="step rv{% if i % 3 == 2 %} d1{% elif i % 3 == 0 %} d2{% endif %}"><span class="n">0{{ i }}</span><h3>{{ H['s' ~ i ~ 't'] }}</h3><p>{{ H['s' ~ i ~ 'p'] }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">{{ H.factory_eyebrow }}</span>
+        <h2 class="h2 mt-s">{{ H.factory_title }}</h2>
+        <p class="lead">{{ H.factory_lead }}</p>
+      </div>
+      <a class="link" href="{{ u(L, 'about.html') }}">{{ H.factory_link }} {{ icon('arrow') }}</a>
+    </div>
+    <div class="vid rv" data-video="/videos/factory-showcase-h264.mp4">
+      {{ picture(FACTORY_POSTER, t.common.play_film, sizes='100vw') }}
+      <button class="play" type="button" aria-label="{{ t.common.play_film }}"><i>{{ icon('play') }}</i><span>{{ t.common.play_film }}</span></button>
+    </div>
+    <div class="strip">
+      {% for f in FACTORY_STRIP %}<div class="ph ar-11 rv{% if loop.index > 1 %} d{{ loop.index - 1 }}{% endif %}" data-lb="factory">{{ picture(f, 'EASEN factory, Lecong Foshan', sizes='(max-width:760px) 50vw, 25vw') }}</div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec dark ai-band">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">{{ H.ai_eyebrow }}</span>
+        <h2 class="h2 mt-s">{{ H.ai_title }}</h2>
+        <p class="lead mt-s">{{ H.ai_lead }}</p>
+        <ol class="ai-steps">
+          <li><b>01</b><div><strong>{{ H.ai_1t }}</strong><span>{{ H.ai_1s }}</span></div></li>
+          <li><b>02</b><div><strong>{{ H.ai_2t }}</strong><span>{{ H.ai_2s }}</span></div></li>
+          <li><b>03</b><div><strong>{{ H.ai_3t }}</strong><span>{{ H.ai_3s }}</span></div></li>
+        </ol>
+        <a class="btn light mt-l" href="{{ u(L, 'visualizer.html') }}">{{ icon('spark') }} {{ H.ai_cta }}</a>
+      </div>
+      <div class="ai-visual rv d2" aria-hidden="true">
+        <div class="ph a">{{ picture(AI_BEFORE, '', sizes='40vw') }}<span class="lbl">{{ H.ai_before }}</span></div>
+        <div class="ph b">{{ picture(AI_AFTER, '', sizes='30vw') }}<span class="lbl">{{ H.ai_after }}</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sand">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">{{ H.pick_eyebrow }}</span>
+        <h2 class="h2 mt-s">{{ t.cat.restaurant_long }}</h2>
+      </div>
+      <a class="link" href="{{ cat_url('restaurant', L) }}">{{ t.common.view_all }} {{ icon('arrow') }}</a>
+    </div>
+    <div class="pgrid">
+      {% for p in HOME_PRODUCTS %}{{ pcard(p, L, t) }}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ H.q_eyebrow }}</span><h2 class="h2 mt-s">{{ H.q_title }}</h2></div></div>
+    <div class="quotes">
+      {% for i in range(1,4) %}
+      <figure class="quote rv{% if i > 1 %} d{{ i - 1 }}{% endif %}" style="margin:0"><blockquote>“{{ H['q' ~ i] }}”</blockquote><figcaption>{{ H['q' ~ i ~ 'c'] }}</figcaption></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec sand">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ H.comp_eyebrow }}</span><h2 class="h2 mt-s">{{ H.comp_title }}</h2></div>
+      {% if has_insight(L) %}<a class="link" href="{{ insight_url('insight-quality-compliance.html', L) }}">{{ t.common.learn_more }} {{ icon('arrow') }}</a>{% endif %}</div>
+    <div class="flist">
+      {% for i in range(1,7) %}<div class="rv"><h3><i>0{{ i }}</i>{{ H['c' ~ i ~ 't'] }}</h3><p>{{ H['c' ~ i ~ 'p'] }}</p></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">{{ H.j_eyebrow }}</span><h2 class="h2 mt-s">{{ H.j_title }}</h2></div></div>
+    <div class="grid g3">
+      {% for it in INSIGHTS %}
+      <article class="icard rv{% if loop.index > 1 %} d{{ loop.index - 1 }}{% endif %}">
+        <a href="{{ insight_url(it.file, L) }}">
+          <div class="ph zoom">{{ picture(it.img, t.insights['t_' ~ it.key], sizes='(max-width:640px) 100vw, 33vw') }}</div>
+          <span class="k">{{ t.insights['k_' ~ it.key] }}</span>
+          <h3>{{ t.insights['t_' ~ it.key] }}</h3>
+          <p>{{ t.insights['p_' ~ it.key] }}</p>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  {{ picture(CTA_IMG, '', sizes='100vw') }}
+  <div class="wrap">
+    <span class="eyebrow">{{ H.cta_eyebrow }}</span>
+    <h2 class="h1">{{ H.cta_title }}</h2>
+    <p class="lead">{{ H.cta_lead }}</p>
+    <div class="hero-cta">
+      <a class="btn light" href="{{ u(L, 'contact.html') }}">{{ H.cta_btn }} {{ icon('arrow') }}</a>
+      <a class="btn line-light" href="https://wa.me/{{ S.wa }}" target="_blank" rel="noopener">{{ icon('wa') }} {{ H.cta_wa }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon, picture with context %}
+{% block main %}
+<section class="phero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span aria-hidden="true">/</span><span>Solutions</span></nav>
+    <span class="eyebrow">Solutions</span>
+    <h1 class="h1">Commercial furniture, by project type.</h1>
+    <p class="lead">Guides to how EASEN manufactures booths, chairs, tables and complete furniture packages for restaurants, cafés, bars, hotels and outdoor dining — with specifications, options and ordering details.</p>
+  </div>
+</section>
+<section class="sec tight">
+  <div class="wrap">
+    {% for g in GROUPS %}
+    <div class="{% if not loop.first %}mt-xl{% endif %}">
+      <span class="eyebrow">{{ g.name }}</span>
+      <div class="sol-grid mt-m">
+        {% for s in g.entries %}<a href="/en/{{ s.file }}"><span class="k">{{ s.kicker }}</span><h3>{{ s.h1 }}</h3><p>{{ s.desc }}</p><span class="go link">Read the guide {{ icon('arrow') }}</span></a>{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section class="cta-band">
+  {{ picture(CTA_IMG, '', sizes='100vw') }}
+  <div class="wrap">
+    <span class="eyebrow">{{ t.home.cta_eyebrow }}</span>
+    <h2 class="h1">{{ t.home.cta_title }}</h2>
+    <p class="lead">{{ t.home.cta_lead }}</p>
+    <div class="hero-cta"><a class="btn light" href="/en/contact.html">{{ t.home.cta_btn }} {{ icon('arrow') }}</a></div>
+  </div>
+</section>
+{% endblock %}
