@@ -44,6 +44,12 @@ S = {
 
 # ---- curated imagery (all first-party files already in /images) ----
 HERO = "/images/cases/beijing-sichuan/cover1006-2.jpg"
+# home hero photo wall: 3 drifting columns of first-party project shots (portrait)
+HERO_WALL = [
+    ["/images/cases/beijing-sichuan/cover1006-2.jpg", "/images/cases/guangzhou-chio/cover1007-14.jpg", "/images/cases/hanzhong-hotpot/cover1009-1.jpg", "/images/cases/hangzhou-sichuan/cover1008-2.jpg"],
+    ["/images/cases/guangzhou-chio/cover1007-11.jpg", "/images/cases/beijing-sichuan/cover1006-5.jpg", "/images/cases/hanzhong-hotpot/cover1009-4.jpg", "/images/cases/guangzhou-chio/cover1007-8.jpg"],
+    ["/images/cases/hangzhou-sichuan/cover1008-1.jpg", "/images/cases/hanzhong-hotpot/cover1009-3.jpg", "/images/cases/guangzhou-chio/cover1007-15.jpg", "/images/cases/beijing-sichuan/cover1006-8.jpg"],
+]
 INTRO_IMG = "/images/factory/factory-13.jpg"
 CTA_IMG = "/images/cases/beijing-sichuan/cover1006-6.jpg"
 ABOUT_HERO = "/images/factory/factory-9.jpg"
@@ -362,7 +368,7 @@ class Site:
         return dict(
             L=L, t=t, S=Obj(S), V=self.V, YEAR=YEAR, CATS=CATS, TYPES=TYPES,
             CAT_COUNT=self.cat_count, CAT_IMG=CAT_IMG, CAT_HERO=CAT_HERO,
-            HERO=HERO, INTRO_IMG=INTRO_IMG, CTA_IMG=CTA_IMG, ABOUT_HERO=ABOUT_HERO, ABOUT_STORY=ABOUT_STORY,
+            HERO=HERO, HERO_WALL=HERO_WALL, INTRO_IMG=INTRO_IMG, CTA_IMG=CTA_IMG, ABOUT_HERO=ABOUT_HERO, ABOUT_STORY=ABOUT_STORY,
             CONTACT_IMG=CONTACT_IMG, FACTORY_POSTER=FACTORY_POSTER, FACTORY_POSTER2=FACTORY_POSTER2,
             FACTORY_STRIP=FACTORY_STRIP, FACTORY_ALL=FACTORY_ALL, AI_BEFORE=AI_BEFORE, AI_AFTER=AI_AFTER,
             HOTEL_IMGS=HOTEL_IMGS, INSIGHTS=INSIGHTS, CASE_CATS=self.case_cats, CASE_COUNT=self.case_count,
@@ -497,7 +503,7 @@ class Site:
         featured = [c for c in self.cases if c["own"]][:3]
         # home
         self.render("index.html", L, "index.html", u(L, "index.html"),
-                    {"title": t.home.title, "desc": t.home.desc, "over": True, "body_class": "over", "preload": img(HERO),
+                    {"title": t.home.title, "desc": t.home.desc, "over": True, "body_class": "over home",
                      "jsonld": [self.org_ld(L), {"@context": "https://schema.org", "@type": "WebSite", "name": "EASEN", "url": DOMAIN + "/", "inLanguage": L}]},
                     FEATURED=featured, HOME_PRODUCTS=home_items)
         # products (all)

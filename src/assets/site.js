@@ -40,6 +40,88 @@
   function reveal(root) { $$('.rv:not(.in)', root).forEach(function (el) { if (io) io.observe(el); else el.classList.add('in'); }); }
   reveal();
 
+  /* ---------- motion (home hero, counters, marquee, parallax, cursor) ---------- */
+  var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  if ($('.intro')) { try { sessionStorage.setItem('easen-intro', '1'); } catch (e) {} }
+  var d0 = d.documentElement.classList.contains('no-intro') ? 0.1 : 1.5;
+
+  // headline: wrap words (CJK: characters) in masks so they rise line by line
+  $$('[data-split]').forEach(function (h) {
+    var i = 0, cjk = /[　-〿㐀-鿿＀-￯]/;
+    function wrap(tok) { var o = d.createElement('span'), n = d.createElement('span'); o.className = 'w'; n.textContent = tok; n.style.setProperty('--i', i++); o.appendChild(n); return o; }
+    function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (c) {
+        if (c.nodeType === 3) {
+          var frag = d.createDocumentFragment();
+          c.textContent.split(/(\s+)/).forEach(function (part) {
+            if (!part) return;
+            if (/^\s+$/.test(part)) frag.appendChild(d.createTextNode(' '));
+            else if (cjk.test(part)) Array.from(part).forEach(function (ch) { frag.appendChild(wrap(ch)); });
+            else frag.appendChild(wrap(part));
+          });
+          node.replaceChild(frag, c);
+        } else if (c.nodeType === 1 && c.tagName !== 'BR') walk(c);
+      });
+    }
+    if (!RM) walk(h);
+    h.classList.add('sp');
+  });
+
+  // hero: mouse drift + scroll progress, paused while off screen
+  var hero = $('[data-hero]');
+  if (hero && !RM) {
+    var tx = 0, ty = 0, mx = 0, my = 0, heroOn = true;
+    hero.addEventListener('mousemove', function (e) { var r = hero.getBoundingClientRect(); tx = (e.clientX - r.left) / r.width - 0.5; ty = (e.clientY - r.top) / r.height - 0.5; });
+    hero.addEventListener('mouseleave', function () { tx = ty = 0; });
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { heroOn = es[0].isIntersecting; hero.classList.toggle('paused', !heroOn); }).observe(hero);
+    (function loop() {
+      if (heroOn) {
+        mx += (tx - mx) * 0.05; my += (ty - my) * 0.05;
+        var sy = Math.min(1, Math.max(0, (window.scrollY || 0) / (hero.offsetHeight || 1)));
+        hero.style.setProperty('--mx', mx.toFixed(4)); hero.style.setProperty('--my', my.toFixed(4)); hero.style.setProperty('--sy', sy.toFixed(4));
+      }
+      requestAnimationFrame(loop);
+    })();
+  }
+
+  // count-up figures
+  $$('[data-count]').forEach(function (b) {
+    var m = (b.textContent || '').trim().match(/^(\d[\d,.\s]*\d|\d)(\D.*)?$/); if (!m || RM) return;
+    var raw = m[1], sep = (raw.match(/[,.\s]/) || [''])[0], to = +raw.replace(/[,.\s]/g, ''), suf = m[2] || '', t0 = 0, dur = 2000;
+    function fmt(n) { return sep ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, sep) : String(n); }
+    b.textContent = '0' + suf;
+    function step(ts) { if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(2, -10 * k); b.textContent = fmt(k >= 1 ? to : Math.round(to * e)) + suf; if (k < 1) requestAnimationFrame(step); }
+    setTimeout(function () { requestAnimationFrame(step); }, (d0 + 0.9) * 1000);
+  });
+
+  // marquee leans with scroll speed; [data-par] images drift slower than the page
+  var marq = $('.marq-in'), pars = $$('[data-par]');
+  if (!RM && (marq || pars.length)) {
+    var lastS = window.scrollY || 0, sk = 0;
+    (function tick() {
+      var y = window.scrollY || 0, v = y - lastS; lastS = y;
+      sk += (Math.max(-10, Math.min(10, v * 0.3)) - sk) * 0.1;
+      if (marq) marq.style.setProperty('--sk', sk.toFixed(2) + 'deg');
+      var vh = window.innerHeight;
+      pars.forEach(function (p) { var r = p.parentNode.getBoundingClientRect(); if (r.bottom < 0 || r.top > vh) return; p.style.setProperty('--py', (((r.top + r.height / 2) - vh / 2) / vh * -70).toFixed(1) + 'px'); });
+      requestAnimationFrame(tick);
+    })();
+  }
+
+  // "view" disc that follows the pointer over imagery (mouse only)
+  if (!RM && window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    var cur = d.createElement('div'); cur.className = 'cur'; cur.setAttribute('aria-hidden', 'true');
+    cur.innerHTML = '<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 12h15M13 6l6 6-6 6"/></svg></i>';
+    body.appendChild(cur);
+    var X = -200, Y = -200, cx = X, cy = Y;
+    d.addEventListener('mousemove', function (e) {
+      X = e.clientX; Y = e.clientY;
+      cur.classList.toggle('on', !!(e.target.closest && e.target.closest('.col-card,.pf-media,.pcard .ph,.icard a,.ccard a,.masonry .ph,.gal .ph')));
+    }, { passive: true });
+    d.addEventListener('mouseleave', function () { cur.classList.remove('on'); });
+    (function follow() { cx += (X - cx) * 0.2; cy += (Y - cy) * 0.2; cur.style.transform = 'translate3d(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px,0)'; requestAnimationFrame(follow); })();
+  }
+
   /* ---------- video ---------- */
   $$('[data-video]').forEach(function (box) {
     var b = $('.play', box); if (!b) return;
