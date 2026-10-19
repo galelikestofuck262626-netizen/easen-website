@@ -19,7 +19,11 @@
         <div class="mt-m">{{ form(t, L, name='contact') }}</div>
       </div>
       <div>
-        <h2 class="h3">{{ C.direct }}</h2>
+        <div class="sena-contact">
+          <img src="/images/persona/sena-avatar.jpg" alt="{{ t.sena.name }} — {{ t.sena.role }}" width="88" height="88">
+          <div><p>“{{ t.sena.contact_quote }}”</p><small><b>{{ t.sena.name }}</b> · {{ t.sena.role }}</small></div>
+        </div>
+        <h2 class="h3 mt-l">{{ C.direct }}</h2>
         <div class="contact-list mt-m">
           <a href="mailto:{{ S.email }}"><span>{{ C.email_l }}</span><b>{{ S.email }}</b></a>
           <a href="https://wa.me/{{ S.wa }}" target="_blank" rel="noopener"><span>{{ C.wa_l }}</span><b>{{ S.phone }}</b></a>

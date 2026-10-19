@@ -340,5 +340,42 @@
     "p_quality": "Raw materials, frames, upholstery, dimensions, packing and pre-shipment photos: the seven checks every order goes through.",
     "t_guide": "PU leather or fabric for restaurant booths?",
     "p_guide": "Durability, cleaning, comfort and cost compared — a practical guide for restaurant buyers and designers."
+  },
+  "sena": {
+    "name": "Sena",
+    "role": "Virtual brand ambassador",
+    "eyebrow": "Your project guide",
+    "title": "Meet Sena — the face of EASEN",
+    "lead": "Sena is EASEN's virtual brand ambassador. She walks you through layouts, materials and shipping — and hands every brief straight to our project engineers in Foshan.",
+    "quote": "Send me a floor plan, a photo or just a rough idea. I'll make sure the right people in our factory see it today.",
+    "s1_t": "Layout & seating plan",
+    "s1_d": "Booth runs, table mix and seat count planned around your floor plan.",
+    "s2_t": "Materials & finishes",
+    "s2_d": "Leather, fabric, stone and timber samples matched to your concept.",
+    "s3_t": "Production & shipping",
+    "s3_d": "Factory QC photos, packing and door-to-door logistics, step by step.",
+    "cta": "Send Sena your floor plan",
+    "wa": "Chat on WhatsApp",
+    "note": "Sena is a virtual character created by EASEN. Every reply comes from our real project team.",
+    "hello": "Hi, I'm Sena from EASEN. Planning a restaurant, café or hotel? Send me your floor plan.",
+    "dismiss": "Dismiss",
+    "card_sub": "Virtual ambassador · real team behind me",
+    "reply": "We reply within 24 hours",
+    "contact_quote": "Drop your drawings here — I'll pass them to our engineers and we'll reply within 24 hours.",
+    "alt_main": "Sena, EASEN's virtual ambassador, in an EASEN restaurant project",
+    "alt_factory": "Sena checking upholstery stitching in the EASEN factory",
+    "alt_swatch": "Sena with leather and fabric samples",
+    "play": "Let Sena show you around",
+    "play_sub": "25 sec · sound on",
+    "stop": "Stop",
+    "alt_video": "Sena, EASEN's virtual ambassador, introducing EASEN"
+  },
+  "film": {
+    "eyebrow": "Brand film · 48s",
+    "title": "300+ designs.<br><em>One factory.</em>",
+    "sub": "Factory direct from Foshan, China — since 2016.",
+    "play": "Watch the film",
+    "close": "Close film",
+    "alt": "EASEN brand film: our commercial chairs and tables in motion"
   }
 }

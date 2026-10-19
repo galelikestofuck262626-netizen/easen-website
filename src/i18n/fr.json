@@ -340,5 +340,37 @@
     "p_quality": "Matières premières, structures, garnissage, dimensions, emballage et photos avant expédition : les sept contrôles que traverse chaque commande.",
     "t_guide": "Simili cuir PU ou tissu pour les banquettes de restaurant ?",
     "p_guide": "Durabilité, entretien, confort et coût comparés — un guide pratique pour les acheteurs et designers de restaurants."
+  },
+  "sena": {
+    "role": "Ambassadrice virtuelle de la marque",
+    "eyebrow": "Votre guide projet",
+    "title": "Voici Sena, le visage d'EASEN",
+    "lead": "Sena est l'ambassadrice virtuelle d'EASEN. Elle vous accompagne sur l'implantation, les matériaux et l'expédition — et transmet chaque brief directement à nos ingénieurs projet à Foshan.",
+    "quote": "Envoyez-moi un plan, une photo ou simplement une idée. Je m'assure que les bonnes personnes de notre usine la voient aujourd'hui.",
+    "s1_t": "Implantation et places assises",
+    "s1_d": "Banquettes, mix de tables et nombre de places pensés selon votre plan.",
+    "s2_t": "Matériaux et finitions",
+    "s2_d": "Échantillons de cuir, tissu, pierre et bois assortis à votre concept.",
+    "s3_t": "Production et expédition",
+    "s3_d": "Photos de contrôle qualité, emballage et logistique porte-à-porte, étape par étape.",
+    "cta": "Envoyer votre plan à Sena",
+    "wa": "Discuter sur WhatsApp",
+    "note": "Sena est un personnage virtuel créé par EASEN. Chaque réponse vient de notre véritable équipe projet.",
+    "hello": "Bonjour, je suis Sena d'EASEN. Un restaurant, un café ou un hôtel en projet ? Envoyez-moi votre plan.",
+    "dismiss": "Fermer",
+    "card_sub": "Ambassadrice virtuelle · une vraie équipe derrière moi",
+    "reply": "Réponse sous 24 heures",
+    "contact_quote": "Déposez vos plans ici — je les transmets à nos ingénieurs et nous répondons sous 24 heures.",
+    "play": "Sena vous présente EASEN",
+    "play_sub": "25 s · en anglais, son activé",
+    "stop": "Arrêter",
+    "alt_video": "Sena, ambassadrice virtuelle d'EASEN, présente EASEN"
+  },
+  "film": {
+    "eyebrow": "Film de marque · 48 s",
+    "title": "Plus de 300 modèles.<br><em>Une seule usine.</em>",
+    "sub": "Direct usine, Foshan, Chine — depuis 2016.",
+    "play": "Voir le film",
+    "close": "Fermer le film"
   }
 }

@@ -340,5 +340,37 @@
     "p_quality": "Rohmaterial, Gestelle, Polsterung, Maße, Verpackung und Fotos vor dem Versand: die sieben Prüfungen, die jede Bestellung durchläuft.",
     "t_guide": "PU-Leder oder Stoff für Restaurant-Sitzbänke?",
     "p_guide": "Haltbarkeit, Reinigung, Komfort und Kosten im Vergleich – ein praktischer Ratgeber für Einkäufer und Planer in der Gastronomie."
+  },
+  "sena": {
+    "role": "Virtuelle Markenbotschafterin",
+    "eyebrow": "Ihre Projektbegleitung",
+    "title": "Das ist Sena – das Gesicht von EASEN",
+    "lead": "Sena ist die virtuelle Markenbotschafterin von EASEN. Sie begleitet Sie durch Grundriss, Materialien und Versand – und gibt jedes Briefing direkt an unsere Projektingenieure in Foshan weiter.",
+    "quote": "Schicken Sie mir einen Grundriss, ein Foto oder einfach eine Idee. Ich sorge dafür, dass die richtigen Leute in unserer Fabrik sie noch heute sehen.",
+    "s1_t": "Layout & Sitzplanung",
+    "s1_d": "Sitzbankreihen, Tischmix und Platzzahl passend zu Ihrem Grundriss.",
+    "s2_t": "Materialien & Oberflächen",
+    "s2_d": "Leder-, Stoff-, Stein- und Holzmuster passend zu Ihrem Konzept.",
+    "s3_t": "Produktion & Versand",
+    "s3_d": "Qualitätskontrollfotos, Verpackung und Tür-zu-Tür-Logistik, Schritt für Schritt.",
+    "cta": "Grundriss an Sena senden",
+    "wa": "Per WhatsApp schreiben",
+    "note": "Sena ist eine von EASEN geschaffene virtuelle Figur. Jede Antwort kommt von unserem echten Projektteam.",
+    "hello": "Hallo, ich bin Sena von EASEN. Sie planen ein Restaurant, Café oder Hotel? Schicken Sie mir Ihren Grundriss.",
+    "dismiss": "Schließen",
+    "card_sub": "Virtuelle Botschafterin · mit echtem Team dahinter",
+    "reply": "Antwort innerhalb von 24 Stunden",
+    "contact_quote": "Legen Sie Ihre Pläne hier ab – ich gebe sie an unsere Ingenieure weiter, Antwort innerhalb von 24 Stunden.",
+    "play": "Sena stellt EASEN vor",
+    "play_sub": "25 Sek. · auf Englisch, mit Ton",
+    "stop": "Stopp",
+    "alt_video": "Sena, virtuelle Markenbotschafterin von EASEN, stellt EASEN vor"
+  },
+  "film": {
+    "eyebrow": "Markenfilm · 48 s",
+    "title": "Über 300 Modelle.<br><em>Eine Fabrik.</em>",
+    "sub": "Direkt ab Werk in Foshan, China – seit 2016.",
+    "play": "Film ansehen",
+    "close": "Film schließen"
   }
 }

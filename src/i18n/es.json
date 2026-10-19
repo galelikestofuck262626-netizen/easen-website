@@ -340,5 +340,37 @@
     "p_quality": "Materias primas, estructuras, tapizado, medidas, embalaje y fotos previas al envío: los siete controles por los que pasa cada pedido.",
     "t_guide": "¿Polipiel PU o tejido para las bancadas del restaurante?",
     "p_guide": "Durabilidad, limpieza, confort y coste comparados: una guía práctica para compradores y diseñadores de restaurantes."
+  },
+  "sena": {
+    "role": "Embajadora virtual de la marca",
+    "eyebrow": "Tu guía de proyecto",
+    "title": "Conoce a Sena, la cara de EASEN",
+    "lead": "Sena es la embajadora virtual de EASEN. Te acompaña en la distribución, los materiales y el envío, y entrega cada encargo directamente a nuestros ingenieros de proyecto en Foshan.",
+    "quote": "Envíame un plano, una foto o solo una idea. Me aseguro de que las personas adecuadas de nuestra fábrica lo vean hoy.",
+    "s1_t": "Distribución y asientos",
+    "s1_d": "Bancadas, combinación de mesas y número de plazas según tu plano.",
+    "s2_t": "Materiales y acabados",
+    "s2_d": "Muestras de piel, tejido, piedra y madera a juego con tu concepto.",
+    "s3_t": "Producción y envío",
+    "s3_d": "Fotos de control de calidad, embalaje y logística puerta a puerta, paso a paso.",
+    "cta": "Envía tu plano a Sena",
+    "wa": "Hablar por WhatsApp",
+    "note": "Sena es un personaje virtual creado por EASEN. Cada respuesta viene de nuestro equipo de proyecto real.",
+    "hello": "Hola, soy Sena de EASEN. ¿Preparas un restaurante, una cafetería o un hotel? Envíame tu plano.",
+    "dismiss": "Cerrar",
+    "card_sub": "Embajadora virtual · con un equipo real detrás",
+    "reply": "Respondemos en 24 horas",
+    "contact_quote": "Deja aquí tus planos: se los paso a nuestros ingenieros y te respondemos en 24 horas.",
+    "play": "Sena te presenta EASEN",
+    "play_sub": "25 s · en inglés, con sonido",
+    "stop": "Detener",
+    "alt_video": "Sena, embajadora virtual de EASEN, presenta EASEN"
+  },
+  "film": {
+    "eyebrow": "Película de marca · 48 s",
+    "title": "Más de 300 diseños.<br><em>Una sola fábrica.</em>",
+    "sub": "Directo de fábrica en Foshan, China — desde 2016.",
+    "play": "Ver la película",
+    "close": "Cerrar la película"
   }
 }

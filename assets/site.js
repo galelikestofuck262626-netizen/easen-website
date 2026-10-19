@@ -122,6 +122,31 @@
     (function follow() { cx += (X - cx) * 0.2; cy += (Y - cy) * 0.2; cur.style.transform = 'translate3d(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px,0)'; requestAnimationFrame(follow); })();
   }
 
+  /* ---------- brand film band: muted loop (16:9 / 9:16 by screen) → click plays the full film in place ---------- */
+  var filmBox = $('.film-box');
+  if (filmBox) {
+    var fl = $('.film-loop', filmBox), fx = $('.film-x', filmBox), narrow = matchMedia('(max-width:700px)').matches;
+    var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    fl.poster = fl.getAttribute(narrow ? 'data-pv' : 'data-ph');
+    var loopSrc = fl.getAttribute(narrow ? 'data-v' : 'data-h');
+    var startLoop = function () { if (calm) return; if (fl.getAttribute('src') !== loopSrc) fl.src = loopSrc; var p = fl.play(); if (p && p.catch) p.catch(function () {}); };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { es.forEach(function (e) { if (filmBox.classList.contains('playing')) return; if (e.isIntersecting) startLoop(); else fl.pause(); }); }, { rootMargin: '200px' }).observe(filmBox);
+    } else startLoop();
+    var stopFilm = function () {
+      filmBox.classList.remove('playing'); fx.hidden = true;
+      fl.muted = true; fl.loop = true; fl.controls = false; fl.src = loopSrc; startLoop();
+    };
+    $('.film-play', filmBox).addEventListener('click', function () {
+      filmBox.classList.add('playing'); fx.hidden = false;
+      fl.loop = false; fl.muted = false; fl.controls = true;
+      fl.src = filmBox.getAttribute(narrow ? 'data-film-v' : 'data-film-h');
+      var p = fl.play(); if (p && p.catch) p.catch(function () {});
+    });
+    fx.addEventListener('click', stopFilm);
+    fl.addEventListener('ended', function () { if (filmBox.classList.contains('playing')) stopFilm(); });
+  }
+
   /* ---------- video ---------- */
   $$('[data-video]').forEach(function (box) {
     var b = $('.play', box); if (!b) return;
@@ -189,8 +214,58 @@
   var fab = $('#fab');
   if (fab) {
     var fb = $('.fab-btn', fab);
-    fb.addEventListener('click', function () { var o = !fab.classList.contains('open'); fab.classList.toggle('open', o); fb.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+    var hi = $('#sena-hi');
+    var hiOff = function () { if (hi) hi.hidden = true; try { sessionStorage.setItem('easen-sena-hi', '1'); } catch (e) {} };
+    var setFab = function (o) { fab.classList.toggle('open', o); fb.setAttribute('aria-expanded', o ? 'true' : 'false'); if (o) hiOff(); };
+    fb.addEventListener('click', function () { setFab(!fab.classList.contains('open')); });
     d.addEventListener('click', function (e) { if (!fab.contains(e.target)) fab.classList.remove('open'); });
+    /* Sena greeting bubble: once per session, after a short delay */
+    if (hi) {
+      $('.sena-hi-x', hi).addEventListener('click', function (e) { e.stopPropagation(); hiOff(); });
+      $('.sena-hi-msg', hi).addEventListener('click', function (e) { e.stopPropagation(); setFab(true); });
+      var seen = false;
+      try { seen = !!sessionStorage.getItem('easen-sena-hi'); } catch (e) {}
+      if (!seen) setTimeout(function () { if (!fab.classList.contains('open')) { hi.hidden = false; requestAnimationFrame(function () { hi.classList.add('in'); }); setTimeout(function () { if (!hi.hidden) { hi.classList.remove('in'); setTimeout(hiOff, 500); } }, 15000); } }, 3500);
+    }
+  }
+
+  /* ---------- Sena video: living avatar + talking intro ---------- */
+  var swallow = function (p) { if (p && p.catch) p.catch(function () {}); };
+  var sav = $('.sena-av');
+  if (sav && !RM) window.addEventListener('load', function () {
+    setTimeout(function () {
+      sav.addEventListener('playing', function () { sav.classList.add('on'); }, { once: true });
+      sav.src = sav.getAttribute('data-src'); swallow(sav.play());
+    }, 1200);
+  });
+  var st = $('.sena-talk');
+  if (st) {
+    var sv = $('video', st), sp = $('.sena-play', st), sx = $('.sena-stop', st), idle = sv.getAttribute('data-idle'), trk = null;
+    var toIdle = function () {
+      if (trk) { trk.remove(); trk = null; }
+      st.classList.remove('talking'); st.parentNode.classList.remove('talking'); sx.hidden = true; sp.hidden = false;
+      sv.muted = true; sv.loop = true;
+      if (RM) { sv.pause(); sv.removeAttribute('src'); sv.load(); return; }
+      sv.src = idle; swallow(sv.play());
+    };
+    if (!RM && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (st.classList.contains('talking')) return;
+          if (e.isIntersecting) { if (!sv.getAttribute('src')) sv.src = idle; swallow(sv.play()); } else sv.pause();
+        });
+      }, { rootMargin: '200px' }).observe(st);
+    }
+    sp.addEventListener('click', function () {
+      st.classList.add('talking'); st.parentNode.classList.add('talking'); sp.hidden = true; sx.hidden = false;
+      sv.loop = false; sv.muted = false; sv.src = st.getAttribute('data-talk');
+      trk = d.createElement('track'); trk.kind = 'captions'; trk.srclang = trk.label = st.getAttribute('data-srclang'); trk.src = st.getAttribute('data-vtt'); trk.default = true;
+      sv.appendChild(trk);
+      sv.addEventListener('loadedmetadata', function () { if (sv.textTracks[0]) sv.textTracks[0].mode = 'showing'; }, { once: true });
+      swallow(sv.play());
+    });
+    sx.addEventListener('click', toIdle);
+    sv.addEventListener('ended', function () { if (st.classList.contains('talking')) toIdle(); });
   }
 
   /* ---------- forms ---------- */
