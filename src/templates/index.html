@@ -58,11 +58,17 @@
     <div class="split wide-r">
       <div class="sena-media rv">
         {% set SV = 'zh' if L == 'zh' else 'en' %}
+        {# 10-20 森娜换白人形象;新讲解视频回来前先放静态图,视频回来把 SENA_VIDEO 改 true #}
+        {% set SENA_VIDEO = false %}
+        {% if SENA_VIDEO %}
         <div class="ph ar-34 sena-main sena-talk wipe" data-talk="/videos/sena/{{ SV }}_intro.mp4" data-vtt="/videos/sena/{{ SV }}_intro.vtt" data-srclang="{{ SV }}">
           <video muted loop playsinline preload="none" poster="/videos/sena/poster.jpg" data-idle="/videos/sena/idle.mp4" width="720" height="960" aria-label="{{ SN.alt_video }}"></video>
           <button class="sena-play" type="button"><span class="sena-play-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span><b>{{ SN.play }}</b><small>{{ SN.play_sub }}</small></span></button>
           <button class="sena-stop" type="button" aria-label="{{ SN.stop }}" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
         </div>
+        {% else %}
+        <div class="ph ar-34 sena-main wipe">{{ picture('/images/persona/sena-portrait.jpg', SN.name ~ ' — ' ~ SN.role, sizes='(max-width:820px) 100vw, 34vw') }}</div>
+        {% endif %}
         <div class="ph ar-34 sena-sub a">{{ picture('/images/persona/sena-factory.jpg', SN.alt_factory, sizes='(max-width:820px) 40vw, 16vw') }}</div>
         <div class="ph ar-34 sena-sub b">{{ picture('/images/persona/sena-swatch.jpg', SN.alt_swatch, sizes='(max-width:820px) 40vw, 16vw') }}</div>
       </div>
