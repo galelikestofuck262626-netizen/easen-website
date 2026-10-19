@@ -1,0 +1,9 @@
+// 系统垃圾文件,两边都不同步
+(?d).DS_Store
+(?d)._*
+(?d)Thumbs.db
+(?d)desktop.ini
+(?d).Spotlight-V100
+(?d).Trashes
+~$*
+*.tmp
