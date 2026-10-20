@@ -172,6 +172,86 @@ def _variant_path(src, w):
     return "/%s/%s-%d.webp" % (RES_DIR, stem, w)
 
 
+# ---- 产品图补白底(10-20 用户:白底图显示不完全,不够白底就填白底让它完整显示)
+# 非 3:4 的图、或产品贴到图片边缘的白底图:网站派生图一律补成 3:4,产品居中四周留白;原图不动。
+# 补的底色取原图四边的中位色(纯白底就补纯白,浅灰棚拍底就补同样的浅灰),看不出接缝。
+# 结果缓存在 images/_r/_pad.json(按原图 mtime),改规则就把 PAD_VER 加 1 强制重出。
+PAD_VER = 2
+PAD_FILL = 0.84          # 白底图:产品外框最多占画布宽/高的 84%
+_PAD = None
+
+
+def _pad_cache():
+    global _PAD
+    if _PAD is None:
+        f = ROOT / RES_DIR / "_pad.json"
+        _PAD = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+        if _PAD.get("_ver") != PAD_VER:
+            _PAD = {"_ver": PAD_VER}
+    return _PAD
+
+
+def _pad_save():
+    if _PAD is not None:
+        (ROOT / RES_DIR).mkdir(parents=True, exist_ok=True)
+        (ROOT / RES_DIR / "_pad.json").write_text(json.dumps(_PAD, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+
+
+def _pad_plan(src, local):
+    """-> None(原样用) 或 {size:(W,H), box:[x0,y0,x1,y1]|None, fresh:bool}"""
+    from PIL import Image, ImageOps
+    c = _pad_cache()
+    mt = int(local.stat().st_mtime)
+    hit = c.get(src)
+    if hit and hit.get("mt") == mt:
+        return None if hit.get("keep") else {"size": tuple(hit["size"]), "box": hit.get("box"), "fill": hit.get("fill"), "fresh": False}
+    with Image.open(local) as im0:
+        im = ImageOps.exif_transpose(im0).convert("RGB")
+    W0, H0 = im.size
+    sm = im.copy()
+    sm.thumbnail((400, 400))
+    g = sm.convert("L").point(lambda v: 255 if v < 238 else 0)
+    w, h = sm.size
+    edge = [g.getpixel((x, 0)) for x in range(w)] + [g.getpixel((x, h - 1)) for x in range(w)] + \
+           [g.getpixel((0, y)) for y in range(h)] + [g.getpixel((w - 1, y)) for y in range(h)]
+    edge_dark = sum(1 for v in edge if v) / len(edge)
+    rgb = sm.load()
+    ep = [rgb[x, 0] for x in range(w)] + [rgb[x, h - 1] for x in range(w)] + [rgb[0, y] for y in range(h)] + [rgb[w - 1, y] for y in range(h)]
+    fill = [sorted(p[i] for p in ep)[len(ep) // 2] for i in range(3)]
+    whitebg = edge_dark < 0.3
+    bb = g.getbbox() if whitebg else None
+    is34 = abs(W0 / H0 - 0.75) < 0.03
+    touch = False
+    if bb:
+        m = 2
+        touch = bb[0] <= m or bb[1] <= m or bb[2] >= w - m or bb[3] >= h - m
+    if is34 and not touch:
+        c[src] = {"mt": mt, "keep": 1}
+        return None
+    if bb:
+        k = W0 / w
+        box = [max(0, int(bb[0] * k) - 2), max(0, int(bb[1] * k) - 2), min(W0, int(bb[2] * k) + 2), min(H0, int(bb[3] * k) + 2)]
+        bw, bh = box[2] - box[0], box[3] - box[1]
+        CW = max(bw / PAD_FILL, bh / PAD_FILL * 0.75)
+    else:
+        box = None
+        bw, bh = W0, H0
+        CW = max(W0, H0 * 0.75)
+    CW = int(round(CW))
+    size = (CW, int(round(CW / 0.75)))
+    c[src] = {"mt": mt, "size": list(size), "box": box, "fill": fill}
+    return {"size": size, "box": box, "fill": fill, "fresh": True}
+
+
+def _pad_apply(im, pad):
+    from PIL import Image
+    if pad.get("box"):
+        im = im.crop(tuple(pad["box"]))
+    cv = Image.new("RGB", tuple(pad["size"]), tuple(pad.get("fill") or (255, 255, 255)))
+    cv.paste(im, ((cv.width - im.width) // 2, (cv.height - im.height) // 2))
+    return cv
+
+
 def img(src):
     """-> dict(src, srcset, w, h). Generates webp variants for local images."""
     if not src:
@@ -187,6 +267,11 @@ def img(src):
     kind = "product" if src.startswith("/images/products") else "default"
     with Image.open(local) as im0:
         W, H = ImageOps.exif_transpose(im0).size if hasattr(im0, "getexif") and im0.getexif().get(0x0112, 1) in (5, 6, 7, 8) else im0.size
+    pad = None
+    if kind == "product":
+        pad = _pad_plan(src, local)
+        if pad:
+            W, H = pad["size"]
     ws = [w for w in WIDTHS[kind] if w < W] or [W]
     if W > ws[-1] and len(ws) < len(WIDTHS[kind]):
         ws.append(min(W, WIDTHS[kind][len(ws)]))
@@ -195,16 +280,18 @@ def img(src):
     for w in ws:
         vp = _variant_path(src, w)
         vf = ROOT / vp.lstrip("/")
-        if DO_IMG and (not vf.exists() or vf.stat().st_mtime < local.stat().st_mtime):
+        if DO_IMG and (not vf.exists() or vf.stat().st_mtime < local.stat().st_mtime or (pad and pad["fresh"])):
             if im is None:
                 im = Image.open(local)
                 im = ImageOps.exif_transpose(im)
                 if im.mode not in ("RGB", "RGBA"):
                     im = im.convert("RGB")
                 if im.mode == "RGBA":
-                    bg = Image.new("RGB", im.size, (237, 231, 221))
+                    bg = Image.new("RGB", im.size, (255, 255, 255) if pad else (237, 231, 221))
                     bg.paste(im, mask=im.split()[3])
                     im = bg
+                if pad:
+                    im = _pad_apply(im, pad)
             h = round(H * w / W)
             vf.parent.mkdir(parents=True, exist_ok=True)
             im.resize((w, h), Image.LANCZOS).save(vf, "WEBP", quality=78, method=5)
@@ -847,6 +934,7 @@ def main():
     site = Site()
     site.build()
     n = flush()
+    _pad_save()
     print("pages written: %d files (%d changed); products %d, cases %d, images %d" % (len(WRITES), n, len(site.products), len(site.cases), len(_IMG)))
 
 

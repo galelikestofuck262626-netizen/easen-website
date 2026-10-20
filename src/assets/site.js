@@ -8,11 +8,11 @@
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
 
-  /* ---------- 白底棚拍方图/横图:整张缩进 3:4 框显示(实时拉数据渲染的卡片用;静态页构建时已加好 .fit) ---------- */
+  /* ---------- 产品方图/横图:整张缩进 3:4 框显示(只兜底后台新加、实时拉数据渲染的卡片;静态页的派生图构建时已补白成 3:4) ---------- */
   d.addEventListener('load', function (e) {
     var im = e.target;
     if (im.tagName !== 'IMG' || im.classList.contains('fit') || !im.parentNode || !im.parentNode.classList || !im.parentNode.classList.contains('ph')) return;
-    if ((im.currentSrc || im.src).indexOf('products-studio') > -1 && im.naturalHeight && im.naturalWidth / im.naturalHeight > 0.8) im.classList.add('fit');
+    if (/\/images\/(_r\/)?products/.test(im.currentSrc || im.src) && im.naturalHeight && im.naturalWidth / im.naturalHeight > 0.8) im.classList.add('fit');
   }, true);
 
   /* ---------- header ---------- */
