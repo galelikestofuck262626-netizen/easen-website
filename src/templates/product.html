@@ -7,7 +7,7 @@
     <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ u(L, '') }}">{{ t.nav.home }}</a><span aria-hidden="true">/</span><a href="{{ u(L, 'products.html') }}">{{ t.nav.collection }}</a><span aria-hidden="true">/</span>{% if p %}<a href="{{ cat_url(p.category, L) }}">{{ t.cat[p.category ~ '_long'] }}</a><span aria-hidden="true">/</span><span>{{ nm }}</span>{% else %}<span data-f="name"></span>{% endif %}</nav>
     <div class="pd" id="pd"{% if not p %} data-dynamic{% endif %}>
       <div class="gal" data-f="gallery">
-        {% if p %}{% for im in p.images %}<div class="ph" data-lb="p">{{ picture(im, nm ~ ' — ' ~ loop.index, sizes='(max-width:900px) 86vw, 30vw', eager=loop.first) }}</div>{% endfor %}{% endif %}
+        {% if p %}{% for im in p.images %}<div class="ph" data-lb="p">{{ picture(im, nm ~ ' — ' ~ loop.index, sizes='(max-width:900px) 86vw, 30vw', eager=loop.first, fit=true) }}</div>{% endfor %}{% endif %}
       </div>
       <div class="pd-info">
         <span class="eyebrow" data-f="eyebrow">{% if p %}{{ t.cat[p.category ~ '_long'] }}{% endif %}</span>

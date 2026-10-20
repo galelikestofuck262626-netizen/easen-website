@@ -199,7 +199,8 @@
     "add_ai": "In der KI-Vorschau ausprobieren",
     "added_ai": "Zur KI-Vorschau hinzugefügt",
     "ask_more": "Oder kontaktieren Sie uns direkt",
-    "enquire_subject": "Angebotsanfrage: {name} (Modell {code})"
+    "enquire_subject": "Angebotsanfrage: {name} (Modell {code})",
+    "scene_tag": "Inszeniert von EASEN"
   },
   "cases": {
     "title": "Projekte – Restaurant-, Café- & Hotelmöbel in der Praxis | EASEN",

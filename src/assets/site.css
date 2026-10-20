@@ -335,13 +335,22 @@ html[lang="zh"] .facts span{letter-spacing:.12em}
 @media (max-width:900px){.c-a,.c-b,.c-c,.c-d{grid-column:span 12;min-height:420px}}
 
 /* ---------- products ---------- */
-.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(28px,3vw,44px) clamp(16px,1.8vw,28px)}
+.pgrid{display:grid;grid-auto-flow:row dense;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(28px,3vw,44px) clamp(16px,1.8vw,28px)}
 @media (max-width:1100px){.pgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* 产品网格里穿插的 2×2 场景搭配图 */
+.pscene{grid-column:span 2;grid-row:span 2;position:relative;margin:0;min-height:0}
+.pscene .ph{position:absolute;inset:0;background:var(--stone)}
+.pscene .ph img{object-position:50% 60%}
+.pscene figcaption{position:absolute;left:18px;bottom:16px;color:#fff;font-size:11px;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.45);pointer-events:none}
+.pscene[hidden]{display:none}
+@media (max-width:760px){.pscene{grid-row:span 1;aspect-ratio:3/4;min-height:auto}.pscene .ph{position:absolute}}
 @media (max-width:760px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px}}
 .pcard{position:relative;display:block}
 .pcard .ph{aspect-ratio:3/4;background:#EDE7DD}
 .pcard .ph img{position:absolute;inset:0;transition:opacity .6s var(--ease),transform 1.2s var(--ease)}
 .pcard .ph img.alt{opacity:0}
+.ph img.fit{object-fit:contain;padding:9%;background:#fff;mix-blend-mode:multiply}
+.ph:has(> img.fit:not(.alt)){background:#fff}
 .pcard:hover .ph img.alt{opacity:1}
 .pcard:hover .ph img{transform:scale(1.03)}
 .pcard .meta{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-top:16px}

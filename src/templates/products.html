@@ -50,7 +50,9 @@
   <div class="wrap">
     <p class="count" data-count data-tpl="{{ t.common.results }}">{{ t.common.results|replace('{n}', LIST|length|string) }}</p>
     <div class="pgrid mt-m" id="pgrid" data-cat="{{ cat or '' }}">
-      {% for p in LIST %}<div class="pwrap" data-id="{{ p.id }}" data-cat="{{ p.category }}" data-type="{{ p.type }}" data-q="{{ search_blob(p) }}">{{ pcard(p, L, t, eager=loop.index <= 4) }}</div>{% endfor %}
+      {%- set scn = SCENES[cat or 'all'] if (cat or 'all') in SCENES else [] %}
+      {% for p in LIST %}<div class="pwrap" data-id="{{ p.id }}" data-cat="{{ p.category }}" data-type="{{ p.type }}" data-q="{{ search_blob(p) }}">{{ pcard(p, L, t, eager=loop.index <= 4) }}</div>
+      {%- if loop.index % 10 == 0 and (loop.index // 10) <= scn|length %}{% set sc = scn[loop.index // 10 - 1] %}<figure class="pscene" data-scene><div class="ph" data-lb="scene">{{ picture(sc, t.products.scene_tag ~ ' — ' ~ (t.cat[cat ~ '_long'] if cat else t.nav.collection), sizes='(max-width:760px) 100vw, 50vw') }}</div><figcaption>{{ t.products.scene_tag }}</figcaption></figure>{% endif %}{% endfor %}
       <p class="empty" hidden data-empty>{{ t.common.no_results }}</p>
     </div>
     <div class="more"><button class="btn ghost" type="button" data-more>{{ t.common.load_more }}</button></div>

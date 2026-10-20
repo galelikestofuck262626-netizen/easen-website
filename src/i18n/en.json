@@ -199,7 +199,8 @@
     "add_ai": "Try it in AI Preview",
     "added_ai": "Added to AI Preview",
     "ask_more": "Or reach us directly",
-    "enquire_subject": "Quote request: {name} (model {code})"
+    "enquire_subject": "Quote request: {name} (model {code})",
+    "scene_tag": "Styled by EASEN"
   },
   "cases": {
     "title": "Projects — Restaurant, Café & Hotel Furniture Case Studies | EASEN",

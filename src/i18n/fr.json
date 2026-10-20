@@ -199,7 +199,8 @@
     "add_ai": "L'essayer dans l'Aperçu IA",
     "added_ai": "Ajouté à l'Aperçu IA",
     "ask_more": "Ou contactez-nous directement",
-    "enquire_subject": "Demande de devis : {name} (modèle {code})"
+    "enquire_subject": "Demande de devis : {name} (modèle {code})",
+    "scene_tag": "Mise en scène EASEN"
   },
   "cases": {
     "title": "Réalisations — Mobilier de restaurant, café et hôtel | EASEN",

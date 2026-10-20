@@ -68,6 +68,9 @@ CAT_HERO = {
     "hotel": "/images/services/hotel.jpg",
 }
 CAT_IMG = dict(CAT_HERO)
+# 产品列表里穿插的场景搭配图(10-20 用户:白底图太多,加场景图提逼格)
+SCENES = {c: ["/images/scenes/%s/scene-%s-%02d.jpg" % (c, c[0], i) for i in range(1, n + 1)] for c, n in (("restaurant", 16), ("cafe", 12))}
+SCENES["all"] = [x for pair in zip(SCENES["restaurant"], SCENES["cafe"] + [None] * 4) for x in pair if x]
 HOTEL_IMGS = ["/images/services/hotel.jpg", "/images/cases/guangzhou-chio/cover1007-5.jpg", "/images/cases/guangzhou-chio/cover1007-8.jpg", "/images/services/cafe.jpg"]
 FEATURE_IDX = {"1006": [0, 2, 7], "1007": [4, 1, 5], "1009": [0, 2, 3], "1008": [0, 1, 2]}
 INSIGHTS = [
@@ -371,7 +374,7 @@ class Site:
             HERO=HERO, HERO_WALL=HERO_WALL, INTRO_IMG=INTRO_IMG, CTA_IMG=CTA_IMG, ABOUT_HERO=ABOUT_HERO, ABOUT_STORY=ABOUT_STORY,
             CONTACT_IMG=CONTACT_IMG, FACTORY_POSTER=FACTORY_POSTER, FACTORY_POSTER2=FACTORY_POSTER2,
             FACTORY_STRIP=FACTORY_STRIP, FACTORY_ALL=FACTORY_ALL, AI_BEFORE=AI_BEFORE, AI_AFTER=AI_AFTER,
-            HOTEL_IMGS=HOTEL_IMGS, INSIGHTS=INSIGHTS, CASE_CATS=self.case_cats, CASE_COUNT=self.case_count,
+            HOTEL_IMGS=HOTEL_IMGS, SCENES=SCENES, INSIGHTS=INSIGHTS, CASE_CATS=self.case_cats, CASE_COUNT=self.case_count,
             u=u, cat_url=cat_url, product_url=product_url, case_url=case_url, insight_url=insight_url,
             has_insight=lambda L_: L_ in INSIGHT_LANGS,
             img=img, thumb=thumb, code=code, pname=self.pname, pdesc=self.pdesc, cname=self.cname, cloc=self.cloc,

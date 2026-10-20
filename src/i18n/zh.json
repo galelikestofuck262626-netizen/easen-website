@@ -199,7 +199,8 @@
     "add_ai": "放进 AI 看效果",
     "added_ai": "已加入 AI 看效果",
     "ask_more": "或直接联系我们",
-    "enquire_subject": "询价：{name}（型号 {code}）"
+    "enquire_subject": "询价：{name}（型号 {code}）",
+    "scene_tag": "EASEN 场景搭配"
   },
   "cases": {
     "title": "项目案例 — 餐厅、咖啡厅、酒店家具定制案例｜宜森 EASEN",

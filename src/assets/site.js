@@ -8,6 +8,13 @@
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
 
+  /* ---------- 白底棚拍方图/横图:整张缩进 3:4 框显示(实时拉数据渲染的卡片用;静态页构建时已加好 .fit) ---------- */
+  d.addEventListener('load', function (e) {
+    var im = e.target;
+    if (im.tagName !== 'IMG' || im.classList.contains('fit') || !im.parentNode || !im.parentNode.classList || !im.parentNode.classList.contains('ph')) return;
+    if ((im.currentSrc || im.src).indexOf('products-studio') > -1 && im.naturalHeight && im.naturalWidth / im.naturalHeight > 0.8) im.classList.add('fit');
+  }, true);
+
   /* ---------- header ---------- */
   var hdr = $('#hdr'), lastY = 0, over = body.classList.contains('over');
   function onScroll() {
@@ -361,7 +368,12 @@
       items().forEach(function (it) {
         var ok = (!fCat || it.getAttribute('data-cat') === fCat) && (!fType || it.getAttribute('data-type') === fType) && (!q || (it.getAttribute('data-q') || '').indexOf(q) > -1) && !it.hasAttribute('data-off');
         if (ok) n++;
-        var show = ok && n <= shown; it.hidden = !show; if (show) vis++;
+        var show = ok && n <= shown; it.hidden = !show; if (show) { vis++; it.style.order = vis * 10; }
+      });
+      // 场景搭配图:每 10 款穿插一张;搜索时收起,结果不够 10 款也收起
+      $$('[data-scene]', grid).forEach(function (sc, j) {
+        var at = (j + 1) * 10, on = !q && vis >= at;
+        sc.hidden = !on; if (on) sc.style.order = at * 10 + 5;
       });
       if (countEl) countEl.textContent = (countEl.getAttribute('data-tpl') || '{n}').replace('{n}', n);
       if (moreBtn) moreBtn.parentNode.hidden = vis >= n;

@@ -199,7 +199,8 @@
     "add_ai": "Probarla en la vista previa IA",
     "added_ai": "Añadida a la vista previa IA",
     "ask_more": "O contáctenos directamente",
-    "enquire_subject": "Solicitud de presupuesto: {name} (modelo {code})"
+    "enquire_subject": "Solicitud de presupuesto: {name} (modelo {code})",
+    "scene_tag": "Ambientado por EASEN"
   },
   "cases": {
     "title": "Proyectos — Mobiliario para restaurantes y hoteles | EASEN",

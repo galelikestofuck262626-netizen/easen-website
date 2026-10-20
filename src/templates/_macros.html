@@ -18,8 +18,10 @@
 {%- endif -%}
 {%- endmacro %}
 
-{% macro picture(src, alt, cls='', sizes='100vw', eager=false, w=None) -%}
+{% macro picture(src, alt, cls='', sizes='100vw', eager=false, w=None, fit=false) -%}
 {%- set d = img(src) -%}
+{#- 白底棚拍图不是 3:4(方图/横图)时整张缩进框里显示,不裁切放大 -#}
+{%- if fit and d.w and d.h and d.w / d.h > 0.8 and '/products-studio/' in src %}{% set cls = (cls ~ ' fit')|trim %}{% endif -%}
 <img src="{{ d.src }}"{% if d.srcset %} srcset="{{ d.srcset }}" sizes="{{ sizes }}"{% endif %} alt="{{ alt }}"{% if d.w %} width="{{ d.w }}" height="{{ d.h }}"{% endif %}{% if eager %} fetchpriority="high"{% else %} loading="lazy" decoding="async"{% endif %}{% if cls %} class="{{ cls }}"{% endif %}>
 {%- endmacro %}
 
@@ -27,8 +29,8 @@
 {%- set nm = pname(p, L) -%}
 <article class="pcard rv">
   <a href="{{ product_url(p, L) }}" class="ph ar-34" aria-label="{{ nm }}">
-    {{ picture(p.main_image, nm ~ ' — ' ~ t.cat[p.category] ~ ' ' ~ t.type[p.type ~ '_one'], sizes='(max-width:760px) 50vw, (max-width:1100px) 33vw, 25vw', eager=eager) }}
-    {%- if p.images|length > 1 %}{{ picture(p.images[1], '', cls='alt', sizes='(max-width:760px) 50vw, 25vw') }}{% endif %}
+    {{ picture(p.main_image, nm ~ ' — ' ~ t.cat[p.category] ~ ' ' ~ t.type[p.type ~ '_one'], sizes='(max-width:760px) 50vw, (max-width:1100px) 33vw, 25vw', eager=eager, fit=true) }}
+    {%- if p.images|length > 1 %}{{ picture(p.images[1], '', cls='alt', sizes='(max-width:760px) 50vw, 25vw', fit=true) }}{% endif %}
   </a>
   <div class="meta">
     <div><h3><a href="{{ product_url(p, L) }}">{{ nm }}</a></h3><span class="kind">{{ t.type[p.type ~ '_one'] }} · {{ code(p) }}</span></div>
